@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Genealogy Tree</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="workspace">
+      <aside class="sidebar left-sidebar">
+        <h1>Navigate</h1>
+        <label class="field">
+          <span>Search</span>
+          <input id="searchInput" type="text" placeholder="Name or ID" />
+        </label>
+        <label class="toggle">
+          <input id="displayAllToggle" type="checkbox" />
+          <span>Display all</span>
+        </label>
+        <label class="field">
+          <span>Focus person</span>
+          <select id="focusSelect"></select>
+        </label>
+        <label class="field">
+          <span>Branch to youngest</span>
+          <select id="branchSelect"></select>
+        </label>
+        <label class="toggle">
+          <input id="branchOnlyToggle" type="checkbox" />
+          <span>Show only selected branch</span>
+        </label>
+        <p id="branchHint" class="hint"></p>
+      </aside>
+
+      <main class="canvas-area">
+        <div class="canvas-toolbar">
+          <h2 id="treeTitle">Family tree</h2>
+        </div>
+        <div id="cy"></div>
+      </main>
+
+      <aside class="sidebar right-sidebar">
+        <section class="panel">
+          <h3>Person</h3>
+          <dl id="personSummary" class="summary-grid"></dl>
+        </section>
+        <section class="panel">
+          <h3>Sources</h3>
+          <div id="sourcesList" class="sources-list"></div>
+        </section>
+      </aside>
+    </div>
+    <script src="https://unpkg.com/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
+    <script src="https://unpkg.com/dagre@0.8.5/dist/dagre.min.js"></script>
+    <script src="https://unpkg.com/cytoscape-dagre@2.5.0/cytoscape-dagre.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
