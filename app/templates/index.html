@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Genealogy Tree</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <div id="workspace" class="workspace">
+      <aside id="leftSidebar" class="sidebar left-sidebar">
+        <div class="sidebar-head">
+          <h1>Navigate</h1>
+          <button id="leftToggle" class="icon-toggle" type="button" title="Collapse left sidebar">◀</button>
+        </div>
+        <label class="field">
+          <span>Search</span>
+          <input id="searchInput" type="text" placeholder="Name, place, ID" />
+        </label>
+        <label class="toggle">
+          <input id="displayAllToggle" type="checkbox" />
+          <span>Display all</span>
+        </label>
+        <label class="toggle">
+          <input id="reviewOnlyToggle" type="checkbox" />
+          <span>Review queue only</span>
+        </label>
+        <p id="reviewQueueHint" class="hint"></p>
+        <label class="field">
+          <span>Focus person</span>
+          <select id="focusSelect"></select>
+        </label>
+        <label class="field">
+          <span>Branch</span>
+          <select id="branchSelect"></select>
+        </label>
+        <label class="toggle">
+          <input id="branchOnlyToggle" type="checkbox" />
+          <span>Show only selected branch</span>
+        </label>
+        <p id="branchHint" class="hint"></p>
+      </aside>
+
+      <div id="leftResizer" class="sidebar-resizer left-resizer" title="Resize left sidebar"></div>
+
+      <main class="canvas-area">
+        <div class="canvas-toolbar">
+          <button id="leftExpand" class="edge-toggle left-expand hidden" type="button" title="Open left sidebar">☰</button>
+          <h2 id="treeTitle">Family tree</h2>
+          <button id="rightExpand" class="edge-toggle right-expand hidden" type="button" title="Open right sidebar">☰</button>
+        </div>
+        <div id="cy"></div>
+      </main>
+
+      <div id="rightResizer" class="sidebar-resizer right-resizer" title="Resize right sidebar"></div>
+
+      <aside id="rightSidebar" class="sidebar right-sidebar">
+        <div class="sidebar-head">
+          <h2>Admin</h2>
+          <button id="rightToggle" class="icon-toggle" type="button" title="Collapse right sidebar">▶</button>
+        </div>
+
+        <form id="personForm" class="admin-card">
+          <h3>Person</h3>
+          <div class="compact-grid">
+            <label><span>Name</span><input name="name" type="text" /></label>
+            <label><span>Sex</span>
+              <select name="sex">
+                <option value=""></option>
+                <option value="M">M</option>
+                <option value="F">F</option>
+                <option value="U">U</option>
+              </select>
+            </label>
+            <label><span>Confidence</span>
+              <select name="confidence">
+                <option value=""></option>
+                <option value="confirmed">confirmed</option>
+                <option value="probable">probable</option>
+                <option value="possible">possible</option>
+              </select>
+            </label>
+            <label><span>Birth date</span><input name="birth_date" type="text" /></label>
+            <label><span>Birth place</span><input name="birth_place" type="text" /></label>
+            <label><span>Death date</span><input name="death_date" type="text" /></label>
+            <label><span>Death place</span><input name="death_place" type="text" /></label>
+            <label><span>Father</span><select name="father"></select></label>
+            <label><span>Mother</span><select name="mother"></select></label>
+            <label><span>Provenance</span><input name="provenance" type="text" /></label>
+            <label class="full"><span>Notes</span><textarea name="notes"></textarea></label>
+          </div>
+          <div class="actions">
+            <button type="submit">Save person</button>
+            <span id="saveStatus" class="hint"></span>
+          </div>
+        </form>
+
+        <section class="admin-card">
+          <h3>Review</h3>
+          <p id="reviewSummary" class="hint">Select a person to review imported data.</p>
+          <div class="compact-grid">
+            <label><span>Promote provenance</span>
+              <select id="promoteProvenance">
+                <option value="manual" selected>manual</option>
+                <option value="primary">primary</option>
+                <option value="myheritage">myheritage</option>
+              </select>
+            </label>
+            <label><span>Promote confidence</span>
+              <select id="promoteConfidence">
+                <option value="confirmed">confirmed</option>
+                <option value="probable" selected>probable</option>
+                <option value="possible">possible</option>
+                <option value="open">open</option>
+              </select>
+            </label>
+            <label class="full"><span>Suggested merge target</span><select id="mergeTargetSelect"></select></label>
+            <label class="full"><span>Review note</span><textarea id="reviewNote" placeholder="Why this person is trusted, merged, or still uncertain."></textarea></label>
+          </div>
+          <div class="actions actions-stack">
+            <button id="promoteButton" type="button">Mark reviewed</button>
+            <button id="mergeButton" class="secondary-button" type="button">Merge into selected target</button>
+            <span id="reviewStatus" class="hint"></span>
+          </div>
+        </section>
+
+        <form id="sourceForm" class="admin-card" enctype="multipart/form-data">
+          <h3>Links and images</h3>
+          <div class="compact-grid">
+            <label><span>Attach to event</span><select name="event_id"></select></label>
+            <label><span>Source title</span><input name="title" type="text" placeholder="Birth register entry" /></label>
+            <label class="full"><span>Website link</span><input name="archive_url" type="url" placeholder="https://..." /></label>
+            <label><span>Type</span><input name="type" type="text" placeholder="Parish birth register" /></label>
+            <label><span>Date</span><input name="date" type="text" placeholder="1854-09-15" /></label>
+            <label><span>Priority</span>
+              <select name="priority">
+                <option value="primary">primary</option>
+                <option value="secondary">secondary</option>
+              </select>
+            </label>
+            <label class="full"><span>Attach local image</span><input name="image" type="file" accept="image/*" /></label>
+            <label><span>New event date</span><input name="event_date" type="text" placeholder="1854-09-15" /></label>
+            <label><span>New event place</span><input name="event_place" type="text" placeholder="Rudslavice" /></label>
+            <label><span>New event confidence</span>
+              <select name="event_confidence">
+                <option value="confirmed">confirmed</option>
+                <option value="probable">probable</option>
+                <option value="possible" selected>possible</option>
+              </select>
+            </label>
+          </div>
+          <div class="actions">
+            <button type="submit">Add source</button>
+            <span id="sourceStatus" class="hint"></span>
+          </div>
+        </form>
+
+        <section class="admin-card">
+          <h3>Current links</h3>
+          <div id="sourcesList" class="sources-list"></div>
+        </section>
+      </aside>
+    </div>
+    <script src="https://unpkg.com/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
+    <script src="https://unpkg.com/dagre@0.8.5/dist/dagre.min.js"></script>
+    <script src="https://unpkg.com/cytoscape-dagre@2.5.0/cytoscape-dagre.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>

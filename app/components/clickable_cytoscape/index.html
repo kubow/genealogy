@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      html, body, #cy {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: transparent;
+      }
+      body {
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cy"></div>
+    <script>
+      const container = document.getElementById("cy");
+      let cy = null;
+      let latestArgs = { elements: [], height: 760 };
+      let isReady = false;
+
+      function sendMessage(type, payload = {}) {
+        window.parent.postMessage(
+          {
+            isStreamlitMessage: true,
+            type,
+            ...payload
+          },
+          "*"
+        );
+      }
+
+      function setStatus(message) {
+        container.innerHTML = `
+          <div style="
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            text-align: center;
+            color: #6b5a43;
+            background: linear-gradient(180deg, #fffdf8 0%, #f5efe4 100%);
+            border: 1px solid #d7ccb7;
+            border-radius: 14px;
+            box-sizing: border-box;
+          ">${message}</div>
+        `;
+      }
+
+      setStatus("Loading family tree...");
+
+      function loadScript(url) {
+        return new Promise((resolve, reject) => {
+          const script = document.createElement("script");
+          script.src = url;
+          script.onload = resolve;
+          script.onerror = () => reject(new Error(`Failed to load ${url}`));
+          document.head.appendChild(script);
+        });
+      }
+
+      async function loadAny(urls) {
+        let lastError = null;
+        for (const url of urls) {
+          try {
+            await loadScript(url);
+            return;
+          } catch (error) {
+            lastError = error;
+          }
+        }
+        throw lastError;
+      }
+
+      function styleSheet() {
+        return [
+          {
+            selector: 'node[kind = "person"]',
+            style: {
+              shape: "round-rectangle",
+              width: 170,
+              height: 76,
+              "background-color": "#fffdf7",
+              "border-width": 2,
+              "border-color": "#ccb999",
+              label: "data(display_label)",
+              "text-wrap": "wrap",
+              "text-max-width": 150,
+              "text-valign": "center",
+              "text-halign": "center",
+              "font-size": 13,
+              "font-weight": 700,
+              color: "#3b2c18",
+              "line-height": 1.25,
+              "overlay-opacity": 0
+            }
+          },
+          {
+            selector: 'node[kind = "person"][selected = "true"]',
+            style: {
+              "background-color": "#fff2cc",
+              "border-color": "#b7791f",
+              "border-width": 3
+            }
+          },
+          {
+            selector: 'node[path = "true"]',
+            style: {
+              "border-color": "#c05621",
+              "border-width": 4,
+              "background-color": "#fff0df"
+            }
+          },
+          {
+            selector: 'node[kind = "family"]',
+            style: {
+              shape: "diamond",
+              width: 18,
+              height: 18,
+              "background-color": "#c9b392",
+              "border-width": 1,
+              "border-color": "#987f5e",
+              label: "data(label)",
+              "font-size": 9,
+              "text-valign": "bottom",
+              "text-margin-y": 11,
+              color: "#6b5a43",
+              "overlay-opacity": 0
+            }
+          },
+          {
+            selector: 'node[kind = "family"][path = "true"]',
+            style: {
+              "background-color": "#dd6b20",
+              "border-color": "#9c4221",
+              width: 22,
+              height: 22
+            }
+          },
+          {
+            selector: 'edge[kind = "order"]',
+            style: {
+              width: 0,
+              opacity: 0,
+              "events": "no"
+            }
+          },
+          {
+            selector: "edge",
+            style: {
+              width: 2,
+              "line-color": "#a08f73",
+              "curve-style": "taxi",
+              "taxi-direction": "vertical",
+              "taxi-turn": 22,
+              "target-arrow-shape": "none",
+              "source-arrow-shape": "none",
+              "overlay-opacity": 0
+            }
+          },
+          {
+            selector: 'edge[path = "true"]',
+            style: {
+              width: 4,
+              "line-color": "#dd6b20"
+            }
+          }
+        ];
+      }
+
+      function dagreLayoutOptions() {
+        return {
+          name: "dagre",
+          rankDir: "TB",
+          ranker: "network-simplex",
+          nodeSep: 30,
+          rankSep: 78,
+          edgeSep: 10,
+          animate: false,
+          fit: true,
+          padding: 32,
+          spacingFactor: 0.95,
+          minLen: (edge) => (edge.data("kind") === "order" ? 0 : 1),
+          edgeWeight: (edge) => {
+            if (edge.data("kind") === "order") return 20;
+            if (edge.data("path") === "true") return 8;
+            return 4;
+          }
+        };
+      }
+
+      function buildGraph(args) {
+        latestArgs = args;
+        const incoming = args.elements || [];
+        const elements = incoming.map((element) => {
+          if (!element.data || element.data.kind !== "person") {
+            return element;
+          }
+          const lines = [element.data.label || ""];
+          if (element.data.dates) lines.push(element.data.dates);
+          if (element.data.meta) lines.push(element.data.meta);
+          return {
+            ...element,
+            data: {
+              ...element.data,
+              display_label: lines.join("\n")
+            }
+          };
+        });
+
+        if (!cy) {
+          window.cytoscape.use(window.cytoscapeDagre);
+          cy = window.cytoscape({
+            container,
+            elements,
+            wheelSensitivity: 0.18,
+            minZoom: 0.25,
+            maxZoom: 2.5,
+            motionBlur: true,
+            boxSelectionEnabled: false,
+            autoungrabify: false,
+            style: styleSheet(),
+            layout: dagreLayoutOptions()
+          });
+
+          cy.on("tap", "node[kind = 'person']", (event) => {
+            const personId = event.target.data("person_id");
+            if (personId) {
+              sendMessage("streamlit:setComponentValue", { value: personId });
+            }
+          });
+        } else {
+          cy.json({ elements });
+          cy.style(styleSheet());
+          cy.layout(dagreLayoutOptions()).run();
+        }
+
+        sendMessage("streamlit:setFrameHeight", { height: args.height + 24 });
+      }
+
+      function onRenderMessage(event) {
+        const message = event.data;
+        if (!message || !message.isStreamlitMessage || message.type !== "streamlit:render") {
+          return;
+        }
+        latestArgs = message.args || latestArgs;
+        if (!isReady || !window.cytoscape || !window.dagre || !window.cytoscapeDagre) {
+          return;
+        }
+        buildGraph(latestArgs);
+      }
+
+      window.addEventListener("error", (event) => {
+        setStatus(`Tree component error: ${event.message}`);
+      });
+
+      (async function bootstrap() {
+        try {
+          window.addEventListener("message", onRenderMessage);
+          sendMessage("streamlit:componentReady", { apiVersion: 1 });
+          sendMessage("streamlit:setFrameHeight", { height: 760 });
+
+          await loadAny([
+            "https://unpkg.com/cytoscape@3.30.2/dist/cytoscape.min.js",
+            "https://cdn.jsdelivr.net/npm/cytoscape@3.30.2/dist/cytoscape.min.js"
+          ]);
+          await loadAny([
+            "https://unpkg.com/dagre@0.8.5/dist/dagre.min.js",
+            "https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"
+          ]);
+          await loadAny([
+            "https://unpkg.com/cytoscape-dagre@2.5.0/cytoscape-dagre.js",
+            "https://cdn.jsdelivr.net/npm/cytoscape-dagre@2.5.0/cytoscape-dagre.js"
+          ]);
+          isReady = true;
+          buildGraph(latestArgs);
+        } catch (error) {
+          setStatus("Unable to load Cytoscape assets. Check network/proxy settings or use a local asset bundle.");
+          sendMessage("streamlit:setFrameHeight", { height: (latestArgs.height || 760) + 24 });
+        }
+      })();
+    </script>
+  </body>
+</html>
