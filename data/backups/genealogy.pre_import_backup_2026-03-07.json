@@ -1,0 +1,380 @@
+{
+  "people": [
+    {
+      "id": "P0001",
+      "name": "Frantisek Vajda",
+      "birth_date": "1854-09-15",
+      "death_date": "1916-02",
+      "birth_place": "Rudslavice",
+      "father": "P0002",
+      "mother": "",
+      "sex": "M",
+      "confidence": "confirmed",
+      "notes": "Birth and marriage linked to MZA scans; death month/year from linked death record."
+    },
+    {
+      "id": "P0002",
+      "name": "Josef Vajda",
+      "birth_date": "1827-12-08",
+      "birth_place": "Rudslavice",
+      "father": "P0003",
+      "mother": "P0004",
+      "sex": "M",
+      "confidence": "probable",
+      "notes": "Older notes mention search window 1820-1835 for a Josef Waida record; may refer to same or adjacent generation."
+    },
+    {
+      "id": "P0003",
+      "name": "Georg Wajda",
+      "birth_date": "1793",
+      "birth_place": "Rudslavice (estimated)",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "probable",
+      "notes": "Estimated from age in 1822 marriage record."
+    },
+    {
+      "id": "P0004",
+      "name": "Dominika Liska",
+      "birth_date": "",
+      "birth_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "probable",
+      "notes": "Potential name discrepancy with Anna in later baptism records."
+    },
+    {
+      "id": "P0005",
+      "name": "Stanislav Vajda",
+      "birth_date": "1906",
+      "birth_place": "Velikova",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Birth noted as not digitized; marriage in 1933 at Slusovice linked."
+    },
+    {
+      "id": "P0006",
+      "name": "Franz Waida",
+      "birth_date": "",
+      "birth_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Appears in linked marriage records (1826 and 1860); relationship not fully resolved."
+    },
+    {
+      "id": "P0007",
+      "name": "Anna Vajda",
+      "birth_date": "1825",
+      "birth_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Linked birth record candidate."
+    },
+    {
+      "id": "P0008",
+      "name": "Marianna",
+      "birth_date": "",
+      "birth_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "probable",
+      "notes": "Bride in Frantisek Vajda marriage record."
+    }
+  ],
+  "events": [
+    {
+      "id": "E1822-12-08-marriage-georg-dominika",
+      "event_type": "Marriage",
+      "date": "1822-12-08",
+      "place": "Rudslavice parish",
+      "confidence": "confirmed",
+      "groom_id": "P0003",
+      "bride_id": "P0004",
+      "source_ids": [
+        "S0001",
+        "S0003"
+      ]
+    },
+    {
+      "id": "E1827-12-08-birth-josef",
+      "event_type": "Birth/Baptism",
+      "date": "1827-12-08",
+      "place": "Rudslavice",
+      "confidence": "confirmed",
+      "person_id": "P0002",
+      "source_ids": [
+        "S0002"
+      ]
+    },
+    {
+      "id": "E1854-09-15-birth-frantisek",
+      "event_type": "Birth/Baptism",
+      "date": "1854-09-15",
+      "place": "Rudslavice",
+      "confidence": "confirmed",
+      "person_id": "P0001",
+      "source_ids": [
+        "S0006"
+      ]
+    },
+    {
+      "id": "E1884-11-11-marriage-frantisek-marianna",
+      "event_type": "Marriage",
+      "date": "1884-11-11",
+      "place": "Rudslavice parish",
+      "confidence": "confirmed",
+      "groom_id": "P0001",
+      "bride_id": "P0008",
+      "source_ids": [
+        "S0007"
+      ]
+    },
+    {
+      "id": "E1916-02-death-frantisek",
+      "event_type": "Death",
+      "date": "1916-02",
+      "place": "Rudslavice parish",
+      "confidence": "probable",
+      "person_id": "P0001",
+      "source_ids": [
+        "S0008"
+      ]
+    },
+    {
+      "id": "E1933-marriage-stanislav",
+      "event_type": "Marriage",
+      "date": "1933",
+      "place": "Slusovice",
+      "confidence": "probable",
+      "groom_id": "P0005",
+      "bride_id": "",
+      "source_ids": [
+        "S0009"
+      ]
+    },
+    {
+      "id": "E1860-marriage-franz-waida",
+      "event_type": "Marriage",
+      "date": "1860",
+      "place": "Rudslavice area",
+      "confidence": "possible",
+      "groom_id": "P0006",
+      "bride_id": "",
+      "source_ids": [
+        "S0010"
+      ]
+    },
+    {
+      "id": "E1851-marriage-josef-waida",
+      "event_type": "Marriage",
+      "date": "1851",
+      "place": "Rudslavice area",
+      "confidence": "possible",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0012"
+      ]
+    },
+    {
+      "id": "E1826-marriage-franz-waida",
+      "event_type": "Marriage",
+      "date": "1826",
+      "place": "Rudslavice area",
+      "confidence": "possible",
+      "groom_id": "P0006",
+      "bride_id": "",
+      "source_ids": [
+        "S0013"
+      ]
+    },
+    {
+      "id": "E1825-birth-anna-vajda",
+      "event_type": "Birth/Baptism",
+      "date": "1825",
+      "place": "Rudslavice area",
+      "confidence": "possible",
+      "person_id": "P0007",
+      "source_ids": [
+        "S0014"
+      ]
+    },
+    {
+      "id": "E1825-1835-search-josef-waida",
+      "event_type": "ResearchTask",
+      "date": "1825-1835",
+      "place": "Rudslavice",
+      "confidence": "open",
+      "person_id": "",
+      "source_ids": [
+        "S0011"
+      ],
+      "notes": "Dohledat narozeni Josefa (cca 1820-1835)."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S0001",
+      "title": "Marriage Index Entry (1822): Wajda Georg - Liska Dominika",
+      "type": "Parish marriage index",
+      "parish": "Rudslavice / Ludslavice",
+      "date": "1822",
+      "archive_url": "",
+      "image_url": "",
+      "local_image": "media/images/S0001-index-1822-folio22.jpg",
+      "reliability": "medium-high"
+    },
+    {
+      "id": "S0002",
+      "title": "Birth/Baptism Record: Josef Vajda",
+      "type": "Parish birth/baptism register",
+      "parish": "Rudslavice / Ludslavice",
+      "date": "1827-12-08",
+      "archive_url": "",
+      "image_url": "",
+      "local_image": "media/images/S0002-birth-josef-1827-12-08.jpg",
+      "reliability": "high"
+    },
+    {
+      "id": "S0003",
+      "title": "Marriage Record: Georg Wajda and Dominika Liska",
+      "type": "Parish marriage register",
+      "parish": "Rudslavice / Ludslavice",
+      "date": "1822-12-08",
+      "archive_url": "",
+      "image_url": "",
+      "local_image": "media/images/S0003-marriage-georg-dominika-folio22.jpg",
+      "reliability": "high"
+    },
+    {
+      "id": "S0004",
+      "title": "Birth/Baptism Record: Frantisek Vajda (legacy placeholder)",
+      "type": "Parish birth/baptism register",
+      "parish": "Rudslavice / Ludslavice",
+      "date": "1854",
+      "archive_url": "",
+      "image_url": "",
+      "local_image": "media/images/S0004-birth-frantisek-1854.jpg",
+      "reliability": "high"
+    },
+    {
+      "id": "S0005",
+      "title": "Marriage Record: Frantisek Vajda and Marianna (legacy placeholder)",
+      "type": "Parish marriage register",
+      "parish": "Rudslavice / Ludslavice",
+      "date": "1884",
+      "archive_url": "",
+      "image_url": "",
+      "local_image": "media/images/S0005-marriage-frantisek-marianna-1884.jpg",
+      "reliability": "high"
+    },
+    {
+      "id": "S0006",
+      "title": "Frantisek Vajda birth 1854-09-15 (Rudslavice)",
+      "type": "Parish birth/baptism register",
+      "parish": "Rudslavice",
+      "date": "1854-09-15",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9033?image=216000010-000253-003374-000000-008158-000000-00-B05675-00070.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9033?image=216000010-000253-003374-000000-008158-000000-00-B05675-00070.jp2",
+      "local_image": "",
+      "reliability": "high"
+    },
+    {
+      "id": "S0007",
+      "title": "Frantisek Vajda marriage 1884-11-11",
+      "type": "Parish marriage register",
+      "parish": "Rudslavice / Slusovice area",
+      "date": "1884-11-11",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/11099?image=216000010-000253-003371-000000-004360-000000-00-B00492-00250.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/11099?image=216000010-000253-003371-000000-004360-000000-00-B00492-00250.jp2",
+      "local_image": "",
+      "reliability": "high"
+    },
+    {
+      "id": "S0008",
+      "title": "Frantisek Vajda death 1916",
+      "type": "Parish death register",
+      "parish": "Rudslavice / Slusovice area",
+      "date": "1916",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/12571?image=216000010-000253-003371-000000-004364-000000-00-00840.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/12571?image=216000010-000253-003371-000000-004364-000000-00-00840.jp2",
+      "local_image": "",
+      "reliability": "high"
+    },
+    {
+      "id": "S0009",
+      "title": "Stanislav Vajda marriage 1933 (Slusovice)",
+      "type": "Parish marriage register",
+      "parish": "Slusovice",
+      "date": "1933",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/14895?image=216000010-00253-00000004674-000-000000000-000004674-00220.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/14895?image=216000010-00253-00000004674-000-000000000-000004674-00220.jp2",
+      "local_image": "",
+      "reliability": "medium"
+    },
+    {
+      "id": "S0010",
+      "title": "Franz Waida marriage 1860",
+      "type": "Parish marriage register",
+      "parish": "Rudslavice area",
+      "date": "1860",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9035?image=216000010-000253-003374-000000-008162-000000-00-B06013-00330.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9035?image=216000010-000253-003374-000000-008162-000000-00-B06013-00330.jp2",
+      "local_image": "",
+      "reliability": "medium"
+    },
+    {
+      "id": "S0011",
+      "title": "Josef Waida birth search range 1825-1835",
+      "type": "Parish birth/baptism register",
+      "parish": "Rudslavice area",
+      "date": "1825-1835",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9031?image=216000010-000253-003374-000000-008156-000000-00-B06012-00420.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9031?image=216000010-000253-003374-000000-008156-000000-00-B06012-00420.jp2",
+      "local_image": "",
+      "reliability": "medium"
+    },
+    {
+      "id": "S0012",
+      "title": "Josef Waida marriage 1851",
+      "type": "Parish marriage register",
+      "parish": "Rudslavice area",
+      "date": "1851",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/8879?image=216000010-000253-003374-000000-007871-000000-00-B02884-00900.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/8879?image=216000010-000253-003374-000000-007871-000000-00-B02884-00900.jp2",
+      "local_image": "",
+      "reliability": "medium"
+    },
+    {
+      "id": "S0013",
+      "title": "Franz Waida marriage 1826",
+      "type": "Parish marriage register",
+      "parish": "Rudslavice area",
+      "date": "1826",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9034?image=216000010-000253-003374-000000-008161-000000-00-B05289-00130.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9034?image=216000010-000253-003374-000000-008161-000000-00-B05289-00130.jp2",
+      "local_image": "",
+      "reliability": "medium"
+    },
+    {
+      "id": "S0014",
+      "title": "Anna Vajda birth 1825",
+      "type": "Parish birth/baptism register",
+      "parish": "Rudslavice area",
+      "date": "1825",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9031?image=216000010-000253-003374-000000-008156-000000-00-B06012-00390.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9031?image=216000010-000253-003374-000000-008156-000000-00-B06012-00390.jp2",
+      "local_image": "",
+      "reliability": "medium"
+    }
+  ]
+}

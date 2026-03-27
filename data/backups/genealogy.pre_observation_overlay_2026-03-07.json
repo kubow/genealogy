@@ -1,0 +1,1555 @@
+{
+  "people": [
+    {
+      "id": "P0001",
+      "name": "Frantisek Vajda",
+      "birth_date": "1854-09-15",
+      "death_date": "1916-02",
+      "birth_place": "Rudslavice",
+      "father": "P0002",
+      "mother": "",
+      "sex": "M",
+      "confidence": "confirmed",
+      "notes": "Birth and marriage linked to MZA scans; death month/year from linked death record. | conflict_name:Franti\u0161ek Vajda | conflict_death_date:1916-02-27 | conflict_birth_place:Rudoslavice | conflict_confidence:possible",
+      "death_place": "Velikov\u00e1",
+      "provenance": "primary"
+    },
+    {
+      "id": "P0002",
+      "name": "Josef Vajda",
+      "birth_date": "1827-12-08",
+      "birth_place": "Rudslavice",
+      "father": "P0003",
+      "mother": "P0004",
+      "sex": "M",
+      "confidence": "probable",
+      "notes": "Older notes mention search window 1820-1835 for a Josef Waida record; may refer to same or adjacent generation. | conflict_birth_date:1827-04-18 | conflict_confidence:possible",
+      "provenance": "primary"
+    },
+    {
+      "id": "P0003",
+      "name": "Georg Wajda",
+      "birth_date": "1793",
+      "birth_place": "Rudslavice (estimated)",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "probable",
+      "notes": "Estimated from age in 1822 marriage record.",
+      "provenance": "primary"
+    },
+    {
+      "id": "P0004",
+      "name": "Dominika Liska",
+      "birth_date": "",
+      "birth_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "probable",
+      "notes": "Potential name discrepancy with Anna in later baptism records.",
+      "provenance": "primary"
+    },
+    {
+      "id": "P0005",
+      "name": "Stanislav Vajda",
+      "birth_date": "1906",
+      "birth_place": "Velikova",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Birth noted as not digitized; marriage in 1933 at Slusovice linked. | conflict_birth_date:1906-07-02 | conflict_birth_place:Vesel\u00e1, \u010cesko",
+      "provenance": "primary"
+    },
+    {
+      "id": "P0006",
+      "name": "Franz Waida",
+      "birth_date": "1798",
+      "birth_place": "Ludslavice",
+      "father": "P0060",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Appears in linked marriage records (1826 and 1860); relationship not fully resolved.",
+      "provenance": "primary"
+    },
+    {
+      "id": "P0007",
+      "name": "Anna Vajda",
+      "birth_date": "1825",
+      "birth_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Linked birth record candidate.",
+      "provenance": "primary"
+    },
+    {
+      "id": "P0008",
+      "name": "Marianna",
+      "birth_date": "",
+      "birth_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "probable",
+      "notes": "Bride in Frantisek Vajda marriage record.",
+      "provenance": "primary"
+    },
+    {
+      "id": "P0009",
+      "name": "Josef Vajda",
+      "birth_date": "1933-05-22",
+      "death_date": "",
+      "birth_place": "Vesel\u00e1, \u010cesko",
+      "death_place": "",
+      "father": "P0062",
+      "mother": "P0022",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0010",
+      "name": "Franta Vajda",
+      "birth_date": "1940-06-16",
+      "death_date": "",
+      "birth_place": "Vesel\u00e1, \u010cesko",
+      "death_place": "",
+      "father": "P0062",
+      "mother": "P0022",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0011",
+      "name": "Mirka Vajdov\u00e1",
+      "birth_date": "1943-05-31",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "P0062",
+      "mother": "P0022",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0012",
+      "name": "Lida Vajdov\u00e1",
+      "birth_date": "1946-07-16",
+      "death_date": "",
+      "birth_place": "Vesel\u00e1, \u010cesko",
+      "death_place": "",
+      "father": "P0062",
+      "mother": "P0022",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0013",
+      "name": "Jaroslav Novosad",
+      "birth_date": "1907-06-30",
+      "death_date": "1977-08-30",
+      "birth_place": "Zl\u00edn, \u010cesko",
+      "death_place": "Zl\u00edn, \u010cesko",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0014",
+      "name": "Radom\u00edr Vajda",
+      "birth_date": "1959-06-29",
+      "death_date": "2024-12-01",
+      "birth_place": "Zl\u00edn, \u010cesko",
+      "death_place": "Zl\u00edn, \u010cesko",
+      "father": "P0020",
+      "mother": "P0019",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0015",
+      "name": "Jitka Ture\u010dkov\u00e1",
+      "birth_date": "1961-08-12",
+      "death_date": "",
+      "birth_place": "Zl\u00edn, \u010cesko",
+      "death_place": "",
+      "father": "P0018",
+      "mother": "P0017",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0016",
+      "name": "Jakub Vajda",
+      "birth_date": "1984-06-19",
+      "death_date": "",
+      "birth_place": "Zl\u00edn, \u010cesko",
+      "death_place": "",
+      "father": "P0014",
+      "mother": "P0015",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0017",
+      "name": "Alena Barto\u0148ov\u00e1",
+      "birth_date": "1935",
+      "death_date": "",
+      "birth_place": "Ve\u0159ovice, \u010cesko",
+      "death_place": "",
+      "father": "P0023",
+      "mother": "P0024",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0018",
+      "name": "Leopold Ture\u010dek",
+      "birth_date": "1932",
+      "death_date": "2012",
+      "birth_place": "Zl\u00edn, \u010cesko",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0019",
+      "name": "Ludmila Novosadov\u00e1",
+      "birth_date": "1938",
+      "death_date": "",
+      "birth_place": "Zl\u00edn, \u010cesko",
+      "death_place": "",
+      "father": "P0013",
+      "mother": "P0021",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0020",
+      "name": "Stanislav Vajda",
+      "birth_date": "1935-12-04",
+      "death_date": "2014-04-26",
+      "birth_place": "Vesel\u00e1, \u010cesko",
+      "death_place": "",
+      "father": "P0062",
+      "mother": "P0022",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0021",
+      "name": "Marie",
+      "birth_date": "1912-09-02",
+      "death_date": "1995-11-16",
+      "birth_place": "Zl\u00edn, \u010cesko",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0022",
+      "name": "Berta Slov\u00e1\u010dkov\u00e1",
+      "birth_date": "1911-04-21",
+      "death_date": "",
+      "birth_place": "Vesel\u00e1, \u010cesko",
+      "death_place": "",
+      "father": "P0028",
+      "mother": "P0029",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0023",
+      "name": "Vincenc Barto\u0148",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0024",
+      "name": "Al\u017eb\u011bta",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0027",
+      "name": "Anna \u017derav\u00edkov\u00e1",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0028",
+      "name": "Josef Slov\u00e1\u010dek",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "Vesel\u00e1, \u010cesko",
+      "death_place": "",
+      "father": "P0030",
+      "mother": "P0031",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0029",
+      "name": "Berta Div\u00edlkov\u00e1",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "P0032",
+      "mother": "P0033",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0030",
+      "name": "Franti\u0161ek Slov\u00e1\u010dek",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "\u017delechovice",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0031",
+      "name": "Anna Li\u0161kov\u00e1",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "\u017delechovice",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0032",
+      "name": "Franti\u0161ek Div\u00edlek",
+      "birth_date": "1866-01-15",
+      "death_date": "1940-02-07",
+      "birth_place": "Vesel\u00e1 u Zl\u00edna",
+      "death_place": "slu\u0161ovice",
+      "father": "P0034",
+      "mother": "P0035",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0033",
+      "name": "Marie S\u00e1blov\u00e1",
+      "birth_date": "1866",
+      "death_date": "",
+      "birth_place": "Vesel\u00e1 u Zl\u00edna",
+      "death_place": "",
+      "father": "P0037",
+      "mother": "P0038",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0034",
+      "name": "Anton\u00edn Div\u00edlek",
+      "birth_date": "1838",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "P0039",
+      "mother": "P0040",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0035",
+      "name": "Franti\u0161ka \u0160udov\u00e1",
+      "birth_date": "1837",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "P0041",
+      "mother": "P0042",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0036",
+      "name": "Franti\u0161ek Div\u00edlek",
+      "birth_date": "1904-08-16",
+      "death_date": "1996-01-03",
+      "birth_place": "Vesel\u00e1 u Zl\u00edna",
+      "death_place": "",
+      "father": "P0032",
+      "mother": "P0033",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0037",
+      "name": "Franti\u0161ek Sabl",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0038",
+      "name": "Marie Hol\u00edkov\u00e1",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "P0045",
+      "mother": "",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0039",
+      "name": "Franc Div\u00edlek",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "Vesel\u00e1 u Zl\u00edna",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0040",
+      "name": "Al\u017eb\u011bta Mokro\u0161ov\u00e1",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0041",
+      "name": "Matou\u0161 \u0160uda",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0042",
+      "name": "Mariana Sv\u00edzelov\u00e1",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0043",
+      "name": "Marie Ku\u010derov\u00e1",
+      "birth_date": "1907-08-01",
+      "death_date": "2000-09-08",
+      "birth_place": "Kostelec u \u0160t\u00edpy",
+      "death_place": "",
+      "father": "P0046",
+      "mother": "P0047",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0044",
+      "name": "Jan Sabl",
+      "birth_date": "1868",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "P0037",
+      "mother": "P0038",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0045",
+      "name": "Jan Hol\u00edk",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "Velikov\u00e1",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0046",
+      "name": "Rudolf Ku\u010dera",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "Kostelec u \u0160t\u00edpy",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0047",
+      "name": "Marie Dlabajov\u00e1",
+      "birth_date": "1879-01-19",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "Kostelec u \u0160t\u00edpy",
+      "father": "P0049",
+      "mother": "P0050",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0048",
+      "name": "Franti\u0161ka Bobalov\u00e1",
+      "birth_date": "1873",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "P0051",
+      "mother": "P0052",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0049",
+      "name": "Franti\u0161ek Dlabaja",
+      "birth_date": "1834",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0050",
+      "name": "Aloisie Sla\u010d\u00e1lkov\u00e1",
+      "birth_date": "1857",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0051",
+      "name": "Jan Bobal",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0052",
+      "name": "Anna Nedb\u00e1lkov\u00e1",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "P0053",
+      "mother": "",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0053",
+      "name": "Franti\u0161ek Nedb\u00e1lek",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0054",
+      "name": "Stanislav Vajda",
+      "birth_date": "1904-10-06",
+      "death_date": "",
+      "birth_place": "Velikov\u00e1",
+      "death_place": "Velikov\u00e1",
+      "father": "P0063",
+      "mother": "P0027",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0056",
+      "name": "Veronika Wala\u0161\u00edk",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "P0059",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0058",
+      "name": "Anna K\u0159i\u017eanov\u00e1",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0059",
+      "name": "Johann Gaja",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0060",
+      "name": "Joseph Waida",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "Ludslavice",
+      "death_place": "",
+      "father": "P0061",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0061",
+      "name": "x Waida",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "U",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0062",
+      "name": "Stanislav Vajda",
+      "birth_date": "1906-07-02",
+      "death_date": "",
+      "birth_place": "Vesel\u00e1, \u010cesko",
+      "death_place": "",
+      "father": "P0063",
+      "mother": "P0027",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0063",
+      "name": "Franti\u0161ek Vajda",
+      "birth_date": "1854-09-15",
+      "death_date": "1916-02-27",
+      "birth_place": "Rudoslavice",
+      "death_place": "Velikov\u00e1",
+      "father": "P0064",
+      "mother": "P0056",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    },
+    {
+      "id": "P0064",
+      "name": "Josef Vajda",
+      "birth_date": "1827-04-18",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "P0006",
+      "mother": "P0058",
+      "sex": "M",
+      "confidence": "possible",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "provenance": "myheritage"
+    }
+  ],
+  "events": [
+    {
+      "id": "E1822-12-08-marriage-georg-dominika",
+      "event_type": "Marriage",
+      "date": "1822-12-08",
+      "place": "Rudslavice parish",
+      "confidence": "confirmed",
+      "groom_id": "P0003",
+      "bride_id": "P0004",
+      "source_ids": [
+        "S0001",
+        "S0003"
+      ],
+      "provenance": "primary"
+    },
+    {
+      "id": "E1827-12-08-birth-josef",
+      "event_type": "Birth/Baptism",
+      "date": "1827-12-08",
+      "place": "Rudslavice",
+      "confidence": "confirmed",
+      "person_id": "P0002",
+      "source_ids": [
+        "S0002"
+      ],
+      "provenance": "primary"
+    },
+    {
+      "id": "E1854-09-15-birth-frantisek",
+      "event_type": "Birth/Baptism",
+      "date": "1854-09-15",
+      "place": "Rudslavice",
+      "confidence": "confirmed",
+      "person_id": "P0001",
+      "source_ids": [
+        "S0006"
+      ],
+      "provenance": "primary"
+    },
+    {
+      "id": "E1884-11-11-marriage-frantisek-marianna",
+      "event_type": "Marriage",
+      "date": "1884-11-11",
+      "place": "Rudslavice parish",
+      "confidence": "confirmed",
+      "groom_id": "P0001",
+      "bride_id": "P0008",
+      "source_ids": [
+        "S0007"
+      ],
+      "provenance": "primary"
+    },
+    {
+      "id": "E1916-02-death-frantisek",
+      "event_type": "Death",
+      "date": "1916-02",
+      "place": "Rudslavice parish",
+      "confidence": "probable",
+      "person_id": "P0001",
+      "source_ids": [
+        "S0008"
+      ],
+      "provenance": "primary"
+    },
+    {
+      "id": "E1933-marriage-stanislav",
+      "event_type": "Marriage",
+      "date": "1933",
+      "place": "Slusovice",
+      "confidence": "probable",
+      "groom_id": "P0005",
+      "bride_id": "",
+      "source_ids": [
+        "S0009"
+      ],
+      "provenance": "primary"
+    },
+    {
+      "id": "E1860-marriage-franz-waida",
+      "event_type": "Marriage",
+      "date": "1860",
+      "place": "Rudslavice area",
+      "confidence": "possible",
+      "groom_id": "P0006",
+      "bride_id": "",
+      "source_ids": [
+        "S0010"
+      ],
+      "provenance": "primary"
+    },
+    {
+      "id": "E1851-marriage-josef-waida",
+      "event_type": "Marriage",
+      "date": "1851",
+      "place": "Rudslavice area",
+      "confidence": "possible",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0012"
+      ],
+      "provenance": "primary"
+    },
+    {
+      "id": "E1826-marriage-franz-waida",
+      "event_type": "Marriage",
+      "date": "1826",
+      "place": "Rudslavice area",
+      "confidence": "possible",
+      "groom_id": "P0006",
+      "bride_id": "",
+      "source_ids": [
+        "S0013"
+      ],
+      "provenance": "primary"
+    },
+    {
+      "id": "E1825-birth-anna-vajda",
+      "event_type": "Birth/Baptism",
+      "date": "1825",
+      "place": "Rudslavice area",
+      "confidence": "possible",
+      "person_id": "P0007",
+      "source_ids": [
+        "S0014"
+      ],
+      "provenance": "primary"
+    },
+    {
+      "id": "E1825-1835-search-josef-waida",
+      "event_type": "ResearchTask",
+      "date": "1825-1835",
+      "place": "Rudslavice",
+      "confidence": "open",
+      "person_id": "",
+      "source_ids": [
+        "S0011"
+      ],
+      "notes": "Dohledat narozeni Josefa (cca 1820-1835).",
+      "provenance": "primary"
+    },
+    {
+      "id": "E1982-marriage-012",
+      "event_type": "Marriage",
+      "date": "1982",
+      "place": "Zl\u00edn, \u010cesko",
+      "confidence": "possible",
+      "groom_id": "P0014",
+      "bride_id": "P0015",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-013",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0018",
+      "bride_id": "P0017",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-014",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0020",
+      "bride_id": "P0019",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-015",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0013",
+      "bride_id": "P0021",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "E1933-07-08-marriage-016",
+      "event_type": "Marriage",
+      "date": "1933-07-08",
+      "place": "slu\u0161ovice",
+      "confidence": "possible",
+      "groom_id": "P0005",
+      "bride_id": "P0022",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-017",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0023",
+      "bride_id": "P0024",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "E1884-11-11-marriage-018",
+      "event_type": "Marriage",
+      "date": "1884-11-11",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0001",
+      "bride_id": "P0027",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-019",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0028",
+      "bride_id": "P0029",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-020",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0030",
+      "bride_id": "P0031",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "E1889-07-01-marriage-021",
+      "event_type": "Marriage",
+      "date": "1889-07-01",
+      "place": "vesel\u00e1 u Zl\u00edna",
+      "confidence": "possible",
+      "groom_id": "P0032",
+      "bride_id": "P0033",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "E1862-marriage-022",
+      "event_type": "Marriage",
+      "date": "1862",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0034",
+      "bride_id": "P0035",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-023",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0037",
+      "bride_id": "P0038",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-024",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0039",
+      "bride_id": "P0040",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-025",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0041",
+      "bride_id": "P0042",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-026",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0036",
+      "bride_id": "P0043",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-027",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0045",
+      "bride_id": "",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-028",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0046",
+      "bride_id": "P0047",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-029",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0044",
+      "bride_id": "P0048",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-030",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0049",
+      "bride_id": "P0050",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-031",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0051",
+      "bride_id": "P0052",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-032",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0053",
+      "bride_id": "",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-033",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0002",
+      "bride_id": "P0056",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-034",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0006",
+      "bride_id": "P0058",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-035",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "",
+      "bride_id": "P0059",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "E1826-10-21-marriage-036",
+      "event_type": "Marriage",
+      "date": "1826-10-21",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0060",
+      "bride_id": "",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-037",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0061",
+      "bride_id": "",
+      "source_ids": [
+        "S0015"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "E1933-07-08-marriage-038",
+      "event_type": "Marriage",
+      "date": "1933-07-08",
+      "place": "slu\u0161ovice",
+      "confidence": "possible",
+      "groom_id": "P0062",
+      "bride_id": "P0022",
+      "source_ids": [
+        "S0016"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "E1884-11-11-marriage-039",
+      "event_type": "Marriage",
+      "date": "1884-11-11",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0063",
+      "bride_id": "P0027",
+      "source_ids": [
+        "S0016"
+      ],
+      "provenance": "myheritage"
+    },
+    {
+      "id": "Eundated-marriage-040",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0064",
+      "bride_id": "P0056",
+      "source_ids": [
+        "S0016"
+      ],
+      "provenance": "myheritage"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S0001",
+      "title": "Marriage Index Entry (1822): Wajda Georg - Liska Dominika",
+      "type": "Parish marriage index",
+      "parish": "Rudslavice / Ludslavice",
+      "date": "1822",
+      "archive_url": "",
+      "image_url": "",
+      "local_image": "media/images/S0001-index-1822-folio22.jpg",
+      "reliability": "medium-high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0002",
+      "title": "Birth/Baptism Record: Josef Vajda",
+      "type": "Parish birth/baptism register",
+      "parish": "Rudslavice / Ludslavice",
+      "date": "1827-12-08",
+      "archive_url": "",
+      "image_url": "",
+      "local_image": "media/images/S0002-birth-josef-1827-12-08.jpg",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0003",
+      "title": "Marriage Record: Georg Wajda and Dominika Liska",
+      "type": "Parish marriage register",
+      "parish": "Rudslavice / Ludslavice",
+      "date": "1822-12-08",
+      "archive_url": "",
+      "image_url": "",
+      "local_image": "media/images/S0003-marriage-georg-dominika-folio22.jpg",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0004",
+      "title": "Birth/Baptism Record: Frantisek Vajda (legacy placeholder)",
+      "type": "Parish birth/baptism register",
+      "parish": "Rudslavice / Ludslavice",
+      "date": "1854",
+      "archive_url": "",
+      "image_url": "",
+      "local_image": "media/images/S0004-birth-frantisek-1854.jpg",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0005",
+      "title": "Marriage Record: Frantisek Vajda and Marianna (legacy placeholder)",
+      "type": "Parish marriage register",
+      "parish": "Rudslavice / Ludslavice",
+      "date": "1884",
+      "archive_url": "",
+      "image_url": "",
+      "local_image": "media/images/S0005-marriage-frantisek-marianna-1884.jpg",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0006",
+      "title": "Frantisek Vajda birth 1854-09-15 (Rudslavice)",
+      "type": "Parish birth/baptism register",
+      "parish": "Rudslavice",
+      "date": "1854-09-15",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9033?image=216000010-000253-003374-000000-008158-000000-00-B05675-00070.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9033?image=216000010-000253-003374-000000-008158-000000-00-B05675-00070.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0007",
+      "title": "Frantisek Vajda marriage 1884-11-11",
+      "type": "Parish marriage register",
+      "parish": "Rudslavice / Slusovice area",
+      "date": "1884-11-11",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/11099?image=216000010-000253-003371-000000-004360-000000-00-B00492-00250.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/11099?image=216000010-000253-003371-000000-004360-000000-00-B00492-00250.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0008",
+      "title": "Frantisek Vajda death 1916",
+      "type": "Parish death register",
+      "parish": "Rudslavice / Slusovice area",
+      "date": "1916",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/12571?image=216000010-000253-003371-000000-004364-000000-00-00840.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/12571?image=216000010-000253-003371-000000-004364-000000-00-00840.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0009",
+      "title": "Stanislav Vajda marriage 1933 (Slusovice)",
+      "type": "Parish marriage register",
+      "parish": "Slusovice",
+      "date": "1933",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/14895?image=216000010-00253-00000004674-000-000000000-000004674-00220.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/14895?image=216000010-00253-00000004674-000-000000000-000004674-00220.jp2",
+      "local_image": "",
+      "reliability": "medium",
+      "priority": "primary"
+    },
+    {
+      "id": "S0010",
+      "title": "Franz Waida marriage 1860",
+      "type": "Parish marriage register",
+      "parish": "Rudslavice area",
+      "date": "1860",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9035?image=216000010-000253-003374-000000-008162-000000-00-B06013-00330.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9035?image=216000010-000253-003374-000000-008162-000000-00-B06013-00330.jp2",
+      "local_image": "",
+      "reliability": "medium",
+      "priority": "primary"
+    },
+    {
+      "id": "S0011",
+      "title": "Josef Waida birth search range 1825-1835",
+      "type": "Parish birth/baptism register",
+      "parish": "Rudslavice area",
+      "date": "1825-1835",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9031?image=216000010-000253-003374-000000-008156-000000-00-B06012-00420.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9031?image=216000010-000253-003374-000000-008156-000000-00-B06012-00420.jp2",
+      "local_image": "",
+      "reliability": "medium",
+      "priority": "primary"
+    },
+    {
+      "id": "S0012",
+      "title": "Josef Waida marriage 1851",
+      "type": "Parish marriage register",
+      "parish": "Rudslavice area",
+      "date": "1851",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/8879?image=216000010-000253-003374-000000-007871-000000-00-B02884-00900.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/8879?image=216000010-000253-003374-000000-007871-000000-00-B02884-00900.jp2",
+      "local_image": "",
+      "reliability": "medium",
+      "priority": "primary"
+    },
+    {
+      "id": "S0013",
+      "title": "Franz Waida marriage 1826",
+      "type": "Parish marriage register",
+      "parish": "Rudslavice area",
+      "date": "1826",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9034?image=216000010-000253-003374-000000-008161-000000-00-B05289-00130.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9034?image=216000010-000253-003374-000000-008161-000000-00-B05289-00130.jp2",
+      "local_image": "",
+      "reliability": "medium",
+      "priority": "primary"
+    },
+    {
+      "id": "S0014",
+      "title": "Anna Vajda birth 1825",
+      "type": "Parish birth/baptism register",
+      "parish": "Rudslavice area",
+      "date": "1825",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9031?image=216000010-000253-003374-000000-008156-000000-00-B06012-00390.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9031?image=216000010-000253-003374-000000-008156-000000-00-B06012-00390.jp2",
+      "local_image": "",
+      "reliability": "medium",
+      "priority": "primary"
+    },
+    {
+      "id": "S0015",
+      "title": "Imported GEDCOM from 8g99a1_347583du36189muoeb06ac_A.ged",
+      "type": "GEDCOM import",
+      "parish": "",
+      "date": "2026-03-07",
+      "archive_url": "",
+      "image_url": "",
+      "local_image": "/home/jav/Documents/genealog/8g99a1_347583du36189muoeb06ac_A.ged",
+      "reliability": "medium",
+      "priority": "secondary"
+    },
+    {
+      "id": "S0016",
+      "title": "Imported GEDCOM from 8g99a1_347583du36189muoeb06ac_A.ged",
+      "type": "GEDCOM import",
+      "parish": "",
+      "date": "2026-03-07",
+      "archive_url": "",
+      "image_url": "",
+      "local_image": "/home/jav/Documents/genealog/8g99a1_347583du36189muoeb06ac_A.ged",
+      "reliability": "medium",
+      "priority": "secondary"
+    },
+    {
+      "id": "S0017",
+      "title": "Imported GEDCOM from 8g99a1_347583du36189muoeb06ac_A.ged",
+      "type": "GEDCOM import",
+      "parish": "",
+      "date": "2026-03-07",
+      "archive_url": "",
+      "image_url": "",
+      "local_image": "/home/jav/Documents/genealog/8g99a1_347583du36189muoeb06ac_A.ged",
+      "reliability": "medium",
+      "priority": "secondary"
+    }
+  ]
+}
