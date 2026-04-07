@@ -208,3 +208,6 @@ __marimo__/
 
 # Obsidian
 .obsidian
+
+# no backups
+data/backups

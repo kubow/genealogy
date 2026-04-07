@@ -2,105 +2,87 @@
   "people": [
     {
       "id": "P0001",
-      "name": "Frantisek Vajda",
+      "name": "Franti\u0161ek",
       "birth_date": "1854-09-15",
-      "death_date": "1916-02",
+      "death_date": "1916-02-27",
       "birth_place": "Rudslavice",
       "father": "P0002",
-      "mother": "",
+      "mother": "P0083",
       "sex": "M",
       "confidence": "confirmed",
-      "notes": "Primary line confirmed from parish records. Birth 1854-09-15 and marriage 1884-11-11 linked; death recorded in 1916 (month-level certainty).",
-      "death_place": "",
-      "provenance": "primary"
+      "notes": "Primary line confirmed from parish records. Birth 1854-09-15 and marriage 1884-11-11 linked; death recorded in 1916 (month-level certainty).\n\nImported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nMerged from P0063.\n\nConnected mother to P0083 (Josefa Hykel) after removing incorrect Veronika spouse link.\n\nLegacy 1826 and 1860 marriage-view links were folded into the canonical branch rather than kept as separate spouse views.\n\nMerged from P0006.",
+      "death_place": "Velikov\u00e1",
+      "provenance": "primary",
+      "birth_surname": "Vajda",
+      "married_surname": ""
     },
     {
       "id": "P0002",
-      "name": "Josef Vajda",
+      "name": "Joseph",
       "birth_date": "1827-12-08",
       "birth_place": "Rudslavice",
       "father": "P0003",
       "mother": "P0004",
       "sex": "M",
       "confidence": "probable",
-      "notes": "Baptism identifies father Georg; mother appears as Anna in baptism but likely same person as Dominika Liska from 1822 marriage.",
-      "provenance": "primary"
+      "notes": "Baptism identifies father Georg; mother appears as Anna in baptism but likely same person as Dominika Liska from 1822 marriage.\n\nImported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nMerged from P0064.\n\nLinked-only merge from P0060; references moved without importing personal facts.",
+      "provenance": "primary",
+      "birth_surname": "Waida",
+      "married_surname": "",
+      "death_date": "",
+      "death_place": ""
     },
     {
       "id": "P0003",
-      "name": "Georg Wajda",
-      "birth_date": "1793",
+      "name": "Johann",
+      "birth_date": "1798",
       "birth_place": "Rudslavice (estimated)",
-      "father": "",
-      "mother": "",
+      "father": "P0087",
+      "mother": "P0007",
       "sex": "M",
       "confidence": "probable",
-      "notes": "Estimated birth year from age 29 at marriage in 1822.",
-      "provenance": "primary"
+      "notes": "Estimated birth year from age 24 at marriage in 1822.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged from P0084.",
+      "provenance": "primary",
+      "birth_surname": "Waida",
+      "married_surname": "",
+      "death_date": "",
+      "death_place": ""
     },
     {
       "id": "P0004",
-      "name": "Dominika Liska",
+      "name": "Anna",
       "birth_date": "",
       "birth_place": "",
       "father": "",
       "mother": "",
       "sex": "F",
       "confidence": "probable",
-      "notes": "Bride in 1822 marriage; possibly recorded as Anna in child baptism records.",
-      "provenance": "primary"
-    },
-    {
-      "id": "P0005",
-      "name": "Stanislav Vajda",
-      "birth_date": "1906",
-      "birth_place": "Velikova",
-      "father": "",
-      "mother": "",
-      "sex": "M",
-      "confidence": "possible",
-      "notes": "Birth noted but not digitized; linked marriage in 1933 (Slusovice).",
-      "provenance": "primary"
-    },
-    {
-      "id": "P0006",
-      "name": "Franz Waida",
-      "birth_date": "",
-      "birth_place": "",
-      "father": "",
-      "mother": "",
-      "sex": "M",
-      "confidence": "possible",
-      "notes": "Appears in linked marriage records (1826 and 1860); exact identity and lineage unresolved.",
-      "provenance": "primary"
+      "notes": "Bride in 1822 marriage; possibly recorded as Anna in child baptism records.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0143 into P0085.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0179 into P0085.\n\nMerged from P0085.",
+      "provenance": "primary",
+      "birth_surname": "Holzman",
+      "married_surname": "Waida",
+      "death_date": "",
+      "death_place": ""
     },
     {
       "id": "P0007",
-      "name": "Anna Vajda",
-      "birth_date": "1825",
-      "birth_place": "",
-      "father": "",
-      "mother": "",
-      "sex": "F",
-      "confidence": "possible",
-      "notes": "Linked birth candidate from parish register.",
-      "provenance": "primary"
-    },
-    {
-      "id": "P0008",
-      "name": "Marianna",
+      "name": "",
       "birth_date": "",
+      "death_date": "",
       "birth_place": "",
+      "death_place": "",
       "father": "",
       "mother": "",
       "sex": "F",
-      "confidence": "probable",
-      "notes": "Bride in Frantisek Vajda marriage record (1884).",
-      "provenance": "primary"
+      "confidence": "",
+      "notes": "",
+      "provenance": "",
+      "birth_surname": "",
+      "married_surname": ""
     },
     {
       "id": "P0009",
-      "name": "Josef Vajda",
+      "name": "Josef",
       "birth_date": "1933-05-22",
       "death_date": "",
       "birth_place": "Vesel\u00e1, \u010cesko",
@@ -110,11 +92,12 @@
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Vajda"
     },
     {
       "id": "P0010",
-      "name": "Franta Vajda",
+      "name": "Franta",
       "birth_date": "1940-06-16",
       "death_date": "",
       "birth_place": "Vesel\u00e1, \u010cesko",
@@ -124,11 +107,12 @@
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Vajda"
     },
     {
       "id": "P0011",
-      "name": "Mirka Vajdov\u00e1",
+      "name": "Mirka",
       "birth_date": "1943-05-31",
       "death_date": "",
       "birth_place": "",
@@ -138,11 +122,12 @@
       "sex": "F",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Vajdov\u00e1"
     },
     {
       "id": "P0012",
-      "name": "Lida Vajdov\u00e1",
+      "name": "Lida",
       "birth_date": "1946-07-16",
       "death_date": "",
       "birth_place": "Vesel\u00e1, \u010cesko",
@@ -152,11 +137,13 @@
       "sex": "F",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Vajdov\u00e1",
+      "married_surname": ""
     },
     {
       "id": "P0013",
-      "name": "Jaroslav Novosad",
+      "name": "Jaroslav",
       "birth_date": "1907-06-30",
       "death_date": "1977-08-30",
       "birth_place": "Zl\u00edn, \u010cesko",
@@ -166,11 +153,12 @@
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Novosad"
     },
     {
       "id": "P0014",
-      "name": "Radom\u00edr Vajda",
+      "name": "Radom\u00edr",
       "birth_date": "1959-06-29",
       "death_date": "2024-12-01",
       "birth_place": "Zl\u00edn, \u010cesko",
@@ -180,11 +168,12 @@
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Vajda"
     },
     {
       "id": "P0015",
-      "name": "Jitka Ture\u010dkov\u00e1",
+      "name": "Jitka",
       "birth_date": "1961-08-12",
       "death_date": "",
       "birth_place": "Zl\u00edn, \u010cesko",
@@ -194,11 +183,13 @@
       "sex": "F",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Ture\u010dkov\u00e1",
+      "married_surname": "Vajdov\u00e1"
     },
     {
       "id": "P0016",
-      "name": "Jakub Vajda",
+      "name": "Jakub",
       "birth_date": "1984-06-19",
       "death_date": "",
       "birth_place": "Zl\u00edn, \u010cesko",
@@ -208,11 +199,12 @@
       "sex": "M",
       "confidence": "confirmed",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Vajda"
     },
     {
       "id": "P0017",
-      "name": "Alena Barto\u0148ov\u00e1",
+      "name": "Alena",
       "birth_date": "1935",
       "death_date": "",
       "birth_place": "Ve\u0159ovice, \u010cesko",
@@ -222,11 +214,13 @@
       "sex": "F",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Barto\u0148ov\u00e1",
+      "married_surname": "Ture\u010dkov\u00e1"
     },
     {
       "id": "P0018",
-      "name": "Leopold Ture\u010dek",
+      "name": "Leopold",
       "birth_date": "1932",
       "death_date": "2012",
       "birth_place": "Zl\u00edn, \u010cesko",
@@ -236,11 +230,12 @@
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Ture\u010dek"
     },
     {
       "id": "P0019",
-      "name": "Ludmila Novosadov\u00e1",
+      "name": "Ludmila",
       "birth_date": "1938",
       "death_date": "",
       "birth_place": "Zl\u00edn, \u010cesko",
@@ -250,11 +245,13 @@
       "sex": "F",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Novosadov\u00e1",
+      "married_surname": "Vajdov\u00e1"
     },
     {
       "id": "P0020",
-      "name": "Stanislav Vajda",
+      "name": "Stanislav",
       "birth_date": "1935-12-04",
       "death_date": "2014-04-26",
       "birth_place": "Vesel\u00e1, \u010cesko",
@@ -264,7 +261,8 @@
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Vajda"
     },
     {
       "id": "P0021",
@@ -278,11 +276,13 @@
       "sex": "F",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Svobodov\u00e1",
+      "married_surname": "Novosadov\u00e1"
     },
     {
       "id": "P0022",
-      "name": "Berta Slov\u00e1\u010dkov\u00e1",
+      "name": "Berta",
       "birth_date": "1911-04-21",
       "death_date": "",
       "birth_place": "Vesel\u00e1, \u010cesko",
@@ -292,11 +292,13 @@
       "sex": "F",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Slov\u00e1\u010dkov\u00e1",
+      "married_surname": "Vajdov\u00e1"
     },
     {
       "id": "P0024",
-      "name": "Al\u017eb\u011bta Jan\u00e1kov\u00e1",
+      "name": "Al\u017eb\u011bta",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -306,25 +308,13 @@
       "sex": "F",
       "confidence": "confirmed",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nExtended with identity details from P0125, which appears to represent her mother with unknown given name.",
-      "provenance": "manual"
-    },
-    {
-      "id": "P0027",
-      "name": "Anna \u017derav\u00edkov\u00e1",
-      "birth_date": "",
-      "death_date": "",
-      "birth_place": "",
-      "death_place": "",
-      "father": "",
-      "mother": "",
-      "sex": "F",
-      "confidence": "possible",
-      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "manual",
+      "birth_surname": "Jan\u00e1kov\u00e1",
+      "married_surname": "Barto\u0148ov\u00e1"
     },
     {
       "id": "P0030",
-      "name": "Franti\u0161ek Slov\u00e1\u010dek",
+      "name": "Franti\u0161ek",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -334,11 +324,12 @@
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0070 into P0030.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0129 into P0030.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0165 into P0030.",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Slov\u00e1\u010dek"
     },
     {
       "id": "P0031",
-      "name": "Anna Li\u0161kov\u00e1",
+      "name": "Anna",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -348,11 +339,12 @@
       "sex": "F",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0071 into P0031.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0130 into P0031.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0166 into P0031.",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Li\u0161kov\u00e1"
     },
     {
       "id": "P0032",
-      "name": "Franti\u0161ek Div\u00edlek",
+      "name": "Franti\u0161ek",
       "birth_date": "1866-01-15",
       "death_date": "1940-02-07",
       "birth_place": "Vesel\u00e1 u Zl\u00edna",
@@ -362,11 +354,12 @@
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Div\u00edlek"
     },
     {
       "id": "P0033",
-      "name": "Marie S\u00e1blov\u00e1",
+      "name": "Marie",
       "birth_date": "1866",
       "death_date": "",
       "birth_place": "Vesel\u00e1 u Zl\u00edna",
@@ -376,11 +369,12 @@
       "sex": "F",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "S\u00e1blov\u00e1"
     },
     {
       "id": "P0034",
-      "name": "Anton\u00edn Div\u00edlek",
+      "name": "Anton\u00edn",
       "birth_date": "1838",
       "death_date": "",
       "birth_place": "",
@@ -390,11 +384,12 @@
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Div\u00edlek"
     },
     {
       "id": "P0035",
-      "name": "Franti\u0161ka \u0160udov\u00e1",
+      "name": "Franti\u0161ka",
       "birth_date": "1837",
       "death_date": "",
       "birth_place": "",
@@ -404,11 +399,13 @@
       "sex": "F",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "\u0160udov\u00e1",
+      "married_surname": "Div\u00edlkov\u00e1"
     },
     {
       "id": "P0036",
-      "name": "Franti\u0161ek Div\u00edlek",
+      "name": "Franti\u0161ek",
       "birth_date": "1904-08-16",
       "death_date": "1996-01-03",
       "birth_place": "Vesel\u00e1 u Zl\u00edna",
@@ -418,11 +415,12 @@
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Div\u00edlek"
     },
     {
       "id": "P0037",
-      "name": "Franti\u0161ek Sabl",
+      "name": "Franti\u0161ek",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -432,11 +430,12 @@
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0072 into P0037.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0131 into P0037.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0167 into P0037.",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Sabl"
     },
     {
       "id": "P0038",
-      "name": "Marie Hol\u00edkov\u00e1",
+      "name": "Marie",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -446,11 +445,12 @@
       "sex": "F",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0073 into P0038.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0132 into P0038.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0168 into P0038.",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Hol\u00edkov\u00e1"
     },
     {
       "id": "P0039",
-      "name": "Franc Div\u00edlek",
+      "name": "Franc",
       "birth_date": "",
       "death_date": "",
       "birth_place": "Vesel\u00e1 u Zl\u00edna",
@@ -460,11 +460,12 @@
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0074 into P0039.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0133 into P0039.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0169 into P0039.",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Div\u00edlek"
     },
     {
       "id": "P0040",
-      "name": "Al\u017eb\u011bta Mokro\u0161ov\u00e1",
+      "name": "Al\u017eb\u011bta",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -474,11 +475,12 @@
       "sex": "F",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0075 into P0040.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0134 into P0040.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0170 into P0040.",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Mokro\u0161ov\u00e1"
     },
     {
       "id": "P0041",
-      "name": "Matou\u0161 \u0160uda",
+      "name": "Matou\u0161",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -488,11 +490,12 @@
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0076 into P0041.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0135 into P0041.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0171 into P0041.",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "\u0160uda"
     },
     {
       "id": "P0042",
-      "name": "Mariana Sv\u00edzelov\u00e1",
+      "name": "Mariana",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -502,11 +505,13 @@
       "sex": "F",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0077 into P0042.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0136 into P0042.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0172 into P0042.",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Sv\u00edzelov\u00e1",
+      "married_surname": "\u0160udov\u00e1"
     },
     {
       "id": "P0043",
-      "name": "Marie Ku\u010derov\u00e1",
+      "name": "Marie",
       "birth_date": "1907-08-01",
       "death_date": "2000-09-08",
       "birth_place": "Kostelec u \u0160t\u00edpy",
@@ -516,11 +521,12 @@
       "sex": "F",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Ku\u010derov\u00e1"
     },
     {
       "id": "P0044",
-      "name": "Jan Sabl",
+      "name": "Jan",
       "birth_date": "1868",
       "death_date": "",
       "birth_place": "",
@@ -530,11 +536,12 @@
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Sabl"
     },
     {
       "id": "P0045",
-      "name": "Jan Hol\u00edk",
+      "name": "Jan",
       "birth_date": "",
       "death_date": "",
       "birth_place": "Velikov\u00e1",
@@ -544,11 +551,12 @@
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0078 into P0045.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0137 into P0045.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0173 into P0045.",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Hol\u00edk"
     },
     {
       "id": "P0046",
-      "name": "Rudolf Ku\u010dera",
+      "name": "Rudolf",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -558,11 +566,12 @@
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0079 into P0046.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0138 into P0046.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0174 into P0046.",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Ku\u010dera"
     },
     {
       "id": "P0047",
-      "name": "Marie Dlabajov\u00e1",
+      "name": "Marie",
       "birth_date": "1879-01-19",
       "death_date": "",
       "birth_place": "",
@@ -572,11 +581,12 @@
       "sex": "F",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Dlabajov\u00e1"
     },
     {
       "id": "P0048",
-      "name": "Franti\u0161ka Bobalov\u00e1",
+      "name": "Franti\u0161ka",
       "birth_date": "1873",
       "death_date": "",
       "birth_place": "",
@@ -586,11 +596,12 @@
       "sex": "F",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Bobalov\u00e1"
     },
     {
       "id": "P0049",
-      "name": "Franti\u0161ek Dlabaja",
+      "name": "Franti\u0161ek",
       "birth_date": "1834",
       "death_date": "",
       "birth_place": "",
@@ -600,11 +611,12 @@
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Dlabaja"
     },
     {
       "id": "P0050",
-      "name": "Aloisie Sla\u010d\u00e1lkov\u00e1",
+      "name": "Aloisie",
       "birth_date": "1857",
       "death_date": "",
       "birth_place": "",
@@ -614,11 +626,12 @@
       "sex": "F",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Sla\u010d\u00e1lkov\u00e1"
     },
     {
       "id": "P0051",
-      "name": "Jan Bobal",
+      "name": "Jan",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -628,11 +641,12 @@
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0080 into P0051.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0139 into P0051.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0175 into P0051.",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Bobal"
     },
     {
       "id": "P0053",
-      "name": "Franti\u0161ek Nedb\u00e1lek",
+      "name": "Franti\u0161ek",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -642,137 +656,43 @@
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged from P0082.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0141 into P0053.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0177 into P0053.",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Nedb\u00e1lek"
     },
     {
       "id": "P0054",
-      "name": "Stanislav Vajda",
+      "name": "Stanislav",
       "birth_date": "1904-10-06",
-      "death_date": "",
+      "death_date": "1905",
       "birth_place": "Velikov\u00e1",
       "death_place": "Velikov\u00e1",
-      "father": "P0063",
-      "mother": "P0027",
+      "father": "P0001",
+      "mother": "P0126",
       "sex": "M",
       "confidence": "possible",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
-    },
-    {
-      "id": "P0056",
-      "name": "Veronika Wala\u0161\u00edk",
-      "birth_date": "",
-      "death_date": "",
-      "birth_place": "",
-      "death_place": "",
-      "father": "",
-      "mother": "P0059",
-      "sex": "F",
-      "confidence": "possible",
-      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
-    },
-    {
-      "id": "P0058",
-      "name": "Anna K\u0159i\u017eanov\u00e1",
-      "birth_date": "",
-      "death_date": "",
-      "birth_place": "",
-      "death_place": "",
-      "father": "",
-      "mother": "",
-      "sex": "F",
-      "confidence": "possible",
-      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
-    },
-    {
-      "id": "P0059",
-      "name": "Johann Gaja",
-      "birth_date": "",
-      "death_date": "",
-      "birth_place": "",
-      "death_place": "",
-      "father": "",
-      "mother": "",
-      "sex": "M",
-      "confidence": "possible",
-      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
-    },
-    {
-      "id": "P0060",
-      "name": "Joseph Waida",
-      "birth_date": "",
-      "death_date": "",
-      "birth_place": "Ludslavice",
-      "death_place": "",
-      "father": "P0061",
-      "mother": "",
-      "sex": "M",
-      "confidence": "possible",
-      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
-    },
-    {
-      "id": "P0061",
-      "name": "x Waida",
-      "birth_date": "",
-      "death_date": "",
-      "birth_place": "",
-      "death_place": "",
-      "father": "",
-      "mother": "",
-      "sex": "U",
-      "confidence": "possible",
-      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "provenance": "myheritage",
+      "birth_surname": "Vajda",
+      "married_surname": ""
     },
     {
       "id": "P0062",
-      "name": "Stanislav Vajda",
+      "name": "Stanislav",
       "birth_date": "1906-07-02",
       "death_date": "",
       "birth_place": "Vesel\u00e1, \u010cesko",
       "death_place": "",
-      "father": "P0063",
-      "mother": "P0027",
+      "father": "P0001",
+      "mother": "P0126",
       "sex": "M",
       "confidence": "possible",
-      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
-    },
-    {
-      "id": "P0063",
-      "name": "Franti\u0161ek Vajda",
-      "birth_date": "1854-09-15",
-      "death_date": "1916-02-27",
-      "birth_place": "Rudoslavice",
-      "death_place": "Velikov\u00e1",
-      "father": "P0064",
-      "mother": "P0056",
-      "sex": "M",
-      "confidence": "possible",
-      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
-    },
-    {
-      "id": "P0064",
-      "name": "Josef Vajda",
-      "birth_date": "1827-04-18",
-      "death_date": "",
-      "birth_place": "",
-      "death_place": "",
-      "father": "P0006",
-      "mother": "P0058",
-      "sex": "M",
-      "confidence": "possible",
-      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage"
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nBirth noted but not digitized; linked marriage in 1933 (Slusovice).\n\nMerged duplicate record P0005.",
+      "provenance": "myheritage",
+      "birth_surname": "Vajda"
     },
     {
       "id": "P0068",
-      "name": "Josef Slov\u00e1\u010dek",
+      "name": "Josef",
       "birth_date": "",
       "death_date": "",
       "birth_place": "Vesel\u00e1, \u010cesko",
@@ -782,11 +702,12 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nImported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nMerged from P0028.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0127 into P0068.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0163 into P0068."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nImported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nMerged from P0028.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0127 into P0068.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0163 into P0068.",
+      "birth_surname": "Slov\u00e1\u010dek"
     },
     {
       "id": "P0069",
-      "name": "Berta Div\u00edlkov\u00e1",
+      "name": "Berta",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -796,11 +717,13 @@
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nImported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nMerged from P0029.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0128 into P0069.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0164 into P0069."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nImported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nMerged from P0029.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0128 into P0069.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0164 into P0069.",
+      "birth_surname": "Div\u00edlkov\u00e1",
+      "married_surname": "Slov\u00e1\u010dkov\u00e1"
     },
     {
       "id": "P0081",
-      "name": "Anna Nedb\u00e1lkov\u00e1",
+      "name": "Anna",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -810,53 +733,28 @@
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nImported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nMerged from P0052.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0140 into P0081.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0176 into P0081."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nImported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nMerged from P0052.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0140 into P0081.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0176 into P0081.",
+      "birth_surname": "Nedb\u00e1lkov\u00e1"
     },
     {
       "id": "P0083",
-      "name": "Josefa Hykel",
+      "name": "Josefa",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
       "death_place": "",
-      "father": "P0115",
-      "mother": "P0086",
+      "father": "P0086",
+      "mother": "P0115",
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0142 into P0083.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0178 into P0083."
-    },
-    {
-      "id": "P0084",
-      "name": "Johann Waida",
-      "birth_date": "1798",
-      "death_date": "",
-      "birth_place": "Ludslavice",
-      "death_place": "",
-      "father": "P0087",
-      "mother": "",
-      "sex": "M",
-      "confidence": "possible",
-      "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
-    },
-    {
-      "id": "P0085",
-      "name": "Anna Holzman",
-      "birth_date": "",
-      "death_date": "",
-      "birth_place": "",
-      "death_place": "",
-      "father": "",
-      "mother": "",
-      "sex": "F",
-      "confidence": "possible",
-      "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0143 into P0085.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0179 into P0085."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0142 into P0083.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0178 into P0083.",
+      "birth_surname": "Hykel",
+      "married_surname": "Waida"
     },
     {
       "id": "P0086",
-      "name": "Josef Hykel",
+      "name": "Josef",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -866,7 +764,8 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0144 into P0086.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0180 into P0086."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0144 into P0086.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0180 into P0086.",
+      "birth_surname": "Hykel"
     },
     {
       "id": "P0087",
@@ -884,7 +783,7 @@
     },
     {
       "id": "P0088",
-      "name": "Michaela Loveck\u00e1",
+      "name": "Michaela",
       "birth_date": "1982-03-07",
       "death_date": "",
       "birth_place": "Kyjov",
@@ -894,11 +793,13 @@
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Loveck\u00e1",
+      "married_surname": "Vajdov\u00e1"
     },
     {
       "id": "P0089",
-      "name": "Ond\u0159ej Vajda",
+      "name": "Ond\u0159ej",
       "birth_date": "1986-10-03",
       "death_date": "",
       "birth_place": "",
@@ -908,11 +809,12 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Vajda"
     },
     {
       "id": "P0091",
-      "name": "Franti\u0161ek Loveck\u00fd",
+      "name": "Franti\u0161ek",
       "birth_date": "1955-06-13",
       "death_date": "2019-03-06",
       "birth_place": "Kyjov",
@@ -922,11 +824,12 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Loveck\u00fd"
     },
     {
       "id": "P0092",
-      "name": "Alena Sl\u00e1dkov\u00e1",
+      "name": "Alena",
       "birth_date": "1957-03-01",
       "death_date": "",
       "birth_place": "Kyjov",
@@ -936,11 +839,12 @@
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Sl\u00e1dkov\u00e1"
     },
     {
       "id": "P0093",
-      "name": "Franti\u0161ek Loveck\u00fd",
+      "name": "Franti\u0161ek",
       "birth_date": "1926-01-01",
       "death_date": "2009",
       "birth_place": "Kyjov",
@@ -950,11 +854,12 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Loveck\u00fd"
     },
     {
       "id": "P0094",
-      "name": "Marie Form\u00e1nkov\u00e1",
+      "name": "Marie",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -964,11 +869,12 @@
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0147 into P0094.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0183 into P0094."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0147 into P0094.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0183 into P0094.",
+      "birth_surname": "Form\u00e1nkov\u00e1"
     },
     {
       "id": "P0095",
-      "name": "Drahom\u00edra Svobodov\u00e1",
+      "name": "Drahom\u00edra",
       "birth_date": "1930-11-11",
       "death_date": "",
       "birth_place": "",
@@ -978,11 +884,12 @@
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Svobodov\u00e1"
     },
     {
       "id": "P0096",
-      "name": "Josef Sl\u00e1dek",
+      "name": "Josef",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -992,11 +899,12 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0148 into P0096.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0184 into P0096."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0148 into P0096.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0184 into P0096.",
+      "birth_surname": "Sl\u00e1dek"
     },
     {
       "id": "P0097",
-      "name": "Pavel Slov\u00e1\u010dek",
+      "name": "Pavel",
       "birth_date": "1815-01-24",
       "death_date": "1866-06-03",
       "birth_place": "Rackov\u00e1 47, Zl\u00edn, Czechia",
@@ -1006,11 +914,12 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Slov\u00e1\u010dek"
     },
     {
       "id": "P0098",
-      "name": "Veronika Skotkov\u00e1",
+      "name": "Veronika",
       "birth_date": "1814-02-14",
       "death_date": "1888-03-06",
       "birth_place": "42, M\u00ed\u0161kovice, Krom\u011b\u0159\u00ed\u017e, Czechia",
@@ -1020,11 +929,13 @@
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Skotkov\u00e1",
+      "married_surname": "Slov\u00e1\u010dkov\u00e1"
     },
     {
       "id": "P0099",
-      "name": "Ign\u00e1c Slov\u00e1\u010dek",
+      "name": "Ign\u00e1c",
       "birth_date": "1879-12-05",
       "death_date": "1949-10-26",
       "birth_place": "Lechotice 64, Krom\u011b\u0159\u00ed\u017e, Czechia",
@@ -1034,11 +945,12 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Slov\u00e1\u010dek"
     },
     {
       "id": "P0100",
-      "name": "Ane\u017eka Slov\u00e1\u010dkov\u00e1",
+      "name": "Ane\u017eka",
       "birth_date": "1876-10-04",
       "death_date": "",
       "birth_place": "Lechotice 64, Krom\u011b\u0159\u00ed\u017e, Czechia",
@@ -1048,11 +960,12 @@
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Slov\u00e1\u010dkov\u00e1"
     },
     {
       "id": "P0101",
-      "name": "Jaroslav Slov\u00e1\u010dek",
+      "name": "Jaroslav",
       "birth_date": "1882-05-26",
       "death_date": "1953-07-26",
       "birth_place": "64, Lechotice, Krom\u011b\u0159\u00ed\u017e, Czechia",
@@ -1062,11 +975,12 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Slov\u00e1\u010dek"
     },
     {
       "id": "P0102",
-      "name": "Anna Slov\u00e1\u010dkov\u00e1",
+      "name": "Anna",
       "birth_date": "1850-06-20",
       "death_date": "",
       "birth_place": "Doln\u00ed Ves, Zl\u00edn, Czechia",
@@ -1076,11 +990,13 @@
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "",
+      "married_surname": "Slov\u00e1\u010dkov\u00e1"
     },
     {
       "id": "P0103",
-      "name": "Ludmila Hradilov\u00e1",
+      "name": "Ludmila",
       "birth_date": "1881-06-22",
       "death_date": "1954-03-30",
       "birth_place": "Lechotice 34, Krom\u011b\u0159\u00ed\u017e, Czechia",
@@ -1090,11 +1006,12 @@
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Hradilov\u00e1"
     },
     {
       "id": "P0104",
-      "name": "Stanislav Slov\u00e1\u010dek",
+      "name": "Stanislav",
       "birth_date": "1909-05-31",
       "death_date": "",
       "birth_place": "\u017dopy 6",
@@ -1104,11 +1021,12 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Slov\u00e1\u010dek"
     },
     {
       "id": "P0105",
-      "name": "Anton\u00edn Slov\u00e1\u010dek",
+      "name": "Anton\u00edn",
       "birth_date": "1910-07-18",
       "death_date": "1965-08-25",
       "birth_place": "\u017dopy 6",
@@ -1118,11 +1036,12 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Slov\u00e1\u010dek"
     },
     {
       "id": "P0106",
-      "name": "Ign\u00e1c Slov\u00e1\u010dek",
+      "name": "Ign\u00e1c",
       "birth_date": "1916-01-12",
       "death_date": "1982-06-25",
       "birth_place": "\u017dopy 6",
@@ -1132,11 +1051,12 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Slov\u00e1\u010dek"
     },
     {
       "id": "P0108",
-      "name": "Jan Hradil",
+      "name": "Jan",
       "birth_date": "1853-06-12",
       "death_date": "1923-11-13",
       "birth_place": "37, Lechotice, Krom\u011b\u0159\u00ed\u017e, Czechia",
@@ -1146,11 +1066,12 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Hradil"
     },
     {
       "id": "P0109",
-      "name": "Veronika Frgalov\u00e1",
+      "name": "Veronika",
       "birth_date": "1848-05-02",
       "death_date": "1915-09-21",
       "birth_place": "6, M\u00ed\u0161kovice, Krom\u011b\u0159\u00ed\u017e, Czechia",
@@ -1160,11 +1081,12 @@
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Frgalov\u00e1"
     },
     {
       "id": "P0110",
-      "name": "Jan Hradil",
+      "name": "Jan",
       "birth_date": "1823",
       "death_date": "",
       "birth_place": "",
@@ -1174,11 +1096,12 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Hradil"
     },
     {
       "id": "P0111",
-      "name": "Veronika Mich\u00e1lkov\u00e1",
+      "name": "Veronika",
       "birth_date": "1820",
       "death_date": "",
       "birth_place": "",
@@ -1188,11 +1111,12 @@
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Mich\u00e1lkov\u00e1"
     },
     {
       "id": "P0112",
-      "name": "Ign\u00e1c Hradil",
+      "name": "Ign\u00e1c",
       "birth_date": "1878-07-07",
       "death_date": "1914-11-18",
       "birth_place": "Lechotice",
@@ -1202,11 +1126,12 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Hradil"
     },
     {
       "id": "P0114",
-      "name": "Franti\u0161ek Loveck\u00fd",
+      "name": "Franti\u0161ek",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -1216,11 +1141,12 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0151 into P0114.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0187 into P0114."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0151 into P0114.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0187 into P0114.",
+      "birth_surname": "Loveck\u00fd"
     },
     {
       "id": "P0115",
-      "name": "Rosalina Hykel",
+      "name": "Rosalina",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -1230,11 +1156,13 @@
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0152 into P0115.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0188 into P0115."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0152 into P0115.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0188 into P0115.",
+      "birth_surname": "",
+      "married_surname": "Hykel"
     },
     {
       "id": "P0116",
-      "name": "Jan Sova",
+      "name": "Jan",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -1244,7 +1172,8 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged from P0153.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0189 into P0116."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged from P0153.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0189 into P0116.",
+      "birth_surname": "Sova"
     },
     {
       "id": "P0117",
@@ -1258,11 +1187,13 @@
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0154 into P0117.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0190 into P0117."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0154 into P0117.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0190 into P0117.",
+      "birth_surname": "",
+      "married_surname": "Sova"
     },
     {
       "id": "P0118",
-      "name": "Jan Barto\u0148",
+      "name": "Jan",
       "birth_date": "1874-01-03",
       "death_date": "",
       "birth_place": "",
@@ -1270,13 +1201,14 @@
       "father": "P0120",
       "mother": "P0121",
       "sex": "M",
-      "confidence": "possible",
-      "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged)."
+      "confidence": "confirmed",
+      "provenance": "manual",
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Barto\u0148"
     },
     {
       "id": "P0119",
-      "name": "Maria B\u00e1rtonov\u00e1",
+      "name": "Maria",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -1286,11 +1218,13 @@
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0155 into P0119.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0191 into P0119."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0155 into P0119.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0191 into P0119.",
+      "birth_surname": "B\u00e1rtonov\u00e1",
+      "married_surname": "Barto\u0148ov\u00e1"
     },
     {
       "id": "P0120",
-      "name": "Franti\u0161ek Barto\u0148",
+      "name": "Franti\u0161ek",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -1300,7 +1234,8 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0156 into P0120.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0192 into P0120."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0156 into P0120.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0192 into P0120.",
+      "birth_surname": "Barto\u0148"
     },
     {
       "id": "P0121",
@@ -1314,11 +1249,13 @@
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0157 into P0121.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0193 into P0121."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0157 into P0121.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0193 into P0121.",
+      "birth_surname": "\u0160er\u00e1",
+      "married_surname": "Barto\u0148ov\u00e1"
     },
     {
       "id": "P0122",
-      "name": "Josef B\u00e1rton",
+      "name": "Josef",
       "birth_date": "",
       "death_date": "",
       "birth_place": "Rabensburg",
@@ -1328,11 +1265,12 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0158 into P0122.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0194 into P0122."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0158 into P0122.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0194 into P0122.",
+      "birth_surname": "B\u00e1rton"
     },
     {
       "id": "P0123",
-      "name": "Marie Anna",
+      "name": "Marie",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -1342,11 +1280,12 @@
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0159 into P0123.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0195 into P0123."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0159 into P0123.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0195 into P0123.",
+      "birth_surname": "Anna"
     },
     {
       "id": "P0124",
-      "name": "Vincenc Barto\u0148",
+      "name": "Vincenc",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -1356,11 +1295,13 @@
       "sex": "M",
       "confidence": "confirmed",
       "provenance": "manual",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nImported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nMerged from P0023.\n\nMerged from P0065.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0160 into P0124."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nImported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nMerged from P0023.\n\nMerged from P0065.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0160 into P0124.",
+      "birth_surname": "Barto\u0148",
+      "married_surname": "Barto\u0148"
     },
     {
       "id": "P0125",
-      "name": "Unknown Jan\u00e1kov\u00e1",
+      "name": "Unknown",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -1370,11 +1311,13 @@
       "sex": "F",
       "confidence": "confirmed",
       "provenance": "manual",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0066 into P0125.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0161 into P0125.\n\nRepurposed as the mother of P0024 after resolving duplicate spouse records around P0124."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0066 into P0125.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0161 into P0125.\n\nRepurposed as the mother of P0024 after resolving duplicate spouse records around P0124.",
+      "birth_surname": "Jan\u00e1kov\u00e1",
+      "married_surname": ""
     },
     {
       "id": "P0126",
-      "name": "Marie Anna Sova",
+      "name": "Marie Anna",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -1382,13 +1325,15 @@
       "father": "P0116",
       "mother": "P0117",
       "sex": "F",
-      "confidence": "possible",
-      "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged from P0067.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0162 into P0126."
+      "confidence": "confirmed",
+      "provenance": "manual",
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged from P0067.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0162 into P0126.\n\nKept as the single bride record for Frantisek Vajda after collapsing duplicate Marianna/Anna bride records from the 1884 marriage cluster.",
+      "birth_surname": "Sova",
+      "married_surname": "Vajdov\u00e1"
     },
     {
       "id": "P0146",
-      "name": "Dagmara Vajdov\u00e1",
+      "name": "Dagmara",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -1398,11 +1343,13 @@
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged from P0090.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0182 into P0146."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged from P0090.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0182 into P0146.",
+      "birth_surname": "Vajdov\u00e1",
+      "married_surname": "Cekotov\u00e1"
     },
     {
       "id": "P0149",
-      "name": "Ludmila Slov\u00e1\u010dek",
+      "name": "Ludmila",
       "birth_date": "",
       "death_date": "",
       "birth_place": "\u017dopy 6",
@@ -1412,11 +1359,12 @@
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged from P0107.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0185 into P0149."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged from P0107.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0185 into P0149.",
+      "birth_surname": "Slov\u00e1\u010dek"
     },
     {
       "id": "P0150",
-      "name": "Anton\u00edn Cekota",
+      "name": "Anton\u00edn",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -1426,7 +1374,8 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged from P0113.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0186 into P0150."
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged from P0113.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0186 into P0150.",
+      "birth_surname": "Cekota"
     }
   ],
   "events": [
@@ -1440,9 +1389,11 @@
       "bride_id": "P0004",
       "source_ids": [
         "S0001",
-        "S0003"
+        "S0003",
+        "S0017"
       ],
-      "provenance": "primary"
+      "provenance": "manual",
+      "notes": "Canonical Johann Waida + Anna marriage record after absorbing duplicate MyHeritage spouse view Eundated-marriage-054."
     },
     {
       "id": "E1827-12-08-birth-josef",
@@ -1469,19 +1420,6 @@
       "provenance": "primary"
     },
     {
-      "id": "E1884-11-11-marriage-frantisek-marianna",
-      "event_type": "Marriage",
-      "date": "1884-11-11",
-      "place": "Rudslavice parish",
-      "confidence": "confirmed",
-      "groom_id": "P0001",
-      "bride_id": "P0008",
-      "source_ids": [
-        "S0007"
-      ],
-      "provenance": "primary"
-    },
-    {
       "id": "E1916-02-death-frantisek",
       "event_type": "Death",
       "date": "1916-02",
@@ -1490,32 +1428,6 @@
       "person_id": "P0001",
       "source_ids": [
         "S0008"
-      ],
-      "provenance": "primary"
-    },
-    {
-      "id": "E1933-marriage-stanislav",
-      "event_type": "Marriage",
-      "date": "1933",
-      "place": "Slusovice",
-      "confidence": "probable",
-      "groom_id": "P0005",
-      "bride_id": "",
-      "source_ids": [
-        "S0009"
-      ],
-      "provenance": "primary"
-    },
-    {
-      "id": "E1860-marriage-franz-waida",
-      "event_type": "Marriage",
-      "date": "1860",
-      "place": "Rudslavice area",
-      "confidence": "possible",
-      "groom_id": "P0006",
-      "bride_id": "",
-      "source_ids": [
-        "S0010"
       ],
       "provenance": "primary"
     },
@@ -1529,31 +1441,6 @@
       "bride_id": "",
       "source_ids": [
         "S0012"
-      ],
-      "provenance": "primary"
-    },
-    {
-      "id": "E1826-marriage-franz-waida",
-      "event_type": "Marriage",
-      "date": "1826",
-      "place": "Rudslavice area",
-      "confidence": "possible",
-      "groom_id": "P0006",
-      "bride_id": "",
-      "source_ids": [
-        "S0013"
-      ],
-      "provenance": "primary"
-    },
-    {
-      "id": "E1825-birth-anna-vajda",
-      "event_type": "Birth/Baptism",
-      "date": "1825",
-      "place": "Rudslavice area",
-      "confidence": "possible",
-      "person_id": "P0007",
-      "source_ids": [
-        "S0014"
       ],
       "provenance": "primary"
     },
@@ -1623,19 +1510,6 @@
       "provenance": "myheritage"
     },
     {
-      "id": "E1933-07-08-marriage-016",
-      "event_type": "Marriage",
-      "date": "1933-07-08",
-      "place": "slu\u0161ovice",
-      "confidence": "possible",
-      "groom_id": "P0005",
-      "bride_id": "P0022",
-      "source_ids": [
-        "S0015"
-      ],
-      "provenance": "myheritage"
-    },
-    {
       "id": "Eundated-marriage-017",
       "event_type": "Marriage",
       "date": "",
@@ -1643,19 +1517,6 @@
       "confidence": "possible",
       "groom_id": "P0124",
       "bride_id": "P0024",
-      "source_ids": [
-        "S0015"
-      ],
-      "provenance": "myheritage"
-    },
-    {
-      "id": "E1884-11-11-marriage-018",
-      "event_type": "Marriage",
-      "date": "1884-11-11",
-      "place": "",
-      "confidence": "possible",
-      "groom_id": "P0001",
-      "bride_id": "P0027",
       "source_ids": [
         "S0015"
       ],
@@ -1844,108 +1705,18 @@
       "provenance": "myheritage"
     },
     {
-      "id": "Eundated-marriage-033",
-      "event_type": "Marriage",
-      "date": "",
-      "place": "",
-      "confidence": "possible",
-      "groom_id": "P0002",
-      "bride_id": "P0056",
-      "source_ids": [
-        "S0015"
-      ],
-      "provenance": "myheritage"
-    },
-    {
-      "id": "Eundated-marriage-034",
-      "event_type": "Marriage",
-      "date": "",
-      "place": "",
-      "confidence": "possible",
-      "groom_id": "P0006",
-      "bride_id": "P0058",
-      "source_ids": [
-        "S0015"
-      ],
-      "provenance": "myheritage"
-    },
-    {
-      "id": "Eundated-marriage-035",
-      "event_type": "Marriage",
-      "date": "",
-      "place": "",
-      "confidence": "possible",
-      "groom_id": "",
-      "bride_id": "P0059",
-      "source_ids": [
-        "S0015"
-      ],
-      "provenance": "myheritage"
-    },
-    {
-      "id": "E1826-10-21-marriage-036",
-      "event_type": "Marriage",
-      "date": "1826-10-21",
-      "place": "",
-      "confidence": "possible",
-      "groom_id": "P0060",
-      "bride_id": "",
-      "source_ids": [
-        "S0015"
-      ],
-      "provenance": "myheritage"
-    },
-    {
-      "id": "Eundated-marriage-037",
-      "event_type": "Marriage",
-      "date": "",
-      "place": "",
-      "confidence": "possible",
-      "groom_id": "P0061",
-      "bride_id": "",
-      "source_ids": [
-        "S0015"
-      ],
-      "provenance": "myheritage"
-    },
-    {
       "id": "E1933-07-08-marriage-038",
       "event_type": "Marriage",
       "date": "1933-07-08",
       "place": "slu\u0161ovice",
-      "confidence": "possible",
+      "confidence": "probable",
       "groom_id": "P0062",
       "bride_id": "P0022",
       "source_ids": [
-        "S0015"
+        "S0015",
+        "S0009"
       ],
-      "provenance": "myheritage"
-    },
-    {
-      "id": "E1884-11-11-marriage-039",
-      "event_type": "Marriage",
-      "date": "1884-11-11",
-      "place": "",
-      "confidence": "possible",
-      "groom_id": "P0063",
-      "bride_id": "P0027",
-      "source_ids": [
-        "S0015"
-      ],
-      "provenance": "myheritage"
-    },
-    {
-      "id": "Eundated-marriage-040",
-      "event_type": "Marriage",
-      "date": "",
-      "place": "",
-      "confidence": "possible",
-      "groom_id": "P0064",
-      "bride_id": "P0056",
-      "source_ids": [
-        "S0015"
-      ],
-      "provenance": "myheritage"
+      "provenance": "primary"
     },
     {
       "id": "Eundated-birth-baptism-041",
@@ -1963,14 +1734,19 @@
       "id": "E1884-11-11-marriage-043",
       "event_type": "Marriage",
       "date": "1884-11-11",
-      "place": "",
-      "confidence": "possible",
-      "groom_id": "P0063",
+      "place": "Rudslavice parish",
+      "confidence": "confirmed",
+      "groom_id": "P0001",
       "bride_id": "P0126",
-      "provenance": "myheritage",
+      "provenance": "manual",
       "source_ids": [
+        "S0007",
+        "S0010",
+        "S0013",
+        "S0015",
         "S0017"
-      ]
+      ],
+      "notes": "Kept event for Frantisek Vajda + Marie Anna Sova after collapsing duplicate bride records P0008, P0027, and P0058, plus duplicate marriage events E1884-11-11-marriage-frantisek-marianna, E1884-11-11-marriage-018, and Eundated-marriage-034. Legacy secondary marriage-view links E1860-marriage-franz-waida and E1826-marriage-franz-waida were also folded into this canonical branch event."
     },
     {
       "id": "Eundated-marriage-053",
@@ -1978,25 +1754,14 @@
       "date": "",
       "place": "",
       "confidence": "possible",
-      "groom_id": "P0064",
+      "groom_id": "P0002",
       "bride_id": "P0083",
       "provenance": "myheritage",
       "source_ids": [
+        "S0015",
         "S0017"
-      ]
-    },
-    {
-      "id": "Eundated-marriage-054",
-      "event_type": "Marriage",
-      "date": "",
-      "place": "",
-      "confidence": "possible",
-      "groom_id": "P0084",
-      "bride_id": "P0085",
-      "provenance": "myheritage",
-      "source_ids": [
-        "S0017"
-      ]
+      ],
+      "notes": "Canonical Joseph Waida + Josefa Hykel branch record after folding in duplicate spouse view E1826-10-21-marriage-036."
     },
     {
       "id": "Eundated-marriage-055",
@@ -2004,8 +1769,8 @@
       "date": "",
       "place": "",
       "confidence": "possible",
-      "groom_id": "P0115",
-      "bride_id": "P0086",
+      "groom_id": "P0086",
+      "bride_id": "P0115",
       "provenance": "myheritage",
       "source_ids": [
         "S0017"
@@ -2360,7 +2125,7 @@
       "date": "2026-03-07",
       "archive_url": "",
       "image_url": "",
-      "local_image": "/home/jav/Documents/genealog/8g99a1_347583du36189muoeb06ac_A.ged",
+      "local_image": "sources/s19auq_161180a5aa169d0x8vcefs_C.zip",
       "reliability": "medium",
       "priority": "secondary"
     },
@@ -2376,30 +2141,6 @@
     },
     {
       "id": "S0017",
-      "title": "Imported GEDCOM from djb608_6840609ec667286678317r_A.ged",
-      "type": "GEDCOM import",
-      "parish": "",
-      "date": "2026-03-27",
-      "archive_url": "",
-      "image_url": "",
-      "local_image": "sources/djb608_6840609ec667286678317r_A.ged",
-      "reliability": "medium",
-      "priority": "secondary"
-    },
-    {
-      "id": "S0018",
-      "title": "Imported GEDCOM from djb608_6840609ec667286678317r_A.ged",
-      "type": "GEDCOM import",
-      "parish": "",
-      "date": "2026-03-27",
-      "archive_url": "",
-      "image_url": "",
-      "local_image": "sources/djb608_6840609ec667286678317r_A.ged",
-      "reliability": "medium",
-      "priority": "secondary"
-    },
-    {
-      "id": "S0019",
       "title": "Imported GEDCOM from djb608_6840609ec667286678317r_A.ged",
       "type": "GEDCOM import",
       "parish": "",
