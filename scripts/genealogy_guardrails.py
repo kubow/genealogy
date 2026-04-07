@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+from collections import defaultdict
 import datetime as dt
 import json
 from pathlib import Path
@@ -67,6 +68,7 @@ SOURCE_FIELDS = {
 VALID_CONFIDENCE = {"", "open", "possible", "probable", "confirmed"}
 VALID_REVIEW_STATUS = {"", "imported", "reviewed", "trusted"}
 VALID_SEX = {"", "M", "F", "U"}
+MARRIAGE_EVENT_TYPES = {"marriage"}
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -172,20 +174,45 @@ def validate_db(db: dict[str, Any]) -> list[str]:
     person_ids = check_ids(db["people"], "people")
     source_ids = check_ids(db["sources"], "sources")
     check_ids(db["events"], "events")
+    people_by_id = {person.get("id", ""): person for person in db["people"] if person.get("id")}
+    children_by_parent: dict[str, list[str]] = defaultdict(list)
+    marriages_by_pair: dict[tuple[str, str], list[str]] = defaultdict(list)
+    undirected_links: dict[str, set[str]] = defaultdict(set)
+    event_links_by_person: dict[str, set[str]] = defaultdict(set)
 
     for person in db["people"]:
+        person_id = person.get("id", "?")
         if person.get("sex", "") not in VALID_SEX:
-            issues.append(f"people:{person.get('id', '?')}: invalid sex {person.get('sex', '')!r}")
+            issues.append(f"people:{person_id}: invalid sex {person.get('sex', '')!r}")
         if person.get("confidence", "") not in VALID_CONFIDENCE:
-            issues.append(f"people:{person.get('id', '?')}: invalid confidence {person.get('confidence', '')!r}")
+            issues.append(f"people:{person_id}: invalid confidence {person.get('confidence', '')!r}")
         if person.get("review_status", "") not in VALID_REVIEW_STATUS:
-            issues.append(f"people:{person.get('id', '?')}: invalid review_status {person.get('review_status', '')!r}")
+            issues.append(f"people:{person_id}: invalid review_status {person.get('review_status', '')!r}")
         for parent_key in ["father", "mother"]:
             parent_id = person.get(parent_key, "")
             if parent_id and parent_id not in person_ids:
-                issues.append(f"people:{person.get('id', '?')}: unknown {parent_key} {parent_id}")
+                issues.append(f"people:{person_id}: unknown {parent_key} {parent_id}")
+            if parent_id and parent_id == person_id:
+                issues.append(f"people:{person_id}: {parent_key} points to self")
+            if parent_id:
+                children_by_parent[parent_id].append(person_id)
+                if parent_id in person_ids:
+                    undirected_links[person_id].add(parent_id)
+                    undirected_links[parent_id].add(person_id)
         if person.get("father") and person.get("father") == person.get("mother"):
-            issues.append(f"people:{person.get('id', '?')}: father and mother point to same person")
+            issues.append(f"people:{person_id}: father and mother point to same person")
+
+    for parent_id, child_ids in children_by_parent.items():
+        parent = people_by_id.get(parent_id, {})
+        sex = parent.get("sex", "")
+        father_count = sum(1 for child_id in child_ids if people_by_id.get(child_id, {}).get("father") == parent_id)
+        mother_count = sum(1 for child_id in child_ids if people_by_id.get(child_id, {}).get("mother") == parent_id)
+        if father_count and sex == "F":
+            issues.append(f"people:{parent_id}: recorded as father for {father_count} child(ren) despite sex='F'")
+        if mother_count and sex == "M":
+            issues.append(f"people:{parent_id}: recorded as mother for {mother_count} child(ren) despite sex='M'")
+        if father_count and mother_count:
+            issues.append(f"people:{parent_id}: used as both father and mother across linked children")
 
     for event in db["events"]:
         event_id = event.get("id", "?")
@@ -198,6 +225,64 @@ def validate_db(db: dict[str, Any]) -> list[str]:
         for source_id in event.get("source_ids", []):
             if source_id not in source_ids:
                 issues.append(f"events:{event_id}: unknown source_id {source_id}")
+        for person_key in ("person_id", "groom_id", "bride_id"):
+            related_id = event.get(person_key, "")
+            if related_id in person_ids:
+                event_links_by_person[related_id].add(event_id)
+        if event.get("event_type", "").strip().lower() in MARRIAGE_EVENT_TYPES:
+            groom_id = event.get("groom_id", "")
+            bride_id = event.get("bride_id", "")
+            if groom_id and bride_id:
+                if groom_id == bride_id:
+                    issues.append(f"events:{event_id}: marriage event points both spouses at {groom_id}")
+                else:
+                    pair = tuple(sorted((groom_id, bride_id)))
+                    marriages_by_pair[pair].append(event_id)
+                    undirected_links[groom_id].add(bride_id)
+                    undirected_links[bride_id].add(groom_id)
+
+    for pair, event_ids in sorted(marriages_by_pair.items()):
+        if len(event_ids) > 1:
+            issues.append(f"events:{'/'.join(event_ids)}: duplicate marriage pair {pair[0]} + {pair[1]}")
+
+    isolated_people = sorted(
+        person_id
+        for person_id in person_ids
+        if not undirected_links.get(person_id) and not event_links_by_person.get(person_id)
+    )
+    for person_id in isolated_people:
+        issues.append(f"people:{person_id}: disconnected from all parents, children, and spouse links")
+
+    visited: set[str] = set()
+    visiting: set[str] = set()
+    stack: list[str] = []
+    cycles: set[tuple[str, ...]] = set()
+
+    def visit(person_id: str) -> None:
+        if person_id in visited:
+            return
+        if person_id in visiting:
+            cycle_start = stack.index(person_id)
+            cycle = tuple(stack[cycle_start:] + [person_id])
+            cycles.add(cycle)
+            return
+
+        visiting.add(person_id)
+        stack.append(person_id)
+        person = people_by_id.get(person_id, {})
+        for parent_key in ("father", "mother"):
+            parent_id = person.get(parent_key, "")
+            if parent_id in people_by_id:
+                visit(parent_id)
+        stack.pop()
+        visiting.remove(person_id)
+        visited.add(person_id)
+
+    for person_id in sorted(person_ids):
+        visit(person_id)
+
+    for cycle in sorted(cycles):
+        issues.append(f"people:{' -> '.join(cycle)}: ancestry cycle detected")
 
     return issues
 

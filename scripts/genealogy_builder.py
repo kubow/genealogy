@@ -196,6 +196,58 @@ def write_csv(path: Path, rows: List[Dict[str, str]]) -> None:
         writer.writerows(rows)
 
 
+def build_event_review_rows(
+    people: List[Dict[str, str]],
+    events: List[Dict[str, str]],
+    sources: List[Dict[str, str]],
+) -> List[Dict[str, str]]:
+    people_by_id = {person.get("id", ""): person for person in people}
+    sources_by_id = {source.get("id", ""): source for source in sources}
+    rows: List[Dict[str, str]] = []
+
+    for event in events:
+        person_id = event.get("person_id", "")
+        groom_id = event.get("groom_id", "")
+        bride_id = event.get("bride_id", "")
+        source_ids = event.get("source_ids", []) or []
+
+        linked_people = []
+        for related_id in [person_id, groom_id, bride_id]:
+            if not related_id:
+                continue
+            person = people_by_id.get(related_id, {})
+            linked_people.append(person.get("name", related_id) or related_id)
+
+        linked_source_titles = []
+        for source_id in source_ids:
+            source = sources_by_id.get(source_id, {})
+            linked_source_titles.append(source.get("title", source_id) or source_id)
+
+        rows.append(
+            {
+                "id": event.get("id", ""),
+                "event_type": event.get("event_type", ""),
+                "date": event.get("date", ""),
+                "place": event.get("place", ""),
+                "confidence": event.get("confidence", ""),
+                "provenance": event.get("provenance", ""),
+                "person_id": person_id,
+                "person_name": people_by_id.get(person_id, {}).get("name", "") if person_id else "",
+                "groom_id": groom_id,
+                "groom_name": people_by_id.get(groom_id, {}).get("name", "") if groom_id else "",
+                "bride_id": bride_id,
+                "bride_name": people_by_id.get(bride_id, {}).get("name", "") if bride_id else "",
+                "linked_people": " | ".join(linked_people),
+                "source_ids": " | ".join(source_ids),
+                "source_titles": " | ".join(linked_source_titles),
+                "source_count": str(len(source_ids)),
+            }
+        )
+
+    rows.sort(key=lambda row: (row.get("date", "") or "9999", row.get("event_type", ""), row.get("id", "")))
+    return rows
+
+
 def build_dashboard(people: List[Dict[str, str]], events: List[Dict[str, str]], sources: List[Dict[str, str]]) -> str:
     today = dt.date.today().isoformat()
     primary_people = [p for p in people if p.get("provenance", "primary") != "myheritage"]
@@ -356,6 +408,16 @@ def _clean_gedcom_name(value: str) -> str:
     return value
 
 
+def _gedcom_name_parts(value: str) -> Tuple[str, str]:
+    value = value.strip()
+    match = re.match(r"^(.*?)\s*/([^/]+)/(.*)$", value)
+    if match:
+        given = re.sub(r"\s+", " ", f"{match.group(1)} {match.group(3)}").strip()
+        surname = re.sub(r"\s+", " ", match.group(2)).strip()
+        return given, surname
+    return _split_name(_clean_gedcom_name(value))
+
+
 def _strip_accents(value: str) -> str:
     normalized = unicodedata.normalize("NFKD", value)
     return "".join(ch for ch in normalized if not unicodedata.combining(ch))
@@ -370,6 +432,17 @@ def _normalize_token(value: str) -> str:
 def _name_tokens(value: str) -> List[str]:
     parts = re.split(r"\s+", _clean_gedcom_name(value))
     return [token for token in (_normalize_token(part) for part in parts) if token]
+
+
+def _match_name_parts(person: Dict[str, str]) -> Tuple[List[str], str]:
+    given_tokens = _name_tokens(person.get("name", ""))
+    birth_surname = _normalize_token(person.get("birth_surname", ""))
+    married_surname = _normalize_token(person.get("married_surname", ""))
+    surname = birth_surname or married_surname or _surname_token(person.get("name", ""))
+    if not given_tokens and person.get("name", ""):
+        given, _ = _split_name(_clean_gedcom_name(person.get("name", "")))
+        given_tokens = _name_tokens(given)
+    return given_tokens, surname
 
 
 def _surname_token(value: str) -> str:
@@ -397,12 +470,12 @@ def _score_person_match(imported: Dict[str, str], existing: Dict[str, str]) -> T
     score = 0
     reasons: List[str] = []
 
-    imported_tokens = _name_tokens(imported.get("name", ""))
-    existing_tokens = _name_tokens(existing.get("name", ""))
-    imported_surname = _surname_token(imported.get("name", ""))
-    existing_surname = _surname_token(existing.get("name", ""))
-    imported_given = set(_given_tokens(imported.get("name", "")))
-    existing_given = set(_given_tokens(existing.get("name", "")))
+    imported_given_tokens, imported_surname = _match_name_parts(imported)
+    existing_given_tokens, existing_surname = _match_name_parts(existing)
+    imported_tokens = imported_given_tokens + ([imported_surname] if imported_surname else [])
+    existing_tokens = existing_given_tokens + ([existing_surname] if existing_surname else [])
+    imported_given = set(imported_given_tokens)
+    existing_given = set(existing_given_tokens)
 
     if imported_tokens and imported_tokens == existing_tokens:
         score += 45
@@ -476,6 +549,23 @@ def find_person_candidates(imported: Dict[str, str], existing_people: List[Dict[
     return candidates[:limit]
 
 
+def person_display_for_report(person: Dict[str, str]) -> str:
+    given = (person.get("name", "") or "").strip()
+    birth_surname = (person.get("birth_surname", "") or "").strip()
+    married_surname = (person.get("married_surname", "") or "").strip()
+    sex = (person.get("sex", "") or "").strip()
+
+    if sex == "M" and birth_surname:
+        return f"{given} {birth_surname}".strip()
+    if married_surname and birth_surname and married_surname.lower() != birth_surname.lower():
+        return f"{given} {married_surname} ({birth_surname})".strip()
+    if birth_surname:
+        return f"{given} {birth_surname}".strip()
+    if married_surname:
+        return f"{given} {married_surname}".strip()
+    return given or person.get("id", "")
+
+
 def classify_sync_match(candidates: List[Dict[str, Any]]) -> Tuple[str, Dict[str, Any] | None]:
     if not candidates:
         return "new", None
@@ -486,6 +576,99 @@ def classify_sync_match(candidates: List[Dict[str, Any]]) -> Tuple[str, Dict[str
     if best["score"] >= 45:
         return "review", best
     return "new", None
+
+
+def build_duplicate_report(min_score: int = 45) -> Dict[str, Any]:
+    db = load_db()
+    people = list(db["people"])
+    pairs: List[Dict[str, Any]] = []
+
+    for index, left in enumerate(people):
+        for right in people[index + 1 :]:
+            score, reasons = _score_person_match(left, right)
+            if score < min_score:
+                continue
+            pair_key = tuple(sorted((left.get("id", ""), right.get("id", ""))))
+            pairs.append(
+                {
+                    "pair_key": "|".join(pair_key),
+                    "score": score,
+                    "reasons": reasons,
+                    "left_id": left.get("id", ""),
+                    "left_name": person_display_for_report(left),
+                    "left_birth_date": left.get("birth_date", ""),
+                    "left_death_date": left.get("death_date", ""),
+                    "left_birth_place": left.get("birth_place", ""),
+                    "left_provenance": left.get("provenance", ""),
+                    "right_id": right.get("id", ""),
+                    "right_name": person_display_for_report(right),
+                    "right_birth_date": right.get("birth_date", ""),
+                    "right_death_date": right.get("death_date", ""),
+                    "right_birth_place": right.get("birth_place", ""),
+                    "right_provenance": right.get("provenance", ""),
+                }
+            )
+
+    pairs.sort(
+        key=lambda item: (
+            -item["score"],
+            item["left_birth_date"] or "9999",
+            item["left_name"],
+            item["right_name"],
+        )
+    )
+    return {
+        "generated_at": dt.datetime.now().isoformat(timespec="seconds"),
+        "people": len(people),
+        "candidate_pairs": len(pairs),
+        "min_score": min_score,
+        "pairs": pairs,
+    }
+
+
+def write_duplicate_report(min_score: int = 45) -> Dict[str, Any]:
+    report = build_duplicate_report(min_score=min_score)
+    pairs = report["pairs"]
+
+    write_text(EXPORTS_DIR / "duplicate-report.json", json.dumps(report, indent=2, ensure_ascii=True) + "\n")
+    write_csv(EXPORTS_DIR / "duplicate-report.csv", pairs)
+
+    lines = [
+        "# Duplicate Candidate Report",
+        "",
+        f"Generated: {report['generated_at']}",
+        f"People scanned: {report['people']}",
+        f"Candidate pairs: {report['candidate_pairs']}",
+        f"Minimum score: {report['min_score']}",
+        "",
+        "| Score | Left | Right | Reasons |",
+        "|---|---|---|---|",
+    ]
+    for pair in pairs:
+        left = " | ".join(
+            bit
+            for bit in [
+                pair["left_id"],
+                pair["left_name"],
+                pair["left_birth_date"],
+                pair["left_provenance"],
+            ]
+            if bit
+        )
+        right = " | ".join(
+            bit
+            for bit in [
+                pair["right_id"],
+                pair["right_name"],
+                pair["right_birth_date"],
+                pair["right_provenance"],
+            ]
+            if bit
+        )
+        lines.append(f"| {pair['score']} | {left} | {right} | {'; '.join(pair['reasons'])} |")
+
+    write_text(EXPORTS_DIR / "duplicate-report.md", "\n".join(lines) + "\n")
+    return report
 
 
 def parse_gedcom(path: Path) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
@@ -544,6 +727,8 @@ def parse_gedcom(path: Path) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]
                 current_subtag = ""
                 if tag == "NAME":
                     person["name"] = _clean_gedcom_name(value)
+                    _, surname = _gedcom_name_parts(value)
+                    person["birth_surname"] = surname
                 elif tag == "SEX":
                     person["sex"] = value.strip().upper()[:1]
                 elif tag in {"BIRT", "DEAT"}:
@@ -731,6 +916,8 @@ def import_gedcom(path: Path, mode: str) -> Tuple[int, int, int]:
                 existing["sex"] = person.get("sex", "")
             if not existing.get("birth_place") and person.get("birth_place"):
                 existing["birth_place"] = person.get("birth_place", "")
+            if not existing.get("birth_surname") and person.get("birth_surname"):
+                existing["birth_surname"] = person.get("birth_surname", "")
             if not existing.get("death_date") and person.get("death_date"):
                 existing["death_date"] = person.get("death_date", "")
             if not existing.get("death_place") and person.get("death_place"):
@@ -746,6 +933,8 @@ def import_gedcom(path: Path, mode: str) -> Tuple[int, int, int]:
             "death_date": person.get("death_date", ""),
             "birth_place": person.get("birth_place", ""),
             "death_place": person.get("death_place", ""),
+            "birth_surname": person.get("birth_surname", ""),
+            "married_surname": "",
             "father": "",
             "mother": "",
             "sex": person.get("sex", ""),
@@ -1700,6 +1889,7 @@ def build_exports() -> Tuple[int, int, int]:
     EXPORTS_DIR.mkdir(parents=True, exist_ok=True)
     write_csv(EXPORTS_DIR / "people.csv", people)
     write_csv(EXPORTS_DIR / "events.csv", events)
+    write_csv(EXPORTS_DIR / "events_review.csv", build_event_review_rows(people, events, sources))
     write_csv(EXPORTS_DIR / "sources.csv", sources)
     write_text(EXPORTS_DIR / "dashboard.md", build_dashboard(people, events, sources))
     write_text(EXPORTS_DIR / "overview.html", build_html(people, events, sources))
@@ -1827,6 +2017,8 @@ def main() -> None:
     sub = parser.add_subparsers(dest="cmd")
     sub.add_parser("wizard", help="Run interactive wizard")
     sub.add_parser("build", help="Build exports from JSON database")
+    duplicate_parser = sub.add_parser("duplicate-report", help="Write likely duplicate person pairs for review")
+    duplicate_parser.add_argument("--min-score", type=int, default=45, help="Minimum match score to include")
     sub.add_parser("migrate-markdown", help="One-time migration from markdown structure to JSON")
     sync_parser = sub.add_parser("sync-report", help="Analyze a GEDCOM file and write a match review report")
     sync_parser.add_argument("--file", required=True, help="Path to GEDCOM file")
@@ -1846,6 +2038,13 @@ def main() -> None:
     if args.cmd == "build":
         p, e, s = build_exports()
         print(f"Built exports for {p} people, {e} events, {s} sources.")
+        return
+    if args.cmd == "duplicate-report":
+        report = write_duplicate_report(min_score=args.min_score)
+        print(
+            "Duplicate report written to outputs/duplicate-report.{json,csv,md}: "
+            f"{report['candidate_pairs']} candidate pairs at min score {report['min_score']}."
+        )
         return
     if args.cmd == "migrate-markdown":
         p, e, s = migrate_markdown()
