@@ -18,6 +18,11 @@
           <input id="searchInput" type="text" placeholder="Name, place, ID" />
         </label>
         <label class="toggle">
+          <input id="linkedEventsViewToggle" type="checkbox" />
+          <span>Linked events review</span>
+        </label>
+        <div class="person-view-only">
+        <label class="toggle">
           <input id="displayAllToggle" type="checkbox" />
           <span>Display all</span>
         </label>
@@ -39,6 +44,7 @@
           <span>Show only selected branch</span>
         </label>
         <p id="branchHint" class="hint"></p>
+        </div>
       </aside>
 
       <div id="leftResizer" class="sidebar-resizer left-resizer" title="Resize left sidebar"></div>
@@ -50,19 +56,28 @@
           <button id="rightExpand" class="edge-toggle right-expand hidden" type="button" title="Open right sidebar">☰</button>
         </div>
         <div id="cy"></div>
+        <section id="linkedEventsPanel" class="linked-events-panel hidden">
+          <div class="linked-events-head">
+            <h3>Linked Events</h3>
+            <p id="linkedEventsCount" class="hint"></p>
+          </div>
+          <div id="linkedEventsList" class="linked-events-list"></div>
+        </section>
       </main>
 
       <div id="rightResizer" class="sidebar-resizer right-resizer" title="Resize right sidebar"></div>
 
       <aside id="rightSidebar" class="sidebar right-sidebar">
         <div class="sidebar-head">
-          <h2>Admin</h2>
+          <h2 id="rightSidebarTitle">Admin</h2>
           <button id="rightToggle" class="icon-toggle" type="button" title="Collapse right sidebar">▶</button>
         </div>
 
+        <div id="personAdminPanel">
         <form id="personForm" class="admin-card">
           <h3>Person</h3>
           <div class="compact-grid">
+            <label><span>ID</span><input id="personIdField" name="person_id_readonly" type="text" readonly /></label>
             <label><span>Name</span><input name="name" type="text" /></label>
             <label><span>Sex</span>
               <select name="sex">
@@ -82,6 +97,8 @@
             </label>
             <label><span>Birth date</span><input name="birth_date" type="text" /></label>
             <label><span>Birth place</span><input name="birth_place" type="text" /></label>
+            <label><span>Birth surname</span><input name="birth_surname" type="text" /></label>
+            <label><span>Married surname</span><input name="married_surname" type="text" /></label>
             <label><span>Death date</span><input name="death_date" type="text" /></label>
             <label><span>Death place</span><input name="death_place" type="text" /></label>
             <label><span>Father</span><select name="father"></select></label>
@@ -95,7 +112,7 @@
           </div>
         </form>
 
-        <section class="admin-card">
+        <section id="reviewPanel" class="admin-card hidden">
           <h3>Review</h3>
           <p id="reviewSummary" class="hint">Select a person to review imported data.</p>
           <div class="compact-grid">
@@ -125,8 +142,9 @@
         </section>
 
         <form id="sourceForm" class="admin-card" enctype="multipart/form-data">
-          <h3>Links and images</h3>
+          <h3>Event Links</h3>
           <div class="compact-grid">
+            <label><span>Person ID</span><input id="sourcePersonIdField" type="text" readonly /></label>
             <label><span>Attach to event</span><select name="event_id"></select></label>
             <label><span>Source title</span><input name="title" type="text" placeholder="Birth register entry" /></label>
             <label class="full"><span>Website link</span><input name="archive_url" type="url" placeholder="https://..." /></label>
@@ -153,11 +171,17 @@
             <button type="submit">Add source</button>
             <span id="sourceStatus" class="hint"></span>
           </div>
-        </form>
-
-        <section class="admin-card">
-          <h3>Current links</h3>
+          <div class="section-divider"></div>
+          <h3>Current Event Links</h3>
           <div id="sourcesList" class="sources-list"></div>
+        </form>
+        </div>
+
+        <section id="eventInspectorPanel" class="admin-card hidden">
+          <h3 id="eventInspectorHeading">Event</h3>
+          <div id="eventInspectorContent" class="event-inspector-content">
+            <p class="hint">Select a linked event to inspect it.</p>
+          </div>
         </section>
       </aside>
     </div>
