@@ -1,0 +1,80 @@
+app/flask_app.py
+  dbc5c9c516fff7ab 240-254
+  s_cf961c400a469d::t_d2596d27c3afe8 130-142
+app/static/app.js
+  s_cf961c400a469d::t_812286ac96c2ea 66-68
+  s_cf961c400a469d::t_fc8b7a18d5af0a 1201-1211
+  s_cf961c400a469d::t_33dd938d52253d 1005-1006
+  s_cf961c400a469d::t_acab04105e1dc9 331-332
+  s_cf961c400a469d::t_e21c73b6f69f4b 510-511
+  s_cf961c400a469d::t_03dda76bb5012a 1009-1012
+  s_cf961c400a469d::t_af5b41ae8a2842 445-448
+  s_cf961c400a469d::t_53db3c87c0b243 298-330,333-444,449-509,512-517
+  s_cf961c400a469d::t_d3d0bf7d3e23c7 1212-1224
+  s_cf961c400a469d::t_8cb8cfb1861960 10-12
+  s_cf961c400a469d::t_6f3355e68eb8da 69-72
+  dbc5c9c516fff7ab 546-582,1268-1287
+  s_cf961c400a469d::t_8e0aa088e3763a 1016-1031,1035,1043-1054
+  s_cf961c400a469d::t_ccbf4e1aa6a9f9 663-664,673
+  s_cf961c400a469d::t_7aa8ae81490dc6 1085,1088-1091
+  s_cf961c400a469d::t_eeb8365ee5e8a9 665
+app/genealogy_core.py
+  s_cf961c400a469d::t_47953445dc08c5 432,437
+  s_cf961c400a469d::t_fb9392a5b191ce 715
+  s_cf961c400a469d::t_dedd63b4b41acd 487
+  s_cf961c400a469d::t_7d819dfde9daa7 590,594
+  s_cf961c400a469d::t_3440919ecaad15 618
+app/templates/index.html
+  s_cf961c400a469d::t_697457c2f03c63 57
+  s_cf961c400a469d::t_bc4f09e9e6b79e 56
+  s_cf961c400a469d::t_c7423667397fc1 78-86
+  s_cf961c400a469d::t_84505ff07ce892 202-247
+  s_cf961c400a469d::t_5d215a31a38ec1 87-90
+app/static/styles.css
+  s_cf961c400a469d::t_19ef61d8249b42 174
+  s_cf961c400a469d::t_abde6eebb42647 858-946
+  s_cf961c400a469d::t_eb04c609a17c92 619-665,671-857
+  s_cf961c400a469d::t_5d06c25bdd09bc 666-670
+  dbc5c9c516fff7ab 572-577
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.8",
+  "base_commit_sha": "71588981a17cbdd019142b6972ca7d47a2e64632",
+  "prompts": {
+    "ac8179714d0caac0": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019d8c7a-c52e-7103-955c-6090cddaa2a9",
+        "model": "gpt-5.4"
+      },
+      "human_author": "kubow <kube.kubow@gmail.com>",
+      "total_additions": 26,
+      "total_deletions": 14,
+      "accepted_lines": 26,
+      "overriden_lines": 0
+    },
+    "dbc5c9c516fff7ab": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019d8c7b-abbe-7573-aa98-471e0c90b3ee",
+        "model": "unknown"
+      },
+      "human_author": "kubow <kube.kubow@gmail.com>",
+      "total_additions": 614,
+      "total_deletions": 616,
+      "accepted_lines": 610,
+      "overriden_lines": 0
+    }
+  },
+  "sessions": {
+    "s_cf961c400a469d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ec4244dc-1d8b-4647-b93f-ebcdfaa6e2f5",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "kubow <kube.kubow@gmail.com>"
+    }
+  }
+}
