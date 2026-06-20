@@ -71,6 +71,17 @@ VALID_SEX = {"", "M", "F", "U"}
 MARRIAGE_EVENT_TYPES = {"marriage"}
 
 
+def event_identity_key(event: dict[str, Any]) -> tuple[str, str, str, str, str, str]:
+    return (
+        event.get("event_type", "").strip().lower(),
+        event.get("date", ""),
+        event.get("place", ""),
+        event.get("person_id", ""),
+        event.get("groom_id", ""),
+        event.get("bride_id", ""),
+    )
+
+
 def load_json(path: Path) -> dict[str, Any]:
     raw = json.loads(path.read_text(encoding="utf-8"))
     return {
@@ -177,6 +188,7 @@ def validate_db(db: dict[str, Any]) -> list[str]:
     people_by_id = {person.get("id", ""): person for person in db["people"] if person.get("id")}
     children_by_parent: dict[str, list[str]] = defaultdict(list)
     marriages_by_pair: dict[tuple[str, str], list[str]] = defaultdict(list)
+    events_by_identity: dict[tuple[str, str, str, str, str, str], list[str]] = defaultdict(list)
     undirected_links: dict[str, set[str]] = defaultdict(set)
     event_links_by_person: dict[str, set[str]] = defaultdict(set)
 
@@ -216,6 +228,7 @@ def validate_db(db: dict[str, Any]) -> list[str]:
 
     for event in db["events"]:
         event_id = event.get("id", "?")
+        events_by_identity[event_identity_key(event)].append(event_id)
         if event.get("confidence", "") not in VALID_CONFIDENCE:
             issues.append(f"events:{event_id}: invalid confidence {event.get('confidence', '')!r}")
         for person_key in ["person_id", "groom_id", "bride_id"]:
@@ -244,6 +257,14 @@ def validate_db(db: dict[str, Any]) -> list[str]:
     for pair, event_ids in sorted(marriages_by_pair.items()):
         if len(event_ids) > 1:
             issues.append(f"events:{'/'.join(event_ids)}: duplicate marriage pair {pair[0]} + {pair[1]}")
+
+    for identity_key, event_ids in sorted(events_by_identity.items()):
+        if not identity_key[0] or len(event_ids) <= 1:
+            continue
+        issues.append(
+            f"events:{'/'.join(event_ids)}: duplicate event identity "
+            f"type={identity_key[0]!r} date={identity_key[1]!r} place={identity_key[2]!r}"
+        )
 
     isolated_people = sorted(
         person_id

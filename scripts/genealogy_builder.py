@@ -24,6 +24,7 @@ DATA_PATH = DATA_DIR / "genealogy.json"
 OUTPUTS_DIR = ROOT / "outputs"
 EXPORTS_DIR = OUTPUTS_DIR
 SITE_DIR = ROOT / "docs"
+SITE_DATA_PATH = SITE_DIR / "data" / "genealogy.json"
 SOURCES_DIR = ROOT / "sources"
 
 # Legacy markdown paths, used only by migrate-markdown.
@@ -97,7 +98,10 @@ def load_db() -> Dict[str, List[Dict[str, str]]]:
 
 def save_db(db: Dict[str, List[Dict[str, str]]]) -> None:
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
-    DATA_PATH.write_text(json.dumps(db, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
+    payload = json.dumps(db, indent=2, ensure_ascii=True) + "\n"
+    DATA_PATH.write_text(payload, encoding="utf-8")
+    SITE_DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
+    SITE_DATA_PATH.write_text(payload, encoding="utf-8")
 
 
 def next_id(items: List[Dict[str, str]], prefix: str, width: int = 4) -> str:

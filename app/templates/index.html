@@ -53,6 +53,8 @@
         <div class="canvas-toolbar">
           <button id="leftExpand" class="edge-toggle left-expand hidden" type="button" title="Open left sidebar">☰</button>
           <h2 id="treeTitle">Family tree</h2>
+          <button id="fullTreeBtn" class="toolbar-btn" type="button" title="Toggle full connected tree">Full tree</button>
+          <button id="helpBtn" class="toolbar-btn" type="button" title="Help">?</button>
           <button id="rightExpand" class="edge-toggle right-expand hidden" type="button" title="Open right sidebar">☰</button>
         </div>
         <div id="cy"></div>
@@ -73,7 +75,19 @@
           <button id="rightToggle" class="icon-toggle" type="button" title="Collapse right sidebar">▶</button>
         </div>
 
-        <div id="personAdminPanel">
+        <section id="personCard" class="admin-card">
+          <p class="hint">Click a person in the tree to see their details.</p>
+        </section>
+
+        <section id="couplePanel" class="admin-card hidden">
+          <p class="hint">Click a marriage diamond &#9674; to see the couple.</p>
+        </section>
+
+        <div id="personAdminPanel" class="hidden">
+        <div class="edit-panel-head">
+          <span class="hint">Editing person</span>
+          <button id="closeEditBtn" type="button" class="toolbar-btn" title="Close edit panel">&#10005; Close edit</button>
+        </div>
         <form id="personForm" class="admin-card">
           <h3>Person</h3>
           <div class="compact-grid">
@@ -184,6 +198,52 @@
           </div>
         </section>
       </aside>
+    </div>
+    <div id="helpModal" class="help-modal hidden" role="dialog" aria-modal="true">
+      <div class="help-modal-card">
+        <div class="help-modal-head">
+          <h2>How to use the tree</h2>
+          <button id="helpCloseBtn" type="button" class="icon-btn" title="Close">&times;</button>
+        </div>
+        <div class="help-modal-body">
+          <section>
+            <h3>Graph navigation</h3>
+            <dl>
+              <dt>Single click a person</dt><dd>Select them — shows their card in the right panel without moving the tree.</dd>
+              <dt>Double-click a person</dt><dd>Refocus the tree on that person (redraws ancestors &amp; descendants around them).</dd>
+              <dt>Click a diamond &#9674;</dt><dd>Open the marriage/couple view: both spouses are highlighted and shown side by side.</dd>
+              <dt>Full tree button</dt><dd>Toggle between the focused view (ancestors + descendants of the current person) and the full connected tree.</dd>
+              <dt>Scroll / pinch</dt><dd>Zoom the graph. Click and drag to pan.</dd>
+            </dl>
+          </section>
+          <section>
+            <h3>Person card (right panel)</h3>
+            <dl>
+              <dt>Father / Mother chips</dt><dd>Click to select that person's card without moving the tree.</dd>
+              <dt>Spouse chip</dt><dd>Click to open the marriage view for that couple.</dd>
+              <dt>Children chips + <em>branch</em> button</dt><dd>The chip selects the child; <em>branch</em> highlights the path from root to that child in the tree.</dd>
+              <dt>Focus tree here</dt><dd>Redraws the tree centred on the person shown in the card.</dd>
+              <dt>&#9998; pencil button</dt><dd>Opens the edit forms below the card. Click <strong>Close edit</strong> to hide them again.</dd>
+            </dl>
+          </section>
+          <section>
+            <h3>Left sidebar</h3>
+            <dl>
+              <dt>Search</dt><dd>Filters the Focus person dropdown by name, place, or ID.</dd>
+              <dt>Branch dropdown</dt><dd>Highlight the path to a specific descendant.</dd>
+              <dt>Linked events review</dt><dd>Switches to a flat event list for reviewing sources and links.</dd>
+            </dl>
+          </section>
+          <section>
+            <h3>Node colours</h3>
+            <dl>
+              <dt>Yellow border</dt><dd>Current focus person (tree is centred here).</dd>
+              <dt>Orange border / background</dt><dd>Node is on the highlighted branch path.</dd>
+              <dt>Blue border / background</dt><dd>Couple mode — both spouses of the active marriage.</dd>
+            </dl>
+          </section>
+        </div>
+      </div>
     </div>
     <script src="https://unpkg.com/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
     <script src="https://unpkg.com/dagre@0.8.5/dist/dagre.min.js"></script>

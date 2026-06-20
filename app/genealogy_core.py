@@ -429,12 +429,12 @@ def build_family_graph_elements(
             }
         }
 
-    def add_family_node(family_id: str, label: str = "") -> None:
+    def add_family_node(family_id: str, label: str = "", event_id: str = "") -> None:
         key = f"family:{family_id}"
         if key in family_defs:
             return
         family_defs.add(key)
-        node_defs[key] = {"data": {"id": key, "kind": "family", "label": label, "layout_order": next_layout_order()}}
+        node_defs[key] = {"data": {"id": key, "kind": "family", "label": label, "event_id": event_id, "layout_order": next_layout_order()}}
 
     def add_edge(left_id: str, right_id: str) -> None:
         edge_defs.add((left_id, right_id))
@@ -484,7 +484,7 @@ def build_family_graph_elements(
         add_person(target_id)
         for spouse_id, child_ids, marriage in partner_groups(target_id, people_by_id, children_by_parent, marriages):
             family_id = f"desc_{target_id}_{spouse_id or 'unknown'}"
-            add_family_node(family_id, (marriage or {}).get("date", ""))
+            add_family_node(family_id, (marriage or {}).get("date", ""), (marriage or {}).get("id", ""))
             family_key = f"family:{family_id}"
             add_edge(f"person:{target_id}", family_key)
             if spouse_id:
@@ -587,11 +587,11 @@ def build_all_graph_elements(
             }
         }
 
-    def add_family(family_id: str, label: str = "") -> str:
+    def add_family(family_id: str, label: str = "", event_id: str = "") -> str:
         key = f"family:{family_id}"
         if key not in family_nodes:
             family_nodes.add(key)
-            node_defs[key] = {"data": {"id": key, "kind": "family", "label": label, "path": "false", "layout_order": next_layout_order()}}
+            node_defs[key] = {"data": {"id": key, "kind": "family", "label": label, "event_id": event_id, "path": "false", "layout_order": next_layout_order()}}
         return key
 
     def add_partner_order(left_pid: str, right_pid: str) -> None:
@@ -615,7 +615,7 @@ def build_all_graph_elements(
         processed_pairs.add(pair)
         add_person(pair[0])
         add_person(pair[1])
-        family_key = add_family(f"all_{pair[0]}_{pair[1]}", marriage.get("date", ""))
+        family_key = add_family(f"all_{pair[0]}_{pair[1]}", marriage.get("date", ""), marriage.get("id", ""))
         edge_defs.add((f"person:{pair[0]}", family_key))
         edge_defs.add((f"person:{pair[1]}", family_key))
         add_partner_order(pair[0], pair[1])
@@ -712,6 +712,7 @@ def person_relations(
                 "label": person_label(spouse),
                 "children_count": len(child_ids),
                 "marriage_date": (marriage or {}).get("date", ""),
+                "marriage_event_id": (marriage or {}).get("id", ""),
             }
         )
     return {

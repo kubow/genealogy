@@ -127,6 +127,19 @@ def api_event(event_id: str):
     return jsonify(payload)
 
 
+@app.get("/api/couple/<event_id>")
+def api_couple(event_id: str):
+    _, people, events, _, people_by_id, children_by_parent, marriages, sources_by_id = load_indexes()
+    event = next((e for e in events if e.get("id") == event_id), None)
+    if not event:
+        return jsonify({"error": "Event not found"}), 404
+    groom_id = event.get("groom_id", "")
+    bride_id = event.get("bride_id", "")
+    groom = person_detail_payload(groom_id, people_by_id, people, events, sources_by_id, children_by_parent, marriages) if groom_id else None
+    bride = person_detail_payload(bride_id, people_by_id, people, events, sources_by_id, children_by_parent, marriages) if bride_id else None
+    return jsonify({"event": event, "groom": groom, "bride": bride})
+
+
 @app.post("/api/event/<event_id>")
 def api_event_update(event_id: str):
     payload = request.get_json(force=True)
@@ -222,6 +235,21 @@ def api_event_add_source(event_id: str):
 
     save_db(db)
     return jsonify({"ok": True, "event_id": event_id, "source_id": source_id})
+
+
+@app.post("/api/source/<source_id>")
+def api_source_update(source_id: str):
+    payload = request.get_json(force=True)
+    db = load_db()
+    source = next((item for item in db["sources"] if item.get("id") == source_id), None)
+    if source is None:
+        return jsonify({"error": "Source not found"}), 404
+
+    for key in ["title", "type", "date", "archive_url", "priority"]:
+        source[key] = str(payload.get(key, "")).strip()
+
+    save_db(db)
+    return jsonify({"ok": True, "source_id": source_id})
 
 
 @app.post("/api/person/<person_id>")

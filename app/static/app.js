@@ -7,6 +7,9 @@ const state = {
   people: [],
   linkedEvents: [],
   focusId: "",
+  selectedPersonId: "",
+  coupleEventId: "",
+  couplePersonIds: [],
   selectedEventId: "",
   branchTargetId: "",
   branchOnly: false,
@@ -60,6 +63,13 @@ const linkedEventsPanel = document.getElementById("linkedEventsPanel");
 const linkedEventsList = document.getElementById("linkedEventsList");
 const linkedEventsCount = document.getElementById("linkedEventsCount");
 const personAdminPanel = document.getElementById("personAdminPanel");
+const personCard = document.getElementById("personCard");
+const couplePanel = document.getElementById("couplePanel");
+const fullTreeBtn = document.getElementById("fullTreeBtn");
+const helpBtn = document.getElementById("helpBtn");
+const helpModal = document.getElementById("helpModal");
+const helpCloseBtn = document.getElementById("helpCloseBtn");
+const closeEditBtn = document.getElementById("closeEditBtn");
 const eventInspectorPanel = document.getElementById("eventInspectorPanel");
 const eventInspectorHeading = document.getElementById("eventInspectorHeading");
 const eventInspectorContent = document.getElementById("eventInspectorContent");
@@ -285,6 +295,226 @@ function sourceNote(source) {
   return "";
 }
 
+function markSelected(personId) {
+  if (!state.cy) return;
+  state.cy.elements().removeClass("cy-selected");
+  if (personId) {
+    const node = state.cy.getElementById(`person:${personId}`);
+    if (node.length) node.addClass("cy-selected");
+  }
+}
+
+function applyCoupleHighlight() {
+  if (!state.cy) return;
+  for (const personId of state.couplePersonIds) {
+    const node = state.cy.getElementById(`person:${personId}`);
+    if (node.length) node.addClass("cy-couple");
+  }
+  if (state.coupleEventId) {
+    state.cy.nodes('[kind = "family"]').forEach((node) => {
+      if (node.data("event_id") === state.coupleEventId) node.addClass("cy-couple-family");
+    });
+  }
+}
+
+function clearCoupleHighlight() {
+  if (!state.cy) return;
+  state.cy.elements().removeClass("cy-couple cy-couple-family");
+  state.couplePersonIds = [];
+  state.coupleEventId = "";
+}
+
+function showPersonPanel(showEdit = false) {
+  personCard.classList.remove("hidden");
+  couplePanel.classList.add("hidden");
+  personAdminPanel.classList.toggle("hidden", !showEdit);
+  const editBtn = personCard.querySelector(".edit-toggle-btn");
+  if (editBtn) editBtn.classList.toggle("active", showEdit);
+}
+
+function showCouplePanel() {
+  couplePanel.classList.remove("hidden");
+  personCard.classList.add("hidden");
+  personAdminPanel.classList.add("hidden");
+}
+
+async function loadPersonCard(personId) {
+  const { response, payload } = await fetchJson(`/api/person/${encodeURIComponent(personId)}`);
+  if (!response.ok) return;
+  renderPersonCard(payload);
+  renderDetails(payload);
+  showPersonPanel(false);
+}
+
+function renderPersonCard(payload) {
+  if (!personCard) return;
+  const person = payload.person || {};
+  const relations = payload.relations || {};
+  const conf = person.confidence || "";
+  const confBadge = conf ? `<span class="conf-badge conf-${escapeHtml(conf)}">${escapeHtml(conf)}</span>` : "";
+  const birth = [person.birth_date, person.birth_place].filter(Boolean).join(" · ");
+  const death = [person.death_date, person.death_place].filter(Boolean).join(" · ");
+  const surname = person.birth_surname || person.married_surname || "";
+  const nameLine = [person.name, surname].filter(Boolean).join(" ");
+
+  const fatherChip = relations.father
+    ? `<span class="rel-chip" data-person-id="${escapeHtml(relations.father.id)}">${escapeHtml(relations.father.label)}</span>`
+    : `<span class="rel-chip rel-unknown">Unknown</span>`;
+  const motherChip = relations.mother
+    ? `<span class="rel-chip" data-person-id="${escapeHtml(relations.mother.id)}">${escapeHtml(relations.mother.label)}</span>`
+    : `<span class="rel-chip rel-unknown">Unknown</span>`;
+
+  const partnerChips = (relations.partners || []).map((p) => {
+    const label = p.marriage_date ? `${p.label} · ${p.marriage_date.slice(0, 4)}` : p.label;
+    const coupleAttr = p.marriage_event_id ? ` data-couple-event-id="${escapeHtml(p.marriage_event_id)}"` : "";
+    return `<span class="rel-chip rel-spouse"${coupleAttr} data-person-id="${escapeHtml(p.id)}">${escapeHtml(label)}</span>`;
+  });
+
+  const childItems = (relations.children || []).map((c) =>
+    `<span class="rel-chip" data-person-id="${escapeHtml(c.id)}">${escapeHtml(c.label)}</span>` +
+    `<button type="button" class="branch-btn" data-branch-id="${escapeHtml(c.id)}" title="Trace branch to ${escapeHtml(c.label)}">branch</button>`
+  );
+
+  personCard.innerHTML = `
+    <div class="person-card-head">
+      <div>
+        <h3 class="person-card-name">${escapeHtml(nameLine || person.id || "")}</h3>
+        ${confBadge}
+      </div>
+      <button type="button" class="icon-btn edit-toggle-btn" title="Edit" data-edit-person-id="${escapeHtml(person.id || "")}">&#9998;</button>
+    </div>
+    ${birth ? `<p class="person-card-dates">b. ${escapeHtml(birth)}</p>` : ""}
+    ${death ? `<p class="person-card-dates">d. ${escapeHtml(death)}</p>` : ""}
+    <div class="rel-section">
+      <div class="rel-row"><span class="rel-label">Father</span>${fatherChip}</div>
+      <div class="rel-row"><span class="rel-label">Mother</span>${motherChip}</div>
+      ${partnerChips.length ? `<div class="rel-row"><span class="rel-label">Spouse</span><span class="rel-chips">${partnerChips.join("")}</span></div>` : ""}
+      ${childItems.length ? `<div class="rel-row rel-children"><span class="rel-label">Children</span><span class="rel-chips">${childItems.join("")}</span></div>` : ""}
+    </div>
+    ${person.id ? `<div class="person-card-actions"><button type="button" class="focus-person-btn" data-focus-id="${escapeHtml(person.id)}">Focus tree here</button></div>` : ""}
+  `;
+
+  personCard.querySelectorAll(".rel-chip[data-person-id]").forEach((chip) => {
+    chip.addEventListener("click", async () => {
+      const coupleEventId = chip.dataset.coupleEventId;
+      const pid = chip.dataset.personId;
+      if (coupleEventId) {
+        state.coupleEventId = coupleEventId;
+        const { payload: cp } = await fetchJson(`/api/couple/${encodeURIComponent(coupleEventId)}`);
+        state.couplePersonIds = [cp.groom?.person?.id, cp.bride?.person?.id].filter(Boolean);
+        applyCoupleHighlight();
+        renderMarriageCard(cp);
+        showCouplePanel();
+        return;
+      }
+      if (!pid) return;
+      state.selectedPersonId = pid;
+      markSelected(pid);
+      clearCoupleHighlight();
+      await loadPersonCard(pid);
+    });
+  });
+
+  personCard.querySelectorAll(".branch-btn[data-branch-id]").forEach((btn) => {
+    btn.addEventListener("click", async () => {
+      state.branchTargetId = btn.dataset.branchId;
+      state.branchOnly = false;
+      branchOnlyToggle.checked = false;
+      if (branchSelect) branchSelect.value = btn.dataset.branchId;
+      await refreshGraph();
+    });
+  });
+
+  const focusBtn = personCard.querySelector(".focus-person-btn");
+  if (focusBtn) {
+    focusBtn.addEventListener("click", async () => {
+      const fid = focusBtn.dataset.focusId;
+      if (!fid || fid === state.focusId) return;
+      state.focusId = fid;
+      if (!state.displayAll) {
+        state.branchTargetId = "";
+        branchOnlyToggle.checked = false;
+        state.branchOnly = false;
+      }
+      await refreshGraph();
+    });
+  }
+
+  const editBtn = personCard.querySelector(".edit-toggle-btn");
+  if (editBtn) {
+    editBtn.addEventListener("click", () => {
+      const isOpen = !personAdminPanel.classList.contains("hidden");
+      showPersonPanel(!isOpen);
+    });
+  }
+
+  rightSidebarTitle.textContent = nameLine || person.id || "Person";
+}
+
+function renderMarriageCard(payload) {
+  if (!couplePanel) return;
+  const event = payload.event || {};
+  const groom = (payload.groom || {}).person || {};
+  const bride = (payload.bride || {}).person || {};
+
+  const spouseCard = (personData) => {
+    if (!personData.id) return `<div class="couple-person-card couple-person-empty"><p class="hint">Unknown</p></div>`;
+    const nameLine = [personData.name, personData.birth_surname || personData.married_surname].filter(Boolean).join(" ");
+    const birth = [personData.birth_date ? personData.birth_date.slice(0, 4) : "", personData.birth_place].filter(Boolean).join(" · ");
+    const death = [personData.death_date ? personData.death_date.slice(0, 4) : "", personData.death_place].filter(Boolean).join(" · ");
+    return `
+      <div class="couple-person-card">
+        <h4>${escapeHtml(nameLine || personData.id)}</h4>
+        ${birth ? `<p class="couple-person-dates">b. ${escapeHtml(birth)}</p>` : ""}
+        ${death ? `<p class="couple-person-dates">d. ${escapeHtml(death)}</p>` : ""}
+        <button type="button" class="focus-person-btn" data-focus-id="${escapeHtml(personData.id)}">Focus</button>
+      </div>`;
+  };
+
+  const datePlace = [event.date, event.place].filter(Boolean).join(" · ");
+  couplePanel.innerHTML = `
+    <div class="couple-panel-head">
+      <h3>Marriage${datePlace ? " · " + escapeHtml(datePlace) : ""}</h3>
+      <button type="button" class="icon-btn close-couple-btn" title="Close">&times;</button>
+    </div>
+    ${event.confidence ? `<p class="hint">${escapeHtml(event.confidence)}${event.provenance ? " · " + escapeHtml(event.provenance) : ""}</p>` : ""}
+    <div class="couple-persons">
+      ${spouseCard(groom)}
+      <span class="couple-divider">&loz;</span>
+      ${spouseCard(bride)}
+    </div>
+  `;
+
+  couplePanel.querySelectorAll(".focus-person-btn[data-focus-id]").forEach((btn) => {
+    btn.addEventListener("click", async () => {
+      const fid = btn.dataset.focusId;
+      if (!fid) return;
+      state.focusId = fid;
+      state.selectedPersonId = fid;
+      clearCoupleHighlight();
+      if (!state.displayAll) {
+        state.branchTargetId = "";
+        branchOnlyToggle.checked = false;
+        state.branchOnly = false;
+      }
+      showPersonPanel(false);
+      await refreshGraph();
+    });
+  });
+
+  const closeBtn = couplePanel.querySelector(".close-couple-btn");
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      clearCoupleHighlight();
+      showPersonPanel(false);
+      const cardName = personCard.querySelector(".person-card-name");
+      rightSidebarTitle.textContent = cardName ? cardName.textContent : "Family tree";
+    });
+  }
+
+  rightSidebarTitle.textContent = "Marriage";
+}
+
 function renderSources(events) {
   sourcesList.innerHTML = "";
   if (!events.length) {
@@ -313,6 +543,43 @@ function renderSources(events) {
             ${imageUrl ? `<a class="link-chip" href="${imageUrl}" target="_blank" rel="noreferrer">${isImage ? "Open image" : "Open local file"}</a>` : ""}
           </div>
           ${imageUrl && isImage ? `<img class="image-thumb" src="${imageUrl}" alt="${escapeHtml(source.title || source.id)}" />` : ""}
+          <form class="source-edit-form" data-source-id="${escapeHtml(source.id || "")}">
+            <div class="detail-form-grid">
+              <label>
+                <span>Source ID</span>
+                <input type="text" value="${escapeHtml(source.id || "")}" readonly />
+              </label>
+              <label>
+                <span>Title</span>
+                <input name="title" type="text" value="${escapeHtml(source.title || "")}" />
+              </label>
+              <label>
+                <span>Type</span>
+                <input name="type" type="text" value="${escapeHtml(source.type || "")}" />
+              </label>
+              <label>
+                <span>Date</span>
+                <input name="date" type="text" value="${escapeHtml(source.date || "")}" />
+              </label>
+              <label class="full">
+                <span>Website link</span>
+                <input name="archive_url" type="url" value="${escapeHtml(source.archive_url || "")}" />
+              </label>
+              <label>
+                <span>Priority</span>
+                <select name="priority">
+                  ${optionMarkup([
+                    { id: "primary", label: "primary" },
+                    { id: "secondary", label: "secondary" },
+                  ], source.priority || "primary")}
+                </select>
+              </label>
+            </div>
+            <div class="inline-actions">
+              <button type="submit">Save source</button>
+              <span class="hint source-edit-status"></span>
+            </div>
+          </form>
         </div>
       `);
     }
@@ -393,7 +660,9 @@ function setViewMode() {
   const linkedMode = state.linkedEventsView;
   linkedEventsPanel.classList.toggle("hidden", !linkedMode);
   cyContainer.classList.toggle("hidden", linkedMode);
-  personAdminPanel.classList.toggle("hidden", linkedMode);
+  if (personCard) personCard.classList.toggle("hidden", linkedMode);
+  if (couplePanel) couplePanel.classList.add("hidden");
+  personAdminPanel.classList.add("hidden");  // always hidden; only revealed by Edit button
   eventInspectorPanel.classList.toggle("hidden", !linkedMode);
   for (const section of personViewOnlySections) {
     section.classList.toggle("hidden", linkedMode);
@@ -401,7 +670,7 @@ function setViewMode() {
   if (linkedMode) {
     reviewPanel.classList.add("hidden");
   }
-  rightSidebarTitle.textContent = linkedMode ? "Event details" : "Admin";
+  rightSidebarTitle.textContent = linkedMode ? "Event details" : "Family tree";
   treeTitle.textContent = linkedMode ? "Linked events review" : "Family tree";
 }
 
@@ -733,24 +1002,56 @@ function buildCy(elements) {
         },
         { selector: 'node[kind = "person"][selected = "true"]', style: { "background-color": "#fff2cc", "border-color": "#b7791f", "border-width": 3 } },
         { selector: 'node[path = "true"]', style: { "border-color": "#c05621", "border-width": 4, "background-color": "#fff0df" } },
-        { selector: 'node[kind = "family"]', style: { shape: "diamond", width: 18, height: 18, "background-color": "#c9b392", "border-width": 1, "border-color": "#987f5e", label: "data(label)", "font-size": 9, "text-valign": "bottom", "text-margin-y": 11, color: "#6b5a43" } },
-        { selector: 'node[kind = "family"][path = "true"]', style: { "background-color": "#dd6b20", "border-color": "#9c4221", width: 22, height: 22 } },
+        { selector: 'node[kind = "family"]', style: { shape: "diamond", width: 26, height: 26, "background-color": "#c9b392", "border-width": 1, "border-color": "#987f5e", label: "data(label)", "font-size": 9, "text-valign": "bottom", "text-margin-y": 13, color: "#6b5a43", cursor: "pointer" } },
+        { selector: 'node[kind = "family"][path = "true"]', style: { "background-color": "#dd6b20", "border-color": "#9c4221", width: 30, height: 30 } },
         { selector: 'edge[kind = "order"]', style: { width: 0, opacity: 0, "events": "no" } },
         { selector: "edge", style: { width: 2, "line-color": "#a08f73", "curve-style": "taxi", "taxi-direction": "vertical", "taxi-turn": 28, "taxi-turn-min-distance": 14 } },
-        { selector: 'edge[path = "true"]', style: { width: 4, "line-color": "#dd6b20" } }
+        { selector: 'edge[path = "true"]', style: { width: 4, "line-color": "#dd6b20" } },
+        { selector: 'node[kind = "person"].cy-selected', style: { "background-color": "#fff2cc", "border-color": "#b7791f", "border-width": 3 } },
+        { selector: 'node[kind = "person"].cy-couple', style: { "background-color": "#dbeeff", "border-color": "#4a7fa5", "border-width": 3 } },
+        { selector: 'node[kind = "family"].cy-couple-family', style: { "background-color": "#4a7fa5", "border-color": "#2d5c7a", width: 28, height: 28 } }
       ],
       layout: dagreLayoutOptions()
     });
-    state.cy.on("tap", 'node[kind = "person"]', async (event) => {
+    let tapDebounceTimer = null;
+    state.cy.on("tap", 'node[kind = "person"]', (event) => {
+      const personId = event.target.data("person_id");
+      if (!personId) return;
+      clearTimeout(tapDebounceTimer);
+      tapDebounceTimer = setTimeout(async () => {
+        tapDebounceTimer = null;
+        state.selectedPersonId = personId;
+        markSelected(personId);
+        clearCoupleHighlight();
+        await loadPersonCard(personId);
+      }, 260);
+    });
+    state.cy.on("dbltap", 'node[kind = "person"]', async (event) => {
+      clearTimeout(tapDebounceTimer);
+      tapDebounceTimer = null;
       const personId = event.target.data("person_id");
       if (!personId || personId === state.focusId) return;
       state.focusId = personId;
+      state.selectedPersonId = personId;
       if (!state.displayAll) {
         state.branchTargetId = "";
         branchOnlyToggle.checked = false;
         state.branchOnly = false;
       }
       await refreshGraph();
+    });
+    state.cy.on("tap", 'node[kind = "family"]', async (event) => {
+      const eventId = event.target.data("event_id");
+      if (!eventId) return;
+      state.coupleEventId = eventId;
+      const { payload } = await fetchJson(`/api/couple/${encodeURIComponent(eventId)}`);
+      state.couplePersonIds = [
+        (payload.groom || {}).person ? payload.groom.person.id : null,
+        (payload.bride || {}).person ? payload.bride.person.id : null,
+      ].filter(Boolean);
+      applyCoupleHighlight();
+      renderMarriageCard(payload);
+      showCouplePanel();
     });
     fitGraphToState();
   } else {
@@ -781,8 +1082,13 @@ async function refreshGraph() {
     ? "Display all shows the full connected structure."
     : (payload.branch_found ? "" : state.branchTargetId ? "Selected branch target is outside the current branch window." : "");
 
+  clearCoupleHighlight();
   buildCy(elements);
   renderDetails(payload.focus_person);
+  renderPersonCard(payload.focus_person);
+  state.selectedPersonId = state.focusId;
+  markSelected(state.focusId);
+  showPersonPanel(false);
   focusSelect.value = state.focusId;
 }
 
@@ -892,6 +1198,30 @@ leftToggle.addEventListener("click", () => {
 rightToggle.addEventListener("click", () => toggleSidebar(rightSidebar, true));
 leftExpand.addEventListener("click", () => toggleSidebar(leftSidebar, false));
 rightExpand.addEventListener("click", () => toggleSidebar(rightSidebar, false));
+if (helpBtn && helpModal) {
+  helpBtn.addEventListener("click", () => helpModal.classList.remove("hidden"));
+  helpCloseBtn?.addEventListener("click", () => helpModal.classList.add("hidden"));
+  helpModal.addEventListener("click", (e) => { if (e.target === helpModal) helpModal.classList.add("hidden"); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") helpModal.classList.add("hidden"); });
+}
+
+if (closeEditBtn) {
+  closeEditBtn.addEventListener("click", () => showPersonPanel(false));
+}
+
+if (fullTreeBtn) {
+  fullTreeBtn.addEventListener("click", async () => {
+    state.displayAll = !state.displayAll;
+    displayAllToggle.checked = state.displayAll;
+    fullTreeBtn.classList.toggle("active", state.displayAll);
+    if (state.displayAll) {
+      state.branchTargetId = "";
+      branchOnlyToggle.checked = false;
+      state.branchOnly = false;
+    }
+    await refreshGraph();
+  });
+}
 leftResizer.addEventListener("pointerdown", () => beginResize("left"));
 rightResizer.addEventListener("pointerdown", () => beginResize("right"));
 window.addEventListener("resize", () => {
@@ -932,6 +1262,29 @@ sourceForm.addEventListener("submit", async (event) => {
   sourceStatus.textContent = "Source added.";
   sourceForm.reset();
   updateSourceFormHint();
+  await refreshGraph();
+});
+
+sourcesList.addEventListener("submit", async (event) => {
+  const form = event.target.closest(".source-edit-form");
+  if (!form) return;
+  event.preventDefault();
+  const sourceId = form.dataset.sourceId;
+  if (!sourceId) return;
+  const status = form.querySelector(".source-edit-status");
+  status.textContent = "Saving...";
+  const formData = new FormData(form);
+  const payload = Object.fromEntries(formData.entries());
+  const { response, payload: savePayload } = await fetchJson(`/api/source/${encodeURIComponent(sourceId)}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+  if (!response.ok) {
+    status.textContent = savePayload.error || "Save failed.";
+    return;
+  }
+  status.textContent = "Saved.";
   await refreshGraph();
 });
 
