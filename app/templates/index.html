@@ -7,32 +7,42 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
   </head>
   <body>
+    <header class="app-header">
+      <div class="brand-block">
+        <span class="brand-mark" aria-hidden="true">&#9671;</span>
+        <div>
+          <strong>Family Archive</strong>
+          <span>Genealogy workspace</span>
+        </div>
+      </div>
+      <nav class="mode-nav" aria-label="Workspace">
+        <button id="exploreModeBtn" class="mode-button active" type="button" aria-pressed="true">Explore</button>
+        <button id="reviewModeBtn" class="mode-button" type="button" aria-pressed="false">
+          Review <span id="reviewModeCount" class="mode-count"></span>
+        </button>
+        <button id="sourcesModeBtn" class="mode-button" type="button" aria-pressed="false">Sources</button>
+      </nav>
+      <label class="global-search">
+        <span class="sr-only">Search people, places, or IDs</span>
+        <input id="searchInput" type="search" placeholder="Search people, places, or IDs" autocomplete="off" />
+      </label>
+      <button id="helpBtn" class="toolbar-btn header-help" type="button" aria-label="Open help" title="Help">?</button>
+    </header>
     <div id="workspace" class="workspace">
       <aside id="leftSidebar" class="sidebar left-sidebar">
         <div class="sidebar-head">
-          <h1>Navigate</h1>
-          <button id="leftToggle" class="icon-toggle" type="button" title="Collapse left sidebar">◀</button>
+          <h1>Navigator</h1>
+          <button id="leftToggle" class="icon-toggle" type="button" aria-label="Close navigator" title="Close navigator">◀</button>
         </div>
-        <label class="field">
-          <span>Search</span>
-          <input id="searchInput" type="text" placeholder="Name, place, ID" />
-        </label>
-        <label class="toggle">
-          <input id="linkedEventsViewToggle" type="checkbox" />
-          <span>Linked events review</span>
-        </label>
+        <input id="linkedEventsViewToggle" class="hidden" type="checkbox" tabindex="-1" aria-hidden="true" />
+        <input id="reviewOnlyToggle" class="hidden" type="checkbox" tabindex="-1" aria-hidden="true" />
         <div class="person-view-only">
         <label class="toggle">
           <input id="displayAllToggle" type="checkbox" />
-          <span>Display all</span>
+          <span>Overview map</span>
         </label>
-        <label class="toggle">
-          <input id="reviewOnlyToggle" type="checkbox" />
-          <span>Review queue only</span>
-        </label>
-        <p id="reviewQueueHint" class="hint"></p>
         <label class="field">
-          <span>Focus person</span>
+          <span>Tree centre</span>
           <select id="focusSelect"></select>
         </label>
         <label class="field">
@@ -45,19 +55,37 @@
         </label>
         <p id="branchHint" class="hint"></p>
         </div>
+        <section class="navigator-help">
+          <strong id="navigatorHelpTitle">Explore the family</strong>
+          <p id="reviewQueueHint" class="hint">Select a person to inspect them. Re-centering the tree is always a separate action.</p>
+        </section>
       </aside>
 
-      <div id="leftResizer" class="sidebar-resizer left-resizer" title="Resize left sidebar"></div>
+      <div id="leftResizer" class="sidebar-resizer left-resizer" role="separator" aria-orientation="vertical" aria-label="Resize navigator" tabindex="0" title="Resize navigator"></div>
 
       <main class="canvas-area">
         <div class="canvas-toolbar">
-          <button id="leftExpand" class="edge-toggle left-expand hidden" type="button" title="Open left sidebar">☰</button>
-          <h2 id="treeTitle">Family tree</h2>
-          <button id="fullTreeBtn" class="toolbar-btn" type="button" title="Toggle full connected tree">Full tree</button>
-          <button id="helpBtn" class="toolbar-btn" type="button" title="Help">?</button>
-          <button id="rightExpand" class="edge-toggle right-expand hidden" type="button" title="Open right sidebar">☰</button>
+          <button id="leftExpand" class="edge-toggle left-expand hidden" type="button" aria-label="Open navigator" title="Open navigator">☰</button>
+          <div class="canvas-context">
+            <span id="treeTitle" class="eyebrow">Family tree</span>
+            <strong id="focusContextName">Loading…</strong>
+          </div>
+          <div id="graphControls" class="graph-controls" aria-label="Tree controls">
+            <button id="zoomOutBtn" class="toolbar-btn" type="button" aria-label="Zoom out" title="Zoom out">−</button>
+            <button id="zoomInBtn" class="toolbar-btn" type="button" aria-label="Zoom in" title="Zoom in">+</button>
+            <button id="fitGraphBtn" class="toolbar-btn" type="button">Fit</button>
+            <button id="fullTreeBtn" class="toolbar-btn" type="button" title="Toggle overview map">Overview</button>
+          </div>
+          <button id="rightExpand" class="edge-toggle right-expand hidden" type="button" aria-label="Open details" title="Open details">Details</button>
         </div>
-        <div id="cy"></div>
+        <div id="cy" role="img" aria-label="Interactive family tree. Use the navigator for keyboard-accessible person selection."></div>
+        <section id="reviewQueuePanel" class="linked-events-panel hidden" aria-labelledby="reviewQueueHeading">
+          <div class="linked-events-head">
+            <h3 id="reviewQueueHeading">People awaiting review</h3>
+            <p id="reviewPeopleCount" class="hint"></p>
+          </div>
+          <div id="reviewPeopleList" class="linked-events-list"></div>
+        </section>
         <section id="linkedEventsPanel" class="linked-events-panel hidden">
           <div class="linked-events-head">
             <h3>Linked Events</h3>
@@ -67,12 +95,12 @@
         </section>
       </main>
 
-      <div id="rightResizer" class="sidebar-resizer right-resizer" title="Resize right sidebar"></div>
+      <div id="rightResizer" class="sidebar-resizer right-resizer" role="separator" aria-orientation="vertical" aria-label="Resize details" tabindex="0" title="Resize details"></div>
 
       <aside id="rightSidebar" class="sidebar right-sidebar">
         <div class="sidebar-head">
           <h2 id="rightSidebarTitle">Admin</h2>
-          <button id="rightToggle" class="icon-toggle" type="button" title="Collapse right sidebar">▶</button>
+          <button id="rightToggle" class="icon-toggle" type="button" aria-label="Close details" title="Close details">▶</button>
         </div>
 
         <section id="personCard" class="admin-card">
@@ -122,7 +150,7 @@
           </div>
           <div class="actions">
             <button type="submit">Save person</button>
-            <span id="saveStatus" class="hint"></span>
+            <span id="saveStatus" class="hint" role="status" aria-live="polite"></span>
           </div>
         </form>
 
@@ -151,7 +179,7 @@
           <div class="actions actions-stack">
             <button id="promoteButton" type="button">Mark reviewed</button>
             <button id="mergeButton" class="secondary-button" type="button">Merge into selected target</button>
-            <span id="reviewStatus" class="hint"></span>
+            <span id="reviewStatus" class="hint" role="status" aria-live="polite"></span>
           </div>
         </section>
 
@@ -171,9 +199,9 @@
               </select>
             </label>
             <label class="full"><span>Attach local image</span><input name="image" type="file" accept="image/*" /></label>
-            <label><span>New event date</span><input name="event_date" type="text" placeholder="1854-09-15" /></label>
-            <label><span>New event place</span><input name="event_place" type="text" placeholder="Rudslavice" /></label>
-            <label><span>New event confidence</span>
+            <label class="new-event-field"><span>New event date</span><input name="event_date" type="text" placeholder="1854-09-15" /></label>
+            <label class="new-event-field"><span>New event place</span><input name="event_place" type="text" placeholder="Rudslavice" /></label>
+            <label class="new-event-field"><span>New event confidence</span>
               <select name="event_confidence">
                 <option value="confirmed">confirmed</option>
                 <option value="probable">probable</option>
@@ -183,7 +211,7 @@
           </div>
           <div class="actions">
             <button type="submit">Add source</button>
-            <span id="sourceStatus" class="hint"></span>
+            <span id="sourceStatus" class="hint" role="status" aria-live="polite"></span>
           </div>
           <div class="section-divider"></div>
           <h3>Current Event Links</h3>
@@ -199,11 +227,12 @@
         </section>
       </aside>
     </div>
-    <div id="helpModal" class="help-modal hidden" role="dialog" aria-modal="true">
+    <button id="drawerBackdrop" class="drawer-backdrop hidden" type="button" aria-label="Close open panel"></button>
+    <div id="helpModal" class="help-modal hidden" role="dialog" aria-modal="true" aria-labelledby="helpModalTitle">
       <div class="help-modal-card">
         <div class="help-modal-head">
-          <h2>How to use the tree</h2>
-          <button id="helpCloseBtn" type="button" class="icon-btn" title="Close">&times;</button>
+          <h2 id="helpModalTitle">How to use the tree</h2>
+          <button id="helpCloseBtn" type="button" class="icon-btn" aria-label="Close help" title="Close">&times;</button>
         </div>
         <div class="help-modal-body">
           <section>

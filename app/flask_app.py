@@ -32,6 +32,29 @@ app = Flask(__name__, template_folder=str(APP_DIR / "templates"), static_folder=
 MEDIA_UPLOADS_DIR = DATA_DIR / "media" / "uploads"
 
 
+def preferred_focus_id(db: dict[str, Any], people: list[dict[str, str]]) -> str:
+    """Choose a useful landing person without letting blank names sort first."""
+    configured = str(db.get("settings", {}).get("home_person_id", "")).strip()
+    valid_ids = {person.get("id", "") for person in people}
+    if configured in valid_ids:
+        return configured
+    source_order_people = db.get("people", [])
+    preferred = next(
+        (
+            person
+            for person in source_order_people
+            if person.get("name")
+            and person.get("confidence") == "confirmed"
+            and person.get("provenance") in {"primary", "manual"}
+        ),
+        None,
+    )
+    if preferred:
+        return preferred.get("id", "")
+    named = next((person for person in people if person.get("name")), None)
+    return named.get("id", "") if named else (people[0].get("id", "") if people else "")
+
+
 @app.get("/")
 def index() -> str:
     return render_template("index.html")
@@ -44,7 +67,7 @@ def media(filename: str):
 
 @app.get("/api/bootstrap")
 def api_bootstrap():
-    _, people, events, _, people_by_id, _, _, sources_by_id = load_indexes()
+    db, people, events, _, people_by_id, _, _, sources_by_id = load_indexes()
     review_total = sum(1 for person in people if person_needs_review(person))
     linked_events = linked_event_summaries(events, people_by_id, sources_by_id)
     return jsonify(
@@ -61,6 +84,8 @@ def api_bootstrap():
                             person.get("birth_surname", ""),
                             person.get("married_surname", ""),
                             display_name(person, people_by_id),
+                            person.get("birth_place", ""),
+                            person.get("death_place", ""),
                         ]
                         if bit
                     ),
@@ -70,7 +95,7 @@ def api_bootstrap():
                 }
                 for person in people
             ],
-            "default_focus_id": people[0]["id"] if people else "",
+            "default_focus_id": preferred_focus_id(db, people),
             "review_total": review_total,
             "linked_events": linked_events,
             "default_event_id": linked_events[0]["id"] if linked_events else "",
@@ -80,8 +105,8 @@ def api_bootstrap():
 
 @app.get("/api/graph")
 def api_graph():
-    _, people, events, _, people_by_id, children_by_parent, marriages, sources_by_id = load_indexes()
-    focus_id = request.args.get("focus_id", people[0]["id"] if people else "")
+    db, people, events, _, people_by_id, children_by_parent, marriages, sources_by_id = load_indexes()
+    focus_id = request.args.get("focus_id", preferred_focus_id(db, people))
     branch_target_id = request.args.get("branch_target_id", "")
     branch_only = request.args.get("branch_only", "false").lower() == "true"
     display_all = request.args.get("display_all", "false").lower() == "true"

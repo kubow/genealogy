@@ -6,8 +6,10 @@ from typing import Any
 
 from scripts.genealogy_builder import find_person_candidates, load_db
 
-DEFAULT_ANCESTOR_DEPTH = 4
-DEFAULT_DESCENDANT_DEPTH = 4
+# Keep the initial tree legible. Deeper descendant paths remain available through
+# the branch selector, and the overview mode still exposes the connected graph.
+DEFAULT_ANCESTOR_DEPTH = 2
+DEFAULT_DESCENDANT_DEPTH = 1
 REVIEW_PROVENANCES = {"myheritage"}
 REVIEW_CONFIDENCES = {"possible", "open"}
 

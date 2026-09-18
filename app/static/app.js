@@ -2,6 +2,8 @@ const SIDEBAR_LIMITS = {
   left: { min: 220, max: 620, default: 320 },
   right: { min: 280, max: 720, default: 380 },
 };
+const requestedMode = new URLSearchParams(window.location.search).get("mode");
+const initialMode = ["explore", "review", "sources"].includes(requestedMode) ? requestedMode : "explore";
 
 const state = {
   people: [],
@@ -14,8 +16,11 @@ const state = {
   branchTargetId: "",
   branchOnly: false,
   displayAll: false,
-  reviewOnly: false,
-  linkedEventsView: false,
+  reviewOnly: initialMode === "review",
+  linkedEventsView: initialMode === "sources",
+  mode: initialMode,
+  editPanelOpen: false,
+  personFormDirty: false,
   reviewTotal: 0,
   leftSidebarWidth: SIDEBAR_LIMITS.left.default,
   rightSidebarWidth: SIDEBAR_LIMITS.right.default,
@@ -74,6 +79,34 @@ const eventInspectorPanel = document.getElementById("eventInspectorPanel");
 const eventInspectorHeading = document.getElementById("eventInspectorHeading");
 const eventInspectorContent = document.getElementById("eventInspectorContent");
 const personViewOnlySections = Array.from(document.querySelectorAll(".person-view-only"));
+const exploreModeBtn = document.getElementById("exploreModeBtn");
+const reviewModeBtn = document.getElementById("reviewModeBtn");
+const sourcesModeBtn = document.getElementById("sourcesModeBtn");
+const reviewModeCount = document.getElementById("reviewModeCount");
+const reviewQueuePanel = document.getElementById("reviewQueuePanel");
+const reviewPeopleList = document.getElementById("reviewPeopleList");
+const reviewPeopleCount = document.getElementById("reviewPeopleCount");
+const focusContextName = document.getElementById("focusContextName");
+const graphControls = document.getElementById("graphControls");
+const zoomOutBtn = document.getElementById("zoomOutBtn");
+const zoomInBtn = document.getElementById("zoomInBtn");
+const fitGraphBtn = document.getElementById("fitGraphBtn");
+const drawerBackdrop = document.getElementById("drawerBackdrop");
+const navigatorHelpTitle = document.getElementById("navigatorHelpTitle");
+
+function isMobileLayout() {
+  return window.innerWidth <= 980;
+}
+
+function canDiscardPersonEdits() {
+  if (!state.personFormDirty) return true;
+  return window.confirm("Discard your unsaved changes to this person?");
+}
+
+function setPersonFormClean() {
+  state.personFormDirty = false;
+  personForm.classList.remove("has-unsaved-changes");
+}
 
 function mediaUrl(path) {
   if (!path) return "";
@@ -87,10 +120,18 @@ async function fetchJson(url, options) {
 }
 
 async function refreshAfterMutation({ preserveFocus = true, eventId = state.selectedEventId } = {}) {
+  const editWasOpen = state.editPanelOpen;
+  const prevSelectedId = state.selectedPersonId;
   await bootstrap(preserveFocus);
   if (state.linkedEventsView) {
     await loadEventDetails(eventId);
+    return;
   }
+  // After mutation, restore the person card that was being viewed/edited
+  if (prevSelectedId && prevSelectedId !== state.focusId) {
+    await loadPersonCard(prevSelectedId);
+  }
+  if (editWasOpen) showPersonPanel(true);
 }
 
 function escapeHtml(value) {
@@ -154,9 +195,9 @@ function visibleLinkedEvents() {
 function refreshFocusOptions() {
   const filtered = visiblePeople();
   setOptions(focusSelect, filtered, filtered.some((person) => person.id === state.focusId) ? state.focusId : (filtered[0]?.id || ""));
-  reviewQueueHint.textContent = state.reviewTotal
-    ? `${state.reviewTotal} people still need review.`
-    : "No imported people are currently marked for review.";
+  reviewQueueHint.textContent = state.mode === "review"
+    ? (state.reviewTotal ? `${state.reviewTotal} people still need review.` : "The review queue is clear.")
+    : "Select a person to inspect them. Re-centering the tree is always a separate action.";
   return filtered;
 }
 
@@ -206,29 +247,29 @@ function updateSidebarButtons() {
   rightExpand.classList.toggle("hidden", !rightSidebar.classList.contains("collapsed"));
   leftResizer.classList.toggle("hidden", leftSidebar.classList.contains("collapsed"));
   rightResizer.classList.toggle("hidden", rightSidebar.classList.contains("collapsed"));
+  const drawerOpen = isMobileLayout()
+    && (!leftSidebar.classList.contains("collapsed") || !rightSidebar.classList.contains("collapsed"));
+  drawerBackdrop.classList.toggle("hidden", !drawerOpen);
 }
 
 function toggleSidebar(sidebar, collapsed) {
-  if (!collapsed && window.innerWidth <= 980) {
+  if (!collapsed && isMobileLayout()) {
     const otherSidebar = sidebar === leftSidebar ? rightSidebar : leftSidebar;
     otherSidebar.classList.add("collapsed");
   }
   sidebar.classList.toggle("collapsed", collapsed);
   if (sidebar === leftSidebar) {
     workspace.style.setProperty("--left-sidebar-width", collapsed ? "0px" : `${state.leftSidebarWidth || SIDEBAR_LIMITS.left.default}px`);
+    if (collapsed) workspace.style.setProperty("--left-resizer-width", "0px");
+    else workspace.style.removeProperty("--left-resizer-width");
   }
   if (sidebar === rightSidebar) {
     workspace.style.setProperty("--right-sidebar-width", collapsed ? "0px" : `${state.rightSidebarWidth || SIDEBAR_LIMITS.right.default}px`);
+    if (collapsed) workspace.style.setProperty("--right-resizer-width", "0px");
+    else workspace.style.removeProperty("--right-resizer-width");
   }
   updateSidebarButtons();
   fitGraphToState();
-  if (collapsed && sidebar === leftSidebar) {
-    if (rightSidebar.classList.contains("collapsed")) {
-      toggleSidebar(rightSidebar, false);
-    } else if (window.innerWidth <= 980) {
-      toggleSidebar(rightSidebar, false);
-    }
-  }
 }
 
 function clamp(value, min, max) {
@@ -274,14 +315,23 @@ function syncWorkspaceWidths() {
   if (window.innerWidth <= 980) {
     workspace.style.removeProperty("--left-sidebar-width");
     workspace.style.removeProperty("--right-sidebar-width");
+    workspace.style.removeProperty("--left-resizer-width");
+    workspace.style.removeProperty("--right-resizer-width");
     return;
   }
-  workspace.style.setProperty("--left-sidebar-width", leftSidebar.classList.contains("collapsed") ? "0px" : `${state.leftSidebarWidth}px`);
-  workspace.style.setProperty("--right-sidebar-width", rightSidebar.classList.contains("collapsed") ? "0px" : `${state.rightSidebarWidth}px`);
+  const leftCollapsed = leftSidebar.classList.contains("collapsed");
+  const rightCollapsed = rightSidebar.classList.contains("collapsed");
+  workspace.style.setProperty("--left-sidebar-width", leftCollapsed ? "0px" : `${state.leftSidebarWidth}px`);
+  workspace.style.setProperty("--right-sidebar-width", rightCollapsed ? "0px" : `${state.rightSidebarWidth}px`);
+  if (leftCollapsed) workspace.style.setProperty("--left-resizer-width", "0px");
+  else workspace.style.removeProperty("--left-resizer-width");
+  if (rightCollapsed) workspace.style.setProperty("--right-resizer-width", "0px");
+  else workspace.style.removeProperty("--right-resizer-width");
 }
 
 function updateSourceFormHint() {
   const createMode = (sourceForm.elements.event_id.value || "").startsWith("__new_");
+  sourceForm.querySelectorAll(".new-event-field").forEach((field) => field.classList.toggle("hidden", !createMode));
   sourceStatus.textContent = createMode ? "Choose date/place below to create the missing event and attach the source." : "";
 }
 
@@ -327,7 +377,9 @@ function clearCoupleHighlight() {
 function showPersonPanel(showEdit = false) {
   personCard.classList.remove("hidden");
   couplePanel.classList.add("hidden");
-  personAdminPanel.classList.toggle("hidden", !showEdit);
+  const reviewMode = state.mode === "review";
+  personAdminPanel.classList.toggle("hidden", !showEdit && !reviewMode);
+  state.editPanelOpen = reviewMode ? false : showEdit;
   const editBtn = personCard.querySelector(".edit-toggle-btn");
   if (editBtn) editBtn.classList.toggle("active", showEdit);
 }
@@ -358,20 +410,20 @@ function renderPersonCard(payload) {
   const nameLine = [person.name, surname].filter(Boolean).join(" ");
 
   const fatherChip = relations.father
-    ? `<span class="rel-chip" data-person-id="${escapeHtml(relations.father.id)}">${escapeHtml(relations.father.label)}</span>`
+    ? `<button type="button" class="rel-chip" data-person-id="${escapeHtml(relations.father.id)}">${escapeHtml(relations.father.label)}</button>`
     : `<span class="rel-chip rel-unknown">Unknown</span>`;
   const motherChip = relations.mother
-    ? `<span class="rel-chip" data-person-id="${escapeHtml(relations.mother.id)}">${escapeHtml(relations.mother.label)}</span>`
+    ? `<button type="button" class="rel-chip" data-person-id="${escapeHtml(relations.mother.id)}">${escapeHtml(relations.mother.label)}</button>`
     : `<span class="rel-chip rel-unknown">Unknown</span>`;
 
   const partnerChips = (relations.partners || []).map((p) => {
     const label = p.marriage_date ? `${p.label} · ${p.marriage_date.slice(0, 4)}` : p.label;
     const coupleAttr = p.marriage_event_id ? ` data-couple-event-id="${escapeHtml(p.marriage_event_id)}"` : "";
-    return `<span class="rel-chip rel-spouse"${coupleAttr} data-person-id="${escapeHtml(p.id)}">${escapeHtml(label)}</span>`;
+    return `<button type="button" class="rel-chip rel-spouse"${coupleAttr} data-person-id="${escapeHtml(p.id)}">${escapeHtml(label)}</button>`;
   });
 
   const childItems = (relations.children || []).map((c) =>
-    `<span class="rel-chip" data-person-id="${escapeHtml(c.id)}">${escapeHtml(c.label)}</span>` +
+    `<button type="button" class="rel-chip" data-person-id="${escapeHtml(c.id)}">${escapeHtml(c.label)}</button>` +
     `<button type="button" class="branch-btn" data-branch-id="${escapeHtml(c.id)}" title="Trace branch to ${escapeHtml(c.label)}">branch</button>`
   );
 
@@ -396,6 +448,7 @@ function renderPersonCard(payload) {
 
   personCard.querySelectorAll(".rel-chip[data-person-id]").forEach((chip) => {
     chip.addEventListener("click", async () => {
+      if (!canDiscardPersonEdits()) return;
       const coupleEventId = chip.dataset.coupleEventId;
       const pid = chip.dataset.personId;
       if (coupleEventId) {
@@ -412,11 +465,13 @@ function renderPersonCard(payload) {
       markSelected(pid);
       clearCoupleHighlight();
       await loadPersonCard(pid);
+      if (isMobileLayout()) toggleSidebar(rightSidebar, false);
     });
   });
 
   personCard.querySelectorAll(".branch-btn[data-branch-id]").forEach((btn) => {
     btn.addEventListener("click", async () => {
+      if (!canDiscardPersonEdits()) return;
       state.branchTargetId = btn.dataset.branchId;
       state.branchOnly = false;
       branchOnlyToggle.checked = false;
@@ -428,6 +483,7 @@ function renderPersonCard(payload) {
   const focusBtn = personCard.querySelector(".focus-person-btn");
   if (focusBtn) {
     focusBtn.addEventListener("click", async () => {
+      if (!canDiscardPersonEdits()) return;
       const fid = focusBtn.dataset.focusId;
       if (!fid || fid === state.focusId) return;
       state.focusId = fid;
@@ -449,6 +505,7 @@ function renderPersonCard(payload) {
   }
 
   rightSidebarTitle.textContent = nameLine || person.id || "Person";
+  if (state.mode === "review") focusContextName.textContent = nameLine || person.id || "Review queue";
 }
 
 function renderMarriageCard(payload) {
@@ -604,7 +661,6 @@ function renderSources(events) {
 
 function renderDetails(payload) {
   const person = payload.person || {};
-  treeTitle.textContent = person.name || "Family tree";
   personForm.dataset.personId = person.id || "";
   sourceForm.dataset.personId = person.id || "";
   personIdField.value = person.id || "";
@@ -618,6 +674,7 @@ function renderDetails(payload) {
   updateSourceFormHint();
   renderSources(payload.events || []);
   renderReview(payload.review || {}, person);
+  setPersonFormClean();
 }
 
 function renderReview(review, person) {
@@ -657,21 +714,78 @@ function renderReview(review, person) {
 }
 
 function setViewMode() {
-  const linkedMode = state.linkedEventsView;
+  const linkedMode = state.mode === "sources";
+  const reviewMode = state.mode === "review";
+  state.linkedEventsView = linkedMode;
+  state.reviewOnly = reviewMode;
+  workspace.dataset.mode = state.mode;
+  linkedEventsViewToggle.checked = linkedMode;
+  reviewOnlyToggle.checked = reviewMode;
   linkedEventsPanel.classList.toggle("hidden", !linkedMode);
-  cyContainer.classList.toggle("hidden", linkedMode);
+  reviewQueuePanel.classList.toggle("hidden", !reviewMode);
+  cyContainer.classList.toggle("hidden", linkedMode || reviewMode);
+  graphControls.classList.toggle("hidden", linkedMode || reviewMode);
   if (personCard) personCard.classList.toggle("hidden", linkedMode);
   if (couplePanel) couplePanel.classList.add("hidden");
-  personAdminPanel.classList.add("hidden");  // always hidden; only revealed by Edit button
+  if (linkedMode) {
+    personAdminPanel.classList.add("hidden");
+    state.editPanelOpen = false;
+  } else if (reviewMode) {
+    personAdminPanel.classList.remove("hidden");
+    state.editPanelOpen = false;
+  } else {
+    personAdminPanel.classList.toggle("hidden", !state.editPanelOpen);
+  }
   eventInspectorPanel.classList.toggle("hidden", !linkedMode);
   for (const section of personViewOnlySections) {
-    section.classList.toggle("hidden", linkedMode);
+    section.classList.toggle("hidden", linkedMode || reviewMode);
   }
   if (linkedMode) {
     reviewPanel.classList.add("hidden");
   }
-  rightSidebarTitle.textContent = linkedMode ? "Event details" : "Family tree";
-  treeTitle.textContent = linkedMode ? "Linked events review" : "Family tree";
+  exploreModeBtn.classList.toggle("active", state.mode === "explore");
+  reviewModeBtn.classList.toggle("active", reviewMode);
+  sourcesModeBtn.classList.toggle("active", linkedMode);
+  for (const [button, active] of [
+    [exploreModeBtn, state.mode === "explore"],
+    [reviewModeBtn, reviewMode],
+    [sourcesModeBtn, linkedMode],
+  ]) button.setAttribute("aria-pressed", String(active));
+  rightSidebarTitle.textContent = linkedMode ? "Event details" : reviewMode ? "Review details" : "Person details";
+  treeTitle.textContent = linkedMode ? "Sources and events" : reviewMode ? "Review queue" : "Tree centred on";
+  if (linkedMode) focusContextName.textContent = `${state.linkedEvents.length} linked events`;
+  if (reviewMode) focusContextName.textContent = `${state.reviewTotal} people awaiting review`;
+  navigatorHelpTitle.textContent = linkedMode ? "Review evidence" : reviewMode ? "Resolve uncertain people" : "Explore the family";
+  reviewQueueHint.textContent = reviewMode
+    ? (state.reviewTotal ? `${state.reviewTotal} people still need review.` : "The review queue is clear.")
+    : linkedMode
+      ? "Search events by person, place, date, source, or ID."
+      : "Select a person to inspect them. Re-centering the tree is always a separate action.";
+}
+
+function renderReviewPeopleList() {
+  const people = visiblePeople();
+  reviewPeopleCount.textContent = people.length
+    ? `${people.length} ${people.length === 1 ? "person" : "people"} awaiting review.`
+    : "No people match the current search.";
+  reviewPeopleList.innerHTML = "";
+  for (const person of people) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `event-row${person.id === state.selectedPersonId ? " selected" : ""}`;
+    button.innerHTML = `
+      <div class="event-row-title">${escapeHtml(person.label)}</div>
+      <div class="event-row-meta">${escapeHtml([person.id, person.confidence, person.provenance].filter(Boolean).join(" · "))}</div>
+    `;
+    button.addEventListener("click", async () => {
+      if (!canDiscardPersonEdits()) return;
+      state.selectedPersonId = person.id;
+      renderReviewPeopleList();
+      await loadPersonCard(person.id);
+      if (isMobileLayout()) toggleSidebar(rightSidebar, false);
+    });
+    reviewPeopleList.appendChild(button);
+  }
 }
 
 function renderLinkedEventsList() {
@@ -706,6 +820,7 @@ function renderLinkedEventsList() {
 function renderEventDetails(payload) {
   const event = payload.event || {};
   eventInspectorHeading.textContent = event.event_type || event.id || "Event";
+  if (state.mode === "sources") focusContextName.textContent = event.label || event.event_type || event.id || "Event details";
   const people = payload.people || [];
   const sources = payload.sources || [];
   const rawJson = JSON.stringify(payload.raw_json || event, null, 2);
@@ -1020,16 +1135,19 @@ function buildCy(elements) {
       clearTimeout(tapDebounceTimer);
       tapDebounceTimer = setTimeout(async () => {
         tapDebounceTimer = null;
+        if (!canDiscardPersonEdits()) return;
         state.selectedPersonId = personId;
         markSelected(personId);
         clearCoupleHighlight();
         await loadPersonCard(personId);
+        if (isMobileLayout()) toggleSidebar(rightSidebar, false);
       }, 260);
     });
     state.cy.on("dbltap", 'node[kind = "person"]', async (event) => {
       clearTimeout(tapDebounceTimer);
       tapDebounceTimer = null;
       const personId = event.target.data("person_id");
+      if (!canDiscardPersonEdits()) return;
       if (!personId || personId === state.focusId) return;
       state.focusId = personId;
       state.selectedPersonId = personId;
@@ -1086,6 +1204,8 @@ async function refreshGraph() {
   buildCy(elements);
   renderDetails(payload.focus_person);
   renderPersonCard(payload.focus_person);
+  const focusPerson = payload.focus_person?.person || {};
+  focusContextName.textContent = focusPerson.name || focusPerson.id || "Family tree";
   state.selectedPersonId = state.focusId;
   markSelected(state.focusId);
   showPersonPanel(false);
@@ -1096,6 +1216,7 @@ async function bootstrap(preserveFocus = false) {
   const { payload } = await fetchJson("/api/bootstrap");
   state.people = payload.people;
   state.reviewTotal = payload.review_total || 0;
+  reviewModeCount.textContent = state.reviewTotal ? String(state.reviewTotal) : "";
   if (!preserveFocus || !state.people.some((person) => person.id === state.focusId)) {
     state.focusId = payload.default_focus_id;
   }
@@ -1114,6 +1235,15 @@ async function bootstrap(preserveFocus = false) {
     await loadEventDetails(state.selectedEventId);
     return;
   }
+  if (state.reviewOnly) {
+    const reviewPeople = visiblePeople();
+    if (!reviewPeople.some((person) => person.id === state.selectedPersonId)) {
+      state.selectedPersonId = reviewPeople[0]?.id || "";
+    }
+    renderReviewPeopleList();
+    if (state.selectedPersonId) await loadPersonCard(state.selectedPersonId);
+    return;
+  }
   await refreshGraph();
 }
 
@@ -1127,11 +1257,8 @@ searchInput.addEventListener("input", () => {
     renderLinkedEventsList();
     return;
   }
-  const filtered = refreshFocusOptions();
-  if (!filtered.some((person) => person.id === state.focusId) && filtered[0]) {
-    state.focusId = filtered[0].id;
-    refreshGraph();
-  }
+  refreshFocusOptions();
+  if (state.reviewOnly) renderReviewPeopleList();
 });
 
 reviewOnlyToggle.addEventListener("change", async () => {
@@ -1145,6 +1272,10 @@ reviewOnlyToggle.addEventListener("change", async () => {
 });
 
 focusSelect.addEventListener("change", async () => {
+  if (!canDiscardPersonEdits()) {
+    focusSelect.value = state.focusId;
+    return;
+  }
   state.focusId = focusSelect.value;
   state.branchTargetId = "";
   branchOnlyToggle.checked = false;
@@ -1154,6 +1285,10 @@ focusSelect.addEventListener("change", async () => {
 
 displayAllToggle.addEventListener("change", async () => {
   if (state.linkedEventsView) return;
+  if (!canDiscardPersonEdits()) {
+    displayAllToggle.checked = state.displayAll;
+    return;
+  }
   state.displayAll = displayAllToggle.checked;
   state.branchTargetId = "";
   branchOnlyToggle.checked = false;
@@ -1163,6 +1298,10 @@ displayAllToggle.addEventListener("change", async () => {
 
 branchSelect.addEventListener("change", async () => {
   if (state.linkedEventsView) return;
+  if (!canDiscardPersonEdits()) {
+    branchSelect.value = state.branchTargetId;
+    return;
+  }
   state.branchTargetId = branchSelect.value;
   state.branchOnly = Boolean(state.branchTargetId);
   branchOnlyToggle.checked = state.branchOnly;
@@ -1171,6 +1310,10 @@ branchSelect.addEventListener("change", async () => {
 
 branchOnlyToggle.addEventListener("change", async () => {
   if (state.linkedEventsView) return;
+  if (!canDiscardPersonEdits()) {
+    branchOnlyToggle.checked = state.branchOnly;
+    return;
+  }
   state.branchOnly = branchOnlyToggle.checked;
   await refreshGraph();
 });
@@ -1186,31 +1329,78 @@ linkedEventsViewToggle.addEventListener("change", async () => {
   await refreshGraph();
 });
 
+async function switchMode(mode) {
+  if (mode === state.mode || !canDiscardPersonEdits()) return;
+  state.mode = mode;
+  const nextUrl = new URL(window.location.href);
+  if (mode === "explore") nextUrl.searchParams.delete("mode");
+  else nextUrl.searchParams.set("mode", mode);
+  window.history.replaceState({}, "", nextUrl);
+  state.editPanelOpen = false;
+  setPersonFormClean();
+  setViewMode();
+  if (isMobileLayout()) {
+    toggleSidebar(leftSidebar, true);
+    toggleSidebar(rightSidebar, true);
+  }
+  if (mode === "sources") {
+    renderLinkedEventsList();
+    await loadEventDetails(state.selectedEventId);
+    return;
+  }
+  if (mode === "review") {
+    const reviewPeople = visiblePeople();
+    state.selectedPersonId = reviewPeople[0]?.id || "";
+    renderReviewPeopleList();
+    if (state.selectedPersonId) await loadPersonCard(state.selectedPersonId);
+    return;
+  }
+  await refreshGraph();
+}
+
+exploreModeBtn.addEventListener("click", () => switchMode("explore"));
+reviewModeBtn.addEventListener("click", () => switchMode("review"));
+sourcesModeBtn.addEventListener("click", () => switchMode("sources"));
+
 sourceForm.elements.event_id.addEventListener("change", updateSourceFormHint);
 
 leftToggle.addEventListener("click", () => {
+  if (!canDiscardPersonEdits()) return;
   toggleSidebar(leftSidebar, true);
-  rightSidebar.classList.remove("collapsed");
-  workspace.style.setProperty("--right-sidebar-width", `${state.rightSidebarWidth || SIDEBAR_LIMITS.right.default}px`);
-  updateSidebarButtons();
-  fitGraphToState();
 });
-rightToggle.addEventListener("click", () => toggleSidebar(rightSidebar, true));
+rightToggle.addEventListener("click", () => {
+  if (!canDiscardPersonEdits()) return;
+  state.editPanelOpen = false;
+  setPersonFormClean();
+  toggleSidebar(rightSidebar, true);
+});
 leftExpand.addEventListener("click", () => toggleSidebar(leftSidebar, false));
 rightExpand.addEventListener("click", () => toggleSidebar(rightSidebar, false));
 if (helpBtn && helpModal) {
-  helpBtn.addEventListener("click", () => helpModal.classList.remove("hidden"));
-  helpCloseBtn?.addEventListener("click", () => helpModal.classList.add("hidden"));
-  helpModal.addEventListener("click", (e) => { if (e.target === helpModal) helpModal.classList.add("hidden"); });
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape") helpModal.classList.add("hidden"); });
+  const closeHelp = () => {
+    helpModal.classList.add("hidden");
+    helpBtn.focus();
+  };
+  helpBtn.addEventListener("click", () => {
+    helpModal.classList.remove("hidden");
+    helpCloseBtn?.focus();
+  });
+  helpCloseBtn?.addEventListener("click", closeHelp);
+  helpModal.addEventListener("click", (e) => { if (e.target === helpModal) closeHelp(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !helpModal.classList.contains("hidden")) closeHelp(); });
 }
 
 if (closeEditBtn) {
-  closeEditBtn.addEventListener("click", () => showPersonPanel(false));
+  closeEditBtn.addEventListener("click", () => {
+    if (!canDiscardPersonEdits()) return;
+    setPersonFormClean();
+    showPersonPanel(false);
+  });
 }
 
 if (fullTreeBtn) {
   fullTreeBtn.addEventListener("click", async () => {
+    if (!canDiscardPersonEdits()) return;
     state.displayAll = !state.displayAll;
     displayAllToggle.checked = state.displayAll;
     fullTreeBtn.classList.toggle("active", state.displayAll);
@@ -1224,6 +1414,23 @@ if (fullTreeBtn) {
 }
 leftResizer.addEventListener("pointerdown", () => beginResize("left"));
 rightResizer.addEventListener("pointerdown", () => beginResize("right"));
+for (const [resizer, side, direction] of [[leftResizer, "left", 1], [rightResizer, "right", -1]]) {
+  resizer.addEventListener("keydown", (event) => {
+    if (!['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+    event.preventDefault();
+    const delta = event.key === "ArrowRight" ? 20 : -20;
+    setSidebarWidth(side, (side === "left" ? state.leftSidebarWidth : state.rightSidebarWidth) + delta * direction);
+    fitGraphToState();
+  });
+}
+drawerBackdrop.addEventListener("click", () => {
+  if (!canDiscardPersonEdits()) return;
+  toggleSidebar(leftSidebar, true);
+  toggleSidebar(rightSidebar, true);
+});
+zoomOutBtn.addEventListener("click", () => state.cy?.zoom({ level: state.cy.zoom() / 1.2, renderedPosition: { x: state.cy.width() / 2, y: state.cy.height() / 2 } }));
+zoomInBtn.addEventListener("click", () => state.cy?.zoom({ level: state.cy.zoom() * 1.2, renderedPosition: { x: state.cy.width() / 2, y: state.cy.height() / 2 } }));
+fitGraphBtn.addEventListener("click", fitGraphToState);
 window.addEventListener("resize", () => {
   syncWorkspaceWidths();
   fitGraphToState();
@@ -1244,7 +1451,14 @@ personForm.addEventListener("submit", async (event) => {
     return;
   }
   saveStatus.textContent = "Saved.";
+  setPersonFormClean();
   await refreshAfterMutation();
+});
+personForm.addEventListener("input", () => {
+  if (!state.editPanelOpen) return;
+  state.personFormDirty = true;
+  personForm.classList.add("has-unsaved-changes");
+  saveStatus.textContent = "Unsaved changes";
 });
 
 sourceForm.addEventListener("submit", async (event) => {
@@ -1262,7 +1476,8 @@ sourceForm.addEventListener("submit", async (event) => {
   sourceStatus.textContent = "Source added.";
   sourceForm.reset();
   updateSourceFormHint();
-  await refreshGraph();
+  await refreshAfterMutation();
+  sourceStatus.textContent = "Source added.";
 });
 
 sourcesList.addEventListener("submit", async (event) => {
@@ -1314,6 +1529,9 @@ mergeButton.addEventListener("click", async () => {
   const personId = personForm.dataset.personId;
   const targetId = mergeTargetSelect.value;
   if (!personId || !targetId) return;
+  const sourceLabel = personCard.querySelector(".person-card-name")?.textContent || personId;
+  const targetLabel = mergeTargetSelect.selectedOptions[0]?.textContent || targetId;
+  if (!window.confirm(`Merge ${sourceLabel} into ${targetLabel}?\n\nThis changes relationships and cannot be undone in the app.`)) return;
   reviewStatus.textContent = "Merging duplicate...";
   const { response, payload } = await fetchJson(`/api/person/${personId}/merge`, {
     method: "POST",
@@ -1330,6 +1548,16 @@ mergeButton.addEventListener("click", async () => {
   await bootstrap(true);
 });
 
+window.addEventListener("beforeunload", (event) => {
+  if (!state.personFormDirty) return;
+  event.preventDefault();
+  event.returnValue = "";
+});
+
+if (isMobileLayout()) {
+  leftSidebar.classList.add("collapsed");
+  rightSidebar.classList.add("collapsed");
+}
 syncWorkspaceWidths();
 updateSidebarButtons();
 bootstrap();
