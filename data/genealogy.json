@@ -25,7 +25,7 @@
       "mother": "P0004",
       "sex": "M",
       "confidence": "probable",
-      "notes": "Baptism identifies father Georg; mother appears as Anna in baptism but likely same person as Dominika Liska from 1822 marriage.\n\nImported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nMerged from P0064.\n\nLinked-only merge from P0060; references moved without importing personal facts.",
+      "notes": "Baptism identifies father Georg and mother Anna. The earlier Dominika Liska match for the 1822 marriage was a false positive and has been removed.\n\nImported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nMerged from P0064.\n\nLinked-only merge from P0060; references moved without importing personal facts.",
       "provenance": "primary",
       "birth_surname": "Waida",
       "married_surname": "",
@@ -34,7 +34,7 @@
     },
     {
       "id": "P0003",
-      "name": "Johann",
+      "name": "Georg",
       "birth_date": "1798",
       "birth_place": "Rudslavice (estimated)",
       "father": "P0087",
@@ -685,10 +685,11 @@
       "father": "P0001",
       "mother": "P0126",
       "sex": "M",
-      "confidence": "possible",
+      "confidence": "probable",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nBirth noted but not digitized; linked marriage in 1933 (Slusovice).\n\nMerged duplicate record P0005.",
       "provenance": "myheritage",
-      "birth_surname": "Vajda"
+      "birth_surname": "Vajda",
+      "married_surname": ""
     },
     {
       "id": "P0068",
@@ -1380,7 +1381,7 @@
   ],
   "events": [
     {
-      "id": "E1822-12-08-marriage-georg-dominika",
+      "id": "E1822-12-08-marriage-georg-anna",
       "event_type": "Marriage",
       "date": "1822-12-08",
       "place": "Rudslavice parish",
@@ -1393,7 +1394,7 @@
         "S0017"
       ],
       "provenance": "manual",
-      "notes": "Canonical Johann Waida + Anna marriage record after absorbing duplicate MyHeritage spouse view Eundated-marriage-054."
+      "notes": "Canonical Georg Waida + Anna marriage record after absorbing duplicate MyHeritage spouse view Eundated-marriage-054."
     },
     {
       "id": "E1827-12-08-birth-josef",
@@ -1505,7 +1506,8 @@
       "groom_id": "P0013",
       "bride_id": "P0021",
       "source_ids": [
-        "S0015"
+        "S0015",
+        "S0018"
       ],
       "provenance": "myheritage"
     },
@@ -1975,7 +1977,7 @@
   "sources": [
     {
       "id": "S0001",
-      "title": "Marriage Index Entry (1822): Wajda Georg - Liska Dominika",
+      "title": "Marriage Index Entry (1822): Georg Waida",
       "type": "Parish marriage index",
       "parish": "Rudslavice / Ludslavice",
       "date": "1822",
@@ -1999,7 +2001,7 @@
     },
     {
       "id": "S0003",
-      "title": "Marriage Record: Georg Wajda and Dominika Liska",
+      "title": "Marriage Record (1822): Georg Waida",
       "type": "Parish marriage register",
       "parish": "Rudslavice / Ludslavice",
       "date": "1822-12-08",
@@ -2150,6 +2152,16 @@
       "local_image": "sources/djb608_6840609ec667286678317r_A.ged",
       "reliability": "medium",
       "priority": "secondary"
+    },
+    {
+      "id": "S0018",
+      "title": "Marriage record",
+      "type": "",
+      "date": "1931-09-12",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/10016?image=216000010-000253-003371-000000-004140-000000-00-B03875-00970.jp2",
+      "image_url": "",
+      "local_image": "",
+      "priority": "primary"
     }
   ]
 }
