@@ -1,0 +1,27 @@
+README.md
+  dbc5c9c516fff7ab 12,48-63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "bf60849bb3e88da4e1f4a86b396fce2227fe4ebb",
+  "prompts": {
+    "dbc5c9c516fff7ab": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019d8c7b-abbe-7573-aa98-471e0c90b3ee",
+        "model": "unknown"
+      },
+      "human_author": "kubow <kube.kubow@gmail.com>",
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 529,
+      "overriden_lines": 0
+    }
+  },
+  "humans": {
+    "h_0907ec034f4a17": {
+      "author": "kubow <kube.kubow@gmail.com>"
+    }
+  }
+}
