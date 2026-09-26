@@ -9,6 +9,7 @@ Project layout:
 - `docs/` - generated read-only static site for GitHub Pages
 - `scripts/` - maintenance and build scripts:
   `genealogy_builder.py build` = regenerate `outputs/` and `docs/`
+  `genealogy_builder.py duplicate-report` = write likely duplicate person pairs for review
   `genealogy_builder.py sync-report --file sources/<file>.ged` = preview GEDCOM matches
   `genealogy_builder.py import-gedcom --file sources/<file>.ged --mode merge` = import GEDCOM
   `genealogy_builder.py wizard` = manual editing helper
@@ -44,3 +45,19 @@ Install and run:
 - `python3 -m pip install -r requirements.txt`
 - `python3 -m app.flask_app`
 - `streamlit run app/streamlit_app.py`
+
+
+## Sources
+
+- [Archiv hlavního města Prahy](https://www.ahmp.cz/)
+- [Moravský Zemský Archiv Matriky](https://www.mza.cz/actapublica/matrika/hledani)
+- [Národní archiv](https://www.nacr.cz/)
+- [Státní oblastní archiv v Hradci Králové](https://aron.vychodoceskearchivy.cz/)
+- [Státní oblastní archiv v Litoměřicích](https://www.soalitomerice.cz/?lang=cz)
+- [Státní oblastní archiv v Plzni](https://www.soaplzen.cz/)
+- [Státní oblastní archiv v Praze](https://www.soapraha.cz/)
+- [Státní oblastní archiv v Třeboni](https://www.ceskearchivy.cz/)
+- [Zemský Archiv v Opavě](https://digi.archives.cz/da/)
+
+
+[Genea - genealogie, stránky o genealogii](http://www.genea.cz/)
