@@ -18,13 +18,14 @@ from app.genealogy_core import (
     DEFAULT_ANCESTOR_DEPTH,
     DEFAULT_DESCENDANT_DEPTH,
     branch_choices,
+    build_trace_graph_elements,
     build_family_graph_elements,
     display_name,
     load_indexes,
     person_detail_payload,
     person_label,
 )
-from scripts.genealogy_builder import DATA_PATH
+from scripts.genealogy_builder import DATA_DIR
 
 
 def render_streamlit_tree(elements: list[dict], *, height: int = 760) -> None:
@@ -165,68 +166,73 @@ def render_streamlit_tree(elements: list[dict], *, height: int = 760) -> None:
 def main() -> None:
     st.set_page_config(page_title="Genealogy Tree", layout="wide")
 
-    _, people, events, _, people_by_id, children_by_parent, marriages, sources_by_id = load_indexes()
+    data_files = sorted(DATA_DIR.glob("*.json"), key=lambda path: (path.name != "genealogy.json", path.name.lower()))
+    if not data_files:
+        st.error(f"No JSON database found in {DATA_DIR}.")
+        return
+    data_names = [path.name for path in data_files]
+    selected_name = st.selectbox("Data file", data_names, index=data_names.index(st.session_state.get("data_file", "genealogy.json")) if st.session_state.get("data_file", "genealogy.json") in data_names else 0)
+    st.session_state["data_file"] = selected_name
+    data_path = DATA_DIR / selected_name
+    _, people, events, _, people_by_id, children_by_parent, marriages, sources_by_id = load_indexes(data_path)
     if not people:
-        st.error(f"No people found in {DATA_PATH}.")
+        st.error(f"No people found in {data_path}.")
         return
 
     st.title("Genealogy Tree")
-    st.caption("Branch selector on the left, tree in the center, details on the right.")
-
-    with st.sidebar:
-        st.header("Focus")
-        query = st.text_input("Search people", placeholder="Name, ID, place")
-        matches = [
-            person
-            for person in people
-            if not query
-            or query.lower() in person.get("name", "").lower()
-            or query.lower() in person.get("id", "").lower()
-            or query.lower() in person.get("birth_place", "").lower()
-            or query.lower() in person.get("death_place", "").lower()
-        ]
-        if not matches:
-            st.warning("No people match the current search.")
-            return
-
+    st.caption("Choose a data file, centre person, and optional descendant branch. The overview stays in the main canvas.")
+    search_col, focus_col, branch_col, trace_col, only_col = st.columns([1, 2, 2, 2, 1])
+    with search_col:
+        query = st.text_input("Search", placeholder="Name, ID, place")
+    matches = [
+        person for person in people
+        if not query
+        or query.lower() in person.get("name", "").lower()
+        or query.lower() in person.get("id", "").lower()
+        or query.lower() in person.get("birth_place", "").lower()
+        or query.lower() in person.get("death_place", "").lower()
+    ]
+    if not matches:
+        st.warning("No people match the current search.")
+        return
+    with focus_col:
         default_focus_id = st.session_state.get("focus_person_id", matches[0]["id"])
-        selected_person = st.selectbox(
-            "Person",
-            matches,
-            index=next((idx for idx, candidate in enumerate(matches) if candidate["id"] == default_focus_id), 0),
-            format_func=person_label,
-        )
+        selected_person = st.selectbox("Tree centre", matches, index=next((idx for idx, candidate in enumerate(matches) if candidate["id"] == default_focus_id), 0), format_func=person_label)
         st.session_state["focus_person_id"] = selected_person["id"]
-
-        branch_options = branch_choices(selected_person["id"], people_by_id, children_by_parent)
-        branch_target = st.selectbox(
-            "Branch",
-            [None] + branch_options,
-            index=0,
-            format_func=lambda option: "None" if option is None else option["label"],
-            disabled=not branch_options,
-        )
-        branch_only = st.toggle("Show only selected branch", value=False, disabled=branch_target is None)
+    branch_options = branch_choices(selected_person["id"], people_by_id, children_by_parent)
+    with branch_col:
+        branch_target = st.selectbox("Branch", [None] + branch_options, index=0, format_func=lambda option: "All branches" if option is None else option["label"], disabled=not branch_options)
+    with trace_col:
+        trace_target = st.selectbox("Trace to", [None] + people, index=0, format_func=lambda option: "No route" if option is None else person_label(option, people_by_id))
+    with only_col:
+        branch_only = st.toggle("Only route", value=False, disabled=branch_target is None and trace_target is None)
 
     person_id = selected_person["id"]
     branch_target_id = branch_target["target_id"] if branch_target else ""
-    elements, branch_found = build_family_graph_elements(
-        person_id,
-        people_by_id,
-        children_by_parent,
-        marriages,
-        DEFAULT_ANCESTOR_DEPTH,
-        DEFAULT_DESCENDANT_DEPTH,
-        branch_target_id=branch_target_id,
-        branch_only=branch_only,
-    )
+    if trace_target:
+        elements, branch_found = build_trace_graph_elements(
+            person_id, trace_target["id"], people_by_id, children_by_parent, marriages, trace_only=branch_only
+        )
+    else:
+        elements, branch_found = build_family_graph_elements(
+            person_id,
+            people_by_id,
+            children_by_parent,
+            marriages,
+            DEFAULT_ANCESTOR_DEPTH,
+            99 if branch_target else DEFAULT_DESCENDANT_DEPTH,
+            branch_target_id=branch_target_id,
+            branch_only=branch_only,
+        )
 
     left, right = st.columns([2, 1])
 
     with left:
         st.subheader(selected_person.get("name", "Unnamed person"))
-        if branch_target and not branch_found:
-            st.caption("Selected branch target is outside the current branch window.")
+        if (branch_target or trace_target) and not branch_found:
+            st.caption("No relationship route was found in this data file.")
+        elif trace_target:
+            st.caption(f"Tracing the relationship route to {person_label(trace_target, people_by_id)}")
         elif branch_target:
             st.caption(f"Branch routes to youngest member: {person_label(people_by_id.get(branch_target_id, {}))}")
 
@@ -271,10 +277,16 @@ def main() -> None:
                 st.write(f"- {' | '.join(bit for bit in bits if bit)}")
 
         if payload.get("sources"):
-            st.write("Sources:")
-            for source in payload["sources"]:
-                bits = [source.get("id", ""), source.get("title", ""), source.get("date", "")]
-                st.write(f"- {' | '.join(bit for bit in bits if bit)}")
+            st.write("Linked records:")
+            for event in payload.get("events", []):
+                mapped_to = " | ".join(bit for bit in [event.get("type", ""), event.get("date", ""), event.get("place", "")] if bit)
+                for source in event.get("sources", []):
+                    label = " | ".join(bit for bit in [source.get("id", ""), source.get("title", "")] if bit)
+                    archive = source.get("archive_url", "")
+                    if archive:
+                        st.markdown(f"- [{label}]({archive}) → maps to {mapped_to}")
+                    else:
+                        st.write(f"- {label} → maps to {mapped_to}")
 
 
 if __name__ == "__main__":

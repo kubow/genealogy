@@ -13,6 +13,8 @@ from app.genealogy_core import (
     branch_choices,
     build_all_graph_elements,
     build_family_graph_elements,
+    build_trace_graph_elements,
+    build_couple_ancestor_elements,
     display_name,
     event_detail_payload,
     linked_event_summaries,
@@ -25,11 +27,25 @@ from app.genealogy_core import (
     validate_event_links,
     validate_parent_links,
 )
-from scripts.genealogy_builder import DATA_DIR, load_db, next_id, save_db
+from scripts.genealogy_builder import DATA_DIR, ROOT, load_db, next_id, save_db
 
 APP_DIR = Path(__file__).resolve().parent
 app = Flask(__name__, template_folder=str(APP_DIR / "templates"), static_folder=str(APP_DIR / "static"))
 MEDIA_UPLOADS_DIR = DATA_DIR / "media" / "uploads"
+
+
+def available_data_files() -> list[Path]:
+    """Return only JSON databases stored directly in the project's data directory."""
+    return sorted(DATA_DIR.glob("*.json"), key=lambda path: (path.name != "genealogy.json", path.name.lower()))
+
+
+def selected_data_path() -> Path:
+    """Resolve the requested database without allowing paths outside data/."""
+    requested = request.args.get("data", "genealogy.json")
+    for path in available_data_files():
+        if path.name == requested:
+            return path
+    return DATA_DIR / "genealogy.json"
 
 
 def preferred_focus_id(db: dict[str, Any], people: list[dict[str, str]]) -> str:
@@ -62,12 +78,17 @@ def index() -> str:
 
 @app.get("/media/<path:filename>")
 def media(filename: str):
-    return send_from_directory(DATA_DIR, filename)
+    # Older records may use either a data-relative path (media/uploads/...) or
+    # a project-relative source path (sources/...); both are safe to serve.
+    if (DATA_DIR / filename).is_file():
+        return send_from_directory(DATA_DIR, filename)
+    return send_from_directory(ROOT, filename)
 
 
 @app.get("/api/bootstrap")
 def api_bootstrap():
-    db, people, events, _, people_by_id, _, _, sources_by_id = load_indexes()
+    data_path = selected_data_path()
+    db, people, events, _, people_by_id, _, _, sources_by_id = load_indexes(data_path)
     review_total = sum(1 for person in people if person_needs_review(person))
     linked_events = linked_event_summaries(events, people_by_id, sources_by_id)
     return jsonify(
@@ -99,19 +120,31 @@ def api_bootstrap():
             "review_total": review_total,
             "linked_events": linked_events,
             "default_event_id": linked_events[0]["id"] if linked_events else "",
+            "data_files": [path.name for path in available_data_files()],
+            "active_data_file": data_path.name,
         }
     )
 
 
 @app.get("/api/graph")
 def api_graph():
-    db, people, events, _, people_by_id, children_by_parent, marriages, sources_by_id = load_indexes()
+    db, people, events, _, people_by_id, children_by_parent, marriages, sources_by_id = load_indexes(selected_data_path())
     focus_id = request.args.get("focus_id", preferred_focus_id(db, people))
     branch_target_id = request.args.get("branch_target_id", "")
+    trace_target_id = request.args.get("trace_target_id", "")
+    view_mode = request.args.get("view_mode", "tree")
     branch_only = request.args.get("branch_only", "false").lower() == "true"
     display_all = request.args.get("display_all", "false").lower() == "true"
     branch_options = [] if display_all else (branch_choices(focus_id, people_by_id, children_by_parent) if focus_id else [])
-    if display_all:
+    partner_id = ""
+    if view_mode in {"couple-star", "two-way-fan"}:
+        elements, partner_id = build_couple_ancestor_elements(focus_id, people_by_id, children_by_parent, marriages)
+        branch_found = True
+    elif trace_target_id:
+        elements, branch_found = build_trace_graph_elements(
+            focus_id, trace_target_id, people_by_id, children_by_parent, marriages, trace_only=branch_only
+        )
+    elif display_all:
         elements = build_all_graph_elements(focus_id, people_by_id, children_by_parent, marriages)
         branch_found = False
     else:
@@ -133,19 +166,20 @@ def api_graph():
             "branch_found": branch_found,
             "display_all": display_all,
             "focus_person": person_detail_payload(focus_id, people_by_id, people, events, sources_by_id, children_by_parent, marriages),
+            "view_partner_id": partner_id,
         }
     )
 
 
 @app.get("/api/person/<person_id>")
 def api_person(person_id: str):
-    _, people, events, _, people_by_id, children_by_parent, marriages, sources_by_id = load_indexes()
+    _, people, events, _, people_by_id, children_by_parent, marriages, sources_by_id = load_indexes(selected_data_path())
     return jsonify(person_detail_payload(person_id, people_by_id, people, events, sources_by_id, children_by_parent, marriages))
 
 
 @app.get("/api/event/<event_id>")
 def api_event(event_id: str):
-    _, people, events, sources, people_by_id, _, _, sources_by_id = load_indexes()
+    _, people, events, sources, people_by_id, _, _, sources_by_id = load_indexes(selected_data_path())
     payload = event_detail_payload(event_id, events, people, sources, people_by_id, sources_by_id)
     if not payload:
         return jsonify({"error": "Event not found"}), 404
@@ -154,7 +188,7 @@ def api_event(event_id: str):
 
 @app.get("/api/couple/<event_id>")
 def api_couple(event_id: str):
-    _, people, events, _, people_by_id, children_by_parent, marriages, sources_by_id = load_indexes()
+    _, people, events, _, people_by_id, children_by_parent, marriages, sources_by_id = load_indexes(selected_data_path())
     event = next((e for e in events if e.get("id") == event_id), None)
     if not event:
         return jsonify({"error": "Event not found"}), 404
@@ -162,13 +196,29 @@ def api_couple(event_id: str):
     bride_id = event.get("bride_id", "")
     groom = person_detail_payload(groom_id, people_by_id, people, events, sources_by_id, children_by_parent, marriages) if groom_id else None
     bride = person_detail_payload(bride_id, people_by_id, people, events, sources_by_id, children_by_parent, marriages) if bride_id else None
-    return jsonify({"event": event, "groom": groom, "bride": bride})
+    sources = []
+    for source_id in event.get("source_ids", []) or []:
+        source = sources_by_id.get(source_id, {})
+        sources.append(
+            {
+                "id": source_id,
+                "title": source.get("title", source_id),
+                "type": source.get("type", ""),
+                "date": source.get("date", ""),
+                "archive_url": source.get("archive_url", ""),
+                "local_image": source.get("local_image", ""),
+                "local_image_available": (DATA_DIR / source.get("local_image", "")).is_file() or (ROOT / source.get("local_image", "")).is_file(),
+                "priority": source.get("priority", ""),
+            }
+        )
+    return jsonify({"event": event, "groom": groom, "bride": bride, "sources": sources})
 
 
 @app.post("/api/event/<event_id>")
 def api_event_update(event_id: str):
     payload = request.get_json(force=True)
-    db = load_db()
+    data_path = selected_data_path()
+    db = load_db(data_path)
     event = next((item for item in db["events"] if item.get("id") == event_id), None)
     if event is None:
         return jsonify({"error": "Event not found"}), 404
@@ -185,7 +235,7 @@ def api_event_update(event_id: str):
     for key in ["event_type", "date", "place", "confidence", "provenance", "notes", "person_id", "groom_id", "bride_id"]:
         event[key] = str(payload.get(key, "")).strip()
 
-    save_db(db)
+    save_db(db, data_path)
     return jsonify({"ok": True, "event_id": event_id})
 
 
@@ -196,7 +246,8 @@ def api_event_link_source(event_id: str):
     if not source_id:
         return jsonify({"error": "Source is required"}), 400
 
-    db = load_db()
+    data_path = selected_data_path()
+    db = load_db(data_path)
     event = next((item for item in db["events"] if item.get("id") == event_id), None)
     if event is None:
         return jsonify({"error": "Event not found"}), 404
@@ -208,7 +259,7 @@ def api_event_link_source(event_id: str):
     if source_id not in source_ids:
         source_ids.append(source_id)
     event["source_ids"] = source_ids
-    save_db(db)
+    save_db(db, data_path)
     return jsonify({"ok": True, "event_id": event_id, "source_id": source_id})
 
 
@@ -226,7 +277,8 @@ def api_event_add_source(event_id: str):
     if not title and not archive_url:
         return jsonify({"error": "Provide at least a title or archive URL"}), 400
 
-    db = load_db()
+    data_path = selected_data_path()
+    db = load_db(data_path)
     event = next((item for item in db["events"] if item.get("id") == event_id), None)
     if event is None:
         return jsonify({"error": "Event not found"}), 404
@@ -258,14 +310,15 @@ def api_event_add_source(event_id: str):
         source_ids.append(source_id)
     event["source_ids"] = source_ids
 
-    save_db(db)
+    save_db(db, data_path)
     return jsonify({"ok": True, "event_id": event_id, "source_id": source_id})
 
 
 @app.post("/api/source/<source_id>")
 def api_source_update(source_id: str):
     payload = request.get_json(force=True)
-    db = load_db()
+    data_path = selected_data_path()
+    db = load_db(data_path)
     source = next((item for item in db["sources"] if item.get("id") == source_id), None)
     if source is None:
         return jsonify({"error": "Source not found"}), 404
@@ -273,14 +326,15 @@ def api_source_update(source_id: str):
     for key in ["title", "type", "date", "archive_url", "priority"]:
         source[key] = str(payload.get(key, "")).strip()
 
-    save_db(db)
+    save_db(db, data_path)
     return jsonify({"ok": True, "source_id": source_id})
 
 
 @app.post("/api/person/<person_id>")
 def api_person_update(person_id: str):
     payload = request.get_json(force=True)
-    db = load_db()
+    data_path = selected_data_path()
+    db = load_db(data_path)
     people_by_id = {person.get("id", ""): person for person in db["people"] if person.get("id")}
     father_id = str(payload.get("father", "")).strip()
     mother_id = str(payload.get("mother", "")).strip()
@@ -312,7 +366,7 @@ def api_person_update(person_id: str):
         break
     if updated is None:
         return jsonify({"error": "Person not found"}), 404
-    save_db(db)
+    save_db(db, data_path)
     return jsonify({"ok": True})
 
 
@@ -336,7 +390,8 @@ def api_person_add_source(person_id: str):
     if not title and not archive_url:
         return jsonify({"error": "Provide at least a title or archive URL"}), 400
 
-    db = load_db()
+    data_path = selected_data_path()
+    db = load_db(data_path)
     if event_id in {"__new_birth__", "__new_death__", "__new_research__"}:
         event_type = {
             "__new_birth__": "Birth/Baptism",
@@ -393,7 +448,7 @@ def api_person_add_source(person_id: str):
         source_ids.append(source_id)
     event["source_ids"] = source_ids
 
-    save_db(db)
+    save_db(db, data_path)
     return jsonify({"ok": True, "source_id": source_id, "event_id": event["id"]})
 
 
@@ -404,13 +459,14 @@ def api_person_promote(person_id: str):
     confidence = str(payload.get("confidence", "")).strip()
     note = str(payload.get("note", "")).strip()
 
-    db = load_db()
+    data_path = selected_data_path()
+    db = load_db(data_path)
     person = next((item for item in db["people"] if item.get("id") == person_id), None)
     if person is None:
         return jsonify({"error": "Person not found"}), 404
 
     promote_person_record(person, provenance, confidence, note)
-    save_db(db)
+    save_db(db, data_path)
     return jsonify({"ok": True, "person_id": person_id})
 
 
@@ -421,13 +477,14 @@ def api_person_merge(person_id: str):
     if not target_id:
         return jsonify({"error": "Target person is required"}), 400
 
-    db = load_db()
+    data_path = selected_data_path()
+    db = load_db(data_path)
     try:
         merge_person_records(db, person_id, target_id)
     except ValueError as exc:
         return jsonify({"error": str(exc)}), 400
 
-    save_db(db)
+    save_db(db, data_path)
     return jsonify({"ok": True, "target_id": target_id})
 
 

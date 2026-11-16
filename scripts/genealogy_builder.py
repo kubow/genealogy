@@ -83,25 +83,59 @@ def empty_db() -> Dict[str, List[Dict[str, str]]]:
     return {"people": [], "events": [], "sources": []}
 
 
-def load_db() -> Dict[str, List[Dict[str, str]]]:
-    if not DATA_PATH.exists():
+def embedded_dossier_people(raw: dict[str, Any]) -> list[dict[str, Any]]:
+    """Extract people from a compact subject/family research dossier.
+
+    Some research JSON files are not canonical databases: they put a focal
+    person under ``subject`` and related people under ``family``. Supporting
+    that shape here lets the viewers open those files without altering them.
+    """
+    people_by_id: dict[str, dict[str, Any]] = {}
+
+    def visit(value: Any) -> None:
+        if isinstance(value, list):
+            for item in value:
+                visit(item)
+            return
+        if not isinstance(value, dict):
+            return
+        person_id = str(value.get("id", "")).strip()
+        if person_id and value.get("name") and any(
+            key in value for key in ("father", "mother", "birth_date", "death_date", "sex", "birth_surname")
+        ):
+            people_by_id.setdefault(person_id, value)
+        for child in value.values():
+            visit(child)
+
+    visit(raw.get("subject", {}))
+    visit(raw.get("family", {}))
+    return list(people_by_id.values())
+
+
+def load_db(data_path: Path | None = None) -> Dict[str, List[Dict[str, str]]]:
+    """Load a database, defaulting to the canonical genealogy JSON file."""
+    path = data_path or DATA_PATH
+    if not path.exists():
         db = empty_db()
-        save_db(db)
+        save_db(db, path)
         return db
-    raw = json.loads(DATA_PATH.read_text(encoding="utf-8"))
+    raw = json.loads(path.read_text(encoding="utf-8"))
     db = empty_db()
-    db["people"] = list(raw.get("people", []))
+    db["people"] = list(raw.get("people", []) or embedded_dossier_people(raw))
     db["events"] = list(raw.get("events", []))
     db["sources"] = list(raw.get("sources", []))
     return db
 
 
-def save_db(db: Dict[str, List[Dict[str, str]]]) -> None:
-    DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
+def save_db(db: Dict[str, List[Dict[str, str]]], data_path: Path | None = None) -> None:
+    """Save a database. Only the canonical file is mirrored into the static site."""
+    path = data_path or DATA_PATH
+    path.parent.mkdir(parents=True, exist_ok=True)
     payload = json.dumps(db, indent=2, ensure_ascii=True) + "\n"
-    DATA_PATH.write_text(payload, encoding="utf-8")
-    SITE_DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
-    SITE_DATA_PATH.write_text(payload, encoding="utf-8")
+    path.write_text(payload, encoding="utf-8")
+    if path.resolve() == DATA_PATH.resolve():
+        SITE_DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
+        SITE_DATA_PATH.write_text(payload, encoding="utf-8")
 
 
 def next_id(items: List[Dict[str, str]], prefix: str, width: int = 4) -> str:
@@ -1086,6 +1120,12 @@ def build_gedcom(people: List[Dict[str, str]], events: List[Dict[str, str]]) -> 
         pid = person.get("id", f"P{idx:04d}")
         xref = person_index[pid]
         given, surname = _split_name(person.get("name", ""))
+        # The canonical data commonly stores a given name in ``name`` and
+        # keeps surnames in dedicated fields.  GEDCOM requires the surname in
+        # the NAME value, otherwise importers (including Gramps) report it as
+        # missing.
+        if not surname:
+            surname = person.get("married_surname", "") or person.get("birth_surname", "")
         lines.append(f"0 {xref} INDI")
         if given or surname:
             lines.append(f"1 NAME {given} /{surname}/")

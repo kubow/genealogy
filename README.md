@@ -22,6 +22,11 @@ Main files:
 - Flask app: `python3 -m app.flask_app`
 - Streamlit app: `streamlit run app/streamlit_app.py`
 
+Both local apps list every `*.json` file placed directly in `data/`. Choose the
+file from the **Data file** selector to browse it; Flask edits are saved back to
+the selected file. The default `genealogy.json` remains the canonical file used
+by the builder and static-site export.
+
 Typical flow:
 
 1. Put source GEDCOM files into `sources/`.

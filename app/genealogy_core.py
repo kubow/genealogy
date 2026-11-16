@@ -2,9 +2,10 @@
 from __future__ import annotations
 
 from collections import defaultdict, deque
+from pathlib import Path
 from typing import Any
 
-from scripts.genealogy_builder import find_person_candidates, load_db
+from scripts.genealogy_builder import DATA_DIR, ROOT, find_person_candidates, load_db
 
 # Keep the initial tree legible. Deeper descendant paths remain available through
 # the branch selector, and the overview mode still exposes the connected graph.
@@ -12,6 +13,14 @@ DEFAULT_ANCESTOR_DEPTH = 2
 DEFAULT_DESCENDANT_DEPTH = 1
 REVIEW_PROVENANCES = {"myheritage"}
 REVIEW_CONFIDENCES = {"possible", "open"}
+
+
+def local_file_available(value: str) -> bool:
+    """Whether a source's recorded local path is actually available to the app."""
+    if not value:
+        return False
+    path = Path(value)
+    return (DATA_DIR / path).is_file() or (ROOT / path).is_file()
 
 
 def ordered_partner_ids(
@@ -251,8 +260,8 @@ def promote_person_record(person: dict[str, str], provenance: str, confidence: s
         person["notes"] = "\n\n".join(dict.fromkeys(note_bits))
 
 
-def load_indexes() -> tuple[dict[str, Any], list[dict[str, str]], list[dict[str, Any]], list[dict[str, str]], dict[str, dict[str, str]], dict[str, list[str]], dict[tuple[str, str], dict[str, Any]], dict[str, dict[str, str]]]:
-    db = load_db()
+def load_indexes(data_path: Path | None = None) -> tuple[dict[str, Any], list[dict[str, str]], list[dict[str, Any]], list[dict[str, str]], dict[str, dict[str, str]], dict[str, list[str]], dict[tuple[str, str], dict[str, Any]], dict[str, dict[str, str]]]:
+    db = load_db(data_path)
     people = list(db["people"])
     events = list(db["events"])
     sources = list(db["sources"])
@@ -426,6 +435,10 @@ def build_family_graph_elements(
                 "label": display_name(person, people_by_id),
                 "dates": graph_dates_line(person),
                 "meta": "",
+                "sex": person.get("sex", ""),
+                "father_id": person.get("father", ""),
+                "mother_id": person.get("mother", ""),
+                "confidence": person.get("confidence", ""),
                 "selected": "true" if pid == person_id else "false",
                 "layout_order": next_layout_order(),
             }
@@ -525,7 +538,11 @@ def build_family_graph_elements(
         visible_order_edges = {(left_id, right_id) for left_id, right_id in order_edges if left_id in path_nodes and right_id in path_nodes}
 
     elements = list(visible_node_defs.values())
+    # Imported records can retain a relationship to a person that has since
+    # been removed or merged. Cytoscape rejects an edge with a missing node.
     for left_id, right_id in sorted(visible_edges):
+        if left_id not in visible_node_defs or right_id not in visible_node_defs:
+            continue
         elements.append(
             {
                 "data": {
@@ -536,18 +553,14 @@ def build_family_graph_elements(
                 }
             }
         )
+    # A lightweight invisible edge keeps an ordered couple on the same rank.
+    # Unlike the old high-weight version, it cannot override parent/child
+    # generations, but gives Dagre a stable male-left / female-right family
+    # unit for each marriage.
     for left_id, right_id in sorted(visible_order_edges):
-        elements.append(
-            {
-                "data": {
-                    "id": f"order:{left_id}->{right_id}",
-                    "source": left_id,
-                    "target": right_id,
-                    "path": "false",
-                    "kind": "order",
-                }
-            }
-        )
+        if left_id not in visible_node_defs or right_id not in visible_node_defs:
+            continue
+        elements.append({"data": {"id": f"order:{left_id}->{right_id}", "source": left_id, "target": right_id, "path": "false", "kind": "order"}})
     return elements, branch_found
 
 
@@ -583,6 +596,10 @@ def build_all_graph_elements(
                 "label": display_name(person, people_by_id),
                 "dates": graph_dates_line(person),
                 "meta": "",
+                "sex": person.get("sex", ""),
+                "father_id": person.get("father", ""),
+                "mother_id": person.get("mother", ""),
+                "confidence": person.get("confidence", ""),
                 "selected": "true" if pid == focus_id else "false",
                 "path": "false",
                 "layout_order": next_layout_order(),
@@ -645,10 +662,115 @@ def build_all_graph_elements(
 
     elements = list(node_defs.values())
     for left_id, right_id in sorted(edge_defs):
+        if left_id not in node_defs or right_id not in node_defs:
+            continue
         elements.append({"data": {"id": f"edge:{left_id}->{right_id}", "source": left_id, "target": right_id, "path": "false"}})
     for left_id, right_id in sorted(order_edges):
+        if left_id not in node_defs or right_id not in node_defs:
+            continue
         elements.append({"data": {"id": f"order:{left_id}->{right_id}", "source": left_id, "target": right_id, "path": "false", "kind": "order"}})
     return elements
+
+
+def build_trace_graph_elements(
+    focus_id: str,
+    target_id: str,
+    people_by_id: dict[str, dict[str, str]],
+    children_by_parent: dict[str, list[str]],
+    marriages: dict[tuple[str, str], dict[str, Any]],
+    trace_only: bool = False,
+) -> tuple[list[dict[str, Any]], bool]:
+    """Build the full relationship route between two people.
+
+    The existing tree uses parent -> family -> child edges, which gives Dagre a
+    stable top-to-bottom generational direction.  We preserve those directions
+    and merely mark the undirected shortest route for emphasis or isolation.
+    """
+    elements = build_all_graph_elements(focus_id, people_by_id, children_by_parent, marriages)
+    start = f"person:{focus_id}"
+    target = f"person:{target_id}"
+    edges = [
+        (element["data"]["source"], element["data"]["target"])
+        for element in elements
+        if "source" in element.get("data", {})
+    ]
+    path = shortest_path(start, target, edges)
+    if not path:
+        return elements, False
+
+    path_nodes = set(path)
+    path_edges = {(path[index], path[index + 1]) for index in range(len(path) - 1)}
+    path_edges |= {(right, left) for left, right in path_edges}
+    marked = []
+    for element in elements:
+        data = element["data"]
+        if "source" in data:
+            if trace_only and (data["source"] not in path_nodes or data["target"] not in path_nodes):
+                continue
+            copied = {**element, "data": {**data, "path": "true" if (data["source"], data["target"]) in path_edges else "false"}}
+        else:
+            if trace_only and data["id"] not in path_nodes:
+                continue
+            copied = {**element, "data": {**data, "path": "true" if data["id"] in path_nodes else "false"}}
+        marked.append(copied)
+    return marked, True
+
+
+def build_couple_ancestor_elements(
+    focus_id: str,
+    people_by_id: dict[str, dict[str, str]],
+    children_by_parent: dict[str, list[str]],
+    marriages: dict[tuple[str, str], dict[str, Any]],
+) -> tuple[list[dict[str, Any]], str]:
+    """Return a spouse pair and their ancestors only; descendants are omitted."""
+    partner_id = next((right for (left, right) in marriages if left == focus_id and right in people_by_id), "")
+    roots = {focus_id, partner_id} - {""}
+    people = set(roots)
+    generation = {person_id: 0 for person_id in roots}
+    queue = deque(roots)
+    while queue:
+        person = people_by_id.get(queue.popleft(), {})
+        for parent_id in (person.get("father", ""), person.get("mother", "")):
+            if parent_id and parent_id in people_by_id and parent_id not in people:
+                people.add(parent_id)
+                generation[parent_id] = generation[person.get("id", focus_id)] + 1
+                queue.append(parent_id)
+
+    all_elements = build_all_graph_elements(focus_id, people_by_id, children_by_parent, marriages)
+    by_id = {item["data"]["id"]: item for item in all_elements if "source" not in item["data"]}
+    edges = [item for item in all_elements if "source" in item["data"]]
+    included = {f"person:{person_id}" for person_id in people}
+    for family_id, family in by_id.items():
+        if family["data"].get("kind") != "family":
+            continue
+        incoming = {edge["data"]["source"] for edge in edges if edge["data"]["target"] == family_id}
+        outgoing = {edge["data"]["target"] for edge in edges if edge["data"]["source"] == family_id}
+        if outgoing & included or ({f"person:{focus_id}", f"person:{partner_id}"} <= incoming if partner_id else False):
+            included.add(family_id)
+    family_generation: dict[str, float] = {}
+    for family_id in included:
+        if not family_id.startswith("family:"):
+            continue
+        children = [
+            edge["data"]["target"].removeprefix("person:")
+            for edge in edges
+            if edge["data"]["source"] == family_id and edge["data"]["target"].startswith("person:")
+        ]
+        child_levels = [generation[child_id] for child_id in children if child_id in generation]
+        family_generation[family_id] = (min(child_levels) + 0.5) if child_levels else 0.25
+    result = []
+    for item in all_elements:
+        data = item["data"]
+        if "source" in data:
+            if data["source"] not in included or data["target"] not in included:
+                continue
+        elif data["id"] not in included:
+            continue
+        person_id = data.get("person_id", "")
+        level = generation.get(person_id, family_generation.get(data.get("id", ""), 0))
+        copied = {**item, "data": {**data, "ancestry_level": level, "path": "true" if data.get("id") in {f"person:{focus_id}", f"person:{partner_id}"} else data.get("path", "false")}}
+        result.append(copied)
+    return result, partner_id
 
 
 def person_sources(person_id: str, events: list[dict[str, Any]], sources_by_id: dict[str, dict[str, str]]) -> list[dict[str, Any]]:
@@ -684,6 +806,7 @@ def person_sources(person_id: str, events: list[dict[str, Any]], sources_by_id: 
                 "date": source.get("date", ""),
                 "archive_url": source.get("archive_url", ""),
                 "local_image": source.get("local_image", ""),
+                "local_image_available": local_file_available(source.get("local_image", "")),
                 "priority": source.get("priority", ""),
                 "linked_events": linked_events,
             }
@@ -753,6 +876,7 @@ def person_events(
                     "date": source.get("date", ""),
                     "archive_url": source.get("archive_url", ""),
                     "local_image": source.get("local_image", ""),
+                    "local_image_available": local_file_available(source.get("local_image", "")),
                     "priority": source.get("priority", ""),
                 }
             )
@@ -849,6 +973,7 @@ def event_detail_payload(
                 "date": source.get("date", ""),
                 "archive_url": source.get("archive_url", ""),
                 "local_image": source.get("local_image", ""),
+                "local_image_available": local_file_available(source.get("local_image", "")),
                 "priority": source.get("priority", ""),
             }
         )
@@ -899,6 +1024,14 @@ def person_detail_payload(
         "events": person_events(person_id, events, people_by_id, sources_by_id),
         "event_options": person_event_options(person_id, events),
         "sources": person_sources(person_id, events, sources_by_id),
+        "fact_sources": {
+            fact["source_id"]: {
+                "title": sources_by_id[fact["source_id"]].get("title", ""),
+                "archive_url": sources_by_id[fact["source_id"]].get("archive_url", ""),
+            }
+            for fact in (person.get("facts") or [])
+            if isinstance(fact, dict) and fact.get("source_id") in sources_by_id
+        },
         "review": {
             "needs_review": bool(person) and person_needs_review(person),
             "suggested_matches": suggested_matches,

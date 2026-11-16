@@ -26,39 +26,18 @@
         <span class="sr-only">Search people, places, or IDs</span>
         <input id="searchInput" type="search" placeholder="Search people, places, or IDs" autocomplete="off" />
       </label>
+      <label class="data-file-select">
+        <span>Data file</span>
+        <select id="dataFileSelect" aria-label="Genealogy data file"></select>
+      </label>
       <button id="helpBtn" class="toolbar-btn header-help" type="button" aria-label="Open help" title="Help">?</button>
     </header>
     <div id="workspace" class="workspace">
       <aside id="leftSidebar" class="sidebar left-sidebar">
-        <div class="sidebar-head">
-          <h1>Navigator</h1>
-          <button id="leftToggle" class="icon-toggle" type="button" aria-label="Close navigator" title="Close navigator">◀</button>
-        </div>
         <input id="linkedEventsViewToggle" class="hidden" type="checkbox" tabindex="-1" aria-hidden="true" />
         <input id="reviewOnlyToggle" class="hidden" type="checkbox" tabindex="-1" aria-hidden="true" />
-        <div class="person-view-only">
-        <label class="toggle">
-          <input id="displayAllToggle" type="checkbox" />
-          <span>Overview map</span>
-        </label>
-        <label class="field">
-          <span>Tree centre</span>
-          <select id="focusSelect"></select>
-        </label>
-        <label class="field">
-          <span>Branch</span>
-          <select id="branchSelect"></select>
-        </label>
-        <label class="toggle">
-          <input id="branchOnlyToggle" type="checkbox" />
-          <span>Show only selected branch</span>
-        </label>
-        <p id="branchHint" class="hint"></p>
-        </div>
-        <section class="navigator-help">
-          <strong id="navigatorHelpTitle">Explore the family</strong>
-          <p id="reviewQueueHint" class="hint">Select a person to inspect them. Re-centering the tree is always a separate action.</p>
-        </section>
+        <p id="reviewQueueHint" class="hidden"></p>
+        <strong id="navigatorHelpTitle" class="hidden">Explore the family</strong>
       </aside>
 
       <div id="leftResizer" class="sidebar-resizer left-resizer" role="separator" aria-orientation="vertical" aria-label="Resize navigator" tabindex="0" title="Resize navigator"></div>
@@ -70,15 +49,42 @@
             <span id="treeTitle" class="eyebrow">Family tree</span>
             <strong id="focusContextName">Loading…</strong>
           </div>
+          <section id="treeNavigation" class="tree-navigation person-view-only" aria-label="Tree navigation">
+            <input id="displayAllToggle" class="hidden" type="checkbox" />
+            <label class="inline-field"><span>Tree centre</span><select id="focusSelect"></select></label>
+            <label class="inline-field"><span>Branch</span><select id="branchSelect"></select></label>
+            <label class="inline-field"><span>Trace to</span><select id="traceSelect"></select></label>
+            <select id="viewModeSelect" class="hidden" tabindex="-1" aria-hidden="true"><option value="tree">Tree</option><option value="couple-star">Couple star</option><option value="two-way-fan">Fan</option></select>
+            <label class="inline-toggle"><input id="branchOnlyToggle" type="checkbox" /><span>Only route</span></label>
+            <p id="branchHint" class="hint"></p>
+          </section>
           <div id="graphControls" class="graph-controls" aria-label="Tree controls">
-            <button id="zoomOutBtn" class="toolbar-btn" type="button" aria-label="Zoom out" title="Zoom out">−</button>
-            <button id="zoomInBtn" class="toolbar-btn" type="button" aria-label="Zoom in" title="Zoom in">+</button>
-            <button id="fitGraphBtn" class="toolbar-btn" type="button">Fit</button>
-            <button id="fullTreeBtn" class="toolbar-btn" type="button" title="Toggle overview map">Overview</button>
+            <div class="control-group view-switch" role="group" aria-label="View">
+              <button class="view-btn active" type="button" data-view="tree" aria-pressed="true" title="Tree – generations with couples side by side">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="7" y="2" width="6" height="4" rx="1"/><rect x="2" y="14" width="6" height="4" rx="1"/><rect x="12" y="14" width="6" height="4" rx="1"/><path d="M10 6v4M5 14v-4h10v4"/></svg><span>Tree</span>
+              </button>
+              <button class="view-btn" type="button" data-view="couple-star" aria-pressed="false" title="Couple star – the couple in the centre, each ancestral line branching outwards">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="2.2"/><circle cx="3.5" cy="3.5" r="1.6"/><circle cx="16.5" cy="3.5" r="1.6"/><circle cx="3.5" cy="16.5" r="1.6"/><circle cx="16.5" cy="16.5" r="1.6"/><path d="M8.4 8.4 4.7 4.7M11.6 8.4l3.7-3.7M8.4 11.6l-3.7 3.7M11.6 11.6l3.7 3.7"/></svg><span>Star</span>
+              </button>
+              <button class="view-btn" type="button" data-view="two-way-fan" aria-pressed="false" title="Fan – ancestors as rings around the couple">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="2.5"/><circle cx="10" cy="10" r="5.5"/><circle cx="10" cy="10" r="8.5"/><path d="M10 1.5v17M1.5 10h17"/></svg><span>Fan</span>
+              </button>
+            </div>
+            <div class="control-group zoom-group" role="group" aria-label="Zoom">
+              <button id="zoomOutBtn" class="group-btn" type="button" aria-label="Zoom out" title="Zoom out">−</button>
+              <button id="zoomInBtn" class="group-btn" type="button" aria-label="Zoom in" title="Zoom in">+</button>
+              <button id="fitGraphBtn" class="group-btn" type="button" title="Fit to screen">Fit</button>
+            </div>
+            <button id="fullTreeBtn" class="toolbar-btn" type="button" title="Toggle the full connected tree">Overview</button>
+            <button id="layoutSettingsBtn" class="toolbar-btn settings-btn" type="button" aria-label="Layout settings" title="Layout settings" aria-expanded="false" aria-controls="layoutSettings">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>
+            </button>
           </div>
           <button id="rightExpand" class="edge-toggle right-expand hidden" type="button" aria-label="Open details" title="Open details">Details</button>
         </div>
         <div id="cy" role="img" aria-label="Interactive family tree. Use the navigator for keyboard-accessible person selection."></div>
+        <svg id="fanChart" class="fan-chart hidden" role="img" aria-label="Fan chart of ancestors"></svg>
+        <section id="layoutSettings" class="layout-popover hidden" role="dialog" aria-label="Layout settings"></section>
         <section id="reviewQueuePanel" class="linked-events-panel hidden" aria-labelledby="reviewQueueHeading">
           <div class="linked-events-head">
             <h3 id="reviewQueueHeading">People awaiting review</h3>
@@ -116,12 +122,10 @@
           <span class="hint">Editing person</span>
           <button id="closeEditBtn" type="button" class="toolbar-btn" title="Close edit panel">&#10005; Close edit</button>
         </div>
-        <form id="personForm" class="admin-card">
-          <h3>Person</h3>
+        <form id="personForm" class="person-record-form">
           <div class="compact-grid">
-            <label><span>ID</span><input id="personIdField" name="person_id_readonly" type="text" readonly /></label>
-            <label><span>Name</span><input name="name" type="text" /></label>
-            <label><span>Sex</span>
+            <label class="identity-field identity-id"><span>ID</span><input id="personIdField" name="person_id_readonly" type="text" readonly /></label>
+            <label class="identity-field identity-sex"><span>Sex</span>
               <select name="sex">
                 <option value=""></option>
                 <option value="M">M</option>
@@ -129,7 +133,7 @@
                 <option value="U">U</option>
               </select>
             </label>
-            <label><span>Confidence</span>
+            <label class="identity-field identity-confidence"><span>Confidence</span>
               <select name="confidence">
                 <option value=""></option>
                 <option value="confirmed">confirmed</option>
@@ -137,18 +141,22 @@
                 <option value="possible">possible</option>
               </select>
             </label>
-            <label><span>Birth date</span><input name="birth_date" type="text" /></label>
-            <label><span>Birth place</span><input name="birth_place" type="text" /></label>
-            <label><span>Birth surname</span><input name="birth_surname" type="text" /></label>
-            <label><span>Married surname</span><input name="married_surname" type="text" /></label>
-            <label><span>Death date</span><input name="death_date" type="text" /></label>
-            <label><span>Death place</span><input name="death_place" type="text" /></label>
-            <label><span>Father</span><select name="father"></select></label>
-            <label><span>Mother</span><select name="mother"></select></label>
+            <label class="identity-field identity-name"><span>Name</span><input name="name" type="text" /></label>
+            <label class="identity-field identity-surname"><span>Birth surname</span><input name="birth_surname" type="text" /></label>
+            <div class="identity-married-spacer" aria-hidden="true"></div>
+            <label class="identity-field identity-married"><span>Married surname</span><input name="married_surname" type="text" /></label>
+            <label class="identity-field identity-birth-date"><span>Birth date</span><input name="birth_date" type="text" /></label>
+            <label class="identity-field identity-birth-place"><span>Birth place</span><input name="birth_place" type="text" /></label>
+            <label class="identity-field identity-death-date"><span>Death date</span><input name="death_date" type="text" /></label>
+            <label class="identity-field identity-death-place"><span>Death place</span><input name="death_place" type="text" /></label>
+            <div class="editor-divider" aria-hidden="true"></div>
             <label><span>Provenance</span><input name="provenance" type="text" /></label>
             <label class="full"><span>Notes</span><textarea name="notes"></textarea></label>
           </div>
-          <div class="actions">
+          <select name="father" class="hidden"></select>
+          <select name="mother" class="hidden"></select>
+          <section id="personFacts" class="person-facts"></section>
+          <div class="actions person-save-actions">
             <button type="submit">Save person</button>
             <span id="saveStatus" class="hint" role="status" aria-live="polite"></span>
           </div>
@@ -213,10 +221,11 @@
             <button type="submit">Add source</button>
             <span id="sourceStatus" class="hint" role="status" aria-live="polite"></span>
           </div>
-          <div class="section-divider"></div>
-          <h3>Current Event Links</h3>
-          <div id="sourcesList" class="sources-list"></div>
         </form>
+        <details class="edit-linked-records">
+          <summary>Manage linked records</summary>
+          <div id="sourcesList" class="sources-list"></div>
+        </details>
         </div>
 
         <section id="eventInspectorPanel" class="admin-card hidden">
@@ -256,11 +265,12 @@
             </dl>
           </section>
           <section>
-            <h3>Left sidebar</h3>
+            <h3>Tree toolbar</h3>
             <dl>
-              <dt>Search</dt><dd>Filters the Focus person dropdown by name, place, or ID.</dd>
+              <dt>Search</dt><dd>Filters the Tree centre dropdown by name, place, or ID.</dd>
               <dt>Branch dropdown</dt><dd>Highlight the path to a specific descendant.</dd>
-              <dt>Linked events review</dt><dd>Switches to a flat event list for reviewing sources and links.</dd>
+              <dt>Trace to</dt><dd>Highlights any connected relationship route, including ancestors and spouses.</dd>
+              <dt>Only route</dt><dd>Shows just the highlighted branch or traced relationship route.</dd>
             </dl>
           </section>
           <section>
