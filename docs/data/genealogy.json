@@ -7,78 +7,121 @@
       "death_date": "1916-02-27",
       "birth_place": "Rudslavice",
       "father": "P0002",
-      "mother": "P0083",
+      "mother": "P0151",
       "sex": "M",
       "confidence": "confirmed",
-      "notes": "Primary line confirmed from parish records. Birth 1854-09-15 and marriage 1884-11-11 linked; death recorded in 1916 (month-level certainty).\n\nImported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nMerged from P0063.\n\nConnected mother to P0083 (Josefa Hykel) after removing incorrect Veronika spouse link.\n\nLegacy 1826 and 1860 marriage-view links were folded into the canonical branch rather than kept as separate spouse views.\n\nMerged from P0006.",
+      "notes": "Primary line confirmed from parish records. Birth 1854-09-15 and marriage 1884-11-11 linked; death recorded in 1916 (month-level certainty).\n\nImported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nMerged from P0063.\n\nConnected mother to P0083 (Josefa Hykel) after removing incorrect Veronika spouse link.\n\nLegacy 1826 and 1860 marriage-view links were folded into the canonical branch rather than kept as separate spouse views.\n\nMerged from P0006.\n\nVerified 2026-11-14 against original scan (S0006, scan 7): 'Franz Waida', born 15 Sep 1854, baptised 16 Sep, Ludslavice; father Josef Waida, farmer in Rudslavice, son of Franz Waida and Anna n\u00e9e Dvo\u0159el; mother Veronika, daughter of Johann Dvo\u0159el and Veronika n\u00e9e Lochmann. Mother changed from Josefa Hykel (P0083) to Veronika Dvo\u0159el (P0151). The 1884 marriage link S0007 (Lukov book 4360, scan 25) does NOT show his wedding: that page has 3, 13 and 24 Nov 1884 weddings only.\n\nDeath verified 2026-11-14 (S0008, Lukov/Vel\u00edkov\u00e1 deaths book 4364, scan 84): 'Vajda Franti\u0161ek, married farmer in Vel\u00edkov\u00e1 no. 47, son of Josef Vajda, p\u016fll\u00e1n\u00edk in Rudslavice, and his wife Veronika Dvo\u0159el (written Dovr\u0161elov\u00e1); born 15 Sep 1854 in Rudslavice, Hole\u0161ov district; married 11 Nov 1884'. Died 27 Feb 1916 of pneumonia, buried 29 Feb in Lukov, aged 62. This independently confirms his parents and the marriage date. The marriage itself is not in the Vel\u00edkov\u00e1 (book 4360) or Ludslavice (book 8163) marriage registers, so it was probably in the bride's parish.\n\nMarriage found 2026-11-14 (S0026, Jankovice/Hole\u0161ov): wife Anna \u017derav\u00edk, not Marie Anna Sova. He was then a domk\u00e1\u0159 in Rudslavice, aged 30.",
       "death_place": "Velikov\u00e1",
       "provenance": "primary",
       "birth_surname": "Vajda",
-      "married_surname": ""
+      "married_surname": "",
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "domk\u00e1\u0159 (cottager)",
+          "date": "1884",
+          "source_id": "S0026"
+        },
+        {
+          "type": "residence",
+          "value": "Rudslavice",
+          "date": "1884",
+          "source_id": "S0026"
+        },
+        {
+          "type": "occupation",
+          "value": "farmer (roln\u00edk)",
+          "date": "1905",
+          "source_id": "S0027"
+        },
+        {
+          "type": "residence",
+          "value": "Vel\u00edkov\u00e1 no. 1",
+          "date": "1905",
+          "source_id": "S0027"
+        },
+        {
+          "type": "occupation",
+          "value": "married farmer (roln\u00edk)",
+          "date": "1916",
+          "source_id": "S0008"
+        },
+        {
+          "type": "residence",
+          "value": "Vel\u00edkov\u00e1 no. 47",
+          "date": "1916",
+          "source_id": "S0008"
+        },
+        {
+          "type": "residence",
+          "value": "born at Rudslavice",
+          "date": "1854",
+          "source_id": "S0006"
+        }
+      ]
     },
     {
       "id": "P0002",
       "name": "Joseph",
-      "birth_date": "1827-12-08",
+      "birth_date": "c. 1803 (age 35 at marriage 31 Jul 1838)",
       "birth_place": "Rudslavice",
-      "father": "P0003",
-      "mother": "P0004",
+      "father": "P0152",
+      "mother": "P0153",
       "sex": "M",
       "confidence": "probable",
-      "notes": "Baptism identifies father Georg and mother Anna. The earlier Dominika Liska match for the 1822 marriage was a false positive and has been removed.\n\nImported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nMerged from P0064.\n\nLinked-only merge from P0060; references moved without importing personal facts.",
+      "notes": "Baptism identifies father Georg and mother Anna. The earlier Dominika Liska match for the 1822 marriage was a false positive and has been removed.\n\nImported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nMerged from P0064.\n\nLinked-only merge from P0060; references moved without importing personal facts.\n\nVerified 2026-11-14 against original scan: the 1854 baptism of his son (S0006) names Josef's parents as Franz Waida and Anna n\u00e9e Dvo\u0159el, so Georg Waida (P0003) and Anna Holzman (P0004) were unlinked as parents. His wife was Veronika Dvo\u0159el (P0151), not Josefa Hykel. The birth date 1827-12-08 is NOT confirmed: Ludslavice births 1827 (book 8156, scan 42) have no 8 Dec entry; the 5 Dec 1827 Joseph (house 41) has father Joseph Gaja/Gajda. Not found in the Ludslavice marriage indexes 1785\u20131836 or 1837\u20131868 (note the 1851 Kostelec entry S0012 is Joseph WALEK, not Waida).\n\nAlso named in his son's 1916 death record (S0008) as 'Josef Vajda, p\u016fll\u00e1n\u00edk in Rudslavice', husband of Veronika Dvo\u0159el.\n\nMarriage found 2026-11-14 (S0029): 31 Jul 1838 in Kurovice, aged 35, then already a farmer (Bauer) in Rutzlawitz/Rudslavice no. 18; his father Franz was dead by 1838. So he was born c. 1803, not in the 1820s.\n\n2026-11-14: baptism c. 1803 NOT in Ludslavice (index S0024 lists Wajda children only from 1807). Probably born where Franz + Anna lived before moving to Ludslavice \u2014 likely Anna's home parish (village of Karl Dowr\u017eil, unread).",
       "provenance": "primary",
       "birth_surname": "Waida",
       "married_surname": "",
       "death_date": "",
-      "death_place": ""
-    },
-    {
-      "id": "P0003",
-      "name": "Georg",
-      "birth_date": "1798",
-      "birth_place": "Rudslavice (estimated)",
-      "father": "P0087",
-      "mother": "P0007",
-      "sex": "M",
-      "confidence": "probable",
-      "notes": "Estimated birth year from age 24 at marriage in 1822.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged from P0084.",
-      "provenance": "primary",
-      "birth_surname": "Waida",
-      "married_surname": "",
-      "death_date": "",
-      "death_place": ""
-    },
-    {
-      "id": "P0004",
-      "name": "Anna",
-      "birth_date": "",
-      "birth_place": "",
-      "father": "",
-      "mother": "",
-      "sex": "F",
-      "confidence": "probable",
-      "notes": "Bride in 1822 marriage; possibly recorded as Anna in child baptism records.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0143 into P0085.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0179 into P0085.\n\nMerged from P0085.",
-      "provenance": "primary",
-      "birth_surname": "Holzman",
-      "married_surname": "Waida",
-      "death_date": "",
-      "death_place": ""
-    },
-    {
-      "id": "P0007",
-      "name": "",
-      "birth_date": "",
-      "death_date": "",
-      "birth_place": "",
       "death_place": "",
-      "father": "",
-      "mother": "",
-      "sex": "F",
-      "confidence": "",
-      "notes": "",
-      "provenance": "",
-      "birth_surname": "",
-      "married_surname": ""
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "Bauer (farmer)",
+          "date": "1838",
+          "source_id": "S0029"
+        },
+        {
+          "type": "residence",
+          "value": "house no. 18",
+          "date": "1838",
+          "place": "Rudslavice/Ludslavice",
+          "source_id": "S0029"
+        },
+        {
+          "type": "occupation",
+          "value": "farmer (roln\u00edk)",
+          "date": "1854",
+          "source_id": "S0006"
+        },
+        {
+          "type": "occupation",
+          "value": "p\u016fll\u00e1n\u00edk (half-lan farmer)",
+          "date": "1884",
+          "source_id": "S0026"
+        },
+        {
+          "type": "occupation",
+          "value": "p\u016fll\u00e1n\u00edk",
+          "date": "1916",
+          "source_id": "S0008"
+        },
+        {
+          "type": "property",
+          "value": "successor owner of half-l\u00e1n farm no. 18 after Franz (entry not yet fully read; date probably c. 1828)",
+          "date": "c. 1828",
+          "place": "Ludslavice",
+          "source_id": "S0044"
+        },
+        {
+          "type": "alive",
+          "value": "living in 1884",
+          "date": "1884",
+          "place": "Rudslavice",
+          "source_id": "S0026"
+        }
+      ]
     },
     {
       "id": "P0009",
@@ -144,17 +187,37 @@
     {
       "id": "P0013",
       "name": "Jaroslav",
-      "birth_date": "1907-06-30",
+      "birth_date": "1907-06-29",
       "death_date": "1977-08-30",
-      "birth_place": "Zl\u00edn, \u010cesko",
+      "birth_place": "Mladcov\u00e1 (okres Hole\u0161ov)",
       "death_place": "Zl\u00edn, \u010cesko",
-      "father": "",
-      "mother": "",
+      "father": "P0178",
+      "mother": "P0179",
       "sex": "M",
-      "confidence": "possible",
-      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage",
-      "birth_surname": "Novosad"
+      "confidence": "confirmed",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nVerified 2026-11-14 (S0018): 'Novosad Jaroslav, tov\u00e1rn\u00ed d\u011bln\u00edk v Louk\u00e1ch n. D\u0159evnic\u00ed, svobodn\u00fd syn \u2020 Josefa Novosada, kol\u00e1\u0159e na Mladcov\u00e9, a jeho man\u017eelky Franti\u0161ky Pasty\u0159\u00edkov\u00e9(?), nar. 29. VI. 1907 na Mladcov\u00e9, okres Hole\u0161ov', aged 24. Birth date corrected from 30 Jun to 29 Jun 1907.",
+      "provenance": "primary",
+      "birth_surname": "Novosad",
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "tov\u00e1rn\u00ed d\u011bln\u00edk (factory worker)",
+          "date": "1931",
+          "source_id": "S0018"
+        },
+        {
+          "type": "residence",
+          "value": "Louky n. D\u0159evnic\u00ed",
+          "date": "1931",
+          "source_id": "S0018"
+        },
+        {
+          "type": "residence",
+          "value": "born at Mladcov\u00e1",
+          "date": "1907",
+          "source_id": "S0018"
+        }
+      ]
     },
     {
       "id": "P0014",
@@ -166,10 +229,11 @@
       "father": "P0020",
       "mother": "P0019",
       "sex": "M",
-      "confidence": "possible",
+      "confidence": "confirmed",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
       "provenance": "myheritage",
-      "birth_surname": "Vajda"
+      "birth_surname": "Vajda",
+      "married_surname": ""
     },
     {
       "id": "P0015",
@@ -181,7 +245,7 @@
       "father": "P0018",
       "mother": "P0017",
       "sex": "F",
-      "confidence": "possible",
+      "confidence": "confirmed",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
       "provenance": "myheritage",
       "birth_surname": "Ture\u010dkov\u00e1",
@@ -198,7 +262,7 @@
       "mother": "P0015",
       "sex": "M",
       "confidence": "confirmed",
-      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nSpouse: Michaela Vajdov\u00e1 (Loveck\u00e1), P0088.",
       "provenance": "myheritage",
       "birth_surname": "Vajda"
     },
@@ -212,7 +276,7 @@
       "father": "P0124",
       "mother": "P0024",
       "sex": "F",
-      "confidence": "possible",
+      "confidence": "confirmed",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
       "provenance": "myheritage",
       "birth_surname": "Barto\u0148ov\u00e1",
@@ -228,10 +292,11 @@
       "father": "",
       "mother": "",
       "sex": "M",
-      "confidence": "possible",
+      "confidence": "confirmed",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
       "provenance": "myheritage",
-      "birth_surname": "Ture\u010dek"
+      "birth_surname": "Ture\u010dek",
+      "married_surname": ""
     },
     {
       "id": "P0019",
@@ -243,7 +308,7 @@
       "father": "P0013",
       "mother": "P0021",
       "sex": "F",
-      "confidence": "possible",
+      "confidence": "confirmed",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
       "provenance": "myheritage",
       "birth_surname": "Novosadov\u00e1",
@@ -259,26 +324,35 @@
       "father": "P0062",
       "mother": "P0022",
       "sex": "M",
-      "confidence": "possible",
+      "confidence": "confirmed",
       "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
       "provenance": "myheritage",
-      "birth_surname": "Vajda"
+      "birth_surname": "Vajda",
+      "married_surname": ""
     },
     {
       "id": "P0021",
       "name": "Marie",
       "birth_date": "1912-09-02",
       "death_date": "1995-11-16",
-      "birth_place": "Zl\u00edn, \u010cesko",
+      "birth_place": "Louky n. D\u0159evnic\u00ed",
       "death_place": "",
-      "father": "",
-      "mother": "",
+      "father": "P0168",
+      "mother": "P0169",
       "sex": "F",
-      "confidence": "possible",
-      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage",
+      "confidence": "confirmed",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nVerified 2026-11-14 (S0018): 'Marie Svobodov\u00e1, svobodn\u00e1 dcera \u2020 Josefa Svobody, roln\u00edka v Louk\u00e1ch n. D\u0159., a jeho choti Franti\u0161ky Zelov\u00e9, nar. v Louk\u00e1ch n. D\u0159. 2. IX. 1912', aged 19.",
+      "provenance": "primary",
       "birth_surname": "Svobodov\u00e1",
-      "married_surname": "Novosadov\u00e1"
+      "married_surname": "Novosadov\u00e1",
+      "facts": [
+        {
+          "type": "residence",
+          "value": "Louky n. D\u0159evnic\u00ed",
+          "date": "1931",
+          "source_id": "S0018"
+        }
+      ]
     },
     {
       "id": "P0022",
@@ -291,10 +365,18 @@
       "mother": "P0069",
       "sex": "F",
       "confidence": "possible",
-      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nVerified 2026-11-14 (S0009): 'Berta Slov\u00e1\u010dkov\u00e1, living with her parents in Vesel\u00e1, born 21 Apr 1911 in Vesel\u00e1, Hole\u0161ov district, single, daughter of Josef Slov\u00e1\u010dek, farmer in Vesel\u00e1, and his wife Berta Divilkov\u00e1'. Married Stanislav Vajda on 8 July 1933 in Slu\u0161ovice.",
       "provenance": "myheritage",
       "birth_surname": "Slov\u00e1\u010dkov\u00e1",
-      "married_surname": "Vajdov\u00e1"
+      "married_surname": "Vajdov\u00e1",
+      "facts": [
+        {
+          "type": "residence",
+          "value": "Vesel\u00e1 (with parents)",
+          "date": "1933",
+          "source_id": "S0009"
+        }
+      ]
     },
     {
       "id": "P0024",
@@ -663,33 +745,74 @@
       "id": "P0054",
       "name": "Stanislav",
       "birth_date": "1904-10-06",
-      "death_date": "1905",
+      "death_date": "1905-09-04",
       "birth_place": "Velikov\u00e1",
       "death_place": "Velikov\u00e1",
       "father": "P0001",
-      "mother": "P0126",
+      "mother": "P0156",
       "sex": "M",
-      "confidence": "possible",
-      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).",
-      "provenance": "myheritage",
+      "confidence": "confirmed",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nVerified 2026-11-14 (S0027, Lukov deaths p. 22): 'Vajda Stanislav, born 6 Oct 1904, legitimate son of Franti\u0161ek Vajda, farmer of Vel\u00edkov\u00e1, and his wife Anna, daughter of Anton\u00edn \u017derav\u00edk, innkeeper in Jankovice'; died 4 Sep 1905 (buried 6 Sep in Lukov) aged 10 months 28 days, house no. 1. Mother changed from Marie Anna Sova to Anna \u017derav\u00edk.",
+      "provenance": "primary",
       "birth_surname": "Vajda",
-      "married_surname": ""
+      "married_surname": "",
+      "facts": [
+        {
+          "type": "residence",
+          "value": "Vel\u00edkov\u00e1 no. 1",
+          "date": "1904\u20131905",
+          "source_id": "S0027"
+        },
+        {
+          "type": "occupation",
+          "value": "child (died aged 10 months)",
+          "date": "1905",
+          "source_id": "S0027"
+        }
+      ]
     },
     {
       "id": "P0062",
       "name": "Stanislav",
       "birth_date": "1906-07-02",
       "death_date": "",
-      "birth_place": "Vesel\u00e1, \u010cesko",
+      "birth_place": "Vel\u00edkov\u00e1",
       "death_place": "",
       "father": "P0001",
-      "mother": "P0126",
+      "mother": "P0156",
       "sex": "M",
-      "confidence": "probable",
-      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nBirth noted but not digitized; linked marriage in 1933 (Slusovice).\n\nMerged duplicate record P0005.",
-      "provenance": "myheritage",
+      "confidence": "confirmed",
+      "notes": "Imported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nBirth noted but not digitized; linked marriage in 1933 (Slusovice).\n\nMerged duplicate record P0005.\n\n2026-11-14: mother still linked to P0126 (Sova), but Franti\u0161ek's verified wife was Anna \u017derav\u00edk (P0156) from 1884 to at least 1905. Likely also Anna \u017derav\u00edk's son; 1906 baptism not yet checked.\n\nVerified 2026-11-14 (S0009, Slu\u0161ovice marriages book 4674, scan 22, no. 1): 'Vajda Stanislav, blacksmith's assistant (kov\u00e1\u0159sk\u00fd pomocn\u00edk) in Vel\u00edkov\u00e1, born 2 July 1906 in Vel\u00edkov\u00e1, Hole\u0161ov district, single, son of the late Franti\u0161ek Vajda, farmer in Vel\u00edkov\u00e1, and his wife Anna \u017derav\u00edk'. Married 8 July 1933 in Slu\u0161ovice to Berta Slov\u00e1\u010dkov\u00e1. Mother changed from Marie Anna Sova (P0126) to Anna \u017derav\u00edk (P0156); birthplace corrected from Vesel\u00e1 to Vel\u00edkov\u00e1. Witnesses: Ferdinand Pr\u00e1\u0161ek(?), innkeeper, Vesel\u00e1; Josef Vajda, farmer, Vel\u00edkov\u00e1 (probably his brother, d. 1928?).",
+      "provenance": "primary",
       "birth_surname": "Vajda",
-      "married_surname": ""
+      "married_surname": "",
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "kov\u00e1\u0159sk\u00fd pomocn\u00edk (blacksmith's assistant)",
+          "date": "1933",
+          "source_id": "S0009"
+        },
+        {
+          "type": "residence",
+          "value": "Vel\u00edkov\u00e1",
+          "date": "1933",
+          "source_id": "S0009"
+        },
+        {
+          "type": "alive",
+          "value": "living in 1933",
+          "date": "1933",
+          "place": "Vel\u00edkov\u00e1",
+          "source_id": "S0009"
+        },
+        {
+          "type": "residence",
+          "value": "born at Vel\u00edkov\u00e1",
+          "date": "1906",
+          "source_id": "S0009"
+        }
+      ]
     },
     {
       "id": "P0068",
@@ -704,7 +827,21 @@
       "confidence": "possible",
       "provenance": "myheritage",
       "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nImported from GEDCOM (8g99a1_347583du36189muoeb06ac_A.ged).\n\nMerged from P0028.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0127 into P0068.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0163 into P0068.",
-      "birth_surname": "Slov\u00e1\u010dek"
+      "birth_surname": "Slov\u00e1\u010dek",
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "roln\u00edk (farmer)",
+          "date": "1933",
+          "source_id": "S0009"
+        },
+        {
+          "type": "residence",
+          "value": "Vesel\u00e1",
+          "date": "1933",
+          "source_id": "S0009"
+        }
+      ]
     },
     {
       "id": "P0069",
@@ -738,67 +875,6 @@
       "birth_surname": "Nedb\u00e1lkov\u00e1"
     },
     {
-      "id": "P0083",
-      "name": "Josefa",
-      "birth_date": "",
-      "death_date": "",
-      "birth_place": "",
-      "death_place": "",
-      "father": "P0086",
-      "mother": "P0115",
-      "sex": "F",
-      "confidence": "possible",
-      "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0142 into P0083.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0178 into P0083.",
-      "birth_surname": "Hykel",
-      "married_surname": "Waida"
-    },
-    {
-      "id": "P0086",
-      "name": "Josef",
-      "birth_date": "",
-      "death_date": "",
-      "birth_place": "",
-      "death_place": "",
-      "father": "",
-      "mother": "",
-      "sex": "M",
-      "confidence": "possible",
-      "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0144 into P0086.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0180 into P0086.",
-      "birth_surname": "Hykel"
-    },
-    {
-      "id": "P0087",
-      "name": "Waida",
-      "birth_date": "",
-      "death_date": "",
-      "birth_place": "Ludslavice",
-      "death_place": "",
-      "father": "",
-      "mother": "",
-      "sex": "U",
-      "confidence": "possible",
-      "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0145 into P0087.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0181 into P0087."
-    },
-    {
-      "id": "P0088",
-      "name": "Michaela",
-      "birth_date": "1982-03-07",
-      "death_date": "",
-      "birth_place": "Kyjov",
-      "death_place": "",
-      "father": "P0091",
-      "mother": "P0092",
-      "sex": "F",
-      "confidence": "possible",
-      "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
-      "birth_surname": "Loveck\u00e1",
-      "married_surname": "Vajdov\u00e1"
-    },
-    {
       "id": "P0089",
       "name": "Ond\u0159ej",
       "birth_date": "1986-10-03",
@@ -808,100 +884,11 @@
       "father": "P0014",
       "mother": "P0015",
       "sex": "M",
-      "confidence": "possible",
+      "confidence": "confirmed",
       "provenance": "myheritage",
       "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
-      "birth_surname": "Vajda"
-    },
-    {
-      "id": "P0091",
-      "name": "Franti\u0161ek",
-      "birth_date": "1955-06-13",
-      "death_date": "2019-03-06",
-      "birth_place": "Kyjov",
-      "death_place": "Moravsk\u00fd P\u00edsek",
-      "father": "P0093",
-      "mother": "P0094",
-      "sex": "M",
-      "confidence": "possible",
-      "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
-      "birth_surname": "Loveck\u00fd"
-    },
-    {
-      "id": "P0092",
-      "name": "Alena",
-      "birth_date": "1957-03-01",
-      "death_date": "",
-      "birth_place": "Kyjov",
-      "death_place": "",
-      "father": "P0096",
-      "mother": "P0095",
-      "sex": "F",
-      "confidence": "possible",
-      "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
-      "birth_surname": "Sl\u00e1dkov\u00e1"
-    },
-    {
-      "id": "P0093",
-      "name": "Franti\u0161ek",
-      "birth_date": "1926-01-01",
-      "death_date": "2009",
-      "birth_place": "Kyjov",
-      "death_place": "",
-      "father": "P0114",
-      "mother": "",
-      "sex": "M",
-      "confidence": "possible",
-      "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
-      "birth_surname": "Loveck\u00fd"
-    },
-    {
-      "id": "P0094",
-      "name": "Marie",
-      "birth_date": "",
-      "death_date": "",
-      "birth_place": "",
-      "death_place": "",
-      "father": "",
-      "mother": "",
-      "sex": "F",
-      "confidence": "possible",
-      "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0147 into P0094.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0183 into P0094.",
-      "birth_surname": "Form\u00e1nkov\u00e1"
-    },
-    {
-      "id": "P0095",
-      "name": "Drahom\u00edra",
-      "birth_date": "1930-11-11",
-      "death_date": "",
-      "birth_place": "",
-      "death_place": "",
-      "father": "",
-      "mother": "",
-      "sex": "F",
-      "confidence": "possible",
-      "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
-      "birth_surname": "Svobodov\u00e1"
-    },
-    {
-      "id": "P0096",
-      "name": "Josef",
-      "birth_date": "",
-      "death_date": "",
-      "birth_place": "",
-      "death_place": "",
-      "father": "",
-      "mother": "",
-      "sex": "M",
-      "confidence": "possible",
-      "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0148 into P0096.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0184 into P0096.",
-      "birth_surname": "Sl\u00e1dek"
+      "birth_surname": "Vajda",
+      "married_surname": ""
     },
     {
       "id": "P0097",
@@ -1131,68 +1118,6 @@
       "birth_surname": "Hradil"
     },
     {
-      "id": "P0114",
-      "name": "Franti\u0161ek",
-      "birth_date": "",
-      "death_date": "",
-      "birth_place": "",
-      "death_place": "",
-      "father": "",
-      "mother": "",
-      "sex": "M",
-      "confidence": "possible",
-      "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0151 into P0114.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0187 into P0114.",
-      "birth_surname": "Loveck\u00fd"
-    },
-    {
-      "id": "P0115",
-      "name": "Rosalina",
-      "birth_date": "",
-      "death_date": "",
-      "birth_place": "",
-      "death_place": "",
-      "father": "",
-      "mother": "",
-      "sex": "F",
-      "confidence": "possible",
-      "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0152 into P0115.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0188 into P0115.",
-      "birth_surname": "",
-      "married_surname": "Hykel"
-    },
-    {
-      "id": "P0116",
-      "name": "Jan",
-      "birth_date": "",
-      "death_date": "",
-      "birth_place": "",
-      "death_place": "",
-      "father": "",
-      "mother": "",
-      "sex": "M",
-      "confidence": "possible",
-      "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged from P0153.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0189 into P0116.",
-      "birth_surname": "Sova"
-    },
-    {
-      "id": "P0117",
-      "name": "Terezie",
-      "birth_date": "",
-      "death_date": "",
-      "birth_place": "",
-      "death_place": "",
-      "father": "",
-      "mother": "",
-      "sex": "F",
-      "confidence": "possible",
-      "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0154 into P0117.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0190 into P0117.",
-      "birth_surname": "",
-      "married_surname": "Sova"
-    },
-    {
       "id": "P0118",
       "name": "Jan",
       "birth_date": "1874-01-03",
@@ -1210,16 +1135,16 @@
     {
       "id": "P0119",
       "name": "Maria",
-      "birth_date": "",
+      "birth_date": "1872-08-05 (probable, S0061)",
       "death_date": "",
-      "birth_place": "",
+      "birth_place": "Rabensburg no. 208 (probable)",
       "death_place": "",
       "father": "P0122",
       "mother": "P0123",
       "sex": "F",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0155 into P0119.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0191 into P0119.",
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0155 into P0119.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0191 into P0119.\n\nCandidate birth record 2026-11-14 (S0061, PROBABLE, not yet linked by a marriage record): Rabensburg baptisms 1872, no. 39 \u2014 'Maria', born 5 Aug, baptised 6 Aug 1872, Rabensburg no. 208, female, apparently illegitimate (mark in the 'unehelich' column); father column 'H\u00f6nig(?) Johann, kath. Rlg.'; mother 'angeblich Maria Anna Barton, kath. Rlg., Tagl\u00f6hnerin, von der M\u00e4hr. Pfarre Seitendorf in M\u00e4hren' (Seitendorf = \u017denklava, next to Ve\u0159ovice!). Godmother Anna Hakala(?), daughter of Anton Hakala, Feldh\u00fcter, no. 64; midwife Theresia Michl; baptised by Anton Werm, coop. The mother's name Maria Anna Barton matches the tree's 'Marie Anna' (P0123); but the tree's father 'Josef B\u00e1rton of Rabensburg' (P0122) is NOT supported \u2014 no Josef Barton appears here. Confirm via the Barto\u0148\u2013B\u00e1rtonov\u00e1 marriage (c. 1895\u20131905, Ve\u0159ovice/\u017denklava, ZA Opava).",
       "birth_surname": "B\u00e1rtonov\u00e1",
       "married_surname": "Barto\u0148ov\u00e1"
     },
@@ -1266,12 +1191,12 @@
       "sex": "M",
       "confidence": "possible",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0158 into P0122.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0194 into P0122.",
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0158 into P0122.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0194 into P0122. 2026-11-14: NOT found as father in the Rabensburg 1872 baptism of Maria (S0061), which names 'H\u00f6nig(?) Johann' and looks illegitimate; 'Rabensburg' as his birthplace is unverified. Keep as unconfirmed.",
       "birth_surname": "B\u00e1rton"
     },
     {
       "id": "P0123",
-      "name": "Marie",
+      "name": "Maria Anna",
       "birth_date": "",
       "death_date": "",
       "birth_place": "",
@@ -1279,10 +1204,24 @@
       "father": "",
       "mother": "",
       "sex": "F",
-      "confidence": "possible",
+      "confidence": "probable",
       "provenance": "myheritage",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0159 into P0123.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0195 into P0123.",
-      "birth_surname": "Anna"
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0159 into P0123.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0195 into P0123. 2026-11-14: Rabensburg 1872 baptism (S0061) names the mother of Maria as 'Maria Anna Barton', Catholic day labourer from Seitendorf (\u017denklava) parish in Moravia. The tree had her as 'Marie' with surname 'Anna' (import error). 2026-11-14: no further Barton baptisms 1873\u20131889 (S0062, S0063) and no Barton death 1880\u20131898 (S0065) in Rabensburg \u2014 she was a seasonal/temporary day labourer there, not a resident; her origin and ancestors are in \u017denklava (Seitendorf) parish, ZA Opava (manual check needed).",
+      "birth_surname": "Barton",
+      "facts": [
+        {
+          "type": "origin",
+          "value": "Seitendorf / \u017denklava parish, Moravia (near Ve\u0159ovice)",
+          "date": "1872",
+          "source_id": "S0061"
+        },
+        {
+          "type": "occupation",
+          "value": "Tagl\u00f6hnerin (day labourer) in Rabensburg",
+          "date": "1872",
+          "source_id": "S0061"
+        }
+      ]
     },
     {
       "id": "P0124",
@@ -1317,22 +1256,6 @@
       "married_surname": ""
     },
     {
-      "id": "P0126",
-      "name": "Marie Anna",
-      "birth_date": "",
-      "death_date": "",
-      "birth_place": "",
-      "death_place": "",
-      "father": "P0116",
-      "mother": "P0117",
-      "sex": "F",
-      "confidence": "confirmed",
-      "provenance": "manual",
-      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged from P0067.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0162 into P0126.\n\nKept as the single bride record for Frantisek Vajda after collapsing duplicate Marianna/Anna bride records from the 1884 marriage cluster.",
-      "birth_surname": "Sova",
-      "married_surname": "Vajdov\u00e1"
-    },
-    {
       "id": "P0146",
       "name": "Dagmara",
       "birth_date": "",
@@ -1342,7 +1265,7 @@
       "father": "P0020",
       "mother": "P0019",
       "sex": "F",
-      "confidence": "possible",
+      "confidence": "confirmed",
       "provenance": "myheritage",
       "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged from P0090.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0182 into P0146.",
       "birth_surname": "Vajdov\u00e1",
@@ -1373,40 +1296,961 @@
       "father": "",
       "mother": "",
       "sex": "M",
-      "confidence": "possible",
+      "confidence": "confirmed",
       "provenance": "myheritage",
       "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged from P0113.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0186 into P0150.",
-      "birth_surname": "Cekota"
+      "birth_surname": "Cekota",
+      "married_surname": ""
+    },
+    {
+      "id": "P0151",
+      "name": "Veronika",
+      "birth_date": "c. 1819 (age 19 at marriage 1838)",
+      "death_date": "",
+      "birth_place": "Kurovice (probable)",
+      "death_place": "",
+      "father": "P0154",
+      "mother": "P0155",
+      "sex": "F",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Mother of Franti\u0161ek (b. 1854). Named in Franti\u0161ek's baptism, Ludslavice births 1853\u20131874 (MZA book 8158, scan 7), S0006. Daughter of Johann Dvo\u0159el, farmer in Ludslavice, and Veronika n\u00e9e Lochmann. Confirmed again by her son's 1916 death record (S0008). The 1884 marriage (S0026) gives her as 'n\u00e9e Dovr\u0161el(?) from Kurovice' \u2014 possibly her birthplace; the 1854 baptism said Ludslavice. Married Joseph Waida 31 Jul 1838 in Kurovice aged 19 (S0029); her father Johann Dwor\u017eel was a farmer in Kurovice; she was then parentless, with a guardian's consent.\n\n2026-11-14: replaced the MyHeritage spouse Josefa Hykel (P0083) and her parents Josef Hykel (P0086) + Rosalina (P0115), which were deleted \u2014 no record supports them.",
+      "birth_surname": "Dvo\u0159el",
+      "married_surname": "Waida",
+      "facts": [
+        {
+          "type": "origin",
+          "value": "Kurovice",
+          "date": "1838",
+          "source_id": "S0029"
+        },
+        {
+          "type": "origin",
+          "value": "Kurovice",
+          "date": "1884",
+          "source_id": "S0026"
+        },
+        {
+          "type": "alive",
+          "value": "living in 1854",
+          "date": "1854",
+          "place": "Rudslavice",
+          "source_id": "S0006"
+        },
+        {
+          "type": "residence",
+          "value": "Rudslavice no. 18 (wife of Josef)",
+          "date": "1854",
+          "place": "Ludslavice",
+          "source_id": "S0006"
+        },
+        {
+          "type": "occupation",
+          "value": "wife of farmer Josef Waida",
+          "date": "1854",
+          "source_id": "S0006"
+        }
+      ]
+    },
+    {
+      "id": "P0152",
+      "name": "Franz",
+      "birth_date": "c. 1764 (age 63 at death 1827)",
+      "death_date": "1827-06-05",
+      "birth_place": "",
+      "death_place": "Ludslavice no. 18",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Father of Josef Waida; farmer (Bauer) in Rudslavice/Ludslavice. Named in Franti\u0161ek's baptism, Ludslavice births 1853\u20131874 (MZA book 8158, scan 7), S0006. Dead by 31 Jul 1838 ('nach Franz Waida', S0029); had been a farmer (Bauer) in Rudslavice. Farmer (Bauer) at Ludslavice no. 17 in 1807 (S0031). No Waida baptisms in Ludslavice before 1807, so the family probably moved in c. 1803\u20131807; no Franz Waida marriage in Prusinovice 1784\u20131843 (S0032).\n\nDeath verified 2026-11-14 (S0033, Ludslavice deaths fol. 45): 'Franz Waida, Bauer', house no. 18, died 5 Jun 1827 (buried 7 Jun), aged 63, cause Gicht(?); priest Joseph Vitka, Koop. Same house no. 18 as his son Josef in 1838 (S0029). Born c. 1764 \u2014 so Josef (b. c. 1803) was born when Franz was ~39; an earlier first marriage of Franz is possible.\n\nLand book (S0044, fol. 94\u201398): previous owner of no. 18 from 10 Sep 1806 was Athanasius Wagda (P0164); Franz Wagda took the farm on 10 Jun 1808 for 3200 fl; later owner Josef Waida (his son). This matches Franz being at no. 17 in 1807 and no. 18 from 1809.\n\n2026-11-14: removed the unverified MyHeritage cluster Georg Waida (b. c.1798, 'married 1822 Anna Holzman', P0003/P0004) with an unnamed Waida parent (P0087) and an empty person (P0007), plus events E1822-12-08-marriage-georg-anna, E1822-10-21-marriage-056. A Georg born c.1798 could theoretically be Franz's son from an earlier marriage \u2014 sources S0001/S0003 (1822 marriage, local images missing) are kept for a future check. 2026-11-14: the 1822 'Georg Waida + Anna Holzman' marriage does not exist in the Ludslavice register (S0050, S0051), so the deleted Georg cluster was a MyHeritage error, not a son of Franz. House no. 17 in 1807 belonged to Johann Scho\u0159\u00edk(?) (S0052), so Franz lived there as a lodger before taking over no. 18 in 1808.",
+      "birth_surname": "Waida",
+      "married_surname": "",
+      "facts": [
+        {
+          "type": "residence",
+          "value": "house no. 17",
+          "date": "1807",
+          "place": "Ludslavice",
+          "source_id": "S0031"
+        },
+        {
+          "type": "residence",
+          "value": "house no. 18",
+          "date": "1809",
+          "place": "Ludslavice",
+          "source_id": "S0035"
+        },
+        {
+          "type": "residence",
+          "value": "house no. 18",
+          "date": "1814",
+          "place": "Ludslavice",
+          "source_id": "S0036"
+        },
+        {
+          "type": "residence",
+          "value": "house no. 18",
+          "date": "1816",
+          "place": "Ludslavice",
+          "source_id": "S0037"
+        },
+        {
+          "type": "residence",
+          "value": "house no. 18",
+          "date": "1827",
+          "place": "Ludslavice",
+          "source_id": "S0033"
+        },
+        {
+          "type": "occupation",
+          "value": "Bauer (farmer)",
+          "date": "1807",
+          "source_id": "S0031"
+        },
+        {
+          "type": "occupation",
+          "value": "Bauer (farmer)",
+          "date": "1809",
+          "source_id": "S0035"
+        },
+        {
+          "type": "occupation",
+          "value": "Bauer (farmer)",
+          "date": "1816",
+          "source_id": "S0037"
+        },
+        {
+          "type": "occupation",
+          "value": "Bauer (farmer)",
+          "date": "1827",
+          "source_id": "S0033"
+        },
+        {
+          "type": "property",
+          "value": "took over half-l\u00e1n farm (halber Lahnersgrund) no. 18 in Rutzlawitz, price 3200 fl (hypotheca 1600 fl)",
+          "date": "1808-06-10",
+          "place": "Ludslavice",
+          "source_id": "S0044"
+        }
+      ]
+    },
+    {
+      "id": "P0153",
+      "name": "Anna",
+      "birth_date": "c. 1775\u20131785 (est.: children born 1803\u20131821)",
+      "death_date": "",
+      "birth_place": "Ludslavice",
+      "death_place": "",
+      "father": "P0160",
+      "mother": "",
+      "sex": "F",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Mother of Josef Waida. Named in Franti\u0161ek's baptism, Ludslavice births 1853\u20131874 (MZA book 8158, scan 7), S0006. The 1838 marriage (S0029) reads her as 'Anna geb. Dwor\u017eel(?)' from a village read W/B\u00fcrbetitz (uncertain). The 1807 baptism of her daughter Veronika (S0031) calls her 'Anna, daughter of Karl Dowr\u017eil'.",
+      "birth_surname": "Dvo\u0159el",
+      "married_surname": "Waida",
+      "facts": [
+        {
+          "type": "origin",
+          "value": "Wrb\u011btitz = Vrb\u011btice (probable)",
+          "date": "1809",
+          "source_id": "S0035"
+        },
+        {
+          "type": "residence",
+          "value": "house no. 17, then no. 18",
+          "date": "1807\u20131821",
+          "place": "Ludslavice",
+          "source_id": "S0031"
+        },
+        {
+          "type": "occupation",
+          "value": "wife of farmer (Bauer) Franz Waida",
+          "date": "1807",
+          "source_id": "S0031"
+        }
+      ]
+    },
+    {
+      "id": "P0154",
+      "name": "Johann",
+      "birth_date": "c. 1780\u20131795 (est.: daughter b. c.1819)",
+      "death_date": "before 1838-07-31 (bride parentless, S0029)",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Farmer (Bauer) in Ludslavice; maternal grandfather of Franti\u0161ek. Named in Franti\u0161ek's baptism, Ludslavice births 1853\u20131874 (MZA book 8158, scan 7), S0006. Farmer (Bauer) in Kurovice per the 1838 marriage (S0029); dead by 1838.",
+      "birth_surname": "Dvo\u0159el",
+      "married_surname": "",
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "Bauer (farmer)",
+          "date": "1838",
+          "source_id": "S0029"
+        },
+        {
+          "type": "residence",
+          "value": "Kurovice",
+          "date": "1838",
+          "source_id": "S0029"
+        }
+      ]
+    },
+    {
+      "id": "P0155",
+      "name": "Veronika",
+      "birth_date": "c. 1780\u20131800 (est.: daughter b. c.1819)",
+      "death_date": "before 1838-07-31 (bride parentless, S0029)",
+      "birth_place": "Ludslavice",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Wife of Johann Dvo\u0159el, of Ludslavice. Named in Franti\u0161ek's baptism, Ludslavice births 1853\u20131874 (MZA book 8158, scan 7), S0006. The 1838 marriage (S0029) gives the bride's mother as 'Anna geb. L...(?)' \u2014 first name differs from the 1854 baptism (Veronika); dead by 1838.",
+      "birth_surname": "Lochmann",
+      "married_surname": "Dvo\u0159el"
+    },
+    {
+      "id": "P0156",
+      "name": "Anna",
+      "birth_date": "1862 (est., age 22 in Nov 1884)",
+      "death_date": "1952-03-30",
+      "birth_place": "Jankovice",
+      "death_place": "Vel\u00edkov\u00e1",
+      "father": "P0157",
+      "mother": "P0158",
+      "sex": "F",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Bride of Franti\u0161ek Vaida, married 11 Nov 1884 in Jankovice (S0026): 'Anna \u017derav\u00edk, daughter of Anton\u00edn \u017derav\u00edk of Jankovice and his wife Marianna n\u00e9e Pavl\u00ed\u010dek of Kyselovice', aged 22, single. Margin note: died 30 Mar 1952 in Vel\u00edkov\u00e1. Also named as mother in the 1905 death of son Stanislav (S0027): 'Anna, daughter of Anton\u00edn \u017derav\u00edk, innkeeper (hostinsk\u00fd) from Jankovice'.",
+      "birth_surname": "\u017derav\u00edk",
+      "married_surname": "Vajdov\u00e1",
+      "facts": [
+        {
+          "type": "origin",
+          "value": "Jankovice",
+          "date": "1884",
+          "source_id": "S0026"
+        },
+        {
+          "type": "alive",
+          "value": "living in 1905",
+          "date": "1905",
+          "place": "Vel\u00edkov\u00e1",
+          "source_id": "S0027"
+        },
+        {
+          "type": "residence",
+          "value": "Vel\u00edkov\u00e1 no. 1",
+          "date": "1905",
+          "source_id": "S0027"
+        },
+        {
+          "type": "residence",
+          "value": "Vel\u00edkov\u00e1 (death)",
+          "date": "1952",
+          "source_id": "S0026"
+        },
+        {
+          "type": "occupation",
+          "value": "wife of farmer (roln\u00edk) Franti\u0161ek Vajda",
+          "date": "1905",
+          "source_id": "S0027"
+        }
+      ]
+    },
+    {
+      "id": "P0157",
+      "name": "Anton\u00edn",
+      "birth_date": "c. 1830\u20131842 (est.: daughter b. c.1862)",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Father of Anna \u017derav\u00edk; of Jankovice, innkeeper (hostinsk\u00fd) per S0027. Named in S0026 and S0027.",
+      "birth_surname": "\u017derav\u00edk",
+      "married_surname": "",
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "hostinsk\u00fd (innkeeper)",
+          "date": "1905",
+          "source_id": "S0027"
+        },
+        {
+          "type": "residence",
+          "value": "Jankovice",
+          "date": "1884",
+          "source_id": "S0026"
+        },
+        {
+          "type": "alive",
+          "value": "living in 1905",
+          "date": "1905",
+          "place": "Jankovice",
+          "source_id": "S0027"
+        }
+      ]
+    },
+    {
+      "id": "P0158",
+      "name": "Marianna",
+      "birth_date": "c. 1830\u20131844 (est.: daughter b. c.1862)",
+      "death_date": "",
+      "birth_place": "Kyselovice",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Wife of Anton\u00edn \u017derav\u00edk, from Kyselovice. Named in the 1884 marriage of her daughter (S0026).",
+      "birth_surname": "Pavl\u00ed\u010dek",
+      "married_surname": "\u017derav\u00edk",
+      "facts": [
+        {
+          "type": "origin",
+          "value": "Kyselovice",
+          "date": "1884",
+          "source_id": "S0026"
+        }
+      ]
+    },
+    {
+      "id": "P0159",
+      "name": "Veronika",
+      "birth_date": "1807-06-20",
+      "death_date": "",
+      "birth_place": "Ludslavice no. 17",
+      "death_place": "",
+      "father": "P0152",
+      "mother": "P0153",
+      "sex": "F",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Daughter of Franz Wajda, farmer in Ludslavice no. 17, and Anna, daughter of Karl Dowr\u017eil (S0031). Sister of Josef Waida (P0002). Other siblings per index (not yet opened): Josefa 1809 (fol. 41), Lucia 1814 (fol. 51), Lucia 1816 (fol. 56).",
+      "birth_surname": "Waida",
+      "married_surname": "",
+      "facts": [
+        {
+          "type": "residence",
+          "value": "born at Ludslavice no. 17",
+          "date": "1807",
+          "source_id": "S0031"
+        }
+      ]
+    },
+    {
+      "id": "P0160",
+      "name": "Karl",
+      "birth_date": "c. 1740\u20131765 (est.: granddaughter b. 1807)",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "probable",
+      "provenance": "primary",
+      "notes": "Father of Anna Dvo\u0159el (P0153), wife of Franz Waida; named in the 1807 baptism of granddaughter Veronika (S0031) as 'Karl Dowr\u017eil', occupation and village partly illegible ('... in Wa\u017e...?'). All sisters' baptisms (S0035, S0037) give 'Karl Dowr\u017eil, podsedn\u00edk (in/von) Wrb\u011btitz' \u2014 most likely Vrb\u011btice (Wirbietitz), part of Vlachovice, Zl\u00edn district (the 1838 marriage S0029 reads 'W/B\u00fcrbetitz'). S0036 (1814) seems to say Johann \u2014 probably a clerk's slip.",
+      "birth_surname": "Dvo\u0159el",
+      "married_surname": "",
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "podsedn\u00edk (smallholder)",
+          "date": "1809",
+          "source_id": "S0035"
+        },
+        {
+          "type": "occupation",
+          "value": "podsedn\u00edk (smallholder)",
+          "date": "1816",
+          "source_id": "S0037"
+        },
+        {
+          "type": "residence",
+          "value": "Wrb\u011btitz = Vrb\u011btice (Wirbietitz), obec Vlachovice, okres Zl\u00edn \u2014 identification probable",
+          "date": "1809",
+          "source_id": "S0035"
+        }
+      ]
+    },
+    {
+      "id": "P0161",
+      "name": "Josefa",
+      "birth_date": "1809-05-20",
+      "death_date": "1814-06-05",
+      "birth_place": "Ludslavice no. 18",
+      "death_place": "Ludslavice",
+      "father": "P0152",
+      "mother": "P0153",
+      "sex": "F",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born 20 May, baptised 21 May 1809, Ludslavice no. 18 (S0035). Death 5 Jun 1814 per Ludslavice death index (S0034), entry not opened.",
+      "birth_surname": "Waida",
+      "married_surname": "",
+      "facts": [
+        {
+          "type": "residence",
+          "value": "born at Ludslavice no. 18",
+          "date": "1809",
+          "source_id": "S0035"
+        }
+      ]
+    },
+    {
+      "id": "P0162",
+      "name": "Lucia",
+      "birth_date": "1814-06-15",
+      "death_date": "1814-08-18",
+      "birth_place": "Ludslavice no. 18",
+      "death_place": "Ludslavice",
+      "father": "P0152",
+      "mother": "P0153",
+      "sex": "F",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born 15 Jun(?) 1814, Ludslavice no. 18 (S0036). Death 18 Aug 1814 per death index (S0034), entry not opened. Not to be confused with her sister Lucia b. 1816.",
+      "birth_surname": "Waida",
+      "married_surname": "",
+      "facts": [
+        {
+          "type": "residence",
+          "value": "born at Ludslavice no. 18",
+          "date": "1814",
+          "source_id": "S0036"
+        }
+      ]
+    },
+    {
+      "id": "P0163",
+      "name": "Lucia",
+      "birth_date": "1816-03-15",
+      "death_date": "",
+      "birth_place": "Ludslavice no. 18",
+      "death_place": "",
+      "father": "P0152",
+      "mother": "P0153",
+      "sex": "F",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born 15 Mar 1816, Ludslavice no. 18 (S0037); named after her sister Lucia who died in 1814.",
+      "birth_surname": "Waida",
+      "married_surname": "",
+      "facts": [
+        {
+          "type": "residence",
+          "value": "born at Ludslavice no. 18",
+          "date": "1816",
+          "source_id": "S0037"
+        }
+      ]
+    },
+    {
+      "id": "P0164",
+      "name": "Athanasius",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "provenance": "primary",
+      "notes": "Bought the half-l\u00e1n farm (Halblahnersgrund) Rutzlawitz/Ludslavice no. 18 on 10 Sep 1806 (S0044, fol. 94, scan 97); succeeded there by Franz Wagda/Waida in June 1808. Relationship to Franz unknown (father? brother?) \u2014 the entry text still needs a full reading; it cites an older contract book at 'Folio 249', which may give his origin. Closer reading 2026-11-14: the 1806 entry is a purchase ('Halblahnersgrund' no. 18, price 3200 fl, hypotheca 1600 fl), referencing 'Tomo 2do Folio 249' of the estate contract book; no relationship to Franz is stated in the land book itself. Deed-book index (S0047) lists him as 'Wayda Athanas von Ludslawitz' (fol. 325) \u2014 i.e. resident of Ludslavice, spelled Wayda. The deed text is still to be found. Not in the Ludslavice death index 1785\u20131836 (S0034, re-checked 2026-11-14): he likely left the village after selling no. 18 in 1808, or died after 1836. No baptisms, marriage or death of any Wayda in Ludslavice before 1807 (indexes S0024, S0020, S0034): Athanasius held no. 18 only briefly (1806\u20131808) and left no vital records in the parish.",
+      "birth_surname": "Waida",
+      "married_surname": "",
+      "facts": [
+        {
+          "type": "residence",
+          "value": "Ludslavice no. 18 (owner 1806\u20131808)",
+          "date": "1806",
+          "source_id": "S0044"
+        },
+        {
+          "type": "property",
+          "value": "owner of half-l\u00e1n farm no. 18 (bought for 3200 fl)",
+          "date": "1806",
+          "source_id": "S0044"
+        }
+      ]
+    },
+    {
+      "id": "P0165",
+      "name": "Barbara",
+      "birth_date": "1821-11-24 (est., 16 days at death)",
+      "death_date": "1821-12-10",
+      "birth_place": "Ludslavice no. 18",
+      "death_place": "Ludslavice",
+      "father": "P0152",
+      "mother": "P0153",
+      "sex": "F",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Daughter of Franz Waida, Bauer; died 10 Dec 1821 (buried 12 Dec) aged 16 days (S0048). Birth entry not yet opened.",
+      "birth_surname": "Waida",
+      "married_surname": ""
+    },
+    {
+      "id": "P0088",
+      "name": "Michaela",
+      "sex": "F",
+      "birth_date": "1982-03-07",
+      "birth_place": "Kyjov",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "myheritage",
+      "birth_surname": "Loveck\u00e1",
+      "married_surname": "Vajdov\u00e1",
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged). Her Loveck\u00fd ancestry is maintained in data/lovecky.json."
+    },
+    {
+      "id": "P0166",
+      "name": "Viola",
+      "sex": "F",
+      "birth_date": "2018-01-21",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0016",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "manual",
+      "birth_surname": "Vajda",
+      "married_surname": "",
+      "notes": "Added manually as child of Jakub Vajda and Michaela Vajdov\u00e1 (Loveck\u00e1). Mother: Michaela Vajdov\u00e1 n\u00e9e Loveck\u00e1 \u2014 kept in data/lovecky.json (P0088 there); link removed here 2026-11-14 to avoid a dangling reference."
+    },
+    {
+      "id": "P0167",
+      "name": "Viktor",
+      "sex": "M",
+      "birth_date": "2020-07-30",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0016",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "manual",
+      "birth_surname": "Vajda",
+      "married_surname": "",
+      "notes": "Added manually as child of Jakub Vajda and Michaela Vajdov\u00e1 (Loveck\u00e1). Mother: Michaela Vajdov\u00e1 n\u00e9e Loveck\u00e1 \u2014 kept in data/lovecky.json (P0088 there); link removed here 2026-11-14 to avoid a dangling reference."
+    },
+    {
+      "id": "P0178",
+      "name": "Josef",
+      "birth_date": "1858-08-27",
+      "death_date": "before 1931-09-12 (\u2020 per S0018)",
+      "birth_place": "Mladcov\u00e1 no. 35",
+      "death_place": "",
+      "father": "P0170",
+      "mother": "P0171",
+      "sex": "M",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Wheelwright (kol\u00e1\u0159) at Mladcov\u00e1; dead by Sep 1931. Named in the 1931 marriage of son Jaroslav (S0018). Verified 2026-11-14 (S0054): 'Novosad Josef, z\u00e1lo\u017en\u00edk 11. batt. d\u011blost\u0159electva, roln\u00edk, syn \u2020 Tom\u00e1\u0161e Novosada, \u010dtvrtn\u00edka na Mlatcov\u00e9, a jeho \u2020 man\u017eelky Veroniky \u0160migurov\u00e9(?) z pasek Zl\u00ednsk\u00fdch', aged 25, married 25 Sep 1883 by parish priest Jan Son\u0161\u00edk(?); witnesses Josef D\u011b\u010dek (podsedn\u00edk, Mladcov\u00e1) and Jan D\u011b\u010dek (\u010dtvrtn\u00edk, P\u0159\u00edluky). Baptism verified (S0056): born 27 Aug, baptised 28 Aug 1858 at Mladcov\u00e1 no. 35 by Josef Buch, cooperator; godparents Josef Novosad(?), Viertler in Mladcov\u00e1, and his wife Maria.",
+      "birth_surname": "Novosad",
+      "married_surname": "",
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "kol\u00e1\u0159 (wheelwright)",
+          "date": "before 1931",
+          "place": "Mladcov\u00e1",
+          "source_id": "S0018"
+        },
+        {
+          "type": "occupation",
+          "value": "roln\u00edk; reservist of 11th artillery battery",
+          "date": "1883",
+          "place": "Mladcov\u00e1",
+          "source_id": "S0054"
+        },
+        {
+          "type": "residence",
+          "value": "house no. 35",
+          "date": "1858",
+          "place": "Mladcov\u00e1",
+          "source_id": "S0056"
+        }
+      ]
+    },
+    {
+      "id": "P0179",
+      "name": "Franti\u0161ka",
+      "birth_date": "c. 1865 (age 18 in Sep 1883)",
+      "death_date": "1954-06-14 (margin note, to verify)",
+      "birth_place": "Mladcov\u00e1",
+      "death_place": "(place illegible in margin note, S0054)",
+      "father": "P0172",
+      "mother": "P0173",
+      "sex": "F",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Wife of Josef Novosad. Maiden name read 'Pasty\u0159\u00edkov\u00e1' (uncertain). Named in the 1931 marriage of son Jaroslav (S0018). Verified 2026-11-14 (S0054): bride 'Franti\u0161ka, dcera Franti\u0161ka Pasty\u0159\u00edka, domka\u0159e na Mlatcov\u00e9, a jeho man\u017eelky Terezie Dohnalkov\u00e9 z Kle\u010d\u016fvky', aged 18. Margin note '\u2020 14.6.1954' (place partly illegible) \u2014 probably her death.",
+      "birth_surname": "Pasty\u0159\u00edkov\u00e1",
+      "married_surname": "Novosadov\u00e1",
+      "facts": [
+        {
+          "type": "residence",
+          "value": "Mladcov\u00e1",
+          "date": "1883",
+          "source_id": "S0054"
+        },
+        {
+          "type": "occupation",
+          "value": "bride aged 18, minor",
+          "date": "1883",
+          "source_id": "S0054"
+        }
+      ]
+    },
+    {
+      "id": "P0168",
+      "name": "Josef",
+      "birth_date": "c. 1870\u20131890 (est.: daughter b. 1912)",
+      "death_date": "before 1931-09-12 (\u2020 per S0018)",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Farmer (roln\u00edk) in Louky n. D\u0159evnic\u00ed; father of Marie Svobodov\u00e1. Named in her 1931 marriage (S0018).",
+      "birth_surname": "Svoboda",
+      "married_surname": "",
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "roln\u00edk (farmer)",
+          "date": "before 1931",
+          "place": "Louky n. D\u0159evnic\u00ed",
+          "source_id": "S0018"
+        },
+        {
+          "type": "residence",
+          "value": "Louky n. D\u0159evnic\u00ed",
+          "date": "before 1931",
+          "source_id": "S0018"
+        }
+      ]
+    },
+    {
+      "id": "P0169",
+      "name": "Franti\u0161ka",
+      "birth_date": "c. 1875\u20131892 (est.: daughter b. 1912)",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Wife of Josef Svoboda; born in Louky n. D\u0159evnic\u00ed(?). Named in her daughter's 1931 marriage (S0018).",
+      "birth_surname": "Zelov\u00e1",
+      "married_surname": "Svobodov\u00e1",
+      "facts": [
+        {
+          "type": "residence",
+          "value": "Louky n. D\u0159evnic\u00ed (born there?)",
+          "date": "1931",
+          "source_id": "S0018"
+        }
+      ]
+    },
+    {
+      "id": "P0170",
+      "name": "Tom\u00e1\u0161",
+      "birth_date": "c. 1820 (age 28 in Feb 1848)",
+      "death_date": "before 1883-09-25 (\u2020 per S0054)",
+      "birth_place": "",
+      "death_place": "",
+      "father": "P0174",
+      "mother": "P0175",
+      "sex": "M",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "\u010ctvrtn\u00edk (quarter-l\u00e1n farmer) at Mladcov\u00e1; dead by Sep 1883. Named in the 1883 marriage of Josef Novosad (S0054). 1858 baptism (S0056): 'Thomas Novosad, Viertler in Mlatcow, Sohn des \u2020 Josef Nowosad, Viertler in Mlatcow, und dessen Weibes Anna geb. Kr\u00e1l(?)'. Marriage verified (S0059): 9 Feb 1848 in Zl\u00edn, 'Thomas Nowosad, Viertler in Mlatzow [no.] 35, lediger Sohn des \u2020 Josef Nowosad, Viertlers in Mlatzow, und der Mutter Rosina geb. Dolo\u017eal(?)', aged 28. NOTE: the 1858 baptism (S0056) read his mother as 'Anna geb. Kr\u00e1l(?)' \u2014 conflict; the 1848 reading 'Rosina Dolo\u017eal' is clearer. Witnesses Franz Pifka(?) and Johann Dolo\u017eal (likely a maternal relative).",
+      "birth_surname": "Novosad",
+      "married_surname": "",
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "\u010dtvrtn\u00edk (quarter-l\u00e1n farmer)",
+          "date": "before 1883",
+          "place": "Mladcov\u00e1",
+          "source_id": "S0054"
+        },
+        {
+          "type": "residence",
+          "value": "house no. 35 (Viertler)",
+          "date": "1858",
+          "place": "Mladcov\u00e1",
+          "source_id": "S0056"
+        },
+        {
+          "type": "residence",
+          "value": "Viertler, house no. 35",
+          "date": "1848",
+          "place": "Mladcov\u00e1",
+          "source_id": "S0059"
+        }
+      ]
+    },
+    {
+      "id": "P0171",
+      "name": "Veronika",
+      "birth_date": "c. 1828 (age 20 in Feb 1848)",
+      "death_date": "before 1883-09-25 (\u2020 per S0054)",
+      "birth_place": "Zl\u00edn (paseky)",
+      "death_place": "",
+      "father": "P0176",
+      "mother": "P0177",
+      "sex": "F",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Wife of Tom\u00e1\u0161 Novosad, from the Zl\u00edn paseky ('z pasek Zl\u00ednsk\u00fdch'); dead by 1883. Surname reading '\u0160migurov\u00e1' uncertain. Named in the 1883 marriage of Josef Novosad (S0054). 1858 baptism (S0056): 'Veronika, Tochter des Franz \u0160migura(?), H\u00e4uslers in Zlin, und dessen Weibes Theresia geb. H\u0159\u00edbal(?)'. Marriage (S0059): 'Veronika, ledige Tochter des Franz Schmigura(?), H\u00e4uslers in Zlin, und der Mutter Veronika geb. H\u0159ibal(?)', aged 20; as a minor her father consented.",
+      "birth_surname": "\u0160migurov\u00e1 (Schmiguna?)",
+      "married_surname": "Novosadov\u00e1",
+      "facts": [
+        {
+          "type": "origin",
+          "value": "Zl\u00edn paseky",
+          "date": "1883",
+          "source_id": "S0054"
+        },
+        {
+          "type": "residence",
+          "value": "Mladcov\u00e1 no. 35",
+          "date": "1858",
+          "source_id": "S0056"
+        },
+        {
+          "type": "occupation",
+          "value": "wife of Viertler Tom\u00e1\u0161 Novosad",
+          "date": "1858",
+          "source_id": "S0056"
+        }
+      ]
+    },
+    {
+      "id": "P0172",
+      "name": "Franti\u0161ek",
+      "birth_date": "c. 1830\u20131845 (est.: daughter b. c.1865)",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Domk\u00e1\u0159 at Mladcov\u00e1; father of Franti\u0161ka; signed consent to her marriage as she was a minor (1883). Named in the 1883 marriage of Josef Novosad (S0054).",
+      "birth_surname": "Pasty\u0159\u00edk",
+      "married_surname": "",
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "domk\u00e1\u0159 (cottager)",
+          "date": "1883",
+          "place": "Mladcov\u00e1",
+          "source_id": "S0054"
+        },
+        {
+          "type": "alive",
+          "value": "living in 1883",
+          "date": "1883",
+          "place": "Mladcov\u00e1",
+          "source_id": "S0054"
+        },
+        {
+          "type": "residence",
+          "value": "Mladcov\u00e1",
+          "date": "1883",
+          "source_id": "S0054"
+        }
+      ]
+    },
+    {
+      "id": "P0173",
+      "name": "Terezie",
+      "birth_date": "c. 1830\u20131845 (est.: daughter b. c.1865)",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Wife of Franti\u0161ek Pasty\u0159\u00edk, from Kle\u010d\u016fvka. Named in the 1883 marriage of Josef Novosad (S0054).",
+      "birth_surname": "Dohnalkov\u00e1",
+      "married_surname": "Pasty\u0159\u00edkov\u00e1",
+      "facts": [
+        {
+          "type": "origin",
+          "value": "Kle\u010d\u016fvka",
+          "date": "1883",
+          "source_id": "S0054"
+        }
+      ]
+    },
+    {
+      "id": "P0174",
+      "name": "Josef",
+      "birth_date": "c. 1780\u20131800 (est.: son b. c.1820)",
+      "death_date": "before 1848-02-09 (\u2020 per S0059)",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Viertler (\u010dtvrtn\u00edk) in Mladcov\u00e1; father of Tom\u00e1\u0161. Named in the 1858 baptism of grandson Josef Novosad (S0056).",
+      "birth_surname": "Novosad",
+      "married_surname": "",
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "Viertler (\u010dtvrtn\u00edk)",
+          "date": "before 1858",
+          "place": "Mladcov\u00e1",
+          "source_id": "S0056"
+        },
+        {
+          "type": "residence",
+          "value": "Mladcov\u00e1",
+          "date": "before 1848",
+          "source_id": "S0059"
+        }
+      ]
+    },
+    {
+      "id": "P0175",
+      "name": "Rosina (or Anna)",
+      "birth_date": "c. 1780\u20131800 (est.: son b. c.1820)",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "probable",
+      "provenance": "primary",
+      "notes": "Wife of Josef Novosad (P0174); maiden name read 'Kr\u00e1l' (uncertain). Named in the 1858 baptism of grandson Josef Novosad (S0056). 1848 marriage of her son (S0059) gives 'Rosina geb. Dolo\u017eal(?)'; 1858 baptism (S0056) read as 'Anna geb. Kr\u00e1l(?)'. Probable correct form: Rosina Dolo\u017ealov\u00e1. To verify with Tom\u00e1\u0161's baptism (c. 1820).",
+      "birth_surname": "Dolo\u017eal (or Kr\u00e1l)",
+      "married_surname": "Novosadov\u00e1",
+      "facts": [
+        {
+          "type": "residence",
+          "value": "Mladcov\u00e1 (wife of Josef Novosad)",
+          "date": "before 1848",
+          "source_id": "S0059"
+        }
+      ]
+    },
+    {
+      "id": "P0176",
+      "name": "Franz",
+      "birth_date": "c. 1795\u20131808 (est.: daughter b. c.1828)",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "H\u00e4usler (domk\u00e1\u0159) in Zl\u00edn; father of Veronika. Named in the 1858 baptism of grandson Josef Novosad (S0056).",
+      "birth_surname": "\u0160migura(?)",
+      "married_surname": "",
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "H\u00e4usler (domk\u00e1\u0159)",
+          "date": "1858",
+          "place": "Zl\u00edn",
+          "source_id": "S0056"
+        },
+        {
+          "type": "alive",
+          "value": "living in 1858",
+          "date": "1858",
+          "place": "Zl\u00edn",
+          "source_id": "S0056"
+        },
+        {
+          "type": "residence",
+          "value": "Zl\u00edn",
+          "date": "1848\u20131858",
+          "source_id": "S0059"
+        }
+      ]
+    },
+    {
+      "id": "P0177",
+      "name": "Veronika (or Theresia)",
+      "birth_date": "c. 1795\u20131810 (est.: daughter b. c.1828)",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "probable",
+      "provenance": "primary",
+      "notes": "Wife of Franz \u0160migura; maiden name read 'H\u0159\u00edbal' (uncertain). Named in the 1858 baptism of grandson Josef Novosad (S0056). The 1848 marriage (S0059) gives her first name as Veronika, the 1858 baptism as Theresia \u2014 conflict; surname H\u0159\u00edbal(?) consistent in both.",
+      "birth_surname": "H\u0159\u00edbal(?)",
+      "married_surname": "\u0160migurov\u00e1",
+      "facts": [
+        {
+          "type": "residence",
+          "value": "Zl\u00edn (wife of Franz \u0160migura)",
+          "date": "1848",
+          "source_id": "S0059"
+        }
+      ]
     }
   ],
   "events": [
     {
-      "id": "E1822-12-08-marriage-georg-anna",
-      "event_type": "Marriage",
-      "date": "1822-12-08",
-      "place": "Rudslavice parish",
-      "confidence": "confirmed",
-      "groom_id": "P0003",
-      "bride_id": "P0004",
-      "source_ids": [
-        "S0001",
-        "S0003",
-        "S0017"
-      ],
-      "provenance": "manual",
-      "notes": "Canonical Georg Waida + Anna marriage record after absorbing duplicate MyHeritage spouse view Eundated-marriage-054."
-    },
-    {
       "id": "E1827-12-08-birth-josef",
       "event_type": "Birth/Baptism",
-      "date": "1827-12-08",
-      "place": "Rudslavice",
-      "confidence": "confirmed",
+      "date": "c. 1803",
+      "place": "unknown (not Ludslavice)",
+      "confidence": "possible",
       "person_id": "P0002",
       "source_ids": [
-        "S0002"
+        "S0002",
+        "S0011",
+        "S0024",
+        "S0025",
+        "S0029"
       ],
-      "provenance": "primary"
+      "provenance": "primary",
+      "notes": "Josef was 35 at his 1838 marriage, so born c. 1803. Not found in Ludslavice births index 1785\u20131836 (Wajda baptisms there start 1807). The old 1827-12-08 date was wrong."
     },
     {
       "id": "E1854-09-15-birth-frantisek",
@@ -1423,27 +2267,16 @@
     {
       "id": "E1916-02-death-frantisek",
       "event_type": "Death",
-      "date": "1916-02",
-      "place": "Rudslavice parish",
-      "confidence": "probable",
+      "date": "1916-02-27",
+      "place": "Vel\u00edkov\u00e1",
+      "confidence": "confirmed",
       "person_id": "P0001",
       "source_ids": [
-        "S0008"
+        "S0008",
+        "S0028"
       ],
-      "provenance": "primary"
-    },
-    {
-      "id": "E1851-marriage-josef-waida",
-      "event_type": "Marriage",
-      "date": "1851",
-      "place": "Rudslavice area",
-      "confidence": "possible",
-      "groom_id": "",
-      "bride_id": "",
-      "source_ids": [
-        "S0012"
-      ],
-      "provenance": "primary"
+      "provenance": "primary",
+      "notes": "Verified 2026-11-14 from scan: died 27 Feb 1916 in Vel\u00edkov\u00e1 no. 47 (pneumonia), buried 29 Feb in Lukov, aged 62."
     },
     {
       "id": "E1825-1835-search-josef-waida",
@@ -1500,16 +2333,16 @@
     {
       "id": "Eundated-marriage-015",
       "event_type": "Marriage",
-      "date": "",
-      "place": "",
-      "confidence": "possible",
+      "date": "1931-09-12",
+      "place": "Louky n. D\u0159evnic\u00ed (Malenovice parish)",
+      "confidence": "confirmed",
       "groom_id": "P0013",
       "bride_id": "P0021",
       "source_ids": [
-        "S0015",
         "S0018"
       ],
-      "provenance": "myheritage"
+      "provenance": "primary",
+      "notes": "Verified 2026-11-14: married 12 Sep 1931 by parish priest \u0160t\u011bp\u00e1n \u010cech; witnesses Josef Ma\u0161l\u00e1\u0148 and Tom\u00e1\u0161 Vacul\u00edk, farmers in Louky. Both fathers dead by 1931."
     },
     {
       "id": "Eundated-marriage-017",
@@ -1710,15 +2543,16 @@
       "id": "E1933-07-08-marriage-038",
       "event_type": "Marriage",
       "date": "1933-07-08",
-      "place": "slu\u0161ovice",
-      "confidence": "probable",
+      "place": "Slu\u0161ovice",
+      "confidence": "confirmed",
       "groom_id": "P0062",
       "bride_id": "P0022",
       "source_ids": [
         "S0015",
         "S0009"
       ],
-      "provenance": "primary"
+      "provenance": "primary",
+      "notes": "Verified 2026-11-14 from scan S0009: 8 July 1933, Slu\u0161ovice, priest Ond\u0159ej B\u00edlek. Groom's parents: late Franti\u0161ek Vajda + Anna \u017derav\u00edk. Bride's parents: Josef Slov\u00e1\u010dek + Berta Divilkov\u00e1."
     },
     {
       "id": "Eundated-birth-baptism-041",
@@ -1736,112 +2570,20 @@
       "id": "E1884-11-11-marriage-043",
       "event_type": "Marriage",
       "date": "1884-11-11",
-      "place": "Rudslavice parish",
+      "place": "Jankovice (Hole\u0161ov parish)",
       "confidence": "confirmed",
       "groom_id": "P0001",
-      "bride_id": "P0126",
+      "bride_id": "P0156",
       "provenance": "manual",
       "source_ids": [
         "S0007",
-        "S0010",
-        "S0013",
-        "S0015",
-        "S0017"
+        "S0008",
+        "S0021",
+        "S0022",
+        "S0023",
+        "S0026"
       ],
-      "notes": "Kept event for Frantisek Vajda + Marie Anna Sova after collapsing duplicate bride records P0008, P0027, and P0058, plus duplicate marriage events E1884-11-11-marriage-frantisek-marianna, E1884-11-11-marriage-018, and Eundated-marriage-034. Legacy secondary marriage-view links E1860-marriage-franz-waida and E1826-marriage-franz-waida were also folded into this canonical branch event."
-    },
-    {
-      "id": "Eundated-marriage-053",
-      "event_type": "Marriage",
-      "date": "",
-      "place": "",
-      "confidence": "possible",
-      "groom_id": "P0002",
-      "bride_id": "P0083",
-      "provenance": "myheritage",
-      "source_ids": [
-        "S0015",
-        "S0017"
-      ],
-      "notes": "Canonical Joseph Waida + Josefa Hykel branch record after folding in duplicate spouse view E1826-10-21-marriage-036."
-    },
-    {
-      "id": "Eundated-marriage-055",
-      "event_type": "Marriage",
-      "date": "",
-      "place": "",
-      "confidence": "possible",
-      "groom_id": "P0086",
-      "bride_id": "P0115",
-      "provenance": "myheritage",
-      "source_ids": [
-        "S0017"
-      ]
-    },
-    {
-      "id": "E1822-10-21-marriage-056",
-      "event_type": "Marriage",
-      "date": "1822-10-21",
-      "place": "",
-      "confidence": "possible",
-      "groom_id": "P0087",
-      "bride_id": "",
-      "provenance": "myheritage",
-      "source_ids": [
-        "S0017"
-      ]
-    },
-    {
-      "id": "Eundated-marriage-057",
-      "event_type": "Marriage",
-      "date": "",
-      "place": "",
-      "confidence": "possible",
-      "groom_id": "P0016",
-      "bride_id": "P0088",
-      "provenance": "myheritage",
-      "source_ids": [
-        "S0017"
-      ]
-    },
-    {
-      "id": "Eundated-marriage-058",
-      "event_type": "Marriage",
-      "date": "",
-      "place": "",
-      "confidence": "possible",
-      "groom_id": "P0091",
-      "bride_id": "P0092",
-      "provenance": "myheritage",
-      "source_ids": [
-        "S0017"
-      ]
-    },
-    {
-      "id": "Eundated-marriage-059",
-      "event_type": "Marriage",
-      "date": "",
-      "place": "",
-      "confidence": "possible",
-      "groom_id": "P0093",
-      "bride_id": "P0094",
-      "provenance": "myheritage",
-      "source_ids": [
-        "S0017"
-      ]
-    },
-    {
-      "id": "Eundated-marriage-060",
-      "event_type": "Marriage",
-      "date": "",
-      "place": "",
-      "confidence": "possible",
-      "groom_id": "P0096",
-      "bride_id": "P0095",
-      "provenance": "myheritage",
-      "source_ids": [
-        "S0017"
-      ]
+      "notes": "Kept event for Frantisek Vajda + Marie Anna Sova after collapsing duplicate bride records P0008, P0027, and P0058, plus duplicate marriage events E1884-11-11-marriage-frantisek-marianna, E1884-11-11-marriage-018, and Eundated-marriage-034. Legacy secondary marriage-view links E1860-marriage-franz-waida and E1826-marriage-franz-waida were also folded into this canonical branch event. Verified 2026-11-14: linked page S0007 (Lukov book 4360, scan 25) has no Waida/Vajda wedding (entries 3, 13, 24 Nov 1884); also absent from Ludslavice marriages 1884 (book 8163). Exact entry still to be found, likely nearby in the Lukov book. S0010 and S0013 removed: they are other people's weddings. Date 11 Nov 1884 confirmed by the 1916 death record (S0008); original marriage entry still to be found (bride's parish). FOUND 2026-11-14 (S0026): Hole\u0161ov parish, Jankovice marriages, fol. 25, no. 59: married 11 Nov 1884 by chaplain Eduard Wolff. Groom 'Franti\u0161ek Vaida, domk\u00e1\u0159 in Rudslavice, son of Josef Vaida, p\u016fll\u00e1n\u00edk in Rudslavice, and his wife Veronika n\u00e9e Dovr\u0161el(?) from Kurovice', aged 30, single, Catholic. Bride Anna \u017derav\u00edk (P0156), aged 22. Witnesses Vencl Posp\u00ed\u0161il (podruh?, Rudslavice) and Ji\u0159\u00ed Hrn\u010di\u0159\u00edk(?) (domk\u00e1\u0159, Jankovice). Banns in Jankovice and Rudslavice 1, 2, 9 Nov 1884. The bride is therefore Anna \u017derav\u00edk, not Marie Anna Sova (P0126). 2026-11-14: Marie Anna Sova (P0126) and her parents Jan Sova (P0116) and Terezie (P0117), plus their marriage event Eundated-marriage-067, were deleted: no record links them to this family (MyHeritage import error)."
     },
     {
       "id": "Eundated-marriage-061",
@@ -1909,32 +2651,6 @@
       ]
     },
     {
-      "id": "Eundated-marriage-066",
-      "event_type": "Marriage",
-      "date": "",
-      "place": "",
-      "confidence": "possible",
-      "groom_id": "P0114",
-      "bride_id": "",
-      "provenance": "myheritage",
-      "source_ids": [
-        "S0017"
-      ]
-    },
-    {
-      "id": "Eundated-marriage-067",
-      "event_type": "Marriage",
-      "date": "",
-      "place": "",
-      "confidence": "possible",
-      "groom_id": "P0116",
-      "bride_id": "P0117",
-      "provenance": "myheritage",
-      "source_ids": [
-        "S0017"
-      ]
-    },
-    {
       "id": "Eundated-marriage-068",
       "event_type": "Marriage",
       "date": "",
@@ -1972,12 +2688,415 @@
       "source_ids": [
         "S0017"
       ]
+    },
+    {
+      "id": "E-marriage-josef-veronika",
+      "event_type": "Marriage",
+      "date": "1838-07-31",
+      "place": "Kurovice",
+      "confidence": "confirmed",
+      "groom_id": "P0002",
+      "bride_id": "P0151",
+      "source_ids": [
+        "S0006",
+        "S0008",
+        "S0019",
+        "S0020",
+        "S0029",
+        "S0030"
+      ],
+      "provenance": "primary",
+      "notes": "Found 2026-11-14 (S0029, Kurovice marriages fol. 53), German: groom 'Joseph Waida, Bauer in Rutzlawitz [no. 18], Sohn nach [= son of the late] Franz Waida, Bauer in Rutzlawitz, und dessen Eheweib Anna geborene Dwor\u017eel(?) von W/B\u00fcrbetitz(?)', Catholic, single, aged 35. Bride 'Veronica, ledige Tochter nach Johann Dwor\u017eel, Bauer in Kurowitz, und dessen Eheweib Anna geborene L...(?) von W/B\u00fcrbetitz(?)', aged 19. Note: bride a minor and parentless (minderj\u00e4hrig und elternlos); guardian's consent from the estate (Herrschaft) dated 13 Jun 1838, no. 157. Officiant Carl Holluschka, local chaplain. Witnesses' names partly illegible. Mothers' maiden names and their village are uncertain readings."
+    },
+    {
+      "id": "E-marriage-franz-anna-dvorel",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "probable",
+      "groom_id": "P0152",
+      "bride_id": "P0153",
+      "source_ids": [
+        "S0006",
+        "S0020",
+        "S0031",
+        "S0032",
+        "S0038",
+        "S0039",
+        "S0040",
+        "S0041",
+        "S0042",
+        "S0043"
+      ],
+      "provenance": "primary",
+      "notes": "Couple named in the 1854 baptism of Franti\u0161ek Waida (S0006); marriage record not yet found. 2026-11-14: not found in Vrb\u011btice (Vlachovice parish) marriages 1797\u20131805 nor in its groom index; no Dwor\u017eil family appears among Vrb\u011btice couples there either, so the 'Wrb\u011btitz' identification is uncertain. 2026-11-14: Ludslavice marriages 1797\u20131809 read entry by entry \u2014 no Franz Waida wedding. Marriage therefore took place in another parish (bride's or groom's home), c. 1795\u20131803."
+    },
+    {
+      "id": "E-marriage-johann-dvorel-veronika",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "probable",
+      "groom_id": "P0154",
+      "bride_id": "P0155",
+      "source_ids": [
+        "S0006"
+      ],
+      "provenance": "primary",
+      "notes": "Couple named in the 1854 baptism of Franti\u0161ek Waida (S0006); marriage record not yet found."
+    },
+    {
+      "id": "E-marriage-antonin-zeravik-marianna",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "probable",
+      "groom_id": "P0157",
+      "bride_id": "P0158",
+      "source_ids": [
+        "S0026"
+      ],
+      "provenance": "primary",
+      "notes": "Couple named in the 1884 marriage of their daughter Anna; marriage record not yet found."
+    },
+    {
+      "id": "E1827-06-05-death-franz-waida",
+      "event_type": "Death",
+      "date": "1827-06-05",
+      "place": "Ludslavice no. 18",
+      "confidence": "confirmed",
+      "person_id": "P0152",
+      "source_ids": [
+        "S0033",
+        "S0034"
+      ],
+      "provenance": "primary",
+      "notes": "Aged 63, farmer (Bauer)."
+    },
+    {
+      "id": "E1809-05-20-birth-josefa-waida",
+      "event_type": "Birth/Baptism",
+      "date": "1809-05-20",
+      "place": "Ludslavice no. 18",
+      "confidence": "confirmed",
+      "person_id": "P0161",
+      "source_ids": [
+        "S0035"
+      ],
+      "provenance": "primary"
+    },
+    {
+      "id": "E1814-06-05-death-josefa-waida",
+      "event_type": "Death",
+      "date": "1814-06-05",
+      "place": "Ludslavice",
+      "confidence": "probable",
+      "person_id": "P0161",
+      "source_ids": [
+        "S0034"
+      ],
+      "provenance": "primary",
+      "notes": "Date from the death index only; entry not yet opened."
+    },
+    {
+      "id": "E1814-06-15-birth-lucia-waida",
+      "event_type": "Birth/Baptism",
+      "date": "1814-06-15",
+      "place": "Ludslavice no. 18",
+      "confidence": "confirmed",
+      "person_id": "P0162",
+      "source_ids": [
+        "S0036"
+      ],
+      "provenance": "primary"
+    },
+    {
+      "id": "E1814-08-18-death-lucia-waida",
+      "event_type": "Death",
+      "date": "1814-08-18",
+      "place": "Ludslavice",
+      "confidence": "probable",
+      "person_id": "P0162",
+      "source_ids": [
+        "S0034"
+      ],
+      "provenance": "primary",
+      "notes": "Date from the death index only; entry not yet opened."
+    },
+    {
+      "id": "E1816-03-15-birth-lucia-waida",
+      "event_type": "Birth/Baptism",
+      "date": "1816-03-15",
+      "place": "Ludslavice no. 18",
+      "confidence": "confirmed",
+      "person_id": "P0163",
+      "source_ids": [
+        "S0037"
+      ],
+      "provenance": "primary"
+    },
+    {
+      "id": "E1905-09-04-death-stanislav-vajda",
+      "event_type": "Death",
+      "date": "1905-09-04",
+      "place": "Vel\u00edkov\u00e1 no. 1",
+      "confidence": "confirmed",
+      "person_id": "P0054",
+      "source_ids": [
+        "S0027",
+        "S0028"
+      ],
+      "provenance": "primary",
+      "notes": "Aged 10 months 28 days; buried 6 Sep 1905 in Lukov."
+    },
+    {
+      "id": "E1821-12-10-death-barbara-waida",
+      "event_type": "Death",
+      "date": "1821-12-10",
+      "place": "Ludslavice",
+      "confidence": "confirmed",
+      "person_id": "P0165",
+      "source_ids": [
+        "S0048",
+        "S0034"
+      ],
+      "provenance": "primary"
+    },
+    {
+      "id": "Eundated-marriage-jakub-vajda-michaela-lovecka",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "manual",
+      "groom_id": "P0016",
+      "bride_id": "P0088",
+      "source_ids": [],
+      "notes": "Family link added manually."
+    },
+    {
+      "id": "E-marriage-josef-novosad-frantiska",
+      "event_type": "Marriage",
+      "date": "1883-09-25",
+      "place": "Mladcov\u00e1 (Zl\u00edn parish)",
+      "confidence": "confirmed",
+      "groom_id": "P0178",
+      "bride_id": "P0179",
+      "source_ids": [
+        "S0018",
+        "S0054",
+        "S0055"
+      ],
+      "provenance": "primary",
+      "notes": "Banns 9 and 16 Sep 1883; bride's father consented (minor)."
+    },
+    {
+      "id": "E-marriage-josef-svoboda-frantiska",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "probable",
+      "groom_id": "P0168",
+      "bride_id": "P0169",
+      "source_ids": [
+        "S0018"
+      ],
+      "provenance": "primary",
+      "notes": "Couple named in the 1931 marriage of their child; marriage record not yet found."
+    },
+    {
+      "id": "E-marriage-tomas-novosad-veronika",
+      "event_type": "Marriage",
+      "date": "1848-02-09",
+      "place": "Zl\u00edn",
+      "confidence": "confirmed",
+      "groom_id": "P0170",
+      "bride_id": "P0171",
+      "source_ids": [
+        "S0054",
+        "S0059",
+        "S0060"
+      ],
+      "provenance": "primary",
+      "notes": "Groom 28, bride 20 (minor, father's consent). Banns in Zl\u00edn."
+    },
+    {
+      "id": "E-marriage-frantisek-pastyrik-terezie",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "probable",
+      "groom_id": "P0172",
+      "bride_id": "P0173",
+      "source_ids": [
+        "S0054"
+      ],
+      "provenance": "primary",
+      "notes": "Couple named in the 1883 marriage of their child; marriage not yet found."
+    },
+    {
+      "id": "E1858-08-27-birth-josef-novosad",
+      "event_type": "Birth/Baptism",
+      "date": "1858-08-27",
+      "place": "Mladcov\u00e1 no. 35",
+      "confidence": "confirmed",
+      "person_id": "P0178",
+      "source_ids": [
+        "S0056",
+        "S0057"
+      ],
+      "provenance": "primary"
+    },
+    {
+      "id": "E-marriage-josef-novosad-anna",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "probable",
+      "groom_id": "P0174",
+      "bride_id": "P0175",
+      "source_ids": [
+        "S0056"
+      ],
+      "provenance": "primary",
+      "notes": "Named in the 1858 baptism of their grandson; marriage not yet found."
+    },
+    {
+      "id": "E-marriage-franz-smigura-theresia",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "probable",
+      "groom_id": "P0176",
+      "bride_id": "P0177",
+      "source_ids": [
+        "S0056"
+      ],
+      "provenance": "primary",
+      "notes": "Named in the 1858 baptism of their grandson; marriage not yet found."
+    },
+    {
+      "id": "E1807-06-20-birth-p0159",
+      "event_type": "Birth/Baptism",
+      "date": "1807-06-20",
+      "place": "Ludslavice no. 17",
+      "confidence": "confirmed",
+      "person_id": "P0159",
+      "source_ids": [
+        "S0031"
+      ],
+      "provenance": "primary",
+      "notes": "Derived 2026-11-14 from the cited record (date stated in it or, if probable, from a margin note / age at death)."
+    },
+    {
+      "id": "E1907-06-29-birth-p0013",
+      "event_type": "Birth/Baptism",
+      "date": "1907-06-29",
+      "place": "Mladcov\u00e1",
+      "confidence": "confirmed",
+      "person_id": "P0013",
+      "source_ids": [
+        "S0018"
+      ],
+      "provenance": "primary",
+      "notes": "Derived 2026-11-14 from the cited record (date stated in it or, if probable, from a margin note / age at death)."
+    },
+    {
+      "id": "E1912-09-02-birth-p0021",
+      "event_type": "Birth/Baptism",
+      "date": "1912-09-02",
+      "place": "Louky n. D\u0159evnic\u00ed",
+      "confidence": "confirmed",
+      "person_id": "P0021",
+      "source_ids": [
+        "S0018"
+      ],
+      "provenance": "primary",
+      "notes": "Derived 2026-11-14 from the cited record (date stated in it or, if probable, from a margin note / age at death)."
+    },
+    {
+      "id": "E1906-07-02-birth-p0062",
+      "event_type": "Birth/Baptism",
+      "date": "1906-07-02",
+      "place": "Vel\u00edkov\u00e1",
+      "confidence": "confirmed",
+      "person_id": "P0062",
+      "source_ids": [
+        "S0009"
+      ],
+      "provenance": "primary",
+      "notes": "Derived 2026-11-14 from the cited record (date stated in it or, if probable, from a margin note / age at death)."
+    },
+    {
+      "id": "E1904-10-06-birth-p0054",
+      "event_type": "Birth/Baptism",
+      "date": "1904-10-06",
+      "place": "Vel\u00edkov\u00e1 no. 1",
+      "confidence": "confirmed",
+      "person_id": "P0054",
+      "source_ids": [
+        "S0027"
+      ],
+      "provenance": "primary",
+      "notes": "Derived 2026-11-14 from the cited record (date stated in it or, if probable, from a margin note / age at death)."
+    },
+    {
+      "id": "E1911-04-21-birth-p0022",
+      "event_type": "Birth/Baptism",
+      "date": "1911-04-21",
+      "place": "Vesel\u00e1",
+      "confidence": "confirmed",
+      "person_id": "P0022",
+      "source_ids": [
+        "S0009"
+      ],
+      "provenance": "primary",
+      "notes": "Derived 2026-11-14 from the cited record (date stated in it or, if probable, from a margin note / age at death)."
+    },
+    {
+      "id": "E1952-03-30-death-p0156",
+      "event_type": "Death",
+      "date": "1952-03-30",
+      "place": "Vel\u00edkov\u00e1",
+      "confidence": "probable",
+      "person_id": "P0156",
+      "source_ids": [
+        "S0026"
+      ],
+      "provenance": "primary",
+      "notes": "Derived 2026-11-14 from the cited record (date stated in it or, if probable, from a margin note / age at death)."
+    },
+    {
+      "id": "E1954-06-14-death-p0179",
+      "event_type": "Death",
+      "date": "1954-06-14",
+      "place": "",
+      "confidence": "probable",
+      "person_id": "P0179",
+      "source_ids": [
+        "S0054"
+      ],
+      "provenance": "primary",
+      "notes": "Derived 2026-11-14 from the cited record (date stated in it or, if probable, from a margin note / age at death)."
+    },
+    {
+      "id": "E1821-11-24-birth-p0165",
+      "event_type": "Birth/Baptism",
+      "date": "1821-11-24",
+      "place": "Ludslavice no. 18",
+      "confidence": "probable",
+      "person_id": "P0165",
+      "source_ids": [
+        "S0048"
+      ],
+      "provenance": "primary",
+      "notes": "Derived 2026-11-14 from the cited record (date stated in it or, if probable, from a margin note / age at death)."
     }
   ],
   "sources": [
     {
       "id": "S0001",
-      "title": "Marriage Index Entry (1822): Georg Waida",
+      "title": "Marriage Index Entry (1822): Georg Waida \u2014 linked event removed 2026-11-14 (Georg Waida cluster, unverified) \u2014 DISPROVED 2026-11-14: all 1822 Ludslavice weddings (S0050, S0051) read; no Georg Waida marriage exists. Folio 22 holds Oct\u2013Nov 1822 weddings of other families.",
       "type": "Parish marriage index",
       "parish": "Rudslavice / Ludslavice",
       "date": "1822",
@@ -1989,7 +3108,7 @@
     },
     {
       "id": "S0002",
-      "title": "Birth/Baptism Record: Josef Vajda",
+      "title": "Birth/Baptism Record: Josef Vajda \u2014 NOT verified: no 8 Dec 1827 entry; 5 Dec 1827 Joseph is son of Joseph Gaja/Gajda",
       "type": "Parish birth/baptism register",
       "parish": "Rudslavice / Ludslavice",
       "date": "1827-12-08",
@@ -2001,7 +3120,7 @@
     },
     {
       "id": "S0003",
-      "title": "Marriage Record (1822): Georg Waida",
+      "title": "Marriage Record (1822): Georg Waida \u2014 linked event removed 2026-11-14 (Georg Waida cluster, unverified) \u2014 DISPROVED 2026-11-14: all 1822 Ludslavice weddings (S0050, S0051) read; no Georg Waida marriage exists. Folio 22 holds Oct\u2013Nov 1822 weddings of other families.",
       "type": "Parish marriage register",
       "parish": "Rudslavice / Ludslavice",
       "date": "1822-12-08",
@@ -2013,7 +3132,7 @@
     },
     {
       "id": "S0006",
-      "title": "Frantisek Vajda birth 1854-09-15 (Rudslavice)",
+      "title": "Frantisek Vajda birth 1854-09-15 (Rudslavice) \u2014 verified 2026-11-14 (names 3 generations)",
       "type": "Parish birth/baptism register",
       "parish": "Rudslavice",
       "date": "1854-09-15",
@@ -2025,7 +3144,7 @@
     },
     {
       "id": "S0007",
-      "title": "Frantisek Vajda marriage 1884-11-11",
+      "title": "Frantisek Vajda marriage 1884-11-11 \u2014 page checked 2026-11-14: wedding NOT on this scan",
       "type": "Parish marriage register",
       "parish": "Rudslavice / Slusovice area",
       "date": "1884-11-11",
@@ -2037,7 +3156,7 @@
     },
     {
       "id": "S0008",
-      "title": "Frantisek Vajda death 1916",
+      "title": "Frantisek Vajda death 1916 \u2014 verified 2026-11-14 (gives birth 15 Sep 1854 Rudslavice, parents Josef Vajda + Veronika Dvo\u0159el, married 11 Nov 1884)",
       "type": "Parish death register",
       "parish": "Rudslavice / Slusovice area",
       "date": "1916",
@@ -2049,19 +3168,19 @@
     },
     {
       "id": "S0009",
-      "title": "Stanislav Vajda marriage 1933 (Slusovice)",
+      "title": "Stanislav Vajda marriage 1933 (Slusovice) \u2014 verified 2026-11-14 (scan 22, no. 1; names Stanislav's parents Franti\u0161ek Vajda + Anna \u017derav\u00edk)",
       "type": "Parish marriage register",
       "parish": "Slusovice",
       "date": "1933",
       "archive_url": "https://www.mza.cz/actapublica/matrika/detail/14895?image=216000010-00253-00000004674-000-000000000-000004674-00220.jp2",
       "image_url": "https://www.mza.cz/actapublica/matrika/detail/14895?image=216000010-00253-00000004674-000-000000000-000004674-00220.jp2",
       "local_image": "",
-      "reliability": "medium",
+      "reliability": "high",
       "priority": "primary"
     },
     {
       "id": "S0010",
-      "title": "Franz Waida marriage 1860",
+      "title": "Franz Waida marriage 1860 \u2014 different Franz Waida (age 34, son of late Wenzel Waida, Prusinovice; bride Franziska Stan\u011bk); not in direct line",
       "type": "Parish marriage register",
       "parish": "Rudslavice area",
       "date": "1860",
@@ -2085,7 +3204,7 @@
     },
     {
       "id": "S0012",
-      "title": "Josef Waida marriage 1851",
+      "title": "Josef Waida marriage 1851 \u2014 misindexed: groom is Joseph WALEK (son of Johann Walek, Kostelec), not Waida",
       "type": "Parish marriage register",
       "parish": "Rudslavice area",
       "date": "1851",
@@ -2097,7 +3216,7 @@
     },
     {
       "id": "S0013",
-      "title": "Franz Waida marriage 1826",
+      "title": "Franz Waida marriage 1826 \u2014 checked 2026-11-14: no Waida among the 1826 Ludslavice weddings on this scan",
       "type": "Parish marriage register",
       "parish": "Rudslavice area",
       "date": "1826",
@@ -2133,7 +3252,7 @@
     },
     {
       "id": "S0016",
-      "title": "Source for Birth/Baptism",
+      "title": "ZA Opava Digit\u00e1ln\u00ed badatelna \u2014 Vincenc Barto\u0148 baptism (Ve\u0159ovice), link from MyHeritage; NOT read: portal forbids automated browsing (notice on front page, 2026-11-14); to be checked manually by the user",
       "type": "",
       "date": "",
       "archive_url": "https://digi.archives.cz/da/vysledekDetail/29e3f91ac933f2f4:70b6415a:133c48e5e49:-7fff?page=43&actualDetailTab=attachmentsImg&scanLink=1",
@@ -2155,12 +3274,578 @@
     },
     {
       "id": "S0018",
-      "title": "Marriage record",
-      "type": "",
+      "title": "Jaroslav Novosad + Marie Svobodov\u00e1 marriage 12 Sep 1931, Malenovice parish (Louky n. D\u0159evnic\u00ed), book 4140, scan 98, no. 10 \u2014 verified 2026-11-14",
+      "type": "Parish marriage register",
       "date": "1931-09-12",
       "archive_url": "https://www.mza.cz/actapublica/matrika/detail/10016?image=216000010-000253-003371-000000-004140-000000-00-B03875-00970.jp2",
       "image_url": "",
       "local_image": "",
+      "priority": "primary",
+      "parish": "Zl\u00edn-Malenovice (Louky)",
+      "reliability": "high"
+    },
+    {
+      "id": "S0019",
+      "title": "Ludslavice marriages 1837\u20131868, index W/V (book 8162, scan 62): no Josef Waida \u2014 checked 2026-11-14",
+      "type": "Parish marriage index",
+      "parish": "Ludslavice",
+      "date": "1837-1868",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9035?image=216000010-000253-003374-000000-008162-000000-00-B06013-00620.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9035?image=216000010-000253-003374-000000-008162-000000-00-B06013-00620.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0020",
+      "title": "Ludslavice marriages 1785\u20131836, index W (book 8161, scan 37): no clear Waida \u2014 checked 2026-11-14",
+      "type": "Parish marriage index",
+      "parish": "Ludslavice",
+      "date": "1785-1836",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9034?image=216000010-000253-003374-000000-008161-000000-00-B05289-00370.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9034?image=216000010-000253-003374-000000-008161-000000-00-B05289-00370.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0021",
+      "title": "Ludslavice marriages 1884 (book 8163, scan 36): 11 Nov 1884 is Valentin Ostr\u010dil\u00edk, no Vajda \u2014 checked 2026-11-14",
+      "type": "Parish marriage register",
+      "parish": "Ludslavice",
+      "date": "1884",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/679?image=216000010-000253-003374-000000-008163-000000-FM-B10260-00360.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/679?image=216000010-000253-003374-000000-008163-000000-FM-B10260-00360.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0022",
+      "title": "Ludslavice marriages 1869\u20131913, index V (book 8163, scan 117): no Vajda/Waida \u2014 checked 2026-11-14",
+      "type": "Parish marriage index",
+      "parish": "Ludslavice",
+      "date": "1869-1913",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/679?image=216000010-000253-003374-000000-008163-000000-FM-B10260-01170.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/679?image=216000010-000253-003374-000000-008163-000000-FM-B10260-01170.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0023",
+      "title": "Lukov/Vel\u00edkov\u00e1 marriages 1859\u20131941, index (book 4360, scan 100): no Vajda/Waida under V/W \u2014 checked 2026-11-14",
+      "type": "Parish marriage index",
+      "parish": "Lukov (Vel\u00edkov\u00e1)",
+      "date": "1859-1941",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/11099?image=216000010-000253-003371-000000-004360-000000-00-B00492-01000.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/11099?image=216000010-000253-003371-000000-004360-000000-00-B00492-01000.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0024",
+      "title": "Ludslavice births 1785\u20131836, index W (book 8156, scan 74): CORRECTED 2026-11-14 \u2014 Wajda children listed: Veronika 1807 fol.38, Josefa 1809 fol.41, Lucia 1814 fol.51, Lucia 1816 fol.56; no Joseph c.1800\u20131806",
+      "type": "Parish birth index",
+      "parish": "Ludslavice",
+      "date": "1785-1836",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9031?image=216000010-000253-003374-000000-008156-000000-00-B06012-00740.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9031?image=216000010-000253-003374-000000-008156-000000-00-B06012-00740.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0025",
+      "title": "Prusinovice births 1824\u20131850, index W (book 8285, scan 133): possible Wajda entries c.1826\u201328 (fol. 14), unreadable/unconfirmed \u2014 checked 2026-11-14",
+      "type": "Parish birth index",
+      "parish": "Prusinovice",
+      "date": "1824-1850",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9092?image=216000010-000253-003374-000000-008285-000000-00-B06040-01330.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9092?image=216000010-000253-003374-000000-008285-000000-00-B06040-01330.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0026",
+      "title": "Franti\u0161ek Vaida + Anna \u017derav\u00edk marriage 11 Nov 1884, Jankovice (Hole\u0161ov parish book 7608, fol. 25, scan 26) \u2014 verified 2026-11-14",
+      "type": "Parish marriage register",
+      "parish": "Hole\u0161ov (Jankovice)",
+      "date": "1884-11-11",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/11996?image=216000010-000253-003374-000000-007608-000000-00-B11908-00260.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/11996?image=216000010-000253-003374-000000-007608-000000-00-B11908-00260.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0027",
+      "title": "Stanislav Vajda death 4 Sep 1905, Vel\u00edkov\u00e1 (Lukov deaths book 4364, p. 22, scan 71) \u2014 verified 2026-11-14",
+      "type": "Parish death register",
+      "parish": "Lukov (Vel\u00edkov\u00e1)",
+      "date": "1905-09-04",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/12571?image=216000010-000253-003371-000000-004364-000000-00-00710.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/12571?image=216000010-000253-003371-000000-004364-000000-00-00710.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0028",
+      "title": "Vel\u00edkov\u00e1 deaths index 1892\u20131949, V (book 4364, scan 134): Vajda Stanislav 1905 p.22, Franti\u0161ek 1916 p.47, Josef 1928 p.67 \u2014 checked 2026-11-14",
+      "type": "Parish death index",
+      "parish": "Lukov (Vel\u00edkov\u00e1)",
+      "date": "1892-1949",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/12571?image=216000010-000253-003371-000000-004364-000000-00-01340.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/12571?image=216000010-000253-003371-000000-004364-000000-00-01340.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0029",
+      "title": "Joseph Waida + Veronica Dwor\u017eel marriage 31 Jul 1838, Kurovice (book 8045, fol. 53, scan 31) \u2014 verified 2026-11-14",
+      "type": "Parish marriage register",
+      "parish": "Kurovice",
+      "date": "1838-07-31",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/8968?image=216000010-000253-003374-000000-008045-000000-00-B05262-00310.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/8968?image=216000010-000253-003374-000000-008045-000000-00-B05262-00310.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0030",
+      "title": "Kurovice marriages 1784\u20131855, index W (book 8045, scan 77): Waida Carl 1837 fol. 51, Waida Joseph 1838 fol. 53 \u2014 checked 2026-11-14",
+      "type": "Parish marriage index",
+      "parish": "Kurovice",
+      "date": "1784-1855",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/8968?image=216000010-000253-003374-000000-008045-000000-00-B05262-00770.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/8968?image=216000010-000253-003374-000000-008045-000000-00-B05262-00770.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0031",
+      "title": "Veronika Wajda baptism 20 Jun 1807, Ludslavice no. 17 (book 8156, fol. 38, scan 21): parents Franz Wajda, Bauer, + Anna d. of Karl Dowr\u017eil \u2014 verified 2026-11-14",
+      "type": "Parish birth/baptism register",
+      "parish": "Ludslavice",
+      "date": "1807-06-20",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9031?image=216000010-000253-003374-000000-008156-000000-00-B06012-00210.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9031?image=216000010-000253-003374-000000-008156-000000-00-B06012-00210.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0032",
+      "title": "Prusinovice marriages 1784\u20131843, index W/V (book 8292, scan 86): no Waida groom \u2014 checked 2026-11-14",
+      "type": "Parish marriage index",
+      "parish": "Prusinovice",
+      "date": "1784-1843",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9095?image=216000010-000253-003374-000000-008292-000000-00-B06042-00860.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9095?image=216000010-000253-003374-000000-008292-000000-00-B06042-00860.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0033",
+      "title": "Franz Waida death 5 Jun 1827, Ludslavice no. 18 (deaths book 8165, fol. 45, scan 23): Bauer, aged 63 \u2014 verified 2026-11-14",
+      "type": "Parish death register",
+      "parish": "Ludslavice",
+      "date": "1827-06-05",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9036?image=216000010-000253-003374-000000-008165-000000-00-B03043-00230.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9036?image=216000010-000253-003374-000000-008165-000000-00-B03043-00230.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0034",
+      "title": "Ludslavice deaths 1785\u20131836, index W (book 8165, scan 51): Waida/Wajda deaths 1814 Josefa+Lucia, 1821 Barbara, 1827 Franz \u2014 checked 2026-11-14",
+      "type": "Parish death index",
+      "parish": "Ludslavice",
+      "date": "1785-1836",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9036?image=216000010-000253-003374-000000-008165-000000-00-B03043-00510.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9036?image=216000010-000253-003374-000000-008165-000000-00-B03043-00510.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0035",
+      "title": "Josefa Wajda baptism 20 May 1809, Ludslavice no. 18 (book 8156, fol. 41, scan 22): Franz Wajda, Bauer; Anna d. of Karl Dowr\u017eil, podsedn\u00edk in Wrb\u011btitz \u2014 verified 2026-11-14",
+      "type": "Parish birth/baptism register",
+      "parish": "Ludslavice",
+      "date": "1809-05-20",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9031?image=216000010-000253-003374-000000-008156-000000-00-B06012-00220.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9031?image=216000010-000253-003374-000000-008156-000000-00-B06012-00220.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0036",
+      "title": "Lucia Wajda baptism 15 Jun(?) 1814, Ludslavice no. 18 (book 8156, fol. 51, scan 27): Franz Wajda, Bauer; Anna d. of Johann(?) Dwor\u017eil, von Wrb\u011btitz \u2014 verified 2026-11-14",
+      "type": "Parish birth/baptism register",
+      "parish": "Ludslavice",
+      "date": "1814-06-15",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9031?image=216000010-000253-003374-000000-008156-000000-00-B06012-00270.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9031?image=216000010-000253-003374-000000-008156-000000-00-B06012-00270.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0037",
+      "title": "Lucia Wajda baptism 15 Mar 1816, Ludslavice no. 18 (book 8156, fol. 56, scan 30): Franz Wajda, Bauer; Anna d. of Karl Dowr\u017eil, podsedn\u00edk von Wrb\u011btitz \u2014 verified 2026-11-14",
+      "type": "Parish birth/baptism register",
+      "parish": "Ludslavice",
+      "date": "1816-03-15",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9031?image=216000010-000253-003374-000000-008156-000000-00-B06012-00300.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9031?image=216000010-000253-003374-000000-008156-000000-00-B06012-00300.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0038",
+      "title": "Vlachovice parish marriages, Vrb\u011btice section 1797\u20131801 (book 4959, scan 140): no Waida groom / Dwor\u017eil bride \u2014 checked 2026-11-14",
+      "type": "Parish marriage register",
+      "parish": "Vlachovice (Vrb\u011btice)",
+      "date": "1784-1866",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/4813?image=216000010-000253-003371-000000-004959-000000-00-B07273-01400.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/4813?image=216000010-000253-003371-000000-004959-000000-00-B07273-01400.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0039",
+      "title": "Vlachovice parish marriages, Vrb\u011btice section 1801\u20131805 (book 4959, scan 141): no Waida groom / Dwor\u017eil bride \u2014 checked 2026-11-14",
+      "type": "Parish marriage register",
+      "parish": "Vlachovice (Vrb\u011btice)",
+      "date": "1784-1866",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/4813?image=216000010-000253-003371-000000-004959-000000-00-B07273-01410.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/4813?image=216000010-000253-003371-000000-004959-000000-00-B07273-01410.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0040",
+      "title": "Vlachovice parish marriages, Vrb\u011btice index (book 4959, scans 169\u2013172): no Waida/Wajda groom \u2014 checked 2026-11-14",
+      "type": "Parish marriage register",
+      "parish": "Vlachovice (Vrb\u011btice)",
+      "date": "1784-1866",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/4813?image=216000010-000253-003371-000000-004959-000000-00-B07273-01720.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/4813?image=216000010-000253-003371-000000-004959-000000-00-B07273-01720.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0041",
+      "title": "Ludslavice marriages 1797\u20131801 (book 8161, fol. 8\u20139, scan 5): read page by page, no Waida/Wajda groom \u2014 checked 2026-11-14",
+      "type": "Parish marriage register",
+      "parish": "Ludslavice",
+      "date": "1797\u20131801",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9034?image=216000010-000253-003374-000000-008161-000000-00-B05289-00050.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9034?image=216000010-000253-003374-000000-008161-000000-00-B05289-00050.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0042",
+      "title": "Ludslavice marriages 1801\u20131805 (book 8161, fol. 10\u201311, scan 6): read page by page, no Waida/Wajda groom \u2014 checked 2026-11-14",
+      "type": "Parish marriage register",
+      "parish": "Ludslavice",
+      "date": "1801\u20131805",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9034?image=216000010-000253-003374-000000-008161-000000-00-B05289-00060.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9034?image=216000010-000253-003374-000000-008161-000000-00-B05289-00060.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0043",
+      "title": "Ludslavice marriages 1806\u20131809 (book 8161, fol. 12\u201313, scan 7): overview, no Waida groom seen \u2014 checked 2026-11-14",
+      "type": "Parish marriage register",
+      "parish": "Ludslavice",
+      "date": "1806\u20131809",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9034?image=216000010-000253-003374-000000-008161-000000-00-B05289-00070.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9034?image=216000010-000253-003374-000000-008161-000000-00-B05289-00070.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0044",
+      "title": "Ludslavice land book (pozemkov\u00e1 kniha) houses 1\u201355, 1798\u20131837, Hole\u0161ov estate (MZA, Pozemkov\u00e9 knihy, kniha 13405), house no. 18 at fol. 94\u201398 (viewer scans 97\u201398): owners Athanasius Wagda (10 Sep 1806), Franz Wagda (10 Jun 1808, 3200 fl), then Josef Waida \u2014 read 2026-11-14 (partial reading). Both entries cite a contract book 'Tomo 2do Folio 249' (1806) and 'Folio 325' (1808) \u2014 the full purchase contracts (Kaufprotokoll, Hole\u0161ov estate), not yet located.",
+      "type": "Land register (pozemkov\u00e1 kniha)",
+      "parish": "Ludslavice (Hole\u0161ov estate)",
+      "date": "1798-1837",
+      "archive_url": "https://www.mza.cz/aron/apu/0384d0bc-621c-4adb-9aab-25f0470c60bc",
+      "image_url": "https://www.mza.cz/aron/apu/0384d0bc-621c-4adb-9aab-25f0470c60bc",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0045",
+      "title": "Ludslavice land book I, 1747\u20131796 (MZA Pozemkov\u00e9 knihy, kniha 13404, digitised) \u2014 earlier owners of no. 18; not yet read",
+      "type": "Land register (pozemkov\u00e1 kniha)",
+      "parish": "Ludslavice (Hole\u0161ov estate)",
+      "date": "1747\u20131796",
+      "archive_url": "https://www.mza.cz/aron/apu/94a2276a-811b-4d55-9213-be786ec3cd54",
+      "image_url": "https://www.mza.cz/aron/apu/94a2276a-811b-4d55-9213-be786ec3cd54",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0046",
+      "title": "Ludslavice land book III, houses 1\u201357, 1839\u20131883 (MZA Pozemkov\u00e9 knihy, kniha 13406, digitised) \u2014 later owners of no. 18 (Josef Waida and heirs); not yet read",
+      "type": "Land register (pozemkov\u00e1 kniha)",
+      "parish": "Ludslavice (Hole\u0161ov estate)",
+      "date": "houses",
+      "archive_url": "https://www.mza.cz/aron/apu/775c0d5d-9e74-45ce-8c91-832300e54f38",
+      "image_url": "https://www.mza.cz/aron/apu/775c0d5d-9e74-45ce-8c91-832300e54f38",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0047",
+      "title": "Holleschauer Urkundenbuch (Kniha listin) vol. II, 1801\u20131809, Hole\u0161ov estate (MZA Pozemkov\u00e9 knihy, kniha 13351, digitised, 439 scans). Name index (scan 434, W): 'Wayda Athanas von Ludslawitz \u2014 fol. 325'. Folio 325r (scan 333) however holds the Joseph Trunkat contract (May 1808); the Wayda deed itself not yet located \u2014 checked scans 247\u2013248 (fol. 248\u2013249), 331\u2013335 (fol. 320\u2013327) \u2014 2026-11-14. Further check 2026-11-14: contract headings on scans 329\u2013351 (\u2248 fol. 321\u2013343, dated mid-April to 25 June 1808) read one by one \u2014 no Wayda/Waida contract; folio 325 = Trunkat (14 May 1808). The 10 Jun 1808 Franz Wagda deed is therefore not in this run; the 'fol. 325' references may point to a different book (e.g. a separate Kaufprotokoll or Dlu\u017en\u00ed kniha 1806\u20131812).",
+      "type": "Deed book (Kniha listin / Urkundenbuch)",
+      "parish": "Hole\u0161ov estate",
+      "date": "1801-1809",
+      "archive_url": "https://www.mza.cz/aron/apu/8ae5297c-4bad-4a3c-b6f8-1f4a75f42176",
+      "image_url": "https://www.mza.cz/aron/apu/8ae5297c-4bad-4a3c-b6f8-1f4a75f42176",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0048",
+      "title": "Barbara Waida death 10 Dec 1821, Ludslavice (deaths book 8165, fol. 40, scan 21): daughter of Franz Waida, Bauer, aged 16 days \u2014 verified 2026-11-14",
+      "type": "Parish death register",
+      "parish": "Ludslavice",
+      "date": "1821-12-10",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9036?image=216000010-000253-003374-000000-008165-000000-00-B03043-00210.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9036?image=216000010-000253-003374-000000-008165-000000-00-B03043-00210.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0049",
+      "title": "Hole\u0161ov estate debt book (Dlu\u017en\u00ed kniha) III, 1806\u20131812 (MZA Pozemkov\u00e9 knihy, kniha 13365, digitised, no index). Folio 325 (scan 326) checked 2026-11-14: only short repayment receipts ('Quittung', 1807\u20131808) continuing an account that starts on an earlier folio; no Wayda/Waida name visible \u2014 not confirmed as the cited 'fol. 325'",
+      "type": "Debt book (Dlu\u017en\u00ed kniha)",
+      "parish": "Hole\u0161ov estate",
+      "date": "1806-1812",
+      "archive_url": "https://www.mza.cz/aron/apu/f2f4fa66-3b3f-4f81-987c-5e4ab8f60db0",
+      "image_url": "https://www.mza.cz/aron/apu/f2f4fa66-3b3f-4f81-987c-5e4ab8f60db0",
+      "local_image": "",
+      "reliability": "medium",
+      "priority": "primary"
+    },
+    {
+      "id": "S0050",
+      "title": "Ludslavice marriages 1822, part 1 (book 8161, fol. 21, scan 11): 28 Jan Joseph Wro\u017eina(?), 8 Jul Johann Gaja \u2014 no Georg Waida \u2014 checked 2026-11-14",
+      "type": "Parish marriage register",
+      "parish": "Ludslavice",
+      "date": "1822",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9034?image=216000010-000253-003374-000000-008161-000000-00-B05289-00110.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9034?image=216000010-000253-003374-000000-008161-000000-00-B05289-00110.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0051",
+      "title": "Ludslavice marriages 1822, part 2 (book 8161, fol. 22, scan 12): Oct\u2013Nov 1822 weddings (Johann Mimiel?, Johann L\u017ei\u010dil) \u2014 no Georg Waida \u2014 checked 2026-11-14",
+      "type": "Parish marriage register",
+      "parish": "Ludslavice",
+      "date": "1822",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9034?image=216000010-000253-003374-000000-008161-000000-00-B05289-00120.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/9034?image=216000010-000253-003374-000000-008161-000000-00-B05289-00120.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0052",
+      "title": "Ludslavice land book II (kniha 13405), house no. 17 half-l\u00e1n farm, fol. ~87 (viewer scan 90): owners Johann Scho\u0159\u00edk(?) from Dec 1798, then Franz Skop\u00edk(?) from 16 Aug 1822 \u2014 no Waida owner; Franz Waida at no. 17 in 1807 was therefore not the owner (lodger/tenant) \u2014 checked 2026-11-14",
+      "type": "Land register (pozemkov\u00e1 kniha)",
+      "parish": "Ludslavice (Hole\u0161ov estate)",
+      "date": "1798-1837",
+      "archive_url": "https://www.mza.cz/aron/apu/0384d0bc-621c-4adb-9aab-25f0470c60bc",
+      "image_url": "https://www.mza.cz/aron/apu/0384d0bc-621c-4adb-9aab-25f0470c60bc",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0053",
+      "title": "Holleschauer Kontraktenbuch (Kniha listin) vol. I, 1797\u20131801, Hole\u0161ov estate (MZA Pozemkov\u00e9 knihy, kniha 13350, 390 scans). Name index at end (scans ~376\u2013388) skimmed 2026-11-14: no Wayda/Waida/Wajda entry spotted under W/V; the index is faded and partly damaged, so not conclusive",
+      "type": "Deed book (Kniha listin / Kontraktenbuch)",
+      "parish": "Hole\u0161ov estate",
+      "date": "1797-1801",
+      "archive_url": "https://www.mza.cz/aron/apu/2b13ffc1-7915-4e16-a6cb-beaba1919c34",
+      "image_url": "https://www.mza.cz/aron/apu/2b13ffc1-7915-4e16-a6cb-beaba1919c34",
+      "local_image": "",
+      "reliability": "medium",
+      "priority": "primary"
+    },
+    {
+      "id": "S0054",
+      "title": "Josef Novosad + Franti\u0161ka Pasty\u0159\u00edkov\u00e1 marriage 25 Sep 1883, Mladcov\u00e1 (Zl\u00edn parish, marriages book 4196, p. 86, scan 46) \u2014 verified 2026-11-14",
+      "type": "Parish marriage register",
+      "parish": "Zl\u00edn (Mladcov\u00e1)",
+      "date": "1883-09-25",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/311?image=216000010-000253-003371-000000-004196-000000-FM-B09744-00460.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/311?image=216000010-000253-003371-000000-004196-000000-FM-B09744-00460.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0055",
+      "title": "Mladcov\u00e1 marriages index 1784\u20131924 (book 4196, scan 85), N: Novosad Josef + Franti\u0161ka Pasty\u0159\u00edk 1883 p.86; Novosad Josef + Veronika ? 1866 p.57 (another Josef) \u2014 checked 2026-11-14",
+      "type": "Parish marriage index",
+      "parish": "Zl\u00edn (Mladcov\u00e1)",
+      "date": "1784-1924",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/311?image=216000010-000253-003371-000000-004196-000000-FM-B09744-00850.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/311?image=216000010-000253-003371-000000-004196-000000-FM-B09744-00850.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0056",
+      "title": "Josef Novosad baptism 27/28 Aug 1858, Mladcov\u00e1 no. 35 (Zl\u00edn parish births book 4177, p. 125, scan 63) \u2014 verified 2026-11-14",
+      "type": "Parish birth/baptism register",
+      "parish": "Zl\u00edn (Mladcov\u00e1)",
+      "date": "1858-08-27",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/3970?image=216000010-000253-003371-000000-004177-000000-00-B07168-00630.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/3970?image=216000010-000253-003371-000000-004177-000000-00-B07168-00630.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0057",
+      "title": "Mladcov\u00e1 births index 1784\u20131864 (book 4177, scan 79), N: Novosad Franz fol.100, Anna 101, Franziska 108, Josepha 1857 fol.119, Josef 1858 fol.125, Thomas(?) 1860 fol.132, Veronika 1863 fol.140 \u2014 checked 2026-11-14 (entries other than Josef not yet opened)",
+      "type": "Parish birth index",
+      "parish": "Zl\u00edn (Mladcov\u00e1)",
+      "date": "1784-1864",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/3970?image=216000010-000253-003371-000000-004177-000000-00-B07168-00790.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/3970?image=216000010-000253-003371-000000-004177-000000-00-B07168-00790.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0058",
+      "title": "Mladcov\u00e1 marriages 1840\u20131841 (book 4196, pp. 22\u201323, scan 14): index points 'Nowosad Joseph \u2192 p. 22', but no Novosad groom found on pp. 22\u201323 (possibly a witness/bride's-parent mention) \u2014 checked 2026-11-14",
+      "type": "Parish marriage register",
+      "parish": "Zl\u00edn (Mladcov\u00e1)",
+      "date": "1840-1841",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/311?image=216000010-000253-003371-000000-004196-000000-FM-B09744-00140.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/311?image=216000010-000253-003371-000000-004196-000000-FM-B09744-00140.jp2",
+      "local_image": "",
+      "reliability": "medium",
+      "priority": "primary"
+    },
+    {
+      "id": "S0059",
+      "title": "Thomas Nowosad + Veronika \u0160migura marriage 9 Feb 1848, Zl\u00edn parish (marriages book 4184, p. 191, scan 98) \u2014 verified 2026-11-14",
+      "type": "Parish marriage register",
+      "parish": "Zl\u00edn",
+      "date": "1848-02-09",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/3973?image=216000010-000253-003371-000000-004184-000000-FM-B09741-00980.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/3973?image=216000010-000253-003371-000000-004184-000000-FM-B09741-00980.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0060",
+      "title": "Zl\u00edn marriages index 1784\u20131861 (book 4184, scan 160), N: 'Nowosad Thomas p.191', 'Nowosad Johann p.219' \u2014 checked 2026-11-14",
+      "type": "Parish marriage index",
+      "parish": "Zl\u00edn",
+      "date": "1784-1861",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/3973?image=216000010-000253-003371-000000-004184-000000-FM-B09741-01600.jp2",
+      "image_url": "https://www.mza.cz/actapublica/matrika/detail/3973?image=216000010-000253-003371-000000-004184-000000-FM-B09741-01600.jp2",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0061",
+      "title": "Maria Barton baptism 6 Aug 1872 (b. 5 Aug), Rabensburg no. 208, entry 39 (Taufbuch 01-07, fol. 522, Matricula scan 524) \u2014 read 2026-11-14",
+      "type": "Parish birth/baptism register",
+      "parish": "Rabensburg (Erzdi\u00f6zese Wien)",
+      "date": "1872-08-05",
+      "archive_url": "https://data.matricula-online.eu/de/oesterreich/wien/rabensburg/01-07/?pg=524",
+      "image_url": "https://data.matricula-online.eu/de/oesterreich/wien/rabensburg/01-07/?pg=524",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0062",
+      "title": "Rabensburg Taufbuch 01-07 (1841\u20131873) index, letter B (Matricula scans 593\u2013594): only Barton-like entry 'Bardan/Barton Maria 1872 fol. 522'; also 'Bartosch Hermann 1861' (other family) \u2014 checked 2026-11-14",
+      "type": "Parish birth index",
+      "parish": "Rabensburg",
+      "date": "1841-1873",
+      "archive_url": "https://data.matricula-online.eu/de/oesterreich/wien/rabensburg/01-07/?pg=594",
+      "image_url": "https://data.matricula-online.eu/de/oesterreich/wien/rabensburg/01-07/?pg=594",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0063",
+      "title": "Rabensburg Taufbuch 01-08 (1874\u20131889) index B (Matricula scans 381\u2013383): no Barton/B\u00e1rton \u2014 only Bartosch/Barto\u0161\u00edk families; no siblings of Maria (1872) baptised in Rabensburg \u2014 checked 2026-11-14",
+      "type": "Parish birth index",
+      "parish": "Rabensburg (Erzdi\u00f6zese Wien)",
+      "date": "1874-1889",
+      "archive_url": "https://data.matricula-online.eu/de/oesterreich/wien/rabensburg/01-08/?pg=382",
+      "image_url": "https://data.matricula-online.eu/de/oesterreich/wien/rabensburg/01-08/?pg=382",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0064",
+      "title": "Rabensburg 1873 no. 46 Theresia (Taufbuch 01-07 fol. 579, scan 581): parents Franz Barto\u0161 + Maria Pecovsky \u2014 different family, not Barton \u2014 checked 2026-11-14",
+      "type": "Parish birth/baptism register",
+      "parish": "Rabensburg (Erzdi\u00f6zese Wien)",
+      "date": "1873-08-12",
+      "archive_url": "https://data.matricula-online.eu/de/oesterreich/wien/rabensburg/01-07/?pg=581",
+      "image_url": "https://data.matricula-online.eu/de/oesterreich/wien/rabensburg/01-07/?pg=581",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "primary"
+    },
+    {
+      "id": "S0065",
+      "title": "Rabensburg Sterbebuch 03-07 (1880\u20131898) index B (Matricula scan 124): no Barton/B\u00e1rton death \u2014 checked 2026-11-14",
+      "type": "Parish death index",
+      "parish": "Rabensburg (Erzdi\u00f6zese Wien)",
+      "date": "1880-1898",
+      "archive_url": "https://data.matricula-online.eu/de/oesterreich/wien/rabensburg/03-07/?pg=124",
+      "image_url": "https://data.matricula-online.eu/de/oesterreich/wien/rabensburg/03-07/?pg=124",
+      "local_image": "",
+      "reliability": "high",
       "priority": "primary"
     }
   ]

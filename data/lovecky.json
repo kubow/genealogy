@@ -1,0 +1,4592 @@
+{
+  "people": [
+    {
+      "id": "P0093",
+      "name": "František",
+      "sex": "M",
+      "birth_date": "1926",
+      "birth_place": "Moravský Písek",
+      "death_date": "2009",
+      "death_place": "Moravský Písek",
+      "father": "P0114",
+      "mother": "P0201",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Research subject of this file. MyHeritage gave birth '1926-01-01' in Kyjov; '1 Jan' is a placeholder and the family lived in Moravský Písek, so the birthplace was changed to Moravský Písek (probable; his own 1926 birth record is not online yet). Birth year 1926 and death 2009 confirmed by the family grave 'Rodina Lovecká' in Moravský Písek (S0113).\n\nParents identified 2026-11-14: František Lovecký (1900–1984) and Františka Tihlaříková (1904–1996), married 8 Nov 1925 (S0101); confirmed by the grave. Sister Anička (1932–1935).\n\nChildhood homes: Moravský Písek no. 57 (1925) and no. 405 (1935).",
+      "birth_surname": "Lovecký",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 405",
+          "date": "1935",
+          "source_id": "S0111",
+          "evidence": "Death 1935: Anna (Anička) Lovecká"
+        }
+      ]
+    },
+    {
+      "id": "P0114",
+      "name": "František",
+      "sex": "M",
+      "birth_date": "1900-01-09",
+      "birth_place": "Moravský Písek",
+      "death_date": "1984",
+      "death_place": "",
+      "father": "P0203",
+      "mother": "P0204",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born 9 Jan 1900 in Moravský Písek no. 110, baptised 14 Jan (S0103). Married 8 Nov 1925 Františka Tihlaříková in St. Anne's, Moravský Písek (S0101). Died 1984 (grave, S0113).",
+      "birth_surname": "Lovecký",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 110",
+          "date": "1900",
+          "source_id": "S0103",
+          "evidence": "Birth 1900: František Lovecký"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as dělník (labourer)",
+          "date": "1925",
+          "source_id": "S0101",
+          "evidence": "Marriage 1925: František Lovecký + Františka Tihlaříková"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 57",
+          "date": "1925",
+          "source_id": "S0101",
+          "evidence": "Marriage 1925: František Lovecký + Františka Tihlaříková"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as domkař (cottager)",
+          "date": "1935",
+          "source_id": "S0111",
+          "evidence": "Death 1935: Anna (Anička) Lovecká"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 405",
+          "date": "1935",
+          "source_id": "S0111",
+          "evidence": "Death 1935: Anna (Anička) Lovecká"
+        }
+      ]
+    },
+    {
+      "id": "P0094",
+      "name": "Marie",
+      "sex": "F",
+      "birth_date": "1931",
+      "birth_place": "",
+      "death_date": "1994",
+      "death_place": "",
+      "father": "P0254",
+      "mother": "P0255",
+      "confidence": "probable",
+      "provenance": "myheritage",
+      "notes": "The family grave in Moravský Písek (S0113) has a Marie 1931–1994. She is most likely this Marie, wife of František (1926); not yet proven by a record.\n\nProbable parents (2026-11-15): Jan Formánek of Bzenec and Marie Dobřická of Moravský Písek, married 9 Nov 1926 (S0133). They are the only Formánek marriage in the Moravský Písek index 1908–1943 (S0134), and a daughter born 1931 fits. Not proven: Marie's own 1931 birth record is not online (ask the registry office).",
+      "birth_surname": "Formánková",
+      "married_surname": "Lovecká",
+      "display_name": "",
+      "review_status": "imported",
+      "aliases": []
+    },
+    {
+      "id": "P0091",
+      "name": "František",
+      "sex": "M",
+      "birth_date": "1955-06-13",
+      "birth_place": "Kyjov",
+      "death_date": "2019-03-06",
+      "death_place": "Moravský Písek",
+      "father": "P0093",
+      "mother": "P0094",
+      "confidence": "confirmed",
+      "provenance": "myheritage",
+      "notes": "",
+      "birth_surname": "Lovecký",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "imported",
+      "aliases": []
+    },
+    {
+      "id": "P0092",
+      "name": "Alena",
+      "sex": "F",
+      "birth_date": "1957-03-01",
+      "birth_place": "Kyjov",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0235",
+      "mother": "P0236",
+      "confidence": "confirmed",
+      "provenance": "myheritage",
+      "notes": "Her parents (P0096, P0095 in genealogy.json) are not part of this file.\n\nParents Josef Sládek (1928–1968) and Drahomíra Svobodová (1930–2015), from the family grave in Moravský Písek (S0125).",
+      "birth_surname": "Sládková",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "imported",
+      "aliases": []
+    },
+    {
+      "id": "P0088",
+      "name": "Michaela",
+      "sex": "F",
+      "birth_date": "1982-03-07",
+      "birth_place": "Kyjov",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0091",
+      "mother": "P0092",
+      "confidence": "confirmed",
+      "provenance": "myheritage",
+      "notes": "",
+      "birth_surname": "Lovecká",
+      "married_surname": "Vajdová",
+      "display_name": "",
+      "review_status": "imported",
+      "aliases": []
+    },
+    {
+      "id": "P0201",
+      "name": "Františka",
+      "sex": "F",
+      "birth_date": "1904-11-05",
+      "birth_place": "Moravský Písek",
+      "death_date": "1996",
+      "death_place": "",
+      "father": "P0205",
+      "mother": "P0206",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born 5 Nov 1904 in Moravský Písek no. 27, baptised 6 Nov (S0104). Farmer's daughter. Married František Lovecký 8 Nov 1925 (S0101). Died 1996 (grave, S0113). Mother of František (1926) and Anička.",
+      "birth_surname": "Tihlaříková",
+      "married_surname": "Lovecká",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 27",
+          "date": "1904",
+          "source_id": "S0104",
+          "evidence": "Birth 1904: Františka Tihlaříková"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as rolnická dcera (farmer's daughter)",
+          "date": "1925",
+          "source_id": "S0101",
+          "evidence": "Marriage 1925: František Lovecký + Františka Tihlaříková"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 27",
+          "date": "1925",
+          "source_id": "S0101",
+          "evidence": "Marriage 1925: František Lovecký + Františka Tihlaříková"
+        }
+      ]
+    },
+    {
+      "id": "P0202",
+      "name": "Anna",
+      "sex": "F",
+      "birth_date": "1932-07-18",
+      "birth_place": "Moravský Písek",
+      "death_date": "1935-12-24",
+      "death_place": "Uherské Hradiště (zemská nemocnice)",
+      "father": "P0114",
+      "mother": "P0201",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Died 24 Dec 1935 in the state hospital in Uherské Hradiště, aged 3 years 5 months 6 days, of purulent peritonitis and pneumonia; buried 27 Dec in Moravský Písek (S0111). On the family grave as 'Anička 1932–1935' (S0113).",
+      "birth_surname": "Lovecká",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [
+        "Anička"
+      ],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 405",
+          "date": "1935",
+          "source_id": "S0111",
+          "evidence": "Death 1935: Anna (Anička) Lovecká"
+        }
+      ]
+    },
+    {
+      "id": "P0203",
+      "name": "Cyril",
+      "sex": "M",
+      "birth_date": "1871-07-02",
+      "birth_place": "Moravský Písek",
+      "death_date": "1920-09-12",
+      "death_place": "Moravský Písek",
+      "father": "P0207",
+      "mother": "P0208",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born 2 Jul 1871 in Moravský Písek no. 110, baptised 3 Jul (S0106). Married Kateřina Kmínková 23 May 1899 (S0105). Died 12 Sep 1920 at no. 57 of tuberculosis of the lungs, aged 49; buried 14 Sep (S0109).\n\nNot the same as the Cyrill born April 1871 (died 1893) on the previous page of the births book.",
+      "birth_surname": "Lovecký",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [
+        "Cyrill"
+      ],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 110",
+          "date": "1871",
+          "source_id": "S0106",
+          "evidence": "Birth 1871: Cyril Lovecký"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as domkař (cottager)",
+          "date": "1900",
+          "source_id": "S0103",
+          "evidence": "Birth 1900: František Lovecký"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 110",
+          "date": "1900",
+          "source_id": "S0103",
+          "evidence": "Birth 1900: František Lovecký"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as domkař (cottager)",
+          "date": "1920",
+          "source_id": "S0109",
+          "evidence": "Death 1920: Cyril Lovecký"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 57",
+          "date": "1920",
+          "source_id": "S0109",
+          "evidence": "Death 1920: Cyril Lovecký"
+        }
+      ]
+    },
+    {
+      "id": "P0204",
+      "name": "Kateřina",
+      "sex": "F",
+      "birth_date": "1876-04-23",
+      "birth_place": "Moravský Písek",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0209",
+      "mother": "P0210",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born 23 Apr 1876 in Moravský Písek no. 57 (the Kmínek family house), baptised the same day (S0108). Married Cyril Lovecký 23 May 1899 (S0105). The 1925 marriage entry reads her name as 'Kunínková' (misreading of Kmínková).",
+      "birth_surname": "Kmínková",
+      "married_surname": "Lovecká",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 57",
+          "date": "1876",
+          "source_id": "S0108",
+          "evidence": "Birth 1876: Kateřina Kmínková"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 110",
+          "date": "1900",
+          "source_id": "S0103",
+          "evidence": "Birth 1900: František Lovecký"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 57",
+          "date": "1920",
+          "source_id": "S0109",
+          "evidence": "Death 1920: Cyril Lovecký"
+        }
+      ]
+    },
+    {
+      "id": "P0205",
+      "name": "Jan",
+      "sex": "M",
+      "birth_date": "1872-05-05",
+      "birth_place": "Moravský Písek",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0211",
+      "mother": "P0212",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born 5 May 1872 in Moravský Písek no. 27, baptised the same day (S0107). Married Kateřina Tomečková 29 Apr 1896 (date from S0104).",
+      "birth_surname": "Tihlařík",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 27",
+          "date": "1872",
+          "source_id": "S0107",
+          "evidence": "Birth 1872: Jan Tihlařík"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek",
+          "date": "1896",
+          "source_id": "S0114",
+          "evidence": "Marriage 1896: Jan Tihlařík + Kateřina Tomečková"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as čtvrtník (smallholder)",
+          "date": "1904",
+          "source_id": "S0104",
+          "evidence": "Birth 1904: Františka Tihlaříková"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 27",
+          "date": "1904",
+          "source_id": "S0104",
+          "evidence": "Birth 1904: Františka Tihlaříková"
+        }
+      ]
+    },
+    {
+      "id": "P0206",
+      "name": "Kateřina",
+      "sex": "F",
+      "birth_date": "1876-04-29",
+      "birth_place": "Veselí nad Moravou-Předměstí no. 89",
+      "death_date": "1957-06-20",
+      "death_place": "Moravský Písek",
+      "father": "P0213",
+      "mother": "P0214",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born 29 Apr 1876 in Veselí-Předměstí no. 89, baptised 30 Apr (S0115). Her daughter's 1904 baptism and the 1896 marriage give 28 Apr; the birth register says 29 Apr. Married Jan Tihlařík 29 Apr 1896 in Veselí (S0114). Margin note in the birth register: died 20 Jun 1957 in Moravský Písek.",
+      "birth_surname": "Tomečková",
+      "married_surname": "Tihlaříková",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Veselí nad Moravou-Předměstí no. 89",
+          "date": "1896",
+          "source_id": "S0114",
+          "evidence": "Marriage 1896: Jan Tihlařík + Kateřina Tomečková"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 27",
+          "date": "1904",
+          "source_id": "S0104",
+          "evidence": "Birth 1904: Františka Tihlaříková"
+        }
+      ]
+    },
+    {
+      "id": "P0207",
+      "name": "Antonín",
+      "sex": "M",
+      "birth_date": "1843-05-25",
+      "birth_place": "Moravský Písek no. 110",
+      "death_date": "1911-03-23",
+      "death_place": "Moravský Písek no. 147",
+      "father": "P0215",
+      "mother": "P0216",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Cottager (domkař) in Moravský Písek. Born 25 May 1843 at no. 110, son of Johann (Jan) Lovecký, cottager, and Marianna, daughter of the late Johann Žádník (S0116). Married Mariana Blatecká 1 Feb 1871 (S0118). Died 23 Mar 1911 at no. 147, aged 67, of 'rozedma plic' (emphysema), buried 25 Mar (S0119).",
+      "birth_surname": "Lovecký",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 110",
+          "date": "1843",
+          "source_id": "S0116",
+          "evidence": "Birth 1843: Antonín Lovecký"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as domkař (cottager)",
+          "date": "1871",
+          "source_id": "S0118",
+          "evidence": "Marriage 1871: Antonín Lovecký + Mariana Blatecká"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 110",
+          "date": "1871",
+          "source_id": "S0118",
+          "evidence": "Marriage 1871: Antonín Lovecký + Mariana Blatecká"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as domkař (cottager)",
+          "date": "1911",
+          "source_id": "S0119",
+          "evidence": "Death 1911: Antonín Lovecký"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 147",
+          "date": "1911",
+          "source_id": "S0119",
+          "evidence": "Death 1911: Antonín Lovecký"
+        }
+      ]
+    },
+    {
+      "id": "P0208",
+      "name": "Marie",
+      "sex": "F",
+      "birth_date": "1847-08-29",
+      "birth_place": "Moravský Písek no. 29",
+      "death_date": "1918-12-28",
+      "death_place": "Moravský Písek no. 147",
+      "father": "P0217",
+      "mother": "P0218",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born 29 Aug 1847 at no. 29, baptised 30 Aug, daughter of Johann Blatecký, smallholder (Viertler), and Rosina, daughter of Johann Běhavka, smallholder in Polešovice (S0117). Married Antonín Lovecký 1 Feb 1871 (S0118). Died 28 Dec 1918 at no. 147 as his widow and retired farmer (výměnkářka), aged 71, of old age; buried 30 Dec (S0120). Called 'Marianna' in 1847–1871 and 'Marie' in 1918.",
+      "birth_surname": "Blatecká",
+      "married_surname": "Lovecká",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [
+        "Marianna Blatecká",
+        "Mariana Blatecká"
+      ],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 29",
+          "date": "1847",
+          "source_id": "S0117",
+          "evidence": "Birth 1847: Marianna Blatecká"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as výměnkářka (retired farmer, widow)",
+          "date": "1918",
+          "source_id": "S0120",
+          "evidence": "Death 1918: Marie Lovecká née Blatecká"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 147",
+          "date": "1918",
+          "source_id": "S0120",
+          "evidence": "Death 1918: Marie Lovecká née Blatecká"
+        }
+      ]
+    },
+    {
+      "id": "P0209",
+      "name": "František",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0219",
+      "mother": "P0220",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Cottager in Moravský Písek no. 57. Dead by October 1920 (his widow's death entry, S0110).",
+      "birth_surname": "Kmínek",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as domkař (cottager)",
+          "date": "1876",
+          "source_id": "S0108",
+          "evidence": "Birth 1876: Kateřina Kmínková"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 57",
+          "date": "1876",
+          "source_id": "S0108",
+          "evidence": "Birth 1876: Kateřina Kmínková"
+        }
+      ]
+    },
+    {
+      "id": "P0210",
+      "name": "Kateřina",
+      "sex": "F",
+      "birth_date": "1841-05-09",
+      "birth_place": "Moravský Písek",
+      "death_date": "1920-10-15",
+      "death_place": "Moravský Písek",
+      "father": "P0221",
+      "mother": "P0222",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born 9 May 1841 in Písek. Died 15 Oct 1920 at no. 57 as a widow and retired farmer (výměnkářka), aged 79, of old age; buried 17 Oct (S0110). She died one month after her son-in-law Cyril Lovecký.",
+      "birth_surname": "Doležalová",
+      "married_surname": "Kmínková",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as výměnkářka (retired farmer, widow)",
+          "date": "1920",
+          "source_id": "S0110",
+          "evidence": "Death 1920: Kateřina Kmínková née Doležalová"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 57",
+          "date": "1920",
+          "source_id": "S0110",
+          "evidence": "Death 1920: Kateřina Kmínková née Doležalová"
+        }
+      ]
+    },
+    {
+      "id": "P0211",
+      "name": "Josef",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0223",
+      "mother": "P0224",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Smallholder (čtvrtník) in Moravský Písek (S0107, S0104). Already dead by 29 Apr 1896 (marked † in his son's marriage entry, S0114).",
+      "birth_surname": "Tihlařík",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as čtvrtník (smallholder)",
+          "date": "1872",
+          "source_id": "S0107",
+          "evidence": "Birth 1872: Jan Tihlařík"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 27",
+          "date": "1872",
+          "source_id": "S0107",
+          "evidence": "Birth 1872: Jan Tihlařík"
+        }
+      ]
+    },
+    {
+      "id": "P0212",
+      "name": "Josefa",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "Těmice",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0225",
+      "mother": "P0226",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "From Těmice (S0107, S0104).",
+      "birth_surname": "Janoušková",
+      "married_surname": "Tihlaříková",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 27",
+          "date": "1872",
+          "source_id": "S0107",
+          "evidence": "Birth 1872: Jan Tihlařík"
+        }
+      ]
+    },
+    {
+      "id": "P0213",
+      "name": "František",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0227",
+      "mother": "P0228",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Small farmer (podsedník) in Veselí-Předměstí (S0104, S0114, S0115). Son of Josef Tomeček, podsedník from Veselí, and Kateřina Grabcová (S0115).",
+      "birth_surname": "Tomeček",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as podsedník (small farmer), Veselí",
+          "date": "1876",
+          "source_id": "S0115",
+          "evidence": "Birth 1876: Kateřina Tomečková"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Veselí nad Moravou-Předměstí no. 89",
+          "date": "1876",
+          "source_id": "S0115",
+          "evidence": "Birth 1876: Kateřina Tomečková"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Veselí nad Moravou-Předměstí no. 89",
+          "date": "1896",
+          "source_id": "S0114",
+          "evidence": "Marriage 1896: Jan Tihlařík + Kateřina Tomečková"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as podsedník (small farmer), Veselí",
+          "date": "1904",
+          "source_id": "S0104",
+          "evidence": "Birth 1904: Františka Tihlaříková"
+        }
+      ]
+    },
+    {
+      "id": "P0214",
+      "name": "Františka",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "Veselí nad Moravou",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0229",
+      "mother": "P0230",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Daughter of Josef Trachtulec, podsedník from Veselí, and Alžběta Homínková (S0115).",
+      "birth_surname": "Trachtulcová",
+      "married_surname": "Tomečková",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Veselí nad Moravou-Předměstí no. 89",
+          "date": "1876",
+          "source_id": "S0115",
+          "evidence": "Birth 1876: Kateřina Tomečková"
+        }
+      ]
+    },
+    {
+      "id": "P0215",
+      "name": "Jan",
+      "sex": "M",
+      "birth_date": "1805-11-23",
+      "birth_place": "Moravský Písek no. 41",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0233",
+      "mother": "P0234",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born and baptised 23 Nov 1805 at Moravský Písek no. 41, son of Martin Lovecký, smallholder (Viertler), and Mechtildis, daughter of the late Johann Potrzywacz? (S0122). Cottager (domkař) at no. 84 when he married Marianna Žádníková on 2 Feb 1831, aged 25 (S0121). Father of Antonín (1843).",
+      "birth_surname": "Lovecký",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 41",
+          "date": "1805",
+          "source_id": "S0122",
+          "evidence": "Birth 1805: Jan (Johann) Lovecký"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as domkař (cottager)",
+          "date": "1831",
+          "source_id": "S0121",
+          "evidence": "Marriage 1831: Jan Lovecký + Marianna Žádníková"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 84",
+          "date": "1831",
+          "source_id": "S0121",
+          "evidence": "Marriage 1831: Jan Lovecký + Marianna Žádníková"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as domkař (cottager)",
+          "date": "1843",
+          "source_id": "S0116",
+          "evidence": "Birth 1843: Antonín Lovecký"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 110",
+          "date": "1843",
+          "source_id": "S0116",
+          "evidence": "Birth 1843: Antonín Lovecký"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as domkař (cottager)",
+          "date": "1871",
+          "source_id": "S0118",
+          "evidence": "Marriage 1871: Antonín Lovecký + Mariana Blatecká"
+        }
+      ]
+    },
+    {
+      "id": "P0216",
+      "name": "Mariana",
+      "sex": "F",
+      "birth_date": "c. 1807",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0231",
+      "mother": "P0232",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Marianna, daughter of the late Johann Žádník, smallholder (Viertler) in Písek, and Katharina née Nygrschláb? (S0121). Lived at house no. 23 before her marriage to Jan Lovecký on 2 Feb 1831, aged 24. Her father was already dead in 1831.",
+      "birth_surname": "Žádníková",
+      "married_surname": "Lovecká",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 23",
+          "date": "1831",
+          "source_id": "S0121",
+          "evidence": "Marriage 1831: Jan Lovecký + Marianna Žádníková"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 110",
+          "date": "1843",
+          "source_id": "S0116",
+          "evidence": "Birth 1843: Antonín Lovecký"
+        }
+      ]
+    },
+    {
+      "id": "P0217",
+      "name": "Jan",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Smallholder (čtvrtník) in Písek (S0106).",
+      "birth_surname": "Blatecký",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as čtvrtník (smallholder)",
+          "date": "1847",
+          "source_id": "S0117",
+          "evidence": "Birth 1847: Marianna Blatecká"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 29",
+          "date": "1847",
+          "source_id": "S0117",
+          "evidence": "Birth 1847: Marianna Blatecká"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as čtvrtník (smallholder)",
+          "date": "1871",
+          "source_id": "S0118",
+          "evidence": "Marriage 1871: Antonín Lovecký + Mariana Blatecká"
+        }
+      ]
+    },
+    {
+      "id": "P0218",
+      "name": "Rozina",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "Polešovice",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Rosina, daughter of Jan Běhavka, smallholder in Polešovice. The name reads 'Běhavka' in the 1871 marriage (S0118) and 'Běhávková' in her daughter's 1918 death entry (S0120).",
+      "birth_surname": "Běhavková",
+      "married_surname": "Blatecká",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 29",
+          "date": "1847",
+          "source_id": "S0117",
+          "evidence": "Birth 1847: Marianna Blatecká"
+        }
+      ]
+    },
+    {
+      "id": "P0219",
+      "name": "Cyril",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Cottager in Písek (S0108).",
+      "birth_surname": "Kmínek",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as domkař (cottager)",
+          "date": "1876",
+          "source_id": "S0108",
+          "evidence": "Birth 1876: Kateřina Kmínková"
+        }
+      ]
+    },
+    {
+      "id": "P0220",
+      "name": "Alžběta",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Daughter of Matouš Pešík, cottager in Písek (S0108).",
+      "birth_surname": "Pešíková",
+      "married_surname": "Kmínková",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": []
+    },
+    {
+      "id": "P0221",
+      "name": "Martin",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Smallholder (čtvrtník) in Písek (S0108, S0110).",
+      "birth_surname": "Doležal",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as čtvrtník (smallholder)",
+          "date": "1876",
+          "source_id": "S0108",
+          "evidence": "Birth 1876: Kateřina Kmínková"
+        }
+      ]
+    },
+    {
+      "id": "P0222",
+      "name": "Marianna",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "Uherský Ostroh",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Daughter of Filip Kolařík, small farmer (podsedník) in Uherský Ostroh (S0108, S0110).",
+      "birth_surname": "Kolaříková",
+      "married_surname": "Doležalová",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": []
+    },
+    {
+      "id": "P0223",
+      "name": "Ignác",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Smallholder in Písek (S0107).",
+      "birth_surname": "Tihlařík",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as čtvrtník (smallholder)",
+          "date": "1872",
+          "source_id": "S0107",
+          "evidence": "Birth 1872: Jan Tihlařík"
+        }
+      ]
+    },
+    {
+      "id": "P0224",
+      "name": "Františka",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "probable",
+      "provenance": "primary",
+      "notes": "Daughter of Martin Doležal, smallholder in Písek (S0107). Possibly a sister of Kateřina Doležalová (P0210), which would make the Lovecký and Tihlařík lines related; not verified.",
+      "birth_surname": "Doležalová",
+      "married_surname": "Tihlaříková",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": []
+    },
+    {
+      "id": "P0225",
+      "name": "František",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "Těmice",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Half-laner (půlláník) in Těmice (S0107).",
+      "birth_surname": "Janoušek",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as půlláník (half-laner), Těmice",
+          "date": "1872",
+          "source_id": "S0107",
+          "evidence": "Birth 1872: Jan Tihlařík"
+        }
+      ]
+    },
+    {
+      "id": "P0226",
+      "name": "Kateřina",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "Těmice",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "probable",
+      "provenance": "primary",
+      "notes": "Surname hard to read in S0107 ('roz. Martin Zeník?, podsedník z Těmic').",
+      "birth_surname": "Zeníková",
+      "married_surname": "Janoušková",
+      "display_name": "",
+      "review_status": "reviewed",
+      "aliases": []
+    },
+    {
+      "id": "P0227",
+      "name": "Josef",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "Veselí nad Moravou",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Small farmer (podsedník) from Veselí (S0115).",
+      "birth_surname": "Tomeček",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as podsedník (small farmer), Veselí",
+          "date": "1876",
+          "source_id": "S0115",
+          "evidence": "Birth 1876: Kateřina Tomečková"
+        }
+      ]
+    },
+    {
+      "id": "P0228",
+      "name": "Kateřina",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Written 'Kateřina roz. Josef Grabec, podsedník z Veselí' (daughter of Josef Grabec, small farmer from Veselí) in S0115.",
+      "birth_surname": "Grabcová",
+      "married_surname": "Tomečková",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0229",
+      "name": "Josef",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "Veselí nad Moravou",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Small farmer (podsedník) from Veselí (S0115).",
+      "birth_surname": "Trachtulec",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as podsedník (small farmer), Veselí",
+          "date": "1876",
+          "source_id": "S0115",
+          "evidence": "Birth 1876: Kateřina Tomečková"
+        }
+      ]
+    },
+    {
+      "id": "P0230",
+      "name": "Alžběta",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Daughter of … Homínek, small farmer (podsedník) from Veselí (S0115).",
+      "birth_surname": "Homínková",
+      "married_surname": "Trachtulcová",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0231",
+      "name": "Jan",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Johann Žádník, smallholder (Viertler) in Písek; dead by 2 Feb 1831 (S0121, S0116).",
+      "birth_surname": "Žádník",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as čtvrtník (smallholder)",
+          "date": "before 1831",
+          "source_id": "S0121",
+          "evidence": "Marriage 1831: Jan Lovecký + Marianna Žádníková"
+        }
+      ]
+    },
+    {
+      "id": "P0232",
+      "name": "Kateřina",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "probable",
+      "provenance": "primary",
+      "notes": "Katharina, daughter of Matthias Nygrschláb? (S0121; written 'geb. Matthias Ungr…/Nygr…' in S0116). Spelling of the maiden name uncertain; the same surname appears in the 1784–1851 marriage index as 'Nygrschlab'.",
+      "birth_surname": "Nygrschláb",
+      "married_surname": "Žádníková",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0233",
+      "name": "Martin",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Smallholder (Viertler / čtvrtník) in Moravský Písek, house no. 41 in 1805. Father of Jan (1805) (S0122). The 1784–1809 births index lists other Lovecký children who may be his (e.g. Thomas 1804, Marianna 1805/1806).\n\nUnresolved (2026-11-14): the 1784–1851 marriages book has only two Martin Lovecký weddings, and neither bride is Mechtildis: 20 Jan 1790, Martin, smallholder at no. 76, aged 26, to Katharina, daughter of Matthias Kobližek?, cottager (S0123); and 1 May 1810, Martin, WIDOWER, smallholder at no. 76, aged 46, to Josepha, daughter of the late Martin Andrlík, cottager, aged 23 (S0124). Both are probably the same man (born c. 1764). If he is Jan's father, he married Mechtildis between 1790 and 1805 somewhere else (probably her home parish), and she died before 1810. Not proven: Jan's father lived at no. 41 in 1805, not no. 76. The 1784–1820 deaths index (image 67) has no Mechtildis Lovecká; it lists Katharina Lovecká twice (fol. 35 and 45), but fol. 35 (image 36, Aug 1804–Jan 1805) did not show her, so the folio number was probably misread.",
+      "birth_surname": "Lovecký",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as čtvrtník (smallholder)",
+          "date": "1805",
+          "source_id": "S0122",
+          "evidence": "Birth 1805: Jan (Johann) Lovecký"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 41",
+          "date": "1805",
+          "source_id": "S0122",
+          "evidence": "Birth 1805: Jan (Johann) Lovecký"
+        }
+      ]
+    },
+    {
+      "id": "P0234",
+      "name": "Mechtildis",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "probable",
+      "provenance": "primary",
+      "notes": "Mechtildis (Mechtilda), daughter of the late Johann Potrzywacz? (S0122). The maiden name is hard to read: 'Potrzywacz', possibly 'Potmiwacz'.",
+      "birth_surname": "Potrzywaczová",
+      "married_surname": "Lovecká",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [
+        "Mechtilda"
+      ]
+    },
+    {
+      "id": "P0235",
+      "name": "Josef",
+      "sex": "M",
+      "birth_date": "1928-11-25",
+      "birth_place": "",
+      "death_date": "1968-08-03",
+      "death_place": "",
+      "father": "P0268",
+      "mother": "P0269",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Father of Alena Sládková (P0092). On the family grave 'Rodina Sládkova' in Moravský Písek (S0125): born 25 Nov 1928, died 3 Aug 1968, 'trag. smrtí' (tragic death).\n\nPROBABLE parents (2026-11-15): Jiří Sládek (b. 1905, Dolní Bojanovice) and Františka Janečková (b. 1908, Prušánky), married 11 May 1928 in Dolní Bojanovice (S0141) — Josef was born 6½ months later (25 Nov 1928); the bride was a minor and married with her guardian's consent. Other candidates: Jiří's brothers František (m. 1923, S0140) and Petr (m. 1925, S0142), and Rudolf Sládek (m. 1921, not checked). In every case except Rudolf, the paternal grandparents are František Sládek (podsedník) and Kateřina Šupová. Proof needs Josef's birth record (registry office).",
+      "birth_surname": "Sládek",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0236",
+      "name": "Drahomíra",
+      "sex": "F",
+      "birth_date": "1930-10-10",
+      "birth_place": "",
+      "death_date": "2015-12-11",
+      "death_place": "",
+      "father": "P0237",
+      "mother": "P0238",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Mother of Alena Sládková. Grave (S0125): born 10 Oct 1930, died 11 Dec 2015. MyHeritage gave 11 Nov 1930; the gravestone date is used. Daughter of Josef Svoboda and Štěpánka Šingrová, buried with her (S0125); her parents married in 1929 (S0126).",
+      "birth_surname": "Svobodová",
+      "married_surname": "Sládková",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0237",
+      "name": "Josef",
+      "sex": "M",
+      "birth_date": "1906-10-09",
+      "birth_place": "Morkůvky no. 154",
+      "death_date": "1976-05-23",
+      "death_place": "",
+      "father": "P0239",
+      "mother": "P0240",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born 9 Oct 1906 in Morkůvky, district Hustopeče, son of the late František Svoboda, cottager in Morkůvky, and the late Františka Ravasová? (S0126). Baker (pekař) in Moravský Písek, house no. 250 in 1929. Married Štěpánka Šingrová 8 Apr 1929 in Moravský Písek (S0126). Died 23 May 1976 (grave, S0125).\n\nBaptised Josef Jan, born 9 Oct 1906 at Morkůvky no. 154, baptised 14 Oct 1906 in the Evangelical (Helvetic) church at Klobouky (S0144). The family was Protestant, which is why he was not in the Catholic Brumovice registers (S0130).",
+      "birth_surname": "Svoboda",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [
+        "Josef Jan Svoboda"
+      ],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Morkůvky",
+          "date": "1906",
+          "source_id": "S0126",
+          "evidence": "Marriage 1929: Josef Svoboda + Štěpánka Šingrová"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as pekař (baker)",
+          "date": "1929",
+          "source_id": "S0126",
+          "evidence": "Marriage 1929: Josef Svoboda + Štěpánka Šingrová"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 250",
+          "date": "1929",
+          "source_id": "S0126",
+          "evidence": "Marriage 1929: Josef Svoboda + Štěpánka Šingrová"
+        }
+      ]
+    },
+    {
+      "id": "P0238",
+      "name": "Štěpánka",
+      "sex": "F",
+      "birth_date": "1907-12-25",
+      "birth_place": "Moravský Písek no. 293",
+      "death_date": "1987-01-08",
+      "death_place": "",
+      "father": "P0241",
+      "mother": "P0242",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born 25 Dec 1907 in Moravský Písek no. 293, baptised 1 Jan 1908 (S0127). Daughter of František Šingr (Singer), cottager, and Anděla Večeřová. Lived with her parents at no. 254 in 1929. Married Josef Svoboda 8 Apr 1929 (S0126). Died 8 Jan 1987 (grave, S0125).",
+      "birth_surname": "Šingrová",
+      "married_surname": "Svobodová",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [
+        "Štěpánka Singerová"
+      ],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 293",
+          "date": "1907",
+          "source_id": "S0127",
+          "evidence": "Birth 1907: Štěpánka Šingrová"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 254",
+          "date": "1929",
+          "source_id": "S0126",
+          "evidence": "Marriage 1929: Josef Svoboda + Štěpánka Šingrová"
+        }
+      ]
+    },
+    {
+      "id": "P0239",
+      "name": "František",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0278",
+      "mother": "P0279",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Cottager (domkař) in Morkůvky, house no. 154 in 1906. Son of Václav Svoboda, cottager in Morkůvky, and Marianna Petrášová of Morkůvky (S0144). Protestant (Helvetic). Dead by 1929 (S0126).",
+      "birth_surname": "Svoboda",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as domkař (cottager), Morkůvky",
+          "date": "1906",
+          "source_id": "S0144",
+          "evidence": "Birth 1906: Josef Jan Svoboda (Klobouky Helvetic parish)"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Morkůvky no. 154",
+          "date": "1906",
+          "source_id": "S0144",
+          "evidence": "Birth 1906: Josef Jan Svoboda (Klobouky Helvetic parish)"
+        }
+      ]
+    },
+    {
+      "id": "P0240",
+      "name": "Františka",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0280",
+      "mother": "P0281",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Františka Ravasová, daughter of Karel Ravas, farmer (rolník) in Morkůvky, and Kateřina Petrášová of Morkůvky (S0144). Dead by 1929 (S0126).",
+      "birth_surname": "Ravasová",
+      "married_surname": "Svobodová",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0241",
+      "name": "František",
+      "sex": "M",
+      "birth_date": "1880-09-24",
+      "birth_place": "Moravský Písek no. 83",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0243",
+      "mother": "P0244",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Written 'Singer'. Born 24 Sep 1880 at Moravský Písek no. 83, baptised 25 Sep (S0131) — the 1907 entry was first misread as 24 July. Son of Ignác Singer, railway-station guard (hlídač na nádraží) in Písek, and Genovéfa Buriánková from Svitávka. Married Anděla Večeřová 27 May 1903 in Moravský Písek, aged 22, living at no. 254 (S0132); his father consented as he was under age.",
+      "birth_surname": "Šingr",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 83",
+          "date": "1880",
+          "source_id": "S0131",
+          "evidence": "Birth 1880: František Singer (Šingr)"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 254",
+          "date": "1903",
+          "source_id": "S0132",
+          "evidence": "Marriage 1903: František Singer + Anděla Večeřová"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as domkař (cottager)",
+          "date": "1907",
+          "source_id": "S0127",
+          "evidence": "Birth 1907: Štěpánka Šingrová"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 293",
+          "date": "1907",
+          "source_id": "S0127",
+          "evidence": "Birth 1907: Štěpánka Šingrová"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as domkař (cottager)",
+          "date": "1929",
+          "source_id": "S0126",
+          "evidence": "Marriage 1929: Josef Svoboda + Štěpánka Šingrová"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 254",
+          "date": "1929",
+          "source_id": "S0126",
+          "evidence": "Marriage 1929: Josef Svoboda + Štěpánka Šingrová"
+        }
+      ]
+    },
+    {
+      "id": "P0242",
+      "name": "Anděla",
+      "sex": "F",
+      "birth_date": "1877-03-29",
+      "birth_place": "Spytinov? (parish named in S0132)",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0245",
+      "mother": "P0246",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born 29 Mar 1877, daughter of František Večeře, cottager in 'Spytinov', and Josefa Hrdinová, daughter of Josef Hrdina, cottager in Spytinov (S0127, S0132). Her baptism certificate came from the parish office in Spytinov (6 May 1903). Married František Singer 27 May 1903, aged 26. Place name uncertain (Spytinov / Spytihněv?).",
+      "birth_surname": "Večeřová",
+      "married_surname": "Šingrová",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 293",
+          "date": "1907",
+          "source_id": "S0127",
+          "evidence": "Birth 1907: Štěpánka Šingrová"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 254",
+          "date": "1929",
+          "source_id": "S0126",
+          "evidence": "Marriage 1929: Josef Svoboda + Štěpánka Šingrová"
+        }
+      ]
+    },
+    {
+      "id": "P0243",
+      "name": "Ignác",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0249",
+      "mother": "P0250",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Ignác Singer, railway-station guard (hlídač na nádraží) in Písek in 1880, cottager (domkař) in Písek by 1903. Son of Tomáš Singer, smallholder (čtvrtník) from Popice, and Eleonora Odehnalová, daughter of Leopold Odehnal, cottager from Popice (S0131). Marriage to Genovéfa Buriánková NOT found in Moravský Písek 1879–1880 (book 5675, images 64–65) — probably in Popice or Svitávka.",
+      "birth_surname": "Šingr",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as hlídač na nádraží (railway-station guard)",
+          "date": "1880",
+          "source_id": "S0131",
+          "evidence": "Birth 1880: František Singer (Šingr)"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as domkař (cottager)",
+          "date": "1903",
+          "source_id": "S0132",
+          "evidence": "Marriage 1903: František Singer + Anděla Večeřová"
+        }
+      ]
+    },
+    {
+      "id": "P0244",
+      "name": "Genovéfa",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "Svitávka",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0251",
+      "mother": "P0252",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Genovéfa, daughter of Tomáš Buriánek, farmhand (podruh) from Svitávka (Brno district), and Barbora, daughter of Šimon Zámek, cottager from Dzbánovice? (S0131, S0132).",
+      "birth_surname": "Buriánková",
+      "married_surname": "Šingrová",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0245",
+      "name": "František",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Cottager in 'Spytinov' (probably Spytihněv) (S0127).",
+      "birth_surname": "Večeřa",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as domkař (cottager), Spytinov?",
+          "date": "1877",
+          "source_id": "S0127",
+          "evidence": "Birth 1907: Štěpánka Šingrová"
+        }
+      ]
+    },
+    {
+      "id": "P0246",
+      "name": "Josefa",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0253",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Josefa, daughter of Josef Hrdina, cottager in Spytinov (S0132).",
+      "birth_surname": "Hrdinová",
+      "married_surname": "Večeřová",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0247",
+      "name": "Alena",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0091",
+      "mother": "P0092",
+      "confidence": "confirmed",
+      "provenance": "manual",
+      "notes": "Sister of Michaela Lovecká (P0088); daughter of František Lovecký (1955–2019) and Alena Sládková. Added 2026-11-15 from family information (S0129).",
+      "birth_surname": "Lovecká",
+      "married_surname": "Kozumplíková",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0248",
+      "name": "Veronika",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0091",
+      "mother": "P0092",
+      "confidence": "confirmed",
+      "provenance": "manual",
+      "notes": "Sister of Michaela Lovecká (P0088); daughter of František Lovecký (1955–2019) and Alena Sládková. Added 2026-11-15 from family information (S0129).",
+      "birth_surname": "Lovecká",
+      "married_surname": "Jandásková",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0249",
+      "name": "Tomáš",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "Popice",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Tomáš Singer, smallholder (čtvrtník) from Popice (S0131).",
+      "birth_surname": "Šingr",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as čtvrtník (smallholder), Popice",
+          "date": "1880",
+          "source_id": "S0131",
+          "evidence": "Birth 1880: František Singer (Šingr)"
+        }
+      ]
+    },
+    {
+      "id": "P0250",
+      "name": "Eleonora",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "Popice",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Daughter of Leopold Odehnal, cottager from Popice (S0131).",
+      "birth_surname": "Odehnalová",
+      "married_surname": "Šingrová",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0251",
+      "name": "Tomáš",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "Svitávka",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Farmhand (podruh) from Svitávka (S0131, S0132).",
+      "birth_surname": "Buriánek",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as podruh (farmhand), Svitávka",
+          "date": "1880",
+          "source_id": "S0131",
+          "evidence": "Birth 1880: František Singer (Šingr)"
+        }
+      ]
+    },
+    {
+      "id": "P0252",
+      "name": "Barbora",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "probable",
+      "provenance": "primary",
+      "notes": "Daughter of Šimon Zámek, cottager from Dzbánovice? (place hard to read) (S0131).",
+      "birth_surname": "Zámková",
+      "married_surname": "Buriánková",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0253",
+      "name": "Josef",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Cottager in Spytinov (S0132).",
+      "birth_surname": "Hrdina",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0254",
+      "name": "Jan",
+      "sex": "M",
+      "birth_date": "1903-05-14",
+      "birth_place": "Bzenec",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0256",
+      "mother": "P0257",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Baptised Jan Antonín, born 14 May 1903 (baptised 23 May) in Bzenec no. 373 (S0135). Son of František Formánek, pohodný (knacker) in Bzenec, and Antonie Šilnicová. Margin note in the baptism confirms his marriage to Marie Dobřická on 9 Nov 1926 at Velehrad (S0133). Living with his mother in Bzenec no. 609 in 1926. Probable father of Marie Formánková (1931).",
+      "birth_surname": "Formánek",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [
+        "Jan Antonín Formánek"
+      ],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Bzenec no. 373",
+          "date": "1903",
+          "source_id": "S0135",
+          "evidence": "Birth 1903: Jan Antonín Formánek"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Bzenec no. 609",
+          "date": "1926",
+          "source_id": "S0133",
+          "evidence": "Marriage 1926: Jan Formánek + Marie Dobřická"
+        }
+      ]
+    },
+    {
+      "id": "P0255",
+      "name": "Marie",
+      "sex": "F",
+      "birth_date": "1904-09-11",
+      "birth_place": "Moravský Písek no. 90",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0258",
+      "mother": "P0259",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born 11 Sep, baptised 21 Sep 1904 at Moravský Písek no. 90 — the family pub (S0137; the 1904 baptism was found via the births index, image 258). Daughter of Josef Dobřický, innkeeper (hostinský), and Marie Kolářová of Vážany (S0137). Margin: married 9 Nov 1926 at Velehrad to Jan Formánek of Bzenec; also a note '196.1917'. In 1926 she ran the pub herself as innkeeper (hostinská) at no. 90 (S0133). FAMILY TRADITION (user, 2026-11-15): the family had a pub in Moravský Písek. Probable mother of Marie Formánková (1931) — only the link to Marie (1931) is unproven.",
+      "birth_surname": "Dobřická",
+      "married_surname": "Formánková",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 90 (pub)",
+          "date": "1904",
+          "source_id": "S0137",
+          "evidence": "Birth 1904: Marie Dobřická (innkeeper's daughter, pub no. 90)"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as hostinská (innkeeper) — family pub, no. 90",
+          "date": "1926",
+          "source_id": "S0133",
+          "evidence": "Marriage 1926: Jan Formánek + Marie Dobřická"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 90 (pub)",
+          "date": "1926",
+          "source_id": "S0133",
+          "evidence": "Marriage 1926: Jan Formánek + Marie Dobřická"
+        }
+      ]
+    },
+    {
+      "id": "P0256",
+      "name": "František",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0260",
+      "mother": "P0261",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "František Formánek, pohodný (knacker / animal-carcass remover) in Bzenec in 1903; called cottager (domkař) in 1926; dead by 1926. Son of Jan Formánek, podsedník (small farmer) from Stupava, and Františka Kalábová, daughter of Karel Kaláb, smallholder (čtvrtník) from Otrokovice? ('z Otaslavic'?) (S0135). Children in the Bzenec births index 1877–1907 (S0136): Antonín 1898, Marie 1899, Jan 1903, Kateřina 1905, Josef 1907 (siblings of Jan not yet checked one by one). Marriage to Antonie Šilnicová NOT in Bzenec marriages 1883–1913 (index image 288, S0138: only a different 'František Forman', carpenter, son of František, 1889) — probably in Hluk, the bride's parish. Born probably c. 1855–1863 (before 1864): not in Stupava births 1864–1900 (S0139).",
+      "birth_surname": "Formánek",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as pohodný (knacker), Bzenec",
+          "date": "1903",
+          "source_id": "S0135",
+          "evidence": "Birth 1903: Jan Antonín Formánek"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Bzenec no. 373",
+          "date": "1903",
+          "source_id": "S0135",
+          "evidence": "Birth 1903: Jan Antonín Formánek"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as domkař (cottager), Bzenec",
+          "date": "before 1926",
+          "source_id": "S0133",
+          "evidence": "Marriage 1926: Jan Formánek + Marie Dobřická"
+        }
+      ]
+    },
+    {
+      "id": "P0257",
+      "name": "Antonie",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0262",
+      "mother": "P0263",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Antonie, daughter of František Šilnice, cottager in Hluk, and Františka Angrová, daughter of Antonín Angr, cottager in Veselí (S0135). Read as 'Šilinová' in the 1926 marriage entry (S0133). Still alive in 1926 (Jan lived with his mother).",
+      "birth_surname": "Šilnicová",
+      "married_surname": "Formánková",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0258",
+      "name": "Josef",
+      "sex": "M",
+      "birth_date": "1874-03-11",
+      "birth_place": "Moravský Písek",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0264",
+      "mother": "P0265",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Josef Dobřický, born 11 Mar 1874 in Písek; innkeeper (hostinský) running the pub at Moravský Písek no. 90 by 1904 (S0137); dead by 1926 (S0133). Son of Josef Dobřický, cottager in Písek, and Marianna Nejezchlebová of Písek. Married Marie Kolářová 9 Sep 1902 (date from S0137) — not in the Moravský Písek marriage book (1902, images 129–131), probably in the bride's parish (Vážany/Polešovice). Probably the 'Josef Dobřický, innkeeper' who was godfather to Štěpánka Šingrová in 1907 (S0127), with 'Jenofefa Dobřická' (relation unknown).",
+      "birth_surname": "Dobřický",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as hostinský (innkeeper)",
+          "date": "1904",
+          "source_id": "S0137",
+          "evidence": "Birth 1904: Marie Dobřická (innkeeper's daughter, pub no. 90)"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Moravský Písek no. 90 (pub)",
+          "date": "1904",
+          "source_id": "S0137",
+          "evidence": "Birth 1904: Marie Dobřická (innkeeper's daughter, pub no. 90)"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as hostinský (innkeeper)",
+          "date": "1907",
+          "source_id": "S0127",
+          "evidence": "Birth 1907: Štěpánka Šingrová"
+        }
+      ]
+    },
+    {
+      "id": "P0259",
+      "name": "Marie",
+      "sex": "F",
+      "birth_date": "1879-09-06",
+      "birth_place": "Vážany",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0266",
+      "mother": "P0267",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born 6 Sep 1879, daughter of Florián Kolář, smallholder (čtvrtník) from Vážany, and Terezie Hrobařová? from Polešovice (S0137). Married Josef Dobřický 9 Sep 1902.",
+      "birth_surname": "Kolářová",
+      "married_surname": "Dobřická",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0260",
+      "name": "Jan",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "Stupava",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Podsedník (small farmer) from Stupava (S0135). Not in Stupava births 1864–1900 or marriages 1864–1904 (S0139) — his marriage to Františka Kalábová and his son František's birth are probably before 1864 in Osvětimany parish (births 1827–1860 MZA 9627, marriages 1827–1863 MZA 9630, index 1827–1879 MZA 9633 section Stupava images 62–79, index of marriages MZA 9634).",
+      "birth_surname": "Formánek",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as podsedník (small farmer), Stupava",
+          "date": "1903",
+          "source_id": "S0135",
+          "evidence": "Birth 1903: Jan Antonín Formánek"
+        }
+      ]
+    },
+    {
+      "id": "P0261",
+      "name": "Františka",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Daughter of Karel Kaláb, smallholder (čtvrtník) from 'Otaslavice' (reading uncertain) (S0135).",
+      "birth_surname": "Kalábová",
+      "married_surname": "Formánková",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0262",
+      "name": "František",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "Hluk",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Cottager (domkař) in Hluk (S0135).",
+      "birth_surname": "Šilnice",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as domkař (cottager), Hluk",
+          "date": "1903",
+          "source_id": "S0135",
+          "evidence": "Birth 1903: Jan Antonín Formánek"
+        }
+      ]
+    },
+    {
+      "id": "P0263",
+      "name": "Františka",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "Veselí nad Moravou",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Daughter of Antonín Angr, cottager in Veselí (S0135).",
+      "birth_surname": "Angrová",
+      "married_surname": "Šilnicová",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0264",
+      "name": "Josef",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Cottager (domkař) in Písek; father of the innkeeper Josef (1874) (S0137).",
+      "birth_surname": "Dobřický",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as domkař (cottager)",
+          "date": "1874",
+          "source_id": "S0137",
+          "evidence": "Birth 1904: Marie Dobřická (innkeeper's daughter, pub no. 90)"
+        }
+      ]
+    },
+    {
+      "id": "P0265",
+      "name": "Marianna",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "Moravský Písek",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "'Marianna z rodu Nejezchlebového z Písku' (S0137).",
+      "birth_surname": "Nejezchlebová",
+      "married_surname": "Dobřická",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0266",
+      "name": "Florián",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "Vážany",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Smallholder (čtvrtník) from Vážany (S0137).",
+      "birth_surname": "Kolář",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as čtvrtník (smallholder), Vážany",
+          "date": "1879",
+          "source_id": "S0137",
+          "evidence": "Birth 1904: Marie Dobřická (innkeeper's daughter, pub no. 90)"
+        }
+      ]
+    },
+    {
+      "id": "P0267",
+      "name": "Terezie",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "Polešovice",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "probable",
+      "provenance": "primary",
+      "notes": "'Terezie z rodu Hrobařového z Polešovic' (S0137); surname reading uncertain.",
+      "birth_surname": "Hrobařová",
+      "married_surname": "Kolářová",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0268",
+      "name": "Jiří",
+      "sex": "M",
+      "birth_date": "1905-04-22",
+      "birth_place": "Dolní Bojanovice",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0270",
+      "mother": "P0271",
+      "confidence": "probable",
+      "provenance": "primary",
+      "notes": "Born 22 Apr 1905 in Dolní Bojanovice; farmer (rolník), reservist of the 2nd cavalry (jízdecký) regiment. Son of František Sládek, podsedník, and Kateřina Šupová (dead by 1928). Married Františka Janečková 11 May 1928 (S0141). Probable father of Josef Sládek (1928–1968).",
+      "birth_surname": "Sládek",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as rolník (farmer), Dolní Bojanovice",
+          "date": "1928",
+          "source_id": "S0141",
+          "evidence": "Marriage 1928: Jiří Sládek + Františka Janečková"
+        }
+      ]
+    },
+    {
+      "id": "P0269",
+      "name": "Františka",
+      "sex": "F",
+      "birth_date": "1908-03-11",
+      "birth_place": "Prušánky",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "probable",
+      "provenance": "primary",
+      "notes": "Born 11 Mar 1908 in Prušánky, day-labourer (domkařka?) in Dolní Bojanovice in 1928; daughter of the late Jan Janeček, chalupník in Prušánky, and Julie Králová (living). Under age at marriage (consent of guardian Juliána Janečková, court Hodonín 1928) (S0141). Probable mother of Josef Sládek (1928).",
+      "birth_surname": "Janečková",
+      "married_surname": "Sládková",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0270",
+      "name": "František",
+      "sex": "M",
+      "birth_date": "1871-09-13",
+      "birth_place": "Dolní Bojanovice no. 146",
+      "death_date": "1955-12-24",
+      "death_place": "Hodonín",
+      "father": "P0274",
+      "mother": "P0275",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born 13 Sep, baptised 14 Sep 1871 at Dolní Bojanovice no. 146 (S0145). Podsedník (small farmer) in Dolní Bojanovice. Married (1) Kateřina Šupová 15 Nov 1898 (probably Mutěnice); she died before 1925. Margin note in his baptism: married (2) in Mutěnice in 1924 Anna, née Havlíková (widow ?Stanec?). Died 24 Dec 1955 in Hodonín (S0145). Father of František (1899), Petr (1901), Jiří (1905).",
+      "birth_surname": "Sládek",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as podsedník (small farmer), Dolní Bojanovice",
+          "date": "1923",
+          "source_id": "S0140",
+          "evidence": "Marriage 1923: František Sládek + Kristina Herková"
+        }
+      ]
+    },
+    {
+      "id": "P0271",
+      "name": "Kateřina",
+      "sex": "F",
+      "birth_date": "1876-07-24",
+      "birth_place": "Mutěnice",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0276",
+      "mother": "P0277",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born 24 Jul 1876; daughter of Martin Šupa, čtvrtláník (quarter-laner) in Mutěnice, and Františka née Amentová? (S0143). Married 15 Nov 1898. Dead by Jan 1925 (S0142).",
+      "birth_surname": "Šupová",
+      "married_surname": "Sládková",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0272",
+      "name": "František",
+      "sex": "M",
+      "birth_date": "1899-10-24",
+      "birth_place": "Dolní Bojanovice",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0270",
+      "mother": "P0271",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Brother of Jiří. Farmer in Dolní Bojanovice, reservist of the 13th infantry regiment. Married Kristina Herková (b. 16 Sep 1901) 14 May 1923 (S0140).",
+      "birth_surname": "Sládek",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0273",
+      "name": "Petr",
+      "sex": "M",
+      "birth_date": "1901-06-14",
+      "birth_place": "Dolní Bojanovice",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0270",
+      "mother": "P0271",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Brother of Jiří. Labourer in Dolní Bojanovice. Married Ludmila Balusová (b. 26 May 1899) 20 Jan 1925 (S0142).",
+      "birth_surname": "Sládek",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0274",
+      "name": "František",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "Dolní Bojanovice",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0282",
+      "mother": "P0283",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Podsedník (small farmer) in Dolní Bojanovice. Son of Martin Sládek, podsedník in Dolní Bojanovice, and Veronika née Vráčerová? (daughter of Jan Vráčera?) (S0145).",
+      "birth_surname": "Sládek",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as podsedník (small farmer), Dolní Bojanovice",
+          "date": "1871",
+          "source_id": "S0145",
+          "evidence": "Birth 1871: František Sládek (Dolní Bojanovice)"
+        }
+      ]
+    },
+    {
+      "id": "P0275",
+      "name": "Lucie",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0284",
+      "mother": "P0285",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Lucie, daughter of Pavel Hubáček, čtvrtláník (quarter-laner) in Dolní Bojanovice, and Mariana née Matouš Hubená (S0145).",
+      "birth_surname": "Hubáčková",
+      "married_surname": "Sládková",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0276",
+      "name": "Martin",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "Mutěnice",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Čtvrtláník (quarter-laner) in Mutěnice (S0143).",
+      "birth_surname": "Šupa",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as čtvrtláník (quarter-laner), Mutěnice",
+          "date": "1899",
+          "source_id": "S0143",
+          "evidence": "Birth 1899: František Sládek (son of František Sládek and Kateřina Šupová)"
+        }
+      ]
+    },
+    {
+      "id": "P0277",
+      "name": "Františka",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "probable",
+      "provenance": "primary",
+      "notes": "Maiden name read as 'Amentová' in S0143; uncertain.",
+      "birth_surname": "Amentová",
+      "married_surname": "Šupová",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0278",
+      "name": "Václav",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "Morkůvky",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Cottager (domkař) in Morkůvky (S0144).",
+      "birth_surname": "Svoboda",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as domkař (cottager), Morkůvky",
+          "date": "1906",
+          "source_id": "S0144",
+          "evidence": "Birth 1906: Josef Jan Svoboda (Klobouky Helvetic parish)"
+        }
+      ]
+    },
+    {
+      "id": "P0279",
+      "name": "Marianna",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "Morkůvky",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "'Marianna rozená Petrášová z Morkůvek' (S0144). Note: Františka Ravasová's mother was also a Petrášová (Kateřina) — the two lines may be related.",
+      "birth_surname": "Petrášová",
+      "married_surname": "Svobodová",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0280",
+      "name": "Karel",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "Morkůvky",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Farmer (rolník) in Morkůvky (S0144).",
+      "birth_surname": "Ravas",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as rolník (farmer), Morkůvky",
+          "date": "1906",
+          "source_id": "S0144",
+          "evidence": "Birth 1906: Josef Jan Svoboda (Klobouky Helvetic parish)"
+        }
+      ]
+    },
+    {
+      "id": "P0281",
+      "name": "Kateřina",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "Morkůvky",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "'Kateřina rodem Petrášová z Morkůvek' (S0144).",
+      "birth_surname": "Petrášová",
+      "married_surname": "Ravasová",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0282",
+      "name": "Martin",
+      "sex": "M",
+      "birth_date": "1803-10-31",
+      "birth_place": "Dolní Bojanovice no. 146",
+      "death_date": "",
+      "death_place": "",
+      "father": "P0286",
+      "mother": "P0287",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Born and baptised 31 Oct 1803 at Dolní Bojanovice no. 146, son of František (Franz) Sládek, podsedník, and Marina née Jordán (S0147; the copy writes the surname like 'Hladek' — German Sl/Hl look alike). Podsedník at no. 146. Married Veronika Růžičková 27 Nov 1833, aged 30, his father already dead; the marriage also names his mother 'Marina geb. Jordan' (S0146). Grandfather of František (1871–1955).",
+      "birth_surname": "Sládek",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "residence",
+          "value": "lived at Dolní Bojanovice no. 146",
+          "date": "1833",
+          "source_id": "S0146",
+          "evidence": "Marriage 1833: Martin Sládek + Veronika Růžičková"
+        },
+        {
+          "type": "occupation",
+          "value": "worked as podsedník, Dolní Bojanovice",
+          "date": "1871",
+          "source_id": "S0145",
+          "evidence": "Birth 1871: František Sládek (Dolní Bojanovice)"
+        }
+      ]
+    },
+    {
+      "id": "P0283",
+      "name": "Veronika",
+      "sex": "F",
+      "birth_date": "c. 1809",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Veronika, daughter of the late Josef Růžička, podsedník in Dolní Bojanovice; aged 24 at her marriage to Martin Sládek on 27 Nov 1833 (S0146). The 1871 baptism (S0145) was first misread as 'Vráčera'; the marriage entry and index ('Sladek Martin und Veronika Růžička', S0146) settle it as Růžičková.",
+      "birth_surname": "Růžičková",
+      "married_surname": "Sládková",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0284",
+      "name": "Pavel",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "Dolní Bojanovice",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Čtvrtláník (quarter-laner) in Dolní Bojanovice (S0145).",
+      "birth_surname": "Hubáček",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as čtvrtláník (quarter-laner), Dolní Bojanovice",
+          "date": "1871",
+          "source_id": "S0145",
+          "evidence": "Birth 1871: František Sládek (Dolní Bojanovice)"
+        }
+      ]
+    },
+    {
+      "id": "P0285",
+      "name": "Mariana",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Daughter of Matouš Huben (S0145).",
+      "birth_surname": "Hubená",
+      "married_surname": "Hubáčková",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    },
+    {
+      "id": "P0286",
+      "name": "František",
+      "sex": "M",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "Franz Sládek, podsedník (small farmer) in Dolní Bojanovice, house no. 146 in 1803 (S0147). Dead by 27 Nov 1833 (S0146). Surname written like 'Hladek' in the 1803 copy.",
+      "birth_surname": "Sládek",
+      "married_surname": "",
+      "display_name": "",
+      "review_status": "",
+      "aliases": [],
+      "facts": [
+        {
+          "type": "occupation",
+          "value": "worked as podsedník, Dolní Bojanovice",
+          "date": "1803",
+          "source_id": "S0147",
+          "evidence": "Birth 1803: Martin Sládek (Dolní Bojanovice, annual copy)"
+        },
+        {
+          "type": "residence",
+          "value": "lived at Dolní Bojanovice no. 146",
+          "date": "1803",
+          "source_id": "S0147",
+          "evidence": "Birth 1803: Martin Sládek (Dolní Bojanovice, annual copy)"
+        }
+      ]
+    },
+    {
+      "id": "P0287",
+      "name": "Marina",
+      "sex": "F",
+      "birth_date": "",
+      "birth_place": "",
+      "death_date": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "notes": "'Marina gebohrene Jordan' (S0147, S0146).",
+      "birth_surname": "Jordánová",
+      "married_surname": "Sládková",
+      "display_name": "",
+      "review_status": "",
+      "aliases": []
+    }
+  ],
+  "events": [
+    {
+      "id": "Eundated-marriage-059",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "probable",
+      "provenance": "myheritage",
+      "person_id": "",
+      "groom_id": "P0093",
+      "bride_id": "P0094",
+      "source_ids": [
+        "S0017",
+        "S0113"
+      ],
+      "notes": "Marie (1931–1994) is buried with the family (S0113). Son František born 1955, so married c. 1950–1955. Marie's probable parents: Jan Formánek × Marie Dobřická (1926, S0133)."
+    },
+    {
+      "id": "Eundated-marriage-058",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "provenance": "myheritage",
+      "person_id": "",
+      "groom_id": "P0091",
+      "bride_id": "P0092",
+      "source_ids": [
+        "S0017"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E1925-11-08-marriage-lovecky-tihlarikova",
+      "event_type": "Marriage",
+      "date": "1925-11-08",
+      "place": "Moravský Písek, St. Anne's church",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0114",
+      "bride_id": "P0201",
+      "source_ids": [
+        "S0101",
+        "S0102"
+      ],
+      "notes": "Groom labourer, 25, of no. 57; bride farmer's daughter, 21, of no. 27. Banns in October and on 1 Nov 1925."
+    },
+    {
+      "id": "E1899-05-23-marriage-cyril-katerina",
+      "event_type": "Marriage",
+      "date": "1899-05-23",
+      "place": "Moravský Písek",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0203",
+      "bride_id": "P0204",
+      "source_ids": [
+        "S0105",
+        "S0103",
+        "S0109"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E1896-04-29-marriage-tihlarik-tomeckova",
+      "event_type": "Marriage",
+      "date": "1896-04-29",
+      "place": "Veselí nad Moravou",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0205",
+      "bride_id": "P0206",
+      "source_ids": [
+        "S0114",
+        "S0104"
+      ],
+      "notes": "Found in the Veselí marriage register (S0114). The groom was 23, the bride 20."
+    },
+    {
+      "id": "E1871-02-01-marriage-antonin-lovecky-blatecka",
+      "event_type": "Marriage",
+      "date": "1871-02-01",
+      "place": "Moravský Písek",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0207",
+      "bride_id": "P0208",
+      "source_ids": [
+        "S0118",
+        "S0106",
+        "S0109",
+        "S0119",
+        "S0120"
+      ],
+      "notes": "Groom 27, cottager in Písek no. 110; bride 23."
+    },
+    {
+      "id": "E1867-marriage-kminek-dolezalova",
+      "event_type": "Marriage",
+      "date": "1867",
+      "place": "Moravský Písek",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0209",
+      "bride_id": "P0210",
+      "source_ids": [
+        "S0108",
+        "S0110"
+      ],
+      "notes": "S0110 seems to give 8 Jan 1867; reading uncertain."
+    },
+    {
+      "id": "Eundated-marriage-josef-tihlarik-janouskova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0211",
+      "bride_id": "P0212",
+      "source_ids": [
+        "S0107",
+        "S0104"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Eundated-marriage-tomecek-trachtulcova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "Veselí nad Moravou",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0213",
+      "bride_id": "P0214",
+      "source_ids": [
+        "S0104",
+        "S0115"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E1831-02-02-marriage-jan-lovecky-zadnikova",
+      "event_type": "Marriage",
+      "date": "1831-02-02",
+      "place": "Moravský Písek",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0215",
+      "bride_id": "P0216",
+      "source_ids": [
+        "S0121",
+        "S0106",
+        "S0116",
+        "S0118",
+        "S0119"
+      ],
+      "notes": "Groom 25, cottager at no. 84; bride 24, from no. 23."
+    },
+    {
+      "id": "Eundated-marriage-blatecky-behavkova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0217",
+      "bride_id": "P0218",
+      "source_ids": [
+        "S0106",
+        "S0117",
+        "S0118",
+        "S0120"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Eundated-marriage-cyril-kminek-pesikova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0219",
+      "bride_id": "P0220",
+      "source_ids": [
+        "S0108"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Eundated-marriage-dolezal-kolarikova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0221",
+      "bride_id": "P0222",
+      "source_ids": [
+        "S0108",
+        "S0110"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Eundated-marriage-ignac-tihlarik-dolezalova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "probable",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0223",
+      "bride_id": "P0224",
+      "source_ids": [
+        "S0107"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Eundated-marriage-janousek-zenikova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "Těmice",
+      "confidence": "probable",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0225",
+      "bride_id": "P0226",
+      "source_ids": [
+        "S0107"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E1900-01-09-birth-frantisek-lovecky",
+      "event_type": "Birth/Baptism",
+      "date": "1900-01-09",
+      "place": "Moravský Písek no. 110",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0114",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0103"
+      ],
+      "notes": "Baptised 14 Jan 1900 by dean Jan Pospíšil."
+    },
+    {
+      "id": "E1904-11-05-birth-frantiska-tihlarikova",
+      "event_type": "Birth/Baptism",
+      "date": "1904-11-05",
+      "place": "Moravský Písek no. 27",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0201",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0104"
+      ],
+      "notes": "Baptised 6 Nov 1904."
+    },
+    {
+      "id": "E1871-07-02-birth-cyril-lovecky",
+      "event_type": "Birth/Baptism",
+      "date": "1871-07-02",
+      "place": "Moravský Písek no. 110",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0203",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0106"
+      ],
+      "notes": "Baptised 3 Jul 1871."
+    },
+    {
+      "id": "E1872-05-05-birth-jan-tihlarik",
+      "event_type": "Birth/Baptism",
+      "date": "1872-05-05",
+      "place": "Moravský Písek no. 27",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0205",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0107"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E1876-04-23-birth-katerina-kminkova",
+      "event_type": "Birth/Baptism",
+      "date": "1876-04-23",
+      "place": "Moravský Písek no. 57",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0204",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0108"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E1926-birth-frantisek-lovecky",
+      "event_type": "Birth/Baptism",
+      "date": "1926",
+      "place": "Moravský Písek",
+      "confidence": "probable",
+      "provenance": "primary",
+      "person_id": "P0093",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0113",
+        "S0017"
+      ],
+      "notes": "Year from the grave. Exact date and place need his birth record (not online; ask the registry office)."
+    },
+    {
+      "id": "E1920-09-12-death-cyril-lovecky",
+      "event_type": "Death",
+      "date": "1920-09-12",
+      "place": "Moravský Písek no. 57",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0203",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0109"
+      ],
+      "notes": "Tuberculosis of the lungs, aged 49. Buried 14 Sep 1920."
+    },
+    {
+      "id": "E1920-10-15-death-katerina-dolezalova",
+      "event_type": "Death",
+      "date": "1920-10-15",
+      "place": "Moravský Písek no. 57",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0210",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0110"
+      ],
+      "notes": "Old age, aged 79. Buried 17 Oct 1920."
+    },
+    {
+      "id": "E1935-12-24-death-anna-lovecka",
+      "event_type": "Death",
+      "date": "1935-12-24",
+      "place": "Uherské Hradiště, state hospital",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0202",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0111"
+      ],
+      "notes": "Peritonitis and pneumonia, aged 3. Buried 27 Dec 1935 in Moravský Písek."
+    },
+    {
+      "id": "E1984-death-frantisek-lovecky",
+      "event_type": "Death",
+      "date": "1984",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0114",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0113"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E1996-death-frantiska-lovecka",
+      "event_type": "Death",
+      "date": "1996",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0201",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0113"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E1994-death-marie-lovecka",
+      "event_type": "Death",
+      "date": "1994",
+      "place": "",
+      "confidence": "probable",
+      "provenance": "primary",
+      "person_id": "P0094",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0113"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E2009-death-frantisek-lovecky",
+      "event_type": "Death",
+      "date": "2009",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0093",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0113",
+        "S0017"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E1926-search-birth-frantisek",
+      "event_type": "ResearchTask",
+      "date": "1926",
+      "place": "Moravský Písek",
+      "confidence": "open",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0113"
+      ],
+      "notes": "Request a birth extract (výpis) from the registry office (matriční úřad). 1926 births are not yet at MZA."
+    },
+    {
+      "id": "E1920-1949-search-lovecky-relatives",
+      "event_type": "ResearchTask",
+      "date": "1908-1949",
+      "place": "Moravský Písek",
+      "confidence": "open",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0102",
+        "S0112"
+      ],
+      "notes": "Check the other Lovecký marriages and deaths listed in the indexes. Antonín (m. 1919), Dominik (m. 1921) and Boleslav (m. 1923, d. 1946) may be brothers of František (1900)."
+    },
+    {
+      "id": "E1876-04-29-birth-katerina-tomeckova",
+      "event_type": "Birth/Baptism",
+      "date": "1876-04-29",
+      "place": "Veselí nad Moravou-Předměstí no. 89",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0206",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0115"
+      ],
+      "notes": "Baptised 30 Apr 1876."
+    },
+    {
+      "id": "E1957-06-20-death-katerina-tihlarikova",
+      "event_type": "Death",
+      "date": "1957-06-20",
+      "place": "Moravský Písek",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0206",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0115"
+      ],
+      "notes": "From a margin note in her birth record."
+    },
+    {
+      "id": "Eundated-marriage-josef-tomecek-grabcova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "Veselí nad Moravou",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0227",
+      "bride_id": "P0228",
+      "source_ids": [
+        "S0115"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Eundated-marriage-trachtulec-hominkova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "Veselí nad Moravou",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0229",
+      "bride_id": "P0230",
+      "source_ids": [
+        "S0115"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E1843-05-25-birth-antonin-lovecky",
+      "event_type": "Birth/Baptism",
+      "date": "1843-05-25",
+      "place": "Moravský Písek no. 110",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0207",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0116"
+      ],
+      "notes": "Baptised the same day."
+    },
+    {
+      "id": "E1847-08-29-birth-marianna-blatecka",
+      "event_type": "Birth/Baptism",
+      "date": "1847-08-29",
+      "place": "Moravský Písek no. 29",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0208",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0117"
+      ],
+      "notes": "Baptised 30 Aug 1847."
+    },
+    {
+      "id": "E1911-03-23-death-antonin-lovecky",
+      "event_type": "Death",
+      "date": "1911-03-23",
+      "place": "Moravský Písek no. 147",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0207",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0119"
+      ],
+      "notes": "Emphysema, aged 67. Buried 25 Mar 1911."
+    },
+    {
+      "id": "E1918-12-28-death-marie-lovecka",
+      "event_type": "Death",
+      "date": "1918-12-28",
+      "place": "Moravský Písek no. 147",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0208",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0120"
+      ],
+      "notes": "Old age, aged 71. Buried 30 Dec 1918."
+    },
+    {
+      "id": "Eundated-marriage-zadnik-nygrschlab",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "probable",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0231",
+      "bride_id": "P0232",
+      "source_ids": [
+        "S0121",
+        "S0116"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E1805-11-23-birth-jan-lovecky",
+      "event_type": "Birth/Baptism",
+      "date": "1805-11-23",
+      "place": "Moravský Písek no. 41",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0215",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0122"
+      ],
+      "notes": "Baptised the same day."
+    },
+    {
+      "id": "Eundated-marriage-martin-lovecky-potrzywaczova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "probable",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0233",
+      "bride_id": "P0234",
+      "source_ids": [
+        "S0122"
+      ],
+      "notes": "Probably before 1805, in the 1784–1851 marriages book (5674)."
+    },
+    {
+      "id": "E1790-1810-search-martin-lovecky",
+      "event_type": "ResearchTask",
+      "date": "1790-1810",
+      "place": "Moravský Písek",
+      "confidence": "open",
+      "provenance": "primary",
+      "person_id": "P0233",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0122",
+        "S0123",
+        "S0124"
+      ],
+      "notes": "NEXT STEPS (Martin Lovecký, father of Jan 1805):\n\n1. Baptisms of Jan's siblings in births 1784–1809 (MZA 5150; index image 71, letter L): Thomas 1804 (fol. 48–51), Marianna 1805 (fol. 51) and 1806 (fol. 55). Note house number and mother: no. 41 + Mechtildis, or no. 76 + Katharina?\n\n2. Deaths of the two Katharina Lovecká in deaths 1784–1820 (MZA 5154; index image 67 says fol. 35 and 45, but fol. 35 = image 36 did not show her). Page through 1790–1810 by year instead of trusting folio numbers.\n\n3. Martin × Mechtildis marriage is not in the Moravský Písek book; look in neighbouring parishes (Bzenec, Veselí, Uherský Ostroh, Polešovice) c. 1790–1805, and search her surname (Potrzywacz? / Potmiwacz?).\n\nKnown so far: Martin of no. 76, b. c. 1764, married 20 Jan 1790 Katharina Kobližková? (S0123) and, as widower, 1 May 1810 Josepha Andrlíková (S0124). Jan's father in 1805 lived at no. 41 (S0122)."
+    },
+    {
+      "id": "E1928-11-25-birth-josef-sladek",
+      "event_type": "Birth/Baptism",
+      "date": "1928-11-25",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0235",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0125"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E1968-08-03-death-josef-sladek",
+      "event_type": "Death",
+      "date": "1968-08-03",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0235",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0125"
+      ],
+      "notes": "Tragic death (grave)."
+    },
+    {
+      "id": "E1930-10-10-birth-drahomira-svobodova",
+      "event_type": "Birth/Baptism",
+      "date": "1930-10-10",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0236",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0125"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E2015-12-11-death-drahomira-sladkova",
+      "event_type": "Death",
+      "date": "2015-12-11",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0236",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0125"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E1906-10-09-birth-josef-svoboda",
+      "event_type": "Birth/Baptism",
+      "date": "1906-10-09",
+      "place": "Morkůvky no. 154",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0237",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0144",
+        "S0125",
+        "S0126"
+      ],
+      "notes": "Baptised 14 Oct 1906, Evangelical (Helvetic) church, Klobouky."
+    },
+    {
+      "id": "E1976-05-23-death-josef-svoboda",
+      "event_type": "Death",
+      "date": "1976-05-23",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0237",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0125"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E1907-12-25-birth-stepanka-singrova",
+      "event_type": "Birth/Baptism",
+      "date": "1907-12-25",
+      "place": "Moravský Písek no. 293",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0238",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0127",
+        "S0125"
+      ],
+      "notes": "Baptised 1 Jan 1908."
+    },
+    {
+      "id": "E1987-01-08-death-stepanka-svobodova",
+      "event_type": "Death",
+      "date": "1987-01-08",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0238",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0125"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Eundated-marriage-sladek-svobodova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0235",
+      "bride_id": "P0236",
+      "source_ids": [
+        "S0125"
+      ],
+      "notes": "Before 1957 (Alena's birth)."
+    },
+    {
+      "id": "E1929-04-08-marriage-svoboda-singrova",
+      "event_type": "Marriage",
+      "date": "1929-04-08",
+      "place": "Moravský Písek, St. Anne's church",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0237",
+      "bride_id": "P0238",
+      "source_ids": [
+        "S0126",
+        "S0125"
+      ],
+      "notes": "Groom 22, baker; bride 21."
+    },
+    {
+      "id": "E1903-05-27-marriage-singr-vecerova",
+      "event_type": "Marriage",
+      "date": "1903-05-27",
+      "place": "Moravský Písek",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0241",
+      "bride_id": "P0242",
+      "source_ids": [
+        "S0132",
+        "S0127"
+      ],
+      "notes": "Groom 22, bride 26."
+    },
+    {
+      "id": "E1880-09-24-birth-frantisek-singr",
+      "event_type": "Birth/Baptism",
+      "date": "1880-09-24",
+      "place": "Moravský Písek no. 83",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0241",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0131"
+      ],
+      "notes": "Baptised 25 Sep 1880."
+    },
+    {
+      "id": "E1877-03-29-birth-andela-vecerova",
+      "event_type": "Birth/Baptism",
+      "date": "1877-03-29",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0242",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0127"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Eundated-marriage-svoboda-ravasova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0239",
+      "bride_id": "P0240",
+      "source_ids": [
+        "S0126",
+        "S0144"
+      ],
+      "notes": "Probably in the Klobouky Helvetic marriages (1902–1938, MZA 10587)."
+    },
+    {
+      "id": "Eundated-marriage-singr-buriankova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0243",
+      "bride_id": "P0244",
+      "source_ids": [
+        "S0127",
+        "S0131",
+        "S0132"
+      ],
+      "notes": "Probably c. 1879, not in Moravský Písek (1879–1880 checked); try Popice or Svitávka."
+    },
+    {
+      "id": "Eundated-marriage-vecere-hrdinova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0245",
+      "bride_id": "P0246",
+      "source_ids": [
+        "S0127",
+        "S0132"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E-search-sladek-branch",
+      "event_type": "ResearchTask",
+      "date": "",
+      "place": "",
+      "confidence": "open",
+      "provenance": "primary",
+      "person_id": "P0235",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0125",
+        "S0128",
+        "S0130"
+      ],
+      "notes": "NEXT STEPS (Sládek branch):\n\n1. Josef Sládek (b. 25 Nov 1928, d. 3 Aug 1968 'tragic death') — birth and parents not online: Dolní Bojanovice births at MZA end in 1915. Candidate parents from the Dolní Bojanovice marriage index (S0128): 1921 Rudolf Sládek × Marie Fuďová; 1923 František Sládek × Kristina Herková; 1925 Petr Sládek × Ludmila Dalusová?; 1927 Jiří Sládek × Františka Trečková?. To decide: ask the family for Josef's parents' names, or request his birth/death record from the registry office (matriční úřad Dolní Bojanovice / Moravský Písek). The four marriage entries (book 5236, MZA 10759) give the grooms' parents once the right couple is known. Check newspapers for the 1968 accident.\n\n2. Sládek × Svobodová marriage c. 1950–1956 — registry office (not online).\n\n3. Josef Svoboda's 1906 baptism (to get František Svoboda's parents): NOT in the Catholic Morkůvky births (Brumovice parish, MZA 11326, checked 2026-11-15, S0130). The family was probably Protestant: look for the Brumovice evangelical (Helvetic) parish registers — not listed at MZA Acta Publica; ask MZA / Českobratrská církev evangelická Brumovice, or check FamilySearch. Also try: František Svoboda's and Františka Ravasová's deaths (both before 1929) in Brumovice civil/Protestant records; his marriage c. 1895–1906; and the 1921 census (sčítání lidu) for Morkůvky at SOkA Břeclav.\n\n4. Šingr × Večeřová marriage 27 May 1903 (Moravský Písek marriages 1852–1907, MZA 431); František Šingr's 1880 birth (births 1865–1889, MZA 5152); Anděla Večeřová's 1877 birth in Spytinov/Spytihněv.\n\n5. Šingr line (2026-11-15): František Singer's birth (S0131) and 1903 marriage (S0132) done. Next: Ignác Singer × Genovéfa Buriánková marriage c. 1879 in Popice (Hustopeče district) or Svitávka; Ignác's birth in Popice; Anděla Večeřová's 1877 baptism in 'Spytinov' (identify the place).\n\n6. Sládek line (2026-11-15): candidate marriages checked (S0140–S0142). Best match Jiří Sládek × Františka Janečková (11 May 1928). Proof: Josef's 1928 birth record (registry office Dolní Bojanovice). Next online: Jiří's birth 22 Apr 1905 (Dolní Bojanovice births 1893–1915, MZA 10758); František Sládek × Kateřina Šupová marriage (c. 1895–1899, marriages 1886–1913, MZA 377); Rudolf Sládek 1921 not yet checked.\n\n7. (2026-11-15, paused — MZA stopped serving zoomed tiles, likely daily limit) František Sládek × Kateřina Šupová marriage, before Oct 1899: look in Dolní Bojanovice marriage index MZA 11535 image 19 (S entries 1885–1905, right column; one 'Sládek …' entry near 1896–1897, p. ~44–48), then marriages 1886–1913 MZA 377 (image 34 = 1899 pp. 62–63; c. 2 pages per image).\n\n8. DONE 2026-11-15: Josef Svoboda's baptism found in the Klobouky Helvetic births (S0144) -> parents of František Svoboda: Václav Svoboda × Marianna Petrášová. Parents of František Sládek (b. 1871): František Sládek × Lucie Hubáčková (S0143). Next: Svoboda × Ravasová marriage (Klobouky Helvetic marriages 1878–1902 MZA 3630 / 1902–1938 MZA 10587); Sládek × Šupová marriage 15 Nov 1898 (Mutěnice)."
+    },
+    {
+      "id": "Eundated-marriage-tomas-singr-odehnalova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0249",
+      "bride_id": "P0250",
+      "source_ids": [
+        "S0131"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Eundated-marriage-burianek-zamkova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "probable",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0251",
+      "bride_id": "P0252",
+      "source_ids": [
+        "S0131"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E1926-11-09-marriage-formanek-dobricka",
+      "event_type": "Marriage",
+      "date": "1926-11-09",
+      "place": "Velehrad (for Moravský Písek parish)",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0254",
+      "bride_id": "P0255",
+      "source_ids": [
+        "S0133",
+        "S0134"
+      ],
+      "notes": "Groom 23 of Bzenec; bride 22, innkeeper."
+    },
+    {
+      "id": "Eundated-marriage-formanek-silinova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0256",
+      "bride_id": "P0257",
+      "source_ids": [
+        "S0135",
+        "S0133"
+      ],
+      "notes": "Probably before 1898 (first child Antonín, Bzenec). Bride from Hluk."
+    },
+    {
+      "id": "Eundated-marriage-dobricky-kolarova",
+      "event_type": "Marriage",
+      "date": "1902-09-09",
+      "place": "probably Vážany/Polešovice (bride's parish)",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0258",
+      "bride_id": "P0259",
+      "source_ids": [
+        "S0137",
+        "S0133"
+      ],
+      "notes": "Date from the 1904 baptism; not in the Moravský Písek marriage book for Sept 1902."
+    },
+    {
+      "id": "E-search-formankova",
+      "event_type": "ResearchTask",
+      "date": "",
+      "place": "",
+      "confidence": "open",
+      "provenance": "primary",
+      "person_id": "P0094",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0133",
+        "S0134"
+      ],
+      "notes": "NEXT STEPS (Marie Formánková 1931–1994): 1) confirm her parents — request her birth record (1931, Moravský Písek registry office) or ask family; 2) DONE: Marie Dobřická's birth found (S0137, image 258) — family pub at no. 90; 3) DONE: Jan Formánek's birth found (S0135); next: František Formánek × Antonie Šilnicová marriage c. 1895–1898 (Bzenec marriages 1883–1913, MZA 372, or Hluk), František's birth (Stupava); 4) Josef Dobřický × Marie Kolářová marriage (c. 1895–1904, Moravský Písek 1852–1907, MZA 431). 5) Formánek × Šilnicová marriage: not in Bzenec (S0138) — try Hluk c. 1895–1898. 6) Dobřický × Kolářová marriage 9 Sep 1902 — try Vážany (parish?) / Polešovice. 7) The pub at no. 90: look for its history (obecní kronika Moravský Písek, SOkA Uherské Hradiště/Hodonín; 'hostinec Dobřický'); when did it pass to Formánek/close (nationalisation c. 1948–1950?). 8) Formánek of Stupava (2026-11-15): Stupava 1864+ registers have no Formánek (S0139). Next: Osvětimany parish — births index 1827–1879 (MZA 9633, Stupava section images 62–79, German, ordered by house), marriages 1827–1863 (MZA 9630; index MZA 9634) for Jan Formánek × Františka Kalábová; František's birth c. 1855–1863 (MZA 9627)."
+    },
+    {
+      "id": "E1903-05-14-birth-jan-formanek",
+      "event_type": "Birth/Baptism",
+      "date": "1903-05-14",
+      "place": "Bzenec no. 373",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0254",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0135"
+      ],
+      "notes": "Baptised 23 May 1903 as Jan Antonín."
+    },
+    {
+      "id": "Eundated-marriage-jan-formanek-kalabova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0260",
+      "bride_id": "P0261",
+      "source_ids": [
+        "S0135",
+        "S0139"
+      ],
+      "notes": "Before 1864 (not in Stupava marriages 1864–1904, S0139); probably Osvětimany parish."
+    },
+    {
+      "id": "Eundated-marriage-silnice-angrova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0262",
+      "bride_id": "P0263",
+      "source_ids": [
+        "S0135"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E1904-09-11-birth-marie-dobricka",
+      "event_type": "Birth/Baptism",
+      "date": "1904-09-11",
+      "place": "Moravský Písek no. 90 (pub)",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0255",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0137"
+      ],
+      "notes": "Baptised 21 Sep 1904."
+    },
+    {
+      "id": "Eundated-marriage-dobricky-nejezchlebova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0264",
+      "bride_id": "P0265",
+      "source_ids": [
+        "S0137"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Eundated-marriage-kolar-hrobarova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "probable",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0266",
+      "bride_id": "P0267",
+      "source_ids": [
+        "S0137"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E1928-05-11-marriage-jiri-sladek-janeckova",
+      "event_type": "Marriage",
+      "date": "1928-05-11",
+      "place": "Dolní Bojanovice",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0268",
+      "bride_id": "P0269",
+      "source_ids": [
+        "S0141"
+      ],
+      "notes": "Bride a minor; son Josef born 25 Nov 1928."
+    },
+    {
+      "id": "Eundated-marriage-frantisek-sladek-supova",
+      "event_type": "Marriage",
+      "date": "1898-11-15",
+      "place": "probably Mutěnice",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0270",
+      "bride_id": "P0271",
+      "source_ids": [
+        "S0143",
+        "S0140",
+        "S0141",
+        "S0142"
+      ],
+      "notes": "Date from the 1899 baptism of their son."
+    },
+    {
+      "id": "E1871-09-13-birth-frantisek-sladek",
+      "event_type": "Birth/Baptism",
+      "date": "1871-09-13",
+      "place": "Dolní Bojanovice no. 146",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0270",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0145",
+        "S0143"
+      ],
+      "notes": "Baptised 14 Sep 1871."
+    },
+    {
+      "id": "Eundated-marriage-sladek-hubackova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0274",
+      "bride_id": "P0275",
+      "source_ids": [
+        "S0143"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Eundated-marriage-supa-amentova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "probable",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0276",
+      "bride_id": "P0277",
+      "source_ids": [
+        "S0143"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Eundated-marriage-vaclav-svoboda-petrasova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0278",
+      "bride_id": "P0279",
+      "source_ids": [
+        "S0144"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Eundated-marriage-ravas-petrasova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0280",
+      "bride_id": "P0281",
+      "source_ids": [
+        "S0144"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E1955-12-24-death-frantisek-sladek",
+      "event_type": "Death",
+      "date": "1955-12-24",
+      "place": "Hodonín",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0270",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0145"
+      ],
+      "notes": "From margin note in his baptism."
+    },
+    {
+      "id": "E1833-11-27-marriage-martin-sladek-ruzickova",
+      "event_type": "Marriage",
+      "date": "1833-11-27",
+      "place": "Dolní Bojanovice no. 146",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0282",
+      "bride_id": "P0283",
+      "source_ids": [
+        "S0146",
+        "S0145"
+      ],
+      "notes": "Groom 30, bride 24."
+    },
+    {
+      "id": "Eundated-marriage-hubacek-hubena",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0284",
+      "bride_id": "P0285",
+      "source_ids": [
+        "S0145"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "E1803-10-31-birth-martin-sladek",
+      "event_type": "Birth/Baptism",
+      "date": "1803-10-31",
+      "place": "Dolní Bojanovice no. 146",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "P0282",
+      "groom_id": "",
+      "bride_id": "",
+      "source_ids": [
+        "S0147"
+      ],
+      "notes": "Baptised the same day."
+    },
+    {
+      "id": "Eundated-marriage-frantisek-sladek-jordanova",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "confirmed",
+      "provenance": "primary",
+      "person_id": "",
+      "groom_id": "P0286",
+      "bride_id": "P0287",
+      "source_ids": [
+        "S0147",
+        "S0146"
+      ],
+      "notes": "Before 1803. Searched 2026-11-15 in Dolní Bojanovice marriages 1754–1818 (MZA 4953, book 5232, no index), entry by entry: images 37–50 = late Nov 1792 – Jan 1803, NOT found (only unrelated Martin/Franz grooms). Next: image 36 (earlier 1792, 22 marriages that year) and backwards to c. 1780. Alternatively look for the marriage in the bride's parish if Jordán was not local, or find Martin's older siblings' baptisms in the 1783–1817 births copy (MZA 10380) to narrow the date."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S0017",
+      "title": "Imported GEDCOM from djb608_6840609ec667286678317r_A.ged",
+      "type": "GEDCOM import",
+      "parish": "",
+      "date": "2026-03-27",
+      "archive_url": "",
+      "image_url": "",
+      "local_image": "sources/djb608_6840609ec667286678317r_A.ged",
+      "reliability": "medium",
+      "priority": "secondary",
+      "notes": ""
+    },
+    {
+      "id": "S0101",
+      "title": "Marriage 1925: František Lovecký + Františka Tihlaříková",
+      "type": "Parish marriage register",
+      "parish": "Moravský Písek",
+      "date": "1925-11-08",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/11630",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5676_104_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 11630, image 104. Moravský Písek marriages 1908–1943, book 5676, page 104, entry 14. Close-ups: mza_5676_104_zenich.png, mza_5676_104_nevesta.png. Priest František Kvapil. Witnesses Josef F… (surname unclear) and František Holásek."
+    },
+    {
+      "id": "S0102",
+      "title": "Marriage index 1908–1943, letter L",
+      "type": "Parish marriage index",
+      "parish": "Moravský Písek",
+      "date": "1908-1943",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/11630",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5676_234_index_L.png",
+      "reliability": "medium",
+      "priority": "primary",
+      "notes": "MZA book 11630, image 234. Lovecký marriages: 1919 Antonín × Pavlačková (p. 66), 1921 Dominik × Filípková (p. 81), 1923 Boleslav × Doležalová (p. 91), 1925 František × Tihlaříková (p. 104), 1937 Anna Lovecká × Ludvík Lelocha (p. 182), 1940 Svatopluk × Vydělková (p. 200), 1942 Jaroslav × Karlíková (p. 210)."
+    },
+    {
+      "id": "S0103",
+      "title": "Birth 1900: František Lovecký",
+      "type": "Parish birth register",
+      "parish": "Moravský Písek",
+      "date": "1900-01-09",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9922",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5671_161_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 9922, image 161. Moravský Písek births 1890–1908, book 5671, page 160. Close-ups: mza_5671_161_frantisek1900_otec.png, mza_5671_161_frantisek1900_matka.png. Margin note: married 8 Nov 1925 to Františka Tihlaříková."
+    },
+    {
+      "id": "S0104",
+      "title": "Birth 1904: Františka Tihlaříková",
+      "type": "Parish birth register",
+      "parish": "Moravský Písek",
+      "date": "1904-11-05",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9922",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5671_259_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 9922, image 259. Moravský Písek births 1890–1908, book 5671, page 257, entry 66. Close-ups: mza_5671_259_frantiska1904_otec.png, mza_5671_259_frantiska1904_matka.png. Parents married 29 Apr 1896."
+    },
+    {
+      "id": "S0105",
+      "title": "Marriage 1899: Cyril Lovecký + Kateřina Kmínková",
+      "type": "Parish marriage register",
+      "parish": "Moravský Písek",
+      "date": "1899-05-23",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/431",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5675_116_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 431, image 116. Moravský Písek marriages 1852–1907, book 5675, first entry on the image. Close-ups: mza_5675_116_cyril1899_zenich.png, mza_5675_116_cyril1899_nevesta.png."
+    },
+    {
+      "id": "S0106",
+      "title": "Birth 1871: Cyril Lovecký",
+      "type": "Parish birth register",
+      "parish": "Moravský Písek",
+      "date": "1871-07-02",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/5152",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5670_080_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5152, image 80. Moravský Písek births 1865–1889, book 5670, folio 80, no. 110. Close-ups: mza_5670_080_cyril1871_otec.png, mza_5670_080_cyril1871_matka.png."
+    },
+    {
+      "id": "S0107",
+      "title": "Birth 1872: Jan Tihlařík",
+      "type": "Parish birth register",
+      "parish": "Moravský Písek",
+      "date": "1872-05-05",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/5152",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5670_090_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5152, image 90. Moravský Písek births 1865–1889, book 5670, folio 90, first entry. Close-ups: mza_5670_090_jan_tihlarik1872_otec.png, mza_5670_090_jan_tihlarik1872_matka.png."
+    },
+    {
+      "id": "S0108",
+      "title": "Birth 1876: Kateřina Kmínková",
+      "type": "Parish birth register",
+      "parish": "Moravský Písek",
+      "date": "1876-04-23",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/5152",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5670_131_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5152, image 131. Moravský Písek births 1865–1889, book 5670, folio 131, entry 2. Close-ups: mza_5670_131_katerina_kminkova1876_otec.png, mza_5670_131_katerina_kminkova1876_matka.png."
+    },
+    {
+      "id": "S0109",
+      "title": "Death 1920: Cyril Lovecký",
+      "type": "Parish death register",
+      "parish": "Moravský Písek",
+      "date": "1920-09-12",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/13877",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5681_023_cyril1920_umrti.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 13877, image 23. Moravský Písek deaths 1917–1949, book 5681, page 42, entry 27. Full page: mza_5681_023_spread.png."
+    },
+    {
+      "id": "S0110",
+      "title": "Death 1920: Kateřina Kmínková née Doležalová",
+      "type": "Parish death register",
+      "parish": "Moravský Písek",
+      "date": "1920-10-15",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/13877",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5681_023_katerina_kminkova1920_umrti.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 13877, image 23. Moravský Písek deaths 1917–1949, book 5681, page 43, entry 30. Full page: mza_5681_023_spread.png."
+    },
+    {
+      "id": "S0111",
+      "title": "Death 1935: Anna (Anička) Lovecká",
+      "type": "Parish death register",
+      "parish": "Moravský Písek",
+      "date": "1935-12-24",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/13877",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5681_079_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 13877, image 79. Moravský Písek deaths 1917–1949, book 5681, page 156, entry 25. Close-ups: mza_5681_079_anicka1935_a.png, mza_5681_079_anicka1935_b.png. Priest František Mokroš."
+    },
+    {
+      "id": "S0112",
+      "title": "Death index 1917–1949, letter L",
+      "type": "Parish death index",
+      "parish": "Moravský Písek",
+      "date": "1917-1949",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/13877",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5681_131_index_L.png",
+      "reliability": "medium",
+      "priority": "primary",
+      "notes": "MZA book 13877, image 131. Close-ups: mza_5681_131_index_L1.png, mza_5681_131_index_L2.png. Lovecký deaths: 1918 Marie (no. 147), 1920 Cyrill (no. 57), 1924 Jarmila (no. 37), 1925 Josef (no. 131), 1926 Maria (no. 40), 1927 Františka (no. 76), 1929 Valentin (no. 40), Jarmila (no. 1), Stanislav (no. 201), 1931 Kateřina (no. 131), 1935 Anna (no. 405), 1941 Cyril (no. 76), 1945 Marie, 1946 Boleslav (no. 37), 1948 František (no. 37), Jindřiška (no. 75), 1949 Michal (no. 334)."
+    },
+    {
+      "id": "S0113",
+      "title": "Family grave 'Rodina Lovecká', Moravský Písek",
+      "type": "Gravestone photo",
+      "parish": "Moravský Písek",
+      "date": "2026-11-14",
+      "archive_url": "",
+      "image_url": "",
+      "local_image": "media/lovecky/hrob_rodina_lovecka.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "Photo provided by the user. Names: Anička 1932–1935, František 1900–1984, Marie 1931–1994, Františka 1904–1996, František 1926–2009."
+    },
+    {
+      "id": "S0114",
+      "title": "Marriage 1896: Jan Tihlařík + Kateřina Tomečková",
+      "type": "Parish marriage register",
+      "parish": "Veselí nad Moravou",
+      "date": "1896-04-29",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/10507",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5934_169_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5934 (Veselí marriages 1873–1938), image 169, right page (vol. II, p. 335), last entry. Close-up: mza_5934_169_tihlarik_tomeckova1896.png. Groom Jan Tihlařík, 23, single, of Písek, born 5 May 1872, son of the late Josef Tihlařík, smallholder in Písek, and Josefa née Janoušková (daughter of František Janoušek, half-laner from Těmice). Bride Kateřina, 20, of Veselí no. 89, born 28 Apr 1876, daughter of František Tomeček, small farmer in Veselí, and Františka née Trachtulcová. Priest Jaroslav Hlaváček, chaplain. Banns in Veselí and Písek on the 1st–3rd Sundays after Easter 1896. The bride's father gave his consent as she was under age."
+    },
+    {
+      "id": "S0115",
+      "title": "Birth 1876: Kateřina Tomečková",
+      "type": "Parish birth register",
+      "parish": "Veselí nad Moravou-Předměstí",
+      "date": "1876-04-29",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/5334",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5922_096_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5922 (Veselí-Předměstí births 1870–1895), image 96, left page (p. 191), last entry; index image 481 (mza_5922_481_index_T.png). Close-up: mza_5922_096_katerina_tomeckova1876.png. Born 29 Apr, baptised 30 Apr 1876, house no. 89. Father František Tomeček, podsedník in Veselí, son of Josef Tomeček, podsedník from Veselí, and Kateřina née Josef Grabec, podsedník from Veselí. Mother Františka, daughter of Josef Trachtulec, podsedník from Veselí, and Alžběta née Homínková. Midwife Marie Timl, no. 72 in Veselí. Priest Jan Hláček (?), chaplain. Margin: died 20 Jun 1957 in Moravský Písek, recorded 27 Jun 1957."
+    },
+    {
+      "id": "S0116",
+      "title": "Birth 1843: Antonín Lovecký",
+      "type": "Parish birth register",
+      "parish": "Moravský Písek",
+      "date": "1843-05-25",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/5151",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5669_071_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5669 (Moravský Písek births 1810–1864), image 71, left page (fol. 70), second entry. Close-up: mza_5669_071_antonin1843.png. In German: 'Anton', born and baptised 25 May 1843, house no. 110; father Johann Lowetzky, Häusler (cottager) in Písek; mother Marianna, daughter of the late Johann Žádník, Halblehner? in Písek, and Katharina née Matthias Nygrschláb? (first read as 'Ungerhofer'; see S0121). Godfather Martin Stromský?, Viertler in Písek."
+    },
+    {
+      "id": "S0117",
+      "title": "Birth 1847: Marianna Blatecká",
+      "type": "Parish birth register",
+      "parish": "Moravský Písek",
+      "date": "1847-08-29",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/5151",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5669_085_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5669, image 85, right page (fol. 86), second-to-last entry. Close-up: mza_5669_085_marianna_blatecka1847.png. In German: 'Marianna', born 29 Aug, baptised 30 Aug 1847, house no. 29; father Johann Blatetzky, Viertler (smallholder) in Písek; mother Rosina, daughter of Johann Běhavka?, Viertler in Polešovice, and Anna née Ozánová?. Godparents Franz Dobrovský and Marianna, Viertler in Písek."
+    },
+    {
+      "id": "S0118",
+      "title": "Marriage 1871: Antonín Lovecký + Mariana Blatecká",
+      "type": "Parish marriage register",
+      "parish": "Moravský Písek",
+      "date": "1871-02-01",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/431",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5675_047_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5675 (Moravský Písek marriages 1852–1907), image 47, right page (p. 62), first entry. Close-up: mza_5675_047_antonin_mariana1871.png. Groom Antonín Lovecký, cottager in Písek no. 110, son of Jan Lovecký, cottager in Písek, and Mariana née Jan Žádník, smallholder in Písek; Catholic, aged 27, single. Bride Mariana, daughter of Jan Blatecký, smallholder in Písek, and Rosina née Jan Běhavka, smallholder from Polešovice; aged 23, single. Witnesses Jakub Šindelek? and Martin Hořejlek?. Priest Jan Rajdl?"
+    },
+    {
+      "id": "S0119",
+      "title": "Death 1911: Antonín Lovecký",
+      "type": "Parish death register",
+      "parish": "Moravský Písek",
+      "date": "1911-03-23",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/433",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5680_212_antonin1911.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5680 (Moravský Písek deaths 1867–1916), image 212, right page (fol. 404), entry 8 of 1911. Full page: mza_5680_212_spread.png; index: mza_5680_248_index_L.png. Antonín Lovecký, cottager in Písek, married, son of Jan Lovecký, cottager, and Mariana Žádníková. Died 23 Mar 1911 at no. 147, buried 25 Mar; aged 67 years 9 months 28 days; cause 'rozedma plic' (emphysema), doctor no. 8. Married 1 Feb 1871; born 25 May 1843 in Písek. Priest František Böse, cooperator."
+    },
+    {
+      "id": "S0120",
+      "title": "Death 1918: Marie Lovecká née Blatecká",
+      "type": "Parish death register",
+      "parish": "Moravský Písek",
+      "date": "1918-12-28",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/13877",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5681_015_marie_blatecka1918.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5681 (Moravský Písek deaths 1917–1949), image 15, right page (p. 27), entry 60 of 1918. Full page: mza_5681_015_spread.png. Marie Lovecká, retired farmer (výměnkářka) in Písek, widow of the late Antonín Lovecký, cottager; daughter of Jan Blatecký, smallholder, and Rosina Běhávková. Died 28 Dec 1918 at no. 147, buried 30 Dec; aged 71 years 3 months 29 days; old age. Born 29 Aug 1847 in Písek. Married 1 Feb 1871. Priest František Kvapil."
+    },
+    {
+      "id": "S0121",
+      "title": "Marriage 1831: Jan Lovecký + Marianna Žádníková",
+      "type": "Parish marriage register",
+      "parish": "Moravský Písek",
+      "date": "1831-02-02",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/5153",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5674_033_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5674 (Moravský Písek marriages 1784–1851), image 33, right page, second entry of 1831; index image 62 ('Lowetzky Johann', fol. 34; mza_5674_062_index_L.png). Close-up: mza_5674_033_jan_lovecky_zadnikova1831.png. In German: 2 Feb 1831, house no. 84; groom Johann Lowetzky, Häusler von hier, Catholic, 25, single; bride Marianna, daughter of the late Johann Žádník, Viertler von hier, and his wife Katharina née Matthias Nygrschláb?, from no. 23; Catholic, 24, single. Witnesses Thomas Zmínek?, Halblehner, and Georg Žádník, Viertler, both of Písek. Priest Franz Lizniczký?, cooperator. Fasc. XIII no. 2."
+    },
+    {
+      "id": "S0122",
+      "title": "Birth 1805: Jan (Johann) Lovecký",
+      "type": "Parish birth register",
+      "parish": "Moravský Písek",
+      "date": "1805-11-23",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/5150",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5668_056_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5668 (Moravský Písek births 1784–1809), image 56, left page (fol. 53), last entry; index image 71 ('Lowetzky Johann', 1805, fol. 53; mza_5668_071_index_L.png). Close-up: mza_5668_056_jan_lovecky1805.png. In German: born and baptised 23 Nov 1805, house no. 41, Johann, Catholic, boy, legitimate; father Martin Lowetzky, Viertler; mother Mechtildis, daughter of the late Johann Potrzywacz?; godparent Dominik? Matthäus?, Viertler, of the parish. Baptised by Johann Diakon?. Identified as the groom of 1831 (S0121) because he is the only Johann Lowetzky in the 1800–1809 index and the age (25 in Feb 1831) fits."
+    },
+    {
+      "id": "S0123",
+      "title": "Marriage 1790: Martin Lovecký + Katharina Kobližková?",
+      "type": "Parish marriage register",
+      "parish": "Moravský Písek",
+      "date": "1790-01-20",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/5153",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5674_004_spread.png",
+      "reliability": "medium",
+      "priority": "primary",
+      "notes": "MZA book 5674, image 4, right page (fol. 4), second entry of 1790. Close-up: mza_5674_004_martin_katerina1790.png. In German: 20 Jan 1790, house no. 76, Martin Lowetzky, Viertler, Catholic, 26, single; bride Katharina, daughter of Matthias Kobližek?, Häusler; witnesses Georg Dominik? and Thomas Koštka?, Viertler. Not yet linked to anyone in this file (see note on P0233)."
+    },
+    {
+      "id": "S0124",
+      "title": "Marriage 1810: Martin Lovecký (widower) + Josepha Andrlíková",
+      "type": "Parish marriage register",
+      "parish": "Moravský Písek",
+      "date": "1810-05-01",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/5153",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5674_019_spread.png",
+      "reliability": "medium",
+      "priority": "primary",
+      "notes": "MZA book 5674, image 19, left page (fol. 18v), first May entry; index 'Lowetzky Martin II, fol. 18'. Close-up: mza_5674_019_martin_josepha1810.png. 1 May 1810, house no. 76, Martin Lowetzky, widower, Viertler, 46; bride Josepha, daughter of the late Martin Andrlík, Häusler, 23; witnesses Georg Hanák? and Johann Swoboda, Halblehner. Not yet linked to anyone in this file (see note on P0233)."
+    },
+    {
+      "id": "S0125",
+      "title": "Family grave 'Rodina Sládkova', Moravský Písek",
+      "type": "Gravestone photo",
+      "parish": "Moravský Písek",
+      "date": "2026-11-14",
+      "archive_url": "",
+      "image_url": "",
+      "local_image": "media/lovecky/hrob_rodina_sladkova.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "Photo provided by the user. Josef [Sládek] *25.11.1928 †3.8.1968 trag. smrtí; Drahomíra *10.10.1930 †11.12.2015; Josef Svoboda *9.10.1906 †23.5.1976; Štěpánka Svobodová *25.12.1907 †8.1.1987. The user adds that part of the family came from Dolní Bojanovice."
+    },
+    {
+      "id": "S0126",
+      "title": "Marriage 1929: Josef Svoboda + Štěpánka Šingrová",
+      "type": "Parish marriage register",
+      "parish": "Moravský Písek",
+      "date": "1929-04-08",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/11630",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5676_130_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5676 (marriages 1908–1943), image 130 (p. 130), entry 2 of 1929; index image 237 (mza_5676_237_index_S.png). Close-ups: mza_5676_130_svoboda1929_zenich.png, mza_5676_130_singrova1929_nevesta.png. 8 Apr 1929, St. Anne's church, Moravský Písek, priest František Kvapil. Groom Josef Svoboda, baker in Moravský Písek no. 250, born 9 Oct 1906 in Morkůvky, district Hustopeče, son of the late František Svoboda, cottager in Morkůvky, and the late Františka Ravasová?; 22, single. Bride Štěpánka Šingrová, living with her parents at no. 254, born 25 Dec 1907 in Moravský Písek, daughter of František Šingr, cottager, and Anděla Večeřová; 21, single. Witnesses Cyril Kolařík?, master baker, and František Strořar?, cottager, both of Ostrožské Předměstí. Groom's baptism certificate from the Czechoslovak church office in Klobouky u Brna (13 Mar 1929); dispensation for a mixed marriage from Olomouc (29 Mar 1929); groom promised Catholic upbringing of children."
+    },
+    {
+      "id": "S0127",
+      "title": "Birth 1907: Štěpánka Šingrová",
+      "type": "Parish birth register",
+      "parish": "Moravský Písek",
+      "date": "1907-12-25",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9922",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5671_328_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5671 (births 1890–1908), image 328 (p. 326), last entry of 1907. Close-ups: mza_5671_328_stepanka1907_otec.png, mza_5671_328_stepanka1907_matka.png. Born 25 Dec 1907, baptised 1 Jan 1908, house no. 293. Father František Singer, born 24 Jul 1880, cottager in Písek, son of Ignác Singer, cottager, and Genovéfa Buriánková. Mother Anděla, born 29 Mar 1877, daughter of František Večeře, cottager in Spytinov?, and Josefa Hrdinová. Parents married 27 May 1903. Priest František Böse, cooperator; midwife Marie Němečková, no. 253. Godparents Josef Dobřický, innkeeper, and Jenofefa Dobřická. Margin: married 8 Apr 1929 to Josef Svoboda."
+    },
+    {
+      "id": "S0128",
+      "title": "Marriage index 1874–1939, Dolní Bojanovice, letter S",
+      "type": "Parish marriage index",
+      "parish": "Dolní Bojanovice",
+      "date": "1874-1939",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/11535",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5252_020_index_S_dolni_bojanovice.png",
+      "reliability": "medium",
+      "priority": "secondary",
+      "notes": "MZA book 5252, image 20. Sládek marriages: 1906 Pavel × Františka Červenka?; 1910/1911 Pavel × Františka Zavjačič?; 1912 František × Františka Mráková?; 1921 Rudolf × Marie Fuďová; 1923 František × Kristina Herková (book V p. 140); 1925 Petr × Ludmila Dalusová? (V p. 171); 1927 Jiří × Františka Trečková? (V p. 239); 1935 Václav Sládek ×?; 1939 Ladislav × Marie …; 1939 Františka Sládková × Rudolf Hložek?. Marriage books: 1914–1939 = MZA 10759 (book 5236), 1940–1949 = MZA 12454."
+    },
+    {
+      "id": "S0129",
+      "title": "Family information (user)",
+      "type": "Family knowledge",
+      "parish": "",
+      "date": "2026-11-15",
+      "archive_url": "",
+      "image_url": "",
+      "local_image": "",
+      "reliability": "high",
+      "priority": "secondary",
+      "notes": "Michaela Lovecká has two sisters: Alena Kozumplíková (née Lovecká) and Veronika Jandásková (née Lovecká)."
+    },
+    {
+      "id": "S0130",
+      "title": "Morkůvky Catholic births 1865–1916 (negative search for Josef Svoboda 1906)",
+      "type": "Parish birth register",
+      "parish": "Brumovice (Morkůvky)",
+      "date": "1906",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/11326",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_2395_039_morkuvky_1906_catholic.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 2395 (Roman Catholic parish Brumovice, births for Morkůvky only, 1865–1916). Image 39 = all six Catholic births of 1906 (26 Feb Josef, 17 Mar Josef Skřivánek, 20 Apr Františka, 5 Jun Božena, Sep? Anna, 12 Dec Terezie) — no Josef Svoboda born 9 Oct 1906. Index (image 58, mza_2395_058_morkuvky_index_S.png) has no Svoboda at all 1880–1916. Conclusion: the Svoboda family of Morkůvky was not Catholic, most likely Protestant (Brumovice evangelical parish), which fits Josef's Czechoslovak-church baptism certificate in 1929 (S0126)."
+    },
+    {
+      "id": "S0131",
+      "title": "Birth 1880: František Singer (Šingr)",
+      "type": "Parish birth register",
+      "parish": "Moravský Písek",
+      "date": "1880-09-24",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/5152",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5670_178_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5670 (births 1865–1889), image 178 (fol. 178), second-to-last entry. Close-ups: mza_5670_178_frantisek_singer1880_otec.png, mza_5670_178_frantisek_singer1880_matka.png. Born 24 Sep, baptised 25 Sep 1880, house no. 83. Father Ignác Singer, railway-station guard in Písek, son of Tomáš Singer, smallholder from Popice, and Eleonora née Leopold Odehnal, cottager from Popice. Mother Genovéfa, daughter of Tomáš Buriánek, farmhand from Svitávka (Brno district), and Barbora née Šimon Zámek, cottager from Dzbánovice?. Priest Ant. Sedláček; midwife Kateřina Masařík, no. 55; godparent Jiří Dýkora?, smith."
+    },
+    {
+      "id": "S0132",
+      "title": "Marriage 1903: František Singer + Anděla Večeřová",
+      "type": "Parish marriage register",
+      "parish": "Moravský Písek",
+      "date": "1903-05-27",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/431",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5675_133_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5675 (marriages 1852–1907), image 133 (vol. II p. 204), entry 4 of 1903. Close-ups: mza_5675_133_singer1903_zenich.png, mza_5675_133_vecerova1903_nevesta.png. 27 May 1903, house no. 254. Groom František Singer, single, son of Ignác Singer, cottager in Písek, and Genovéfa née Tomáš Buriánek, farmhand from Svitávka; born 24 Sep 1880; aged 22 (father consented). Bride Anděla, single, daughter of František Večeře, cottager in Spytinov, and Josefa née Josef Hrdina, cottager in Spytinov; born 29 Mar 1877; aged 26. Witnesses Rudolf Palkovský, teacher in Písek, and Adolf Burian?, railway guard in Břeclav. Priest Ludvík Grygera, cooperator. Bride's baptism certificate from the parish office in Spytinov (6 May 1903); groom's military papers from Hustopeče district office."
+    },
+    {
+      "id": "S0133",
+      "title": "Marriage 1926: Jan Formánek + Marie Dobřická",
+      "type": "Parish marriage register",
+      "parish": "Moravský Písek",
+      "date": "1926-11-09",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/11630",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5676_112_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5676 (marriages 1908–1943), image 112 (p. 112), third entry of 1926. Close-ups: mza_5676_112_formanek1926_zenich.png, mza_5676_112_dobricka1926_nevesta.png. 9 Nov 1926 in the church at Velehrad (delegation from Moravský Písek parish office; priest Karel Pokorný, administrator at Velehrad). Groom Jan Formánek, living with his mother in Bzenec no. 609, born 14 May 1903 in Bzenec, son of the late František Formánek, cottager in Bzenec, and Antonie Šilinová?; 23, single. Bride Marie Dobřická, innkeeper in Moravský Písek no. 90, born 11 Sep 1904 in Moravský Písek, daughter of the late Josef Dobřický, innkeeper, and Marie Kolářová; 22, single. Witnesses Josef Prokeš?, municipal secretary in Moravský Písek, and František Formánek, innkeeper in Ostrožská Nová Ves. Banns in Moravský Písek and Bzenec 31 Oct, 1 and 7 Nov 1926."
+    },
+    {
+      "id": "S0134",
+      "title": "Marriage index 1908–1943, Moravský Písek, letter F",
+      "type": "Parish marriage index",
+      "parish": "Moravský Písek",
+      "date": "1908-1943",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/11630",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5676_230_index_F.png",
+      "reliability": "medium",
+      "priority": "secondary",
+      "notes": "MZA book 5676, image 230. Only one Formánek marriage 1908–1943: 1926 Formánek Jan – Dobřická M., house 90, p. 112."
+    },
+    {
+      "id": "S0135",
+      "title": "Birth 1903: Jan Antonín Formánek",
+      "type": "Parish birth register",
+      "parish": "Bzenec",
+      "date": "1903-05-14",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9912",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5152bz_276_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5152 (Bzenec births 1877–1907), image 276 (vol. VI p. 548), first entry; index image 349 (mza_5152bz_349_index_F*.png). Close-ups: mza_5152bz_276_jan_formanek1903_otec.png, mza_5152bz_276_jan_formanek1903_matka.png. Born 14 May, baptised 23 May 1903, house no. 373, Jan Antonín, Catholic, male, legitimate. Father František Formánek, pohodný in Bzenec, son of Jan Formánek, podsedník from Stupava, and Františka née Karel Kaláb, čtvrtník from Ota[sla]vice?. Mother Antonie, daughter of František Šilnice, cottager in Hluk, and Františka née Antonín Angr, cottager in Veselí. Priest Karel Gregor, cooperator; midwife Josefa Dufalíková, no. 504 in Bzenec; godmother Kateřina Koudelková?, wife of a farmer in Kvačice?. Margin: married 9 Nov 1926 to Marie Dobřická at Velehrad."
+    },
+    {
+      "id": "S0136",
+      "title": "Births index 1877–1907, Bzenec, letter F",
+      "type": "Parish birth index",
+      "parish": "Bzenec",
+      "date": "1877-1907",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9912",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5152bz_349_index_F.png",
+      "reliability": "medium",
+      "priority": "secondary",
+      "notes": "MZA book 5152, image 349. Formánek births: 1898 Antonín (p. 409), 1899 Marie (p. 427), 1903 Jan (p. 548), 1905 Kateřina (p. 627), 1907 Josef (p. 684) — probably all children of František Formánek and Antonie Šilnicová; not yet verified."
+    },
+    {
+      "id": "S0137",
+      "title": "Birth 1904: Marie Dobřická (innkeeper's daughter, pub no. 90)",
+      "type": "Parish birth register",
+      "parish": "Moravský Písek",
+      "date": "1904-09-11",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9922",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5671_258_spread.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5671 (births 1890–1908), image 258 (vol. V p. 256), entry 61; index image 351 (mza_5671_351_index_D.png). Close-ups: mza_5671_258_marie_dobricka1904_otec.png, mza_5671_258_marie_dobricka1904_matka.png. Born 11 Sep, baptised 21 Sep 1904, house no. 90. Father Josef Dobřický, born 11 Mar 1874, innkeeper (hostinský) in Písek, son of Josef Dobřický, cottager in Písek, and Marianna née Nejezchleba of Písek. Mother Marie, daughter of Florián Kolář, smallholder from Vážany, and Terezie née Hrobař? from Polešovice; born 6 Sep 1879. Parents married 9 Sep 1902. Priest Antonín Sedláček, parish priest; midwife Marie Měšťánková, no. 189; godparents Rudolf Palkovský, teacher in Písek, and Aloisie his wife. Margin: married 9 Nov 1926 at Velehrad to Jan Formánek of Bzenec."
+    },
+    {
+      "id": "S0138",
+      "title": "Bzenec marriages 1883–1913: index F and 1889 Forman entry (negative search)",
+      "type": "Parish marriage index",
+      "parish": "Bzenec",
+      "date": "1883-1913",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/372",
+      "image_url": "",
+      "local_image": "",
+      "reliability": "medium",
+      "priority": "secondary",
+      "notes": "MZA book 5161, index image 288: no František Formánek × Antonie Šilnicová. The only candidate, 'Forman František' 1889 (p. 44, image 45), is a carpenter, son of František Forman — a different man."
+    },
+    {
+      "id": "S0139",
+      "title": "Stupava births 1864–1900 and marriages 1864–1904: indexes F (negative search for Formánek)",
+      "type": "Parish index",
+      "parish": "Stupava (earlier Osvětimany)",
+      "date": "1864-1904",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/9729",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_12020_234_stupava_births_index_F1.png",
+      "reliability": "medium",
+      "priority": "secondary",
+      "notes": "Births 1864–1900 (MZA book 12020, index image 234; mza_12020_234_stupava_births_index_F1/F2.png): no Formánek at all. Marriages 1864–1904 (MZA book 12026 = detail 9730, index image 121): one Formánek only — fol. 52 (image 52, mza_12026_052_jakub_formanek1897.png), 10 Aug 1897: Jakub Formánek, bricklayer of Jestřabí? ('v Jastřížli'), minor, son of Jakub Formánek, cottager there, and Anna née Jan Čech, cottager in Kunovice; bride Františka, daughter of Felix Ištvan?, cottager in Stupava. NOT our line (parents Jakub × Čechová, not Jan × Kalábová) — possibly a distant relative. So Jan Formánek (podsedník from Stupava) married Františka Kalábová and had son František BEFORE 1864, when Stupava belonged to Osvětimany parish."
+    },
+    {
+      "id": "S0140",
+      "title": "Marriage 1923: František Sládek + Kristina Herková",
+      "type": "Parish marriage register",
+      "parish": "Dolní Bojanovice",
+      "date": "1923-05-14",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/10759",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5236_071_sladek_herkova1923.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5236 (Dolní Bojanovice marriages 1914–1939), image 71 (vol. V p. 140), entry 8. Groom František Sládek, b. 24 Oct 1899, son of František Sládek, podsedník in Dolní Bojanovice, and Kateřina née Martin Šupa (both living). Bride Kristina, daughter of Josef Herka, farmer, and Františka née Petr Červenka; b. 16 Sep 1901. Witnesses Pavel Sládek and František Bílík. Priest František Pořízek."
+    },
+    {
+      "id": "S0141",
+      "title": "Marriage 1928: Jiří Sládek + Františka Janečková",
+      "type": "Parish marriage register",
+      "parish": "Dolní Bojanovice",
+      "date": "1928-05-11",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/10759",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5236_120_jiri_sladek_janeckova1928.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5236 (Dolní Bojanovice marriages 1914–1939), image 120 (vol. V p. 239), entry 7. Groom Jiří Sládek, farmer, b. 22 Apr 1905, son of František Sládek, podsedník, and Kateřina née Martin Šupa (father living, mother dead). Bride Františka Janečková, b. 11 Mar 1908 in Prušánky, daughter of the late Jan Janeček, chalupník in Prušánky, and Julie née Jan Král; minor, consent of guardian Juliána Janečková (Hodonín court, 1928). Witnesses František Lekavý and Pavel Sládek, výměnkář. Banns also in Prušánky. Probable parents of Josef Sládek b. 25 Nov 1928."
+    },
+    {
+      "id": "S0142",
+      "title": "Marriage 1925: Petr Sládek + Ludmila Balusová",
+      "type": "Parish marriage register",
+      "parish": "Dolní Bojanovice",
+      "date": "1925-01-20",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/10759",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5236_086_sladek_balusova1925.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5236 (Dolní Bojanovice marriages 1914–1939), image 86 (vol. V p. 171), entry 2. Groom Petr Sládek, labourer, b. 14 Jun 1901, son of František Sládek, podsedník, and Kateřina née Martin Šupa (father living, mother dead). Bride Ludmila, daughter of Jan Balus, cottager, and Rosalie née Tomáš Kučera; b. 26 May 1899."
+    },
+    {
+      "id": "S0143",
+      "title": "Birth 1899: František Sládek (son of František Sládek and Kateřina Šupová)",
+      "type": "Parish birth register",
+      "parish": "Dolní Bojanovice",
+      "date": "1899-10-24",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/10758",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5225_060_frantisek_sladek1899.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5225 (Dolní Bojanovice births 1893–1915), image 60 (vol. IV p. 118), entry 70. Close-up: mza_5225_060_frantisek_sladek1899_rodice.png. Father František Sládek, podsedník in Dolní Bojanovice, born 13 Sep 1871, son of František Sládek, podsedník, and Lucie née Pavel Hubáček. Mother Kateřina née Šupa, born 24 Jul 1876, daughter of Martin Šupa, čtvrtláník in Mutěnice, and Františka née Amentová?. Parents married 15 Nov 1898. Godparents František Lekavý, cottager, and Kristýna Lekavá. Dolní Bojanovice marriage index 1874–1905 (MZA 11535 image 19) has no Sládek × Šupová, so the wedding was probably in Mutěnice."
+    },
+    {
+      "id": "S0144",
+      "title": "Birth 1906: Josef Jan Svoboda (Klobouky Helvetic parish)",
+      "type": "Parish birth register (Evangelical, Helvetic)",
+      "parish": "Klobouky u Brna (helvetské vyznání)",
+      "date": "1906-10-09",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/10575",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_3709_099_josef_svoboda1906.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 3709 (Klobouky u Brna, Helvetic confession, births 1903–1914; covers Morkůvky), image 99 (p. 99), entry 82. Close-ups: mza_3709_099_josef_svoboda1906_a.png, mza_3709_099_josef_svoboda1906_rodice.png. Born 9 Oct, baptised 14 Oct 1906 at Morkůvky no. 154, Josef Jan, male, legitimate, Evangelical. Father František Svoboda, cottager in Morkůvky, son of Václav Svoboda, cottager in Morkůvky, and Marianna née Petrášová of Morkůvky. Mother Františka née Ravasová, daughter of Karel Ravas, farmer in Morkůvky, and Kateřina née Petrášová of Morkůvky. Godfather Jan Petráš (?) represented by Jan Petráš, cottager in Morkůvky no. 17, and his wife Anna. Midwife Dorota Žikmundová of Morkůvky. Pastor Ferdinand Císař."
+    },
+    {
+      "id": "S0145",
+      "title": "Birth 1871: František Sládek (Dolní Bojanovice)",
+      "type": "Parish birth register",
+      "parish": "Dolní Bojanovice",
+      "date": "1871-09-13",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/4950",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5224_154_frantisek_sladek1871.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5224 (Dolní Bojanovice births 1842–1892), image 154, right page, 13 Sep 1871. Close-up: mza_5224_154_frantisek_sladek1871_zoom.png. Born 13 Sep, baptised 14 Sep 1871, house no. 146. Father František Sládek, podsedník here, son of Martin Sládek, podsedník here, and Veronika née Růžička (read first as 'Jan Vráčera?'; corrected from the 1833 marriage S0146). Mother Lucie, daughter of Pavel Hubáček, ¼-láník here, and Mariana née Matouš Hubená. Godparents Petr Jogrunk? and … his wife. Priest František Páral. Margin: † 24.12.1955 in Hodonín; married in Mutěnice 30.?.1924 Anna … née Havlíková (Mutěnice parish office 1924, no. 34)."
+    },
+    {
+      "id": "S0146",
+      "title": "Marriage 1833: Martin Sládek + Veronika Růžičková",
+      "type": "Parish marriage register",
+      "parish": "Dolní Bojanovice",
+      "date": "1833-11-27",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/4954",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_5233_043_martin_sladek1833.png",
+      "reliability": "high",
+      "priority": "primary",
+      "notes": "MZA book 5233 (Dolní Bojanovice marriages 1819–1838), image 43, right page (fol. 85), second entry; index MZA 4961 image 18 ('Sladek Martin und Veronika Růžička, fol. 85'; mza_5251_018_index_sladek_martin.png). Close-up: mza_5233_043_martin_sladek1833_zoom.png. In German: 27 Nov 1833, house no. 146. Groom Martin Sládek, podsedník here, legitimate son of the late … Sládek, podsedník here, and his wife Marina née Jordán (confirmed by the 1803 baptism S0147); Catholic, 30, single. Bride Veronika, legitimate daughter of the late Josef Růžička, podsedník here, and his wife Klara? (maiden name hard to read, possibly 'Bílek'); Catholic, 24, single. House no. 146 = the house where František Sládek was born in 1871 (S0145), which confirms the identification."
+    },
+    {
+      "id": "S0147",
+      "title": "Birth 1803: Martin Sládek (Dolní Bojanovice, annual copy)",
+      "type": "Parish birth register (annual copy)",
+      "parish": "Dolní Bojanovice",
+      "date": "1803-10-31",
+      "archive_url": "https://www.mza.cz/actapublica/matrika/detail/10380",
+      "image_url": "",
+      "local_image": "media/lovecky/mza_opis12_133_martin_sladek1803.png",
+      "reliability": "medium-high",
+      "priority": "primary",
+      "notes": "MZA opis 12 (copy of Dolní Bojanovice births 1783–1817, replacing the lost original), image 133, left page (fol. 141), 31 Oct 1803. Close-up: mza_opis12_133_martin_sladek1803_zoom.png. In German: born and baptised 31 Oct 1803, house no. 146, Martin, Catholic, male, legitimate. Father Franz Sládek (written like 'Hladek'), podsedník; mother Marina née Jordan. Godfather Georg Ludwig?, ½-Lehner. Identification: same house (146) and mother's name as the 1833 marriage (S0146); age 30 in Nov 1833 fits."
+    }
+  ]
+}

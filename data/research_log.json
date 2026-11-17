@@ -1,0 +1,71 @@
+[
+  {
+    "date": "2026-11-14",
+    "branch": "Vajda/Waida (paternal line)",
+    "researcher": "Claude (rodokmen-plus, MZA Acta Publica + ARON)",
+    "summary": "Line verified from scans back to Franz Waida (c.1764–1827), farmer at Ludslavice no. 18: Stanislav (1906, m. 1933 Slušovice, S0009) → František (1854–1916, m. 1884 Jankovice to Anna Žeravík, S0006/S0026/S0008) → Josef (c.1803, m. 1838 Kurovice to Veronika Dvořel, S0029) → Franz + Anna Dvořel (d. of Karl Dvořel, podsedník 'Wrbětitz'; S0031/S0035–S0037; Franz d. 1827, S0033).",
+    "corrections": [
+      "Josef's birth 1827-12-08 was wrong (Joseph Gaja); real birth c.1803, not in Ludslavice",
+      "Josef's parents are Franz Waida + Anna Dvořel, not Georg Waida + Anna Holzman (Georg cluster and the 1822 marriage do not exist: S0050/S0051)",
+      "Josef's wife is Veronika Dvořel, not Josefa Hykel (Hykel cluster deleted)",
+      "František's wife is Anna Žeravík, not Marie Anna Sova (Sova cluster deleted)",
+      "1851 'Josef Waida' marriage (S0012) is Joseph Walek of Kostelec",
+      "1860 Franz Waida (S0010) is a different man from Prusinovice (son of Wenzel)"
+    ],
+    "land_records": "Ludslavice land book II (kniha 13405): no. 18 half-lán — Athanasius Wagda/Wayda bought 10 Sep 1806 (3200 fl), Franz Wagda 10 Jun 1808, later Josef Waida (S0044). No. 17 (Franz's 1807 address) belonged to Johann Schořík → Franz lived there as lodger (S0052).",
+    "open_questions": [
+      "Origin of Franz Waida before c.1806 and his marriage to Anna Dvořel (c.1795–1803)",
+      "Relationship of Athanasius Wayda (P0164) to Franz — deed book II index points to 'fol. 325' but the deed is not there (S0047); debt book fol. 325 inconclusive (S0049); deed book I index not conclusive (S0053)",
+      "Location of 'Wrbětitz' (Vrbětice/Vlachovice checked negative, S0038–S0040)",
+      "Stanislav (b. 1935) and Radomír Vajda not yet verified from records"
+    ],
+    "negative_searches": [
+      "Ludslavice births index 1785–1836 W: Wajda children only from 1807 (S0024)",
+      "Ludslavice marriages 1785–1868 indexes and 1797–1809 pages (S0019–S0022, S0041–S0043)",
+      "Ludslavice deaths index 1785–1836 (S0034): no Athanasius",
+      "Prusinovice marriages 1784–1843 (S0032)",
+      "Vlachovice/Vrbětice marriages 1797–1805 (S0038–S0040)",
+      "Lukov/Velíková marriage index 1859–1941 (S0023)"
+    ],
+    "method_notes": "Acta Publica viewed in a Playwright-driven Firefox after ALTCHA (1 page/30 s); ARON MZA land/deed books viewed in the same browser (iipsrv tiles return 403 outside the viewer). Every checked page is a source with archive_url, including negative results."
+  },
+  {
+    "date": "2026-11-14",
+    "branch": "Novosad (Mladcová) — grandmother Ludmila Novosadová's paternal line",
+    "summary": "Verified from scans: Ludmila (b. 1938) → Jaroslav Novosad (b. 29 Jun 1907 Mladcová; m. 12 Sep 1931 Louky to Marie Svobodová, S0018) → Josef Novosad (b. 27 Aug 1858 Mladcová no. 35, S0056; kolář, m. 25 Sep 1883 Mladcová to Františka Pastyříková, S0054) → Tomáš Novosad (čtvrtník, no. 35) + Veronika Šmigurová(?) from Zlín → Josef Novosad (Viertler, Mladcová) + Anna Král(?) and Franz Šmigura(?) (Häusler, Zlín) + Theresia Hříbal(?). UPDATE: Tomáš + Veronika married 9 Feb 1848 in Zlín (S0059); Tomáš b. c.1820; his mother read 'Rosina Doložal' (1848) vs 'Anna Král' (1858) — conflict recorded.",
+    "corrections": [
+      "Jaroslav born 29 Jun 1907 (not 30 Jun), in Mladcová (not Zlín)",
+      "Marie Svobodová born in Louky n. Dřevnicí"
+    ],
+    "open_questions": [
+      "Tomáš Novosad + Veronika marriage (c. 1845–1850; not in Mladcová marriage index — probably Zlín town, bride's parish)",
+      "Tomáš's birth (c. 1815–1825) in Mladcová births 1784–1864",
+      "Siblings of Josef (Franz, Anna, Franziska, Josepha 1857, Thomas 1860, Veronika 1863 — index S0057) not yet opened",
+      "Svoboda/Zelová and Pastyřík/Dohnalková lines",
+      "Uncertain readings: Šmigurová, Král, Hříbal, Pastyříková"
+    ]
+  },
+  {
+    "date": "2026-11-14",
+    "branch": "Bartoň (Veřovice) + Bárton (Rabensburg) — mother's line",
+    "summary": "Veřovice registers are at ZA Opava (Digitální badatelna), whose front page forbids automated browsing; not read — user to check manually (S0016; Jan Bartoň b. 3 Jan 1874; Vincenc's baptism; Bartoň–Bártonová marriage). Bonus: Rabensburg (Matricula, open) baptism 5/6 Aug 1872 of Maria, daughter of Maria Anna Barton, day labourer from Seitendorf/Ženklava parish next to Veřovice (S0061) — probable birth of Maria Bártonová (P0119). Siblings search: no other Barton children in Rabensburg 1841–1889, no Barton deaths 1880–1898 (S0062–S0065) — Maria Anna was only temporarily in Rabensburg; ancestors must be traced in Ženklava/Veřovice (ZA Opava).",
+    "open_questions": [
+      "Confirm Maria (1872) = wife of Jan Bartoň via their marriage record (ZA Opava)",
+      "Father of Maria: 'Hönig(?) Johann' in 1872 record vs 'Josef Bárton' in tree",
+      "Maria Anna Barton's own baptism in Ženklava (ZA Opava)",
+      "Rabensburg Taufbuch 01-08 (1874–1889) index not checked (siblings of Maria)",
+      "Maria Anna Barton's baptism and parents — Ženklava (Seitendorf) parish, ZA Opava, c. 1840–1852"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "branch": "Vajda/Waida — parents of Franz Waida (c.1764–1827)",
+    "summary": "Searched for Franz's origin. Prusinovice: no Waida in 1763 pages nor births index 1784–1818 (S0066); Waidas there only from c.1819. Daughters' baptisms 1807/1809/1814 share godfather 'Paul R…/L…, Bauer, Richter von L…tz' (probably Lechotice, uncertain); 1816 godparent different. Mother confirmed as 'Anna nach Karl Dowrtil, Podsedker von Wrbetitz' (1816). Lechotice marriages 1784–1825 (Mysločovice parish): no Franz Wajda (S0067).",
+    "open_questions": [
+      "Franz's marriage to Anna Dowrtil c.1795–1803 — not in Ludslavice, Vrbětice 1797–1805, Prusinovice, Lechotice",
+      "Franz's baptism c.1764 — candidates: Mysločovice births 1754–1787 (incl. Lechotice), Holešov births 1749–1776 (no index), Vlachovice births (Vrbětice)",
+      "Identify the godfather Paul … and his village"
+    ],
+    "note": "research_log moved out of genealogy.json on 2026-11-15 because the app drops unknown top-level keys when saving."
+  }
+]

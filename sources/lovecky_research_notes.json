@@ -1,0 +1,881 @@
+{
+  "subject_id": "P0093",
+  "extracted_from": "/home/jav/Projects/Profile/genealogy/data/genealogy.json",
+  "extracted_on": "2026-11-14",
+  "subject": {
+    "id": "P0093",
+    "name": "František",
+    "birth_date": "1926-01-01",
+    "death_date": "2009",
+    "birth_place": "Kyjov",
+    "death_place": "",
+    "father": "P0114",
+    "mother": "",
+    "sex": "M",
+    "confidence": "possible",
+    "provenance": "myheritage",
+    "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+    "birth_surname": "Lovecký",
+    "birth_place_corrected": "Moravský Písek (family home; the grave and the parents' records confirm the family; 'Kyjov' from MyHeritage is likely wrong)",
+    "birth_date_note": "Year 1926 confirmed by the gravestone; '1 Jan' is a MyHeritage placeholder; exact date still unknown."
+  },
+  "disambiguation": {
+    "note": "Four Lovecký persons exist in the tree; this file focuses on the František born 1926.",
+    "P0114": "František Lovecký (no dates) – FATHER of the subject (GEDCOM I500086)",
+    "P0093": "František Lovecký, b. 1926, d. 2009 – SUBJECT (GEDCOM I500061)",
+    "P0091": "František Lovecký, b. 13.6.1955 Kyjov, d. 6.3.2019 Moravský Písek – SON of the subject (GEDCOM I500059)",
+    "P0088": "Michaela Lovecká (married Vajdová), b. 7.3.1982 Kyjov – GRANDDAUGHTER of the subject (GEDCOM I500056)"
+  },
+  "family": {
+    "father": {
+      "id": "P0114",
+      "name": "František",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "M",
+      "confidence": "possible",
+      "provenance": "myheritage",
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0151 into P0114.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0187 into P0114.",
+      "birth_surname": "Lovecký"
+    },
+    "spouse": {
+      "id": "P0094",
+      "name": "Marie",
+      "birth_date": "",
+      "death_date": "",
+      "birth_place": "",
+      "death_place": "",
+      "father": "",
+      "mother": "",
+      "sex": "F",
+      "confidence": "possible",
+      "provenance": "myheritage",
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0147 into P0094.\n\nImported from GEDCOM (djb608_6840609ec667286678317r_A.ged).\n\nMerged duplicate P0183 into P0094.",
+      "birth_surname": "Formánková"
+    },
+    "children": [
+      {
+        "id": "P0091",
+        "name": "František",
+        "birth_date": "1955-06-13",
+        "death_date": "2019-03-06",
+        "birth_place": "Kyjov",
+        "death_place": "Moravský Písek",
+        "father": "P0093",
+        "mother": "P0094",
+        "sex": "M",
+        "confidence": "possible",
+        "provenance": "myheritage",
+        "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+        "birth_surname": "Lovecký"
+      }
+    ],
+    "son_spouse": {
+      "id": "P0092",
+      "name": "Alena",
+      "birth_date": "1957-03-01",
+      "death_date": "",
+      "birth_place": "Kyjov",
+      "death_place": "",
+      "father": "P0096",
+      "mother": "P0095",
+      "sex": "F",
+      "confidence": "possible",
+      "provenance": "myheritage",
+      "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+      "birth_surname": "Sládková"
+    },
+    "grandchildren": [
+      {
+        "id": "P0088",
+        "name": "Michaela",
+        "birth_date": "1982-03-07",
+        "death_date": "",
+        "birth_place": "Kyjov",
+        "death_place": "",
+        "father": "P0091",
+        "mother": "P0092",
+        "sex": "F",
+        "confidence": "possible",
+        "provenance": "myheritage",
+        "notes": "Imported from GEDCOM (djb608_6840609ec667286678317r_A.ged).",
+        "birth_surname": "Lovecká",
+        "married_surname": "Vajdová"
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "Eundated-marriage-058",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0091",
+      "bride_id": "P0092",
+      "provenance": "myheritage",
+      "source_ids": [
+        "S0017"
+      ]
+    },
+    {
+      "id": "Eundated-marriage-059",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0093",
+      "bride_id": "P0094",
+      "provenance": "myheritage",
+      "source_ids": [
+        "S0017"
+      ]
+    },
+    {
+      "id": "Eundated-marriage-066",
+      "event_type": "Marriage",
+      "date": "",
+      "place": "",
+      "confidence": "possible",
+      "groom_id": "P0114",
+      "bride_id": "",
+      "provenance": "myheritage",
+      "source_ids": [
+        "S0017"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S0017",
+      "title": "Imported GEDCOM from djb608_6840609ec667286678317r_A.ged",
+      "type": "GEDCOM import",
+      "parish": "",
+      "date": "2026-03-27",
+      "archive_url": "",
+      "image_url": "",
+      "local_image": "sources/djb608_6840609ec667286678317r_A.ged",
+      "reliability": "medium",
+      "priority": "secondary"
+    }
+  ],
+  "raw_gedcom": {
+    "file": "/home/jav/Projects/Profile/genealogy/sources/djb608_6840609ec667286678317r_A.ged",
+    "INDI_I500061": [
+      "1 NAME František /Lovecký/",
+      "1 SEX M",
+      "1 BIRT",
+      "2 DATE 1 JAN 1926",
+      "2 PLAC Kyjov",
+      "1 DEAT Y",
+      "2 DATE 2009",
+      "1 FAMS @F500036@",
+      "1 FAMC @F500049@",
+      "1 _UPD 8 MAR 2026"
+    ],
+    "FAM_F500036": "HUSB I500061 (František *1926) + WIFE I500062 (Marie Formánková, _MARNM Lovecká); CHIL I500059 (František *1955)",
+    "FAM_F500049": "HUSB I500086 (František Lovecký, father); no WIFE recorded; CHIL I500061"
+  },
+  "data_quality_findings": [
+    "Birth date '1 JAN 1926' is almost certainly a placeholder for year-only knowledge (MyHeritage commonly stores 'abt. 1926' this way). Treat as 'about 1926' until a register entry is found.",
+    "Birth place is recorded as Kyjov, but the family is associated with Moravský Písek (son died there). In 1926 most rural births were home births registered in the home parish, so Kyjov may be a confusion with the son/granddaughter's birthplace (Kyjov hospital). Verify which is correct.",
+    "Death recorded as year only (2009), no place.",
+    "Mother of the subject is unknown – F500049 has no WIFE; genealogy.json P0093.mother is empty.",
+    "Marriage P0093 × P0094 (Eundated-marriage-059) has no date or place. Son born 1955 suggests marriage ca. 1950–1955.",
+    "Marie Formánková (P0094) has no dates or places at all.",
+    "Event Eundated-marriage-066 (P0114 with no bride) is an empty placeholder created from F500049.",
+    "All records come from a single secondary source (MyHeritage GEDCOM, S0017); confidence 'possible' everywhere – nothing is backed by a primary record yet."
+  ],
+  "historical_context": {
+    "place": "Moravský Písek, Hodonín District, South Moravia (Slovácko); ~21 km NE of Hodonín, near Veselí nad Moravou and Uherský Ostroh. First mentioned 1300; Šternberk estate of Veselí 1415–1848; neo-Gothic church of St. Anne built 1909–1910.",
+    "population": {
+      "1921": 2061,
+      "1930": 2059,
+      "1950": 2132,
+      "1961": 2374,
+      "1980": 2238,
+      "2001": 2148
+    },
+    "life_timeline_estimate": [
+      "c. 1926 – born (First Czechoslovak Republic)",
+      "1939–1945 – teenager during the Protectorate; age 18–19 at the 1945 front passage through the Morava valley",
+      "c. 1946–1948 – age for compulsory military service",
+      "1948–1950s – communist takeover; collectivization (JZD) of agriculture in South Moravian villages; regional industry: Moravské naftové doly (oil fields around Hodonín), later the Veselí nad Moravou ironworks",
+      "c. 1950–1955 – marriage to Marie Formánková",
+      "1955 – son František born (Kyjov)",
+      "1982 – granddaughter Michaela born (Kyjov)",
+      "2009 – died, age ~83"
+    ]
+  },
+  "research_leads": [
+    {
+      "what": "Marriage Jan Tihlařík × Kateřina Tomečková (29 Apr 1896)",
+      "where": "https://www.mza.cz/actapublica/matrika/detail/431",
+      "note": "Not found on image 106 of book 5675 (Feb–Jun 1896). May have taken place in the bride's parish, Veselí nad Moravou."
+    },
+    {
+      "what": "Birth of Kateřina Tomečková (28 Apr 1876)",
+      "where": "Veselí nad Moravou parish registers at MZA",
+      "note": "Different parish."
+    },
+    {
+      "what": "Deaths of Antonín Lovecký and Marie Blatecká",
+      "where": "https://www.mza.cz/actapublica/matrika/detail/433 (deaths 1867–1916) and https://www.mza.cz/actapublica/matrika/detail/13877 (1917–1949)",
+      "note": ""
+    },
+    {
+      "what": "Deaths of Jan Tihlařík and Kateřina Tomečková",
+      "where": "https://www.mza.cz/actapublica/matrika/detail/13877 or the registry office",
+      "note": ""
+    },
+    {
+      "what": "Birth of P0093 (1926), marriage to Marie Formánková, death 2009",
+      "where": "Registry office (matriční úřad) Moravský Písek / Veselí nad Moravou",
+      "note": "Not online. Request an extract as a descendant."
+    },
+    {
+      "what": "Other Lovecký entries in the 1917–1949 deaths index and 1908–1943 marriages index",
+      "where": "https://www.mza.cz/actapublica/matrika/detail/13877, https://www.mza.cz/actapublica/matrika/detail/11630",
+      "note": "Probably uncles and cousins of P0093."
+    }
+  ],
+  "web_search_results": {
+    "date": "2026-11-14",
+    "direct_hits": "None – no online mention of 'František Lovecký' with Moravský Písek was found.",
+    "sources_consulted": [
+      "https://en.wikipedia.org/wiki/Moravsk%C3%BD_P%C3%ADsek",
+      "https://sites.google.com/site/auswanderer20/czech-republic-archives-online",
+      "https://www.turistika.cz/mista/moravsky-pisek-socha-sv-jana-nepomuckeho/detail",
+      "https://www.pribehynasichsousedu.cz/media/Josef-Formanek-zivotopis-1.pdf"
+    ],
+    "side_note": "A Josef Formánek (b. 1937 Veselí n. M., son of farmer František) lived in Moravský Písek from 1967; same surname as the subject's wife but no evidence of relation – weak lead only."
+  },
+  "archive_links": {
+    "checked_on": "2026-11-14",
+    "existing_links_in_genealogy_json": "None for the Lovecký line. The MZA links already in genealogy.json (S0006–S0014) belong to the Vajda line (Rudslavice / Slušovice parishes).",
+    "catalogue_search": "https://www.mza.cz/actapublica/matrika/hledani?typ=obec&search_by_obec=Moravsk%C3%BD%20P%C3%ADsek",
+    "parish": "Moravský Písek became its own Roman Catholic parish in 1784 (deanery Bzenec-Kyjov). Before 1784 it belonged to the parish of Bzenec.",
+    "moravsky_pisek_registers": [
+      {
+        "book": "5668",
+        "type": "N (births)",
+        "years": "1784-1809",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/5150"
+      },
+      {
+        "book": "5669",
+        "type": "N (births)",
+        "years": "1810-1864",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/5151"
+      },
+      {
+        "book": "5670",
+        "type": "N (births)",
+        "years": "1865-1889",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/5152"
+      },
+      {
+        "book": "5671",
+        "type": "N (births)",
+        "years": "1890-1908",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/9922",
+        "use": "Birth of the father František (P0114), likely ca. 1890-1905"
+      },
+      {
+        "book": "5674",
+        "type": "O (marriages)",
+        "years": "1784-1851",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/5153"
+      },
+      {
+        "book": "5675",
+        "type": "O (marriages)",
+        "years": "1852-1907",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/431"
+      },
+      {
+        "book": "5676",
+        "type": "O (marriages)",
+        "years": "1908-1943",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/11630",
+        "use": "TOP PRIORITY: marriage of the parents of the subject (ca. 1918-1926). It will name the subject's unknown mother and both sets of grandparents"
+      },
+      {
+        "book": "5677",
+        "type": "O (marriages)",
+        "years": "1944-1949",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/13882",
+        "use": "Check whether the subject married Marie Formánková before 1950 (state civil registers took over from 1950)"
+      },
+      {
+        "book": "5678",
+        "type": "Z (deaths)",
+        "years": "1784-1820",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/5154"
+      },
+      {
+        "book": "5679",
+        "type": "Z (deaths)",
+        "years": "1821-1866",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/5155"
+      },
+      {
+        "book": "5680",
+        "type": "Z (deaths)",
+        "years": "1867-1916",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/433"
+      },
+      {
+        "book": "5681",
+        "type": "Z (deaths)",
+        "years": "1917-1949",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/13877",
+        "use": "Deaths of the grandparents or siblings of the subject"
+      }
+    ],
+    "bzenec_registers_pre_1784": [
+      {
+        "book": "5146",
+        "type": "N",
+        "years": "1638-1669",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/4911"
+      },
+      {
+        "book": "5147",
+        "type": "N/O/Z",
+        "years": "1677-1721",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/4912"
+      },
+      {
+        "book": "5173a",
+        "type": "N/O",
+        "years": "1677-1721",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/11568"
+      },
+      {
+        "book": "5148",
+        "type": "N",
+        "years": "1722-1775",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/4913"
+      },
+      {
+        "book": "5149",
+        "type": "N",
+        "years": "1775-1818",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/4914"
+      },
+      {
+        "book": "5158",
+        "type": "O",
+        "years": "1723-1779",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/4919"
+      },
+      {
+        "book": "5167",
+        "type": "Z",
+        "years": "1722-1777",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/4923"
+      },
+      {
+        "book": "5168",
+        "type": "Z",
+        "years": "1777-1811",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/4924"
+      },
+      {
+        "book": "5174",
+        "type": "index N/O/Z",
+        "years": "1722-1818",
+        "url": "https://www.mza.cz/actapublica/matrika/detail/4927"
+      }
+    ],
+    "not_online": "MZA has no Moravský Písek births after 1908, so the subject's 1926 birth is not online. Ask the registry office (matriční úřad) Moravský Písek or Veselí nad Moravou, or the one in Kyjov if he was really born there, for an extract (výpis).",
+    "access_note": "Since 2 Nov 2026 MZA blocks download scripts. View the scans only in a normal browser or with Playwright, following rodokmen-skill reference/portaly.md."
+  },
+  "findings": [
+    {
+      "id": "F1-marriage-1925",
+      "status": "CONFIRMED – marriage of the parents of P0093",
+      "record": "Marriage, Moravský Písek 1925, register book 5676 (marriages 1908–1943), page/image 104, entry no. 14",
+      "url": "https://www.mza.cz/actapublica/matrika/detail/11630 (image 104; index on image 234, letter L)",
+      "date": "1925-11-08",
+      "place": "Parish church of St. Anne, Moravský Písek; officiating priest František Kvapil, parish priest",
+      "groom": {
+        "name": "František Lovecký",
+        "occupation": "dělník (labourer)",
+        "residence": "Moravský Písek no. 57",
+        "birth": "9 January 1900, Moravský Písek (district Uherské Hradiště)",
+        "age": 25,
+        "religion": "Roman Catholic",
+        "status": "single",
+        "father": "† Cyril Lovecký, domkař (cottager) in Moravský Písek (already dead in 1925)",
+        "mother": "Kateřina née Kmínková (the marriage entry seemed to read 'Kunínková'; the 1900 baptism clearly gives father František Kmínek)"
+      },
+      "bride": {
+        "name": "Františka Tihlaříková",
+        "occupation": "rolnická dcera (farmer's daughter)",
+        "residence": "Moravský Písek no. 27",
+        "birth": "5 November 1904, Moravský Písek (district Uherské Hradiště)",
+        "age": "21 years 3 days",
+        "religion": "Roman Catholic",
+        "status": "single",
+        "father": "Jan Tihlařík, čtvrtník (smallholder, holder of a quarter farm) in Moravský Písek",
+        "mother": "Kateřina née Tomečková"
+      },
+      "witnesses": [
+        "Josef F… (surname unclear, possibly Formánek), rolník (farmer) – Veselí / Moravský Písek",
+        "František Holásek, domkař (cottager), Moravský Písek"
+      ],
+      "other": "Banns read in St. Anne's in October and on All Saints' Day (1 November) 1925; civil pre-marriage record (snubní protokol) of 16 October 1925, no. 14, kept in the parish archive.",
+      "why_it_matches": "P0093's father is František Lovecký (P0114). This František married in November 1925 and P0093 was born in 1926 in the same village, so the dates fit a first child.",
+      "to_confirm": "P0093's own birth/baptism entry (1926; not online) or his marriage/death record should name Františka Tihlaříková as his mother.",
+      "images": [
+        "/home/jav/Projects/WIP/lovecky_media/mza_5676_104_spread.png",
+        "/home/jav/Projects/WIP/lovecky_media/mza_5676_104_zenich.png",
+        "/home/jav/Projects/WIP/lovecky_media/mza_5676_104_nevesta.png"
+      ]
+    },
+    {
+      "id": "F2-other-lovecky-marriages",
+      "record": "Index of book 5676, image 234 (letter L)",
+      "entries": [
+        {
+          "year": 1919,
+          "index_text": "Lovecký Ant. – Pavlačková Fr.",
+          "house": "147/86",
+          "page": 66
+        },
+        {
+          "year": 1921,
+          "index_text": "Lovecký Dom. – Filípková A.",
+          "house": "40/75",
+          "page": 81
+        },
+        {
+          "year": 1923,
+          "index_text": "Lovecký Boles. – Doležalová M.",
+          "house": "76/37",
+          "page": 91
+        },
+        {
+          "year": 1925,
+          "index_text": "Lovecký Fr. a Fra. Tihlaříková",
+          "house": "57/27",
+          "page": 104,
+          "note": "= F1"
+        },
+        {
+          "year": 1937,
+          "index_text": "Lelocha Ludvík – Anna Lovecká",
+          "house": "142",
+          "page": 182
+        },
+        {
+          "year": 1940,
+          "index_text": "Lovecký Svatopluk – Vydělková Jarmila",
+          "house": "116/27",
+          "page": 200
+        },
+        {
+          "year": 1942,
+          "index_text": "Lovecký Jaroslav – Karlíková Miloslava",
+          "house": "65/480",
+          "page": 210
+        }
+      ],
+      "note": "Antonín, Dominik and Bohuslav/Boleslav (1919–1923) may be brothers of František (sons of Cyril); check their entries for parent names. Svatopluk (1940) also lived at no. 27, the bride's house in 1925, so he is a likely relative."
+    },
+    {
+      "id": "F3-birth-frantisek-1900",
+      "status": "CONFIRMED",
+      "record": "Births Moravský Písek 1890–1908, book 5671 (parish book V), page 160, entry 4 of 1900",
+      "url": "https://www.mza.cz/actapublica/matrika/detail/9922 (image 161)",
+      "child": "František Lovecký, male, legitimate, Roman Catholic",
+      "born": "1900-01-09",
+      "baptised": "1900-01-14",
+      "house": "Moravský Písek no. 110",
+      "father": {
+        "name": "Cyril Lovecký",
+        "occupation": "domkař (cottager) in Písek",
+        "born": "1871-07-02",
+        "parents": "son of Antonín Lovecký, cottager in Písek, and his wife Marie née Blatecká (confirmed by the 1871 birth and 1920 death of Cyril)"
+      },
+      "mother": {
+        "name": "Kateřina née Kmínková",
+        "born": "1876-04-23",
+        "parents": "daughter of František Kmínek, cottager in Písek, and his wife Kateřina née Doležalová (daughter of Martin Doležal, smallholder (čtvrtník) in Písek)"
+      },
+      "parents_married": "1899-05-23 (note in the entry)",
+      "baptised_by": "P. Jan Pospíšil, dean (děkan)",
+      "godparents": "František Holásek, cottager in Písek, and his wife Františka",
+      "midwife": "Florentina Lovecká, no. 244 in Písek, certified 1 Sep 1886",
+      "margin_note": "Married 8 Nov 1925 to Františka Tihlaříková",
+      "images": [
+        "/home/jav/Projects/WIP/lovecky_media/mza_5671_161_spread.png",
+        "/home/jav/Projects/WIP/lovecky_media/mza_5671_161_frantisek1900_otec.png",
+        "/home/jav/Projects/WIP/lovecky_media/mza_5671_161_frantisek1900_matka.png"
+      ]
+    },
+    {
+      "id": "F4-birth-frantiska-1904",
+      "status": "CONFIRMED",
+      "record": "Births Moravský Písek 1890–1908, book 5671 (parish book V), page 257, entry 66 of 1904",
+      "url": "https://www.mza.cz/actapublica/matrika/detail/9922 (image 259)",
+      "child": "Františka Tihlaříková, female, legitimate, Roman Catholic",
+      "born": "1904-11-05",
+      "baptised": "1904-11-06",
+      "house": "Moravský Písek no. 27",
+      "father": {
+        "name": "Jan Tihlařík",
+        "occupation": "čtvrtník (smallholder, holder of a quarter farm) in Písek",
+        "born": "1872-05-05",
+        "parents": "son of Josef Tihlařík, smallholder (čtvrtník) in Písek, and his wife Josefa née Janoušková from Těmice"
+      },
+      "mother": {
+        "name": "Kateřina née Tomečková",
+        "born": "1876-04-28",
+        "parents": "daughter of František Tomeček, podsedník (small farmer) in Veselí, and his wife Františka née Trachtulcová from Veselí"
+      },
+      "parents_married": "1896-04-29",
+      "baptised_by": "František Böse (reading uncertain), chaplain (kooperátor)",
+      "godparents": "Josef Tomeček, small farmer (podsedník) from Veselí, and his wife Apolonia",
+      "midwife": "Marie Měšťánková, no. 189 in Písek, certified",
+      "margin_note": "Married 8 Nov 1925 to Fr. Lovecký; further marginal dates 10 Jun 1917 and '176. 1917' (probably a certificate issued)",
+      "images": [
+        "/home/jav/Projects/WIP/lovecky_media/mza_5671_259_spread.png",
+        "/home/jav/Projects/WIP/lovecky_media/mza_5671_259_frantiska1904_otec.png",
+        "/home/jav/Projects/WIP/lovecky_media/mza_5671_259_frantiska1904_matka.png"
+      ]
+    },
+    {
+      "id": "F5-marriage-cyril-1899",
+      "status": "CONFIRMED (located)",
+      "record": "Marriages Moravský Písek 1852–1907, book 5675, image 116, first entry (May 1899)",
+      "url": "https://www.mza.cz/actapublica/matrika/detail/431 (image 116)",
+      "groom": "Cyril Lovecký, son of Antonín Lovecký, cottager in Písek",
+      "bride": "Kateřina Kmínková, daughter of František Kmínek, cottager in Písek",
+      "note": "Date 23 May 1899 is confirmed by the 1900 baptism and the 1920 death entry. Witness names on the 1901 page include a Jakub Blatecký, which supports the reading 'Blatecká'.",
+      "images": [
+        "/home/jav/Projects/WIP/lovecky_media/mza_5675_116_spread.png",
+        "/home/jav/Projects/WIP/lovecky_media/mza_5675_116_cyril1899_zenich.png",
+        "/home/jav/Projects/WIP/lovecky_media/mza_5675_116_cyril1899_nevesta.png"
+      ]
+    },
+    {
+      "id": "F6-birth-cyril-1871",
+      "status": "CONFIRMED",
+      "record": "Births Moravský Písek 1865–1889, book 5670, folio 80, entry 3 (no. 110 of 1871)",
+      "url": "https://www.mza.cz/actapublica/matrika/detail/5152 (image 80)",
+      "child": "Cyril Lovecký",
+      "born": "1871-07-02",
+      "baptised": "1871-07-03",
+      "house": "Moravský Písek no. 110",
+      "father": "Antonín Lovecký, cottager (domkař) in Písek, son of Jan Lovecký, cottager in Písek, and his wife Mariana née Jan Žádník, smallholder (čtvrtník) in Písek",
+      "mother": "Marianna, daughter of Jan Blatecký, smallholder (čtvrtník) in Písek, and his wife Rozina née Jan Běhavka?, smallholder from Polešovice",
+      "baptised_by": "Ant. Sedláček, chaplain (kooperátor)",
+      "midwife": "Terezie Kozina, no. 80 in Písek",
+      "godparents": "Jan Havlíček?, smallholder in Písek, and Juliana his wife",
+      "note": "An earlier Cyrill born April 1871 on image 78 died in 1893 and is a different child.",
+      "images": [
+        "/home/jav/Projects/WIP/lovecky_media/mza_5670_080_spread.png",
+        "/home/jav/Projects/WIP/lovecky_media/mza_5670_080_cyril1871_otec.png",
+        "/home/jav/Projects/WIP/lovecky_media/mza_5670_080_cyril1871_matka.png"
+      ]
+    },
+    {
+      "id": "F7-birth-jan-tihlarik-1872",
+      "status": "CONFIRMED",
+      "record": "Births Moravský Písek 1865–1889, book 5670, folio 90, first entry of the page (1872)",
+      "url": "https://www.mza.cz/actapublica/matrika/detail/5152 (image 90)",
+      "child": "Jan Tihlařík",
+      "born": "1872-05-05",
+      "baptised": "1872-05-05",
+      "house": "Moravský Písek no. 27",
+      "father": "Josef Tihlařík, smallholder (čtvrtník) in Písek, son of Ignác Tihlařík, smallholder in Písek, and his wife Františka née Martin Doležal, smallholder from Písek",
+      "mother": "Josefa, daughter of František Janoušek, half-laner (půlláník) from Těmice, and his wife Kateřina née Martin Zeník?, small farmer (podsedník) from Těmice",
+      "baptised_by": "Ant. Sedláček, chaplain",
+      "midwife": "Terezie Kozina, no. 80",
+      "godparents": "Martin Nyezchleba?, smallholder in Písek, and Františka his wife",
+      "note": "House no. 27 is the same house Františka Tihlaříková lived in at her 1925 marriage; the Tihlařík farm stayed in the family.",
+      "images": [
+        "/home/jav/Projects/WIP/lovecky_media/mza_5670_090_spread.png",
+        "/home/jav/Projects/WIP/lovecky_media/mza_5670_090_jan_tihlarik1872_otec.png",
+        "/home/jav/Projects/WIP/lovecky_media/mza_5670_090_jan_tihlarik1872_matka.png"
+      ]
+    },
+    {
+      "id": "F8-birth-katerina-kminkova-1876",
+      "status": "CONFIRMED",
+      "record": "Births Moravský Písek 1865–1889, book 5670, folio 131, entry 2 (1876)",
+      "url": "https://www.mza.cz/actapublica/matrika/detail/5152 (image 131)",
+      "child": "Kateřina Kmínková",
+      "born": "1876-04-23",
+      "baptised": "1876-04-23",
+      "house": "Moravský Písek no. 57",
+      "father": "František Kmínek, cottager in Písek, son of Cyril Kmínek, cottager in Písek, and his wife Alžběta née Matouš Pešík, cottager in Písek",
+      "mother": "Kateřina, daughter of Martin Doležal, smallholder in Písek, and his wife Mariana née Filip Kolařík, small farmer (podsedník) in Uherský Ostroh",
+      "baptised_by": "Ant. Sedláček, chaplain",
+      "midwife": "Terezie Kozina, no. 60",
+      "godparents": "Jan Vlach, cottager in Písek, and Františka his wife",
+      "note": "House no. 57 is the Kmínek family house. Cyril Lovecký moved there after marrying Kateřina, and their son František still lived there in 1925.",
+      "images": [
+        "/home/jav/Projects/WIP/lovecky_media/mza_5670_131_spread.png",
+        "/home/jav/Projects/WIP/lovecky_media/mza_5670_131_katerina_kminkova1876_otec.png",
+        "/home/jav/Projects/WIP/lovecky_media/mza_5670_131_katerina_kminkova1876_matka.png"
+      ]
+    },
+    {
+      "id": "F9-death-cyril-1920",
+      "status": "CONFIRMED",
+      "record": "Deaths Moravský Písek 1917–1949, book 5681, page 42, entry 27 (1920)",
+      "url": "https://www.mza.cz/actapublica/matrika/detail/13877 (image 23; index image 131)",
+      "name": "Cyril Lovecký, married cottager (domkař) in Písek",
+      "died": "1920-09-12",
+      "buried": "1920-09-14, Písek cemetery",
+      "house": "Moravský Písek no. 57",
+      "parents": "son of Antonín Lovecký, cottager in Písek, and his wife Marie née Blatecká",
+      "born": "1871-07-02, Písek, district Uherské Hradiště",
+      "age": "49 years 2 months 10 days",
+      "cause": "Tuberculosis of the lungs (tuberkulosa plic), death certificate no. 27",
+      "priest": "František Kvapil, parish priest",
+      "married": "1899-05-23",
+      "images": [
+        "/home/jav/Projects/WIP/lovecky_media/mza_5681_023_spread.png",
+        "/home/jav/Projects/WIP/lovecky_media/mza_5681_023_cyril1920_umrti.png"
+      ]
+    },
+    {
+      "id": "F10-death-katerina-kminkova-1920",
+      "status": "CONFIRMED",
+      "record": "Deaths Moravský Písek 1917–1949, book 5681, page 43, entry 30 (1920)",
+      "url": "https://www.mza.cz/actapublica/matrika/detail/13877 (image 23)",
+      "name": "Kateřina Kmínková, retired farmer (výměnkářka) in Písek, widow of František Kmínek, cottager in Písek",
+      "died": "1920-10-15",
+      "buried": "1920-10-17, Písek cemetery",
+      "house": "Moravský Písek no. 57",
+      "parents": "daughter of Martin Doležal, smallholder in Písek, and his wife Marianna Kolaříková",
+      "born": "1841-05-09, Písek",
+      "age": "79",
+      "cause": "old age (sešlost věkem)",
+      "married": "8 Jan 1867 (reading uncertain)",
+      "relation": "Mother of Kateřina Lovecká née Kmínková = great-grandmother of P0093. She died at house no. 57 a month after her son-in-law Cyril.",
+      "images": [
+        "/home/jav/Projects/WIP/lovecky_media/mza_5681_023_katerina_kminkova1920_umrti.png"
+      ]
+    },
+    {
+      "id": "F11-death-anicka-1935",
+      "status": "CONFIRMED",
+      "record": "Deaths Moravský Písek 1917–1949, book 5681, page 156, entry 25 (1935)",
+      "url": "https://www.mza.cz/actapublica/matrika/detail/13877 (image 79)",
+      "name": "Anna (Anička) Lovecká, daughter of František Lovecký, cottager in Moravský Písek, and his wife Františka née Tihlaříková",
+      "born": "1932-07-18",
+      "died": "1935-12-24",
+      "buried": "1935-12-27, Moravský Písek cemetery",
+      "place_of_death": "State hospital (zemská nemocnice) Uherské Hradiště",
+      "house": "Moravský Písek no. 405 (family's home in 1935)",
+      "age": "3 years 5 months 6 days",
+      "cause": "Purulent diffuse peritonitis, pneumonia, heart failure (peritonitis diffusa purulenta, pneumonie, adynamia cordis); autopsy at the hospital",
+      "priest": "František Mokroš, parish priest",
+      "note": "Death reported by the district office Uherské Hradiště, no. 2421, 27 Dec 1935. Sister of P0093.",
+      "images": [
+        "/home/jav/Projects/WIP/lovecky_media/mza_5681_079_spread.png",
+        "/home/jav/Projects/WIP/lovecky_media/mza_5681_079_anicka1935_a.png",
+        "/home/jav/Projects/WIP/lovecky_media/mza_5681_079_anicka1935_b.png"
+      ]
+    },
+    {
+      "id": "F12-other-lovecky-deaths-index",
+      "record": "Deaths 1917–1949 index, letter L (image 131)",
+      "entries": [
+        "1918 Lovecká Marie, no. 147, p. 27",
+        "1920 Lovecký Cyrill, no. 57, p. 42 (= F9)",
+        "1924 Lovecká Jarmila, no. 37, p. 72",
+        "1925 Lovecký Josef, no. 131, p. 73",
+        "1926 Lovecká Maria, no. 40, p. 81",
+        "1927 Lovecká Františka, no. 76, p. 97",
+        "1929 Lovecký Valentin, no. 40, p. 110",
+        "Lovecká Jarmila, no. 1, p. 115",
+        "Lovecký Stanislav, no. 201, p. 115",
+        "1931 Lovecká Kateřina, no. 131, p. 124",
+        "1935 Lovecká Anna, no. 405, p. 156 (= F11)",
+        "1941 Lovecký Cyril, no. 76, p. 181",
+        "1945 Lovecká Marie, p. 211",
+        "1946 Lovecký Boleslav, no. 37, p. 217",
+        "1948 Lovecký František, no. 37, p. 227",
+        "Lovecká Jindřiška, no. 75, p. 228",
+        "1949 Lovecký Michal, no. 334, p. 229"
+      ],
+      "note": "Not yet checked one by one. The Loveckýs were a large family in Moravský Písek.",
+      "images": [
+        "/home/jav/Projects/WIP/lovecky_media/mza_5681_131_index_L.png",
+        "/home/jav/Projects/WIP/lovecky_media/mza_5681_131_index_L1.png",
+        "/home/jav/Projects/WIP/lovecky_media/mza_5681_131_index_L2.png"
+      ]
+    }
+  ],
+  "status": "CONFIRMED (2026-11-14): parents of P0093 identified via the 1925 marriage, both parents' 1900/1904 baptism entries and the family grave.",
+  "grave": {
+    "place": "Moravský Písek cemetery (photo provided by user)",
+    "inscription": "RODINA LOVECKÁ",
+    "buried": [
+      {
+        "name": "Anička",
+        "born": 1932,
+        "died": 1935,
+        "identified_as": "sister of P0093, daughter of František (1900) and Františka; died aged about 3"
+      },
+      {
+        "name": "František",
+        "born": 1900,
+        "died": 1984,
+        "identified_as": "father of P0093 (P0114)"
+      },
+      {
+        "name": "Marie",
+        "born": 1931,
+        "died": 1994,
+        "identified_as": "most likely wife of P0093 – Marie née Formánková (P0094); not proven by a record"
+      },
+      {
+        "name": "Františka",
+        "born": 1904,
+        "died": 1996,
+        "identified_as": "mother of P0093, née Tihlaříková"
+      },
+      {
+        "name": "František",
+        "born": 1926,
+        "died": 2009,
+        "identified_as": "SUBJECT P0093"
+      }
+    ],
+    "image": "/home/jav/Projects/WIP/lovecky_media/hrob_rodina_lovecka.png"
+  },
+  "family_confirmed": {
+    "subject": {
+      "name": "František Lovecký",
+      "born": "1926, Moravský Písek (probably)",
+      "died": 2009,
+      "spouse": "Marie Formánková (1931–1994, from the grave)",
+      "children": [
+        "František Lovecký 1955–2019"
+      ],
+      "siblings": [
+        "Anna (Anička) Lovecká, b. 18 Jul 1932, d. 24 Dec 1935 in the hospital in Uherské Hradiště"
+      ],
+      "childhood_homes": "Moravský Písek no. 57 (Kmínek/Lovecký house, 1925) and no. 405 (1935)"
+    },
+    "parents": [
+      {
+        "name": "František Lovecký",
+        "born": "1900-01-09 Moravský Písek no. 110",
+        "died": 1984,
+        "occupation": "labourer (1925)",
+        "maps_to": "P0114"
+      },
+      {
+        "name": "Františka Tihlaříková",
+        "born": "1904-11-05 Moravský Písek no. 27",
+        "died": 1996,
+        "maps_to": "NEW – fills P0093.mother"
+      }
+    ],
+    "parents_married": "1925-11-08, St. Anne's, Moravský Písek",
+    "grandparents": [
+      {
+        "name": "Cyril Lovecký",
+        "born": "1871-07-02",
+        "died": "1920-09-12, Moravský Písek no. 57, tuberculosis, aged 49",
+        "occupation": "cottager (domkař), Moravský Písek",
+        "side": "paternal",
+        "born_house": "no. 110"
+      },
+      {
+        "name": "Kateřina Kmínková",
+        "born": "1876-04-23",
+        "side": "paternal",
+        "married": "1899-05-23 to Cyril",
+        "born_house": "no. 57"
+      },
+      {
+        "name": "Jan Tihlařík",
+        "born": "1872-05-05",
+        "occupation": "smallholder (čtvrtník), Moravský Písek",
+        "side": "maternal",
+        "born_house": "no. 27"
+      },
+      {
+        "name": "Kateřina Tomečková",
+        "born": "1876-04-28",
+        "from": "Veselí nad Moravou",
+        "side": "maternal",
+        "married": "1896-04-29 to Jan"
+      }
+    ],
+    "great_grandparents": [
+      {
+        "name": "Antonín Lovecký",
+        "occupation": "cottager, Písek",
+        "child": "Cyril",
+        "parents": "Jan Lovecký, cottager, and Mariana Žádníková"
+      },
+      {
+        "name": "Marie (Marianna) Blatecká",
+        "child": "Cyril",
+        "parents": "Jan Blatecký, smallholder, Písek, and Rozina Běhavková? from Polešovice"
+      },
+      {
+        "name": "František Kmínek",
+        "occupation": "cottager, Písek no. 57",
+        "child": "Kateřina Kmínková",
+        "parents": "Cyril Kmínek, cottager, and Alžběta Pešíková",
+        "died": "before Oct 1920"
+      },
+      {
+        "name": "Kateřina Doležalová",
+        "born": "1841-05-09",
+        "died": "1920-10-15, Písek no. 57",
+        "child": "Kateřina Kmínková",
+        "parents": "Martin Doležal, smallholder, and Marianna Kolaříková from Uherský Ostroh"
+      },
+      {
+        "name": "Josef Tihlařík",
+        "occupation": "smallholder, Písek no. 27",
+        "child": "Jan",
+        "parents": "Ignác Tihlařík, smallholder, and Františka Doležalová"
+      },
+      {
+        "name": "Josefa Janoušková",
+        "from": "Těmice",
+        "child": "Jan",
+        "parents": "František Janoušek, half-laner, Těmice, and Kateřina Zeníková?"
+      },
+      {
+        "name": "František Tomeček",
+        "occupation": "small farmer (podsedník), Veselí",
+        "child": "Kateřina Tomečková"
+      },
+      {
+        "name": "Františka Trachtulcová",
+        "from": "Veselí",
+        "child": "Kateřina Tomečková"
+      }
+    ],
+    "3x_great_grandparents": [
+      "Jan Lovecký & Mariana Žádníková",
+      "Jan Blatecký & Rozina Běhavková?",
+      "Cyril Kmínek & Alžběta Pešíková",
+      "Martin Doležal & Marianna Kolaříková",
+      "Ignác Tihlařík & Františka Doležalová",
+      "František Janoušek & Kateřina Zeníková?"
+    ],
+    "note": "Two Martin Doležals appear (father of Kateřina Kmínková née Doležalová, and father of Františka Tihlaříková née Doležalová). They may be the same man, which would make the Lovecký and Tihlařík lines related; not verified."
+  },
+  "working_file": "/home/jav/Projects/Profile/genealogy/data/lovecky.json (moved here 2026-11-14; this is the master file for the Lovecký research)",
+  "media_dir": "/home/jav/Projects/WIP/lovecky_media/"
+}
